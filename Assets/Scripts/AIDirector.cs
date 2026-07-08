@@ -10,6 +10,7 @@ public class AIDirector : MonoBehaviour
     [SerializeField] private float retreatThreshold = 0.3f; // 30% HP
 
     private System.Random rng = new System.Random();
+    private DamagePopup damagePopup;
 
     /// <summary>
     /// Executes the AI turn using priority-based evaluation.
@@ -17,6 +18,16 @@ public class AIDirector : MonoBehaviour
     /// </summary>
     public void ExecuteTurn(TurnManager turnManager, Action onComplete)
     {
+        if (damagePopup == null)
+        {
+            damagePopup = FindObjectOfType<DamagePopup>();
+            if (damagePopup == null)
+            {
+                GameObject dp = new GameObject("DamagePopup");
+                damagePopup = dp.AddComponent<DamagePopup>();
+            }
+        }
+
         List<Unit> enemies = turnManager.EnemyUnits;
         List<Unit> players = turnManager.PlayerUnits;
 
