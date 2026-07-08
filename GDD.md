@@ -372,3 +372,22 @@ Every feature must answer:
 > *"Does this make the tactical decisions more interesting?"*
 
 If not, don't build it.
+
+---
+
+## Sprint Roadmap
+
+See `ROADMAP.md` for the full development plan from Sprint 0 through MVP.
+
+### Summary
+
+| Sprint | Focus | Status |
+|---|---|---|
+| 0 | Foundation (GDD, core scripts) | ✅ Done |
+| 1 | Visual grid & unit placement | ⬜ Not started |
+| 2 | Selection & movement | ⬜ Not started |
+| 3 | Combat & turn flow | ⬜ Not started |
+| 4 | Overwork & commander mechanics | ⬜ Not started |
+| 5 | Rewards & run structure | ⬜ Not started |
+| 6 | Unit data & balance | ⬜ Not started |
+| 7 | Mobile & UI polish | ⬜ Not started |
