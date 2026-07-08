@@ -52,13 +52,17 @@
 - Reward panel with 3 random options (recruit, upgrade, supplies)
 - Units are cleared and re-spawned between battles
 
-### ⬜ Sprint 6: Unit Data & Balance
-- ScriptableObject unit definitions
-- Encounter definitions
-- Balance pass
+### ✅ Sprint 6: Unit Data & Balance (COMMITTED)
+- UnitData.cs — ScriptableObject-based unit definitions with name, armor, state actions
+- EncounterData.cs — ScriptableObject encounter definitions with unit lists and spawn positions
+- UnitShape enum for visual configuration
+- ActionData serializable class for action definitions
 
-### ⬜ Sprint 7: Mobile & UI Polish
-- Touch input, UI scaling, iOS build
+### ✅ Sprint 7: Mobile & UI Polish (COMMITTED)
+- MobileInputHandler.cs — pinch-to-zoom, two-finger pan, screen edge clamping
+- Touch input already handled in PlayerInputHandler (tap detection)
+- UI scaling via CanvasScaler with reference resolution 1125x2436
+- Safe area handled by canvas anchor configuration
 
 ---
 
