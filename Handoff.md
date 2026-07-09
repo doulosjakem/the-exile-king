@@ -6,7 +6,7 @@
 
 ## Latest Commit
 
-`8f1bdfa` — Sprint 1: Visual grid, unit visuals, and game setup scripts
+`7e9222f` — Sprints 6-7: Unit data definitions, encounter data, mobile input, and final polish
 
 ---
 
