@@ -67,5 +67,3 @@
 ## Commercial Use
 
 - **SDXL Turbo** is licensed under CreativeML Open RAIL-M — generated outputs are yours to use commercially
-- All code in this project is your property — use it freely
-- Unity Personal license is fine until $200K annual revenue
