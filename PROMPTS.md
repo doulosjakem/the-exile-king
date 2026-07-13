@@ -21,7 +21,7 @@ ONE PERSON ONLY, solo portrait, waist-up, [UNIT DESCRIPTION], hand-painted histo
 two people, duplicate, twin, clone, double head, extra body, merged body, extra arms, extra hands, malformed weapon, blurry, watermark, text, photorealistic, anime, fantasy armor, modern clothing, gore, nsfw, ugly, deformed
 ```
 
----
+--- 
 
 ## Technique Notes
 
@@ -54,25 +54,27 @@ Generate **waist-up portraits** and composite onto token bases in Unity. Start e
 
 ### Player Units
 
-| Unit | Prompt Addition |
+Full prompt (unit name + description + suffix). Add negative prompt from the template above.
+
+| Unit | Full Prompt |
 |---|---|
-| **David** | `young David, bronze age Israelite shepherd-warrior, leather armor over linen tunic, brown cloak, determined expression, Judean wilderness` |
-| **Swordsman** | `ancient Israelite swordsman, bronze sword, round shield, leather armor, blue tunic, battle-ready stance` |
-| **Spearman** | `ancient Israelite spearman, long spear, leather armor, blue tunic, defensive stance` |
-| **Slinger** | `ancient Israelite slinger, crouching, holding leather sling, pouch at belt, leather armor, blue tunic` |
-| **Archer** | `ancient Israelite archer, drawing bow, leather armor, blue tunic, focused expression` |
-| **Scout** | `ancient Israelite scout, slim build, javelin in hand, light leather armor, blue tunic, alert expression` |
+| **David** | `ONE PERSON ONLY, young David as a bronze age Israelite fugitive commander, simple linen tunic with leather chest piece, brown wool cloak pinned at shoulder, bronze short sword at his hip, leather sling tucked in his belt, shepherd's staff in hand, determined and watchful expression, standing on a rocky Judean hillside under an overcast sky, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Swordsman** | `ONE PERSON ONLY, young Israelite swordsman, bronze age warrior, simple linen tunic with layered leather vest, worn brown cloak, bronze short sword in hand, small round hide-covered shield on his arm, leather wrapped grip, sturdy sandals, battle-ready stance, alert expression, standing on rocky Judean ground, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Spearman** | `ONE PERSON ONLY, young Israelite spearman, bronze age skirmisher, simple linen tunic with leather shoulder piece, brown cloak tied at neck, long bronze-tipped wooden spear held in both hands, small hide shield slung across his back, knife at his waist, sandals, defensive ready stance, focused expression, standing on a hillside overlooking wilderness valleys, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Slinger** | `ONE PERSON ONLY, young Israelite slinger, bronze age skirmisher, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch at his belt, pouch of smooth stones at his hip, small knife, crouched lightly on the balls of his feet, ready to pivot and throw, alert watchful expression, standing on a rocky slope, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Archer** | `ONE PERSON ONLY, young Israelite archer, bronze age wilderness hunter, simple linen tunic with leather vest, brown cloak, wooden composite bow in hand with arrow nocked, quiver of arrows slung across his back, knife at his waist, sandals, drawing the bow with focused precision, standing on a ridge overlooking the valleys, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Scout** | `ONE PERSON ONLY, young Israelite scout, bronze age wilderness tracker, lean shepherd-skirmisher, simple linen tunic with leather vest, worn brown cloak, sandals, sling at his belt, short spear, small round hide shield slung across his back, knife at his waist, alert watchful expression, standing lightly on rocky Judean hillside overlooking the valleys, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
 
 ### Enemy Units (Amalekites)
 
-| Unit | Prompt Addition |
+| Unit | Full Prompt |
 |---|---|
-| **Raider** | `ancient Amalekite raider, nomadic desert warrior, red-brown cloak, spear, weathered face` |
-| **Slinger** | `ancient Amalekite slinger, crouching, red-brown cloak, leather sling, desert warrior` |
-| **Archer** | `ancient Amalekite mounted archer, drawing composite bow, red-brown cloak, on horseback` |
-| **Scout** | `ancient Amalekite scout, red-brown cloak, javelin, lean build, desert warrior` |
-| **Camel Rider** | `ancient Amalekite camel rider, spear, red-brown cloak, riding camel, desert warrior` |
-| **Chieftain** | `ancient Amalekite chieftain, tall headdress, red-brown cloak, commanding presence, weathered and fierce` |
+| **Raider** | `ONE PERSON ONLY, Amalekite raider, bronze age nomadic desert warrior, worn red-brown wool cloak wrapped around his body, leather tunic underneath, bronze-tipped spear in hand, curved knife at his belt, weathered and lean face, windblown hair, hardened squinting expression, standing on sandy desert ground with rocky outcrops, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Slinger** | `ONE PERSON ONLY, Amalekite slinger, bronze age nomadic skirmisher, dusty red-brown cloak wrapped loose, leather sling in hand with pouch of stones at his hip, simple leather tunic, barefoot or sandaled, crouched low in a mobile throwing stance, alert predatory expression, standing on sandy desert terrain, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Archer** | `ONE PERSON ONLY, Amalekite mounted archer, bronze age nomadic horseman, dusty red-brown cloak flowing, riding a small hardy desert horse, composite bow drawn with arrow aimed, quiver strapped to the horse's flank, weathered focused expression, horse mid-stride on open desert plain, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Scout** | `ONE PERSON ONLY, Amalekite scout, bronze age desert tracker, lean wind-hardened build, dusty red-brown cloak patched and worn, short javelin in hand, leather sling at his belt, small hide shield slung across his back, sandals, crouched and scanning the horizon, keen narrowed eyes, standing on a rocky desert ridge, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Camel Rider** | `ONE PERSON ONLY, Amalekite camel rider, bronze age desert warrior, dusty red-brown cloak and headwrap, bronze-tipped spear held upright, riding a tall dromedary camel, leather reins in hand, weathered stern expression, camel standing on sandy desert ground with distant mountains, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
+| **Chieftain** | `ONE PERSON ONLY, Amalekite chieftain, bronze age nomadic warlord, dark red-brown wool cloak trimmed with rough wool fringe, leather and bronze chest piece, weathered authoritative face, gray-streaked beard, bronze short sword at his hip, spear in hand, tall headdress wrapped in desert cloth, standing on a rocky outcrop overlooking his warriors, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family-friendly` |
 
 ---
 
