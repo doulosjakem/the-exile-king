@@ -306,10 +306,16 @@ Priority-based evaluation each turn:
 ## Art Style
 
 - **2.5D / Isometric** perspective
-- **Modern board game aesthetic**
-- Stylized low-poly or flat-shaded
-- Simple but polished
+- **Parchment / illuminated manuscript aesthetic**
+- Hand-painted historical illustration style
+- Watercolor and ink outlines
+- Muted earth tones
+- NOT realistic. NOT fantasy.
+- Inspired by ancient chronicles, illustrated manuscripts, and board game card art
 - Readable over realistic
+- Units rendered as small tokens on the battlefield
+- Selecting a unit opens a command card (like a playing card)
+- Card "flips" after acting to show Exhausted-side abilities
 
 ---
 
