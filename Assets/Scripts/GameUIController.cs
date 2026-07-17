@@ -7,14 +7,15 @@ public class GameUIController : MonoBehaviour
     [Header("References")]
     [SerializeField] private TurnManager turnManager;
     [SerializeField] private PlayerInputHandler inputHandler;
+    [SerializeField] private CardDeckManager cardDeckManager;
 
     [Header("UI Elements")]
     [SerializeField] private GameObject canvas;
     [SerializeField] private Button endTurnButton;
-    [SerializeField] private Button overworkButton;
-    [SerializeField] private Text actionsRemainingText;
     [SerializeField] private Text phaseText;
     [SerializeField] private Text selectedUnitText;
+    [SerializeField] private Text handSizeText;
+    [SerializeField] private Text fatigueText;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private Text gameOverText;
     [SerializeField] private Button restartButton;
@@ -25,6 +26,7 @@ public class GameUIController : MonoBehaviour
     {
         if (turnManager == null) turnManager = FindObjectOfType<TurnManager>();
         if (inputHandler == null) inputHandler = FindObjectOfType<PlayerInputHandler>();
+        if (cardDeckManager == null) cardDeckManager = FindObjectOfType<CardDeckManager>();
 
         CreateUI();
         SetupEvents();
@@ -49,31 +51,26 @@ public class GameUIController : MonoBehaviour
                 es.AddComponent<StandaloneInputModule>();
             }
 
-            // --- End Turn Button ---
             endTurnButton = CreateButton("EndTurnButton", new Vector2(160, 50), new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 30f), new Color(0.3f, 0.5f, 0.8f));
             SetButtonText(endTurnButton, "End Turn", 18);
 
-            // --- Overwork Button ---
-            overworkButton = CreateButton("OverworkButton", new Vector2(160, 50), new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 90f), new Color(0.8f, 0.5f, 0.2f));
-            SetButtonText(overworkButton, "Overwork", 16);
-            overworkButton.gameObject.SetActive(false);
-
-            // --- Actions Remaining ---
-            actionsRemainingText = CreateText("ActionsRemaining", new Vector2(200, 40), new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-20f, -20f));
-            actionsRemainingText.fontSize = 20;
-            actionsRemainingText.alignment = TextAnchor.MiddleRight;
-
-            // --- Phase Text ---
             phaseText = CreateText("PhaseText", new Vector2(300, 40), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -20f));
             phaseText.fontSize = 24;
             phaseText.alignment = TextAnchor.MiddleCenter;
 
-            // --- Selected Unit ---
+            handSizeText = CreateText("HandSizeText", new Vector2(200, 40), new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-20f, -20f));
+            handSizeText.fontSize = 20;
+            handSizeText.alignment = TextAnchor.MiddleRight;
+
+            fatigueText = CreateText("FatigueText", new Vector2(300, 40), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -60f));
+            fatigueText.fontSize = 18;
+            fatigueText.alignment = TextAnchor.MiddleCenter;
+            fatigueText.color = new Color(1f, 0.8f, 0.2f, 1f);
+
             selectedUnitText = CreateText("SelectedUnit", new Vector2(350, 40), new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(20f, -20f));
             selectedUnitText.fontSize = 16;
             selectedUnitText.alignment = TextAnchor.MiddleLeft;
 
-            // --- Game Over Panel ---
             gameOverPanel = CreatePanel("GameOverPanel", new Color(0f, 0f, 0f, 0.75f));
             gameOverText = CreateChildText(gameOverPanel, "GameOverText", new Vector2(500, 100), new Vector2(0.5f, 0.6f), new Vector2(0.5f, 0.6f), Vector2.zero);
             gameOverText.fontSize = 40;
@@ -83,7 +80,6 @@ public class GameUIController : MonoBehaviour
             SetButtonText(restartButton, "New Run", 22);
             gameOverPanel.SetActive(false);
 
-            // --- Reward Panel ---
             rewardPanel = CreatePanel("RewardPanel", new Color(0f, 0f, 0f, 0.8f));
             Text rewardTitle = CreateChildText(rewardPanel, "RewardTitle", new Vector2(400, 60), new Vector2(0.5f, 0.85f), new Vector2(0.5f, 0.85f), Vector2.zero);
             rewardTitle.text = "Choose a Reward";
@@ -99,9 +95,6 @@ public class GameUIController : MonoBehaviour
                 rewardButtons[i].onClick.AddListener(() => OnRewardClicked(capture));
             }
             rewardPanel.SetActive(false);
-
-            // --- Damage Popup Pool ---
-            // Will be created on demand by DamagePopup.cs
         }
     }
 
@@ -109,9 +102,6 @@ public class GameUIController : MonoBehaviour
     {
         if (endTurnButton != null)
             endTurnButton.onClick.AddListener(OnEndTurnClicked);
-
-        if (overworkButton != null)
-            overworkButton.onClick.AddListener(OnOverworkClicked);
 
         if (restartButton != null)
             restartButton.onClick.AddListener(OnRestartClicked);
@@ -129,6 +119,13 @@ public class GameUIController : MonoBehaviour
             inputHandler.OnUnitSelected += OnUnitSelected;
             inputHandler.OnUnitDeselected += OnUnitDeselected;
         }
+
+        if (cardDeckManager != null)
+        {
+            cardDeckManager.OnHandChanged += OnHandChanged;
+            cardDeckManager.OnCardLostToFatigue += OnCardLostToFatigue;
+            cardDeckManager.OnCardLostToCasualty += OnCardLostToCasualty;
+        }
     }
 
     private void Update()
@@ -137,18 +134,15 @@ public class GameUIController : MonoBehaviour
 
         if (turnManager.IsPlayerTurn())
         {
-            if (actionsRemainingText != null)
-                actionsRemainingText.text = $"Actions: {turnManager.RemainingPlayerActions}";
-
-            // Show Overwork button if 0 actions left and David can still act
-            bool showOverwork = turnManager.RemainingPlayerActions <= 0;
-            if (showOverwork && inputHandler != null)
+            if (handSizeText != null && cardDeckManager != null)
             {
-                Unit selected = inputHandler.GetSelectedUnit();
-                showOverwork = selected != null && selected.IsCommander && !selected.IsEnemy && selected.CanAct();
+                handSizeText.text = $"Hand: {cardDeckManager.GetHandCount()}";
             }
-            if (overworkButton != null)
-                overworkButton.gameObject.SetActive(showOverwork);
+
+            if (fatigueText != null && cardDeckManager != null)
+            {
+                fatigueText.text = cardDeckManager.GetLostCount() > 0 ? $"Lost: {cardDeckManager.GetLostCount()}" : "";
+            }
         }
     }
 
@@ -161,21 +155,6 @@ public class GameUIController : MonoBehaviour
         }
     }
 
-    private void OnOverworkClicked()
-    {
-        if (turnManager == null || !turnManager.IsPlayerTurn()) return;
-        if (inputHandler == null) return;
-
-        Unit selected = inputHandler.GetSelectedUnit();
-        if (selected != null && selected.IsCommander && !selected.IsEnemy && selected.CanAct())
-        {
-            // Perform Overwork: David attacks or does something, then skips next turn
-            // For simplicity, we just spend the overwork action and deselect
-            inputHandler.DeselectUnit();
-            turnManager.SpendOverworkAction(selected);
-        }
-    }
-
     private void OnRestartClicked()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(
@@ -185,13 +164,13 @@ public class GameUIController : MonoBehaviour
     private void OnPlayerTurnStarted()
     {
         if (phaseText != null) phaseText.text = "Your Turn";
-        if (overworkButton != null) overworkButton.gameObject.SetActive(false);
+        if (fatigueText != null) fatigueText.text = "";
     }
 
     private void OnAITurnStarted()
     {
         if (phaseText != null) phaseText.text = "Enemy Turn...";
-        if (overworkButton != null) overworkButton.gameObject.SetActive(false);
+        if (fatigueText != null) fatigueText.text = "";
     }
 
     private void OnPhaseChanged(TurnPhase phase)
@@ -212,7 +191,7 @@ public class GameUIController : MonoBehaviour
     private void OnUnitSelected(Unit unit)
     {
         if (selectedUnitText != null)
-            selectedUnitText.text = $"{unit.UnitName} | HP: {unit.CurrentHP}/{unit.MaxHP} | {unit.CurrentState}";
+            selectedUnitText.text = $"{unit.UnitName} | HP: {unit.CurrentHP}/{unit.MaxHP} | {unit.UnitType}";
     }
 
     private void OnUnitDeselected(Unit unit)
@@ -221,7 +200,38 @@ public class GameUIController : MonoBehaviour
             selectedUnitText.text = "";
     }
 
-    // --- Reward System ---
+    private void OnHandChanged(List<CommandCard> hand)
+    {
+        if (handSizeText != null && cardDeckManager != null)
+        {
+            handSizeText.text = $"Hand: {cardDeckManager.GetHandCount()}";
+        }
+    }
+
+    private void OnCardLostToFatigue(CommandCard card)
+    {
+        if (fatigueText != null)
+        {
+            fatigueText.text = $"Fatigue: {card.cardName} lost!";
+            Invoke("ClearFatigueText", 2.0f);
+        }
+    }
+
+    private void OnCardLostToCasualty(CommandCard card)
+    {
+        if (fatigueText != null)
+        {
+            fatigueText.text = $"Casualty: {card.cardName} lost!";
+            Invoke("ClearFatigueText", 2.0f);
+        }
+    }
+
+    private void ClearFatigueText()
+    {
+        if (fatigueText != null)
+            fatigueText.text = "";
+    }
+
     public void ShowRewardPanel(string[] options)
     {
         if (rewardPanel == null) return;
@@ -244,11 +254,8 @@ public class GameUIController : MonoBehaviour
     private void OnRewardClicked(int index)
     {
         rewardPanel.SetActive(false);
-        // The RunManager will handle the reward application
-        // This event is wired up externally
     }
 
-    // --- Factory Methods ---
     private GameObject CreatePanel(string name, Color color)
     {
         GameObject obj = new GameObject(name);

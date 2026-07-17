@@ -256,6 +256,7 @@ Start Turn
     ↓
 Draw until hand contains 4 Command Cards
 (first turn: start with 2, draw 2)
+LOSE one random card (Fatigue)
     ↓
 Choose 2 Command Cards from hand
     ↓
@@ -264,24 +265,22 @@ Reveal both cards
 Resolve:
   • Top ability of one card
   • Bottom ability of the other card
+  (Each ability activates ONE unit — activation token placed)
     ↓
 Discard both cards to Spent pile
-(or Lose pile if the card specifies)
+(or Lose pile if specified)
     ↓
 Enemy Turn
 ```
 
-### Unit State Machine
+### Unit Limitation Rule
 
-REMOVED. Units no longer have per-state action tables.
+Each unit can generally activate only **once per player turn**. When a unit activates, place an activation token on it. It cannot activate again until the next player turn.
 
-Units exist independently of cards with fixed base stats (HP, Move, Attack, Range, Passive Ability). Cards enhance or replace unit actions.
-
-Units always have basic actions:
-- **Basic Move**
-- **Basic Attack**
-
-Cards issued by David determine what tactical options are available each turn.
+This prevents:
+- Moving the same powerful units repeatedly.
+- Ignoring half the army.
+- "Favorite three units" strategies.
 
 ---
 
@@ -297,6 +296,37 @@ The interesting decisions come from:
 - Which half of each command to use (top or bottom)
 - Which unit executes the command
 - Whether a powerful command is worth losing forever
+
+### Command Deck Setup
+
+Before a scenario:
+1. Choose your commander/faction.
+2. Choose your army units.
+3. Add command cards based on the units brought.
+
+Example:
+David + 3 Swordsmen + 2 Archers + 1 Scout
+
+Command deck:
+- David Leadership cards
+- Swordsman command cards
+- Archer command cards
+- Scout command card
+
+### Card Design
+
+Each command card has:
+- **TOP ACTION:** Primary command ability. Usually stronger or more specialized.
+- **BOTTOM ACTION:** Secondary command ability. Usually movement, positioning, support, or weaker action.
+
+### Universal Commands
+
+Every army has access to basic commands:
+
+- **March:** Activate up to 2 units of one type. Move them.
+- **Engage:** Activate up to 2 units of one type. They attack.
+
+Universal commands are weaker than specialized commands.
 
 ### Card States
 
@@ -328,49 +358,77 @@ Lost cards do not return until a battle recovery (or a special ability recovers 
 
 The player starts the game with **2 Command Cards** in hand. On the first turn, draw 2 more (hand of 4). Each subsequent turn, draw up to 2 to refill the hand back to 4.
 
+### Fatigue / Command Loss
+
+When refreshing your command hand:
+- Draw back up according to your hand rules.
+- Lose one random card.
+
+Represents:
+- Commander fatigue.
+- Loss of communication.
+- Soldiers becoming harder to coordinate.
+
+### Casualty System
+
+When a unit type is eliminated:
+- Remove one matching command card from the deck.
+
+Example:
+
+All David archers are destroyed.
+
+Remove:
+"Archer Volley"
+
+Effect:
+- Your army loses tactical options as it suffers losses.
+
+### Co-op / AI Possibility
+
+Human-controlled faction:
+- Draw cards.
+- Choose best actions.
+
+AI-controlled faction:
+- Reveal command cards randomly.
+- Execute the top action first.
+- Follow simple priority rules.
+
+Priority rules:
+1. Attack if possible.
+2. Move toward objective/enemy.
+3. Support nearby allies.
+4. If unable, reposition.
+
 ### Command Cards
 
 Cards represent David's battlefield orders. Each card has a **Top** ability and a **Bottom** ability. When resolving a turn, the player picks one card's top ability and the other card's bottom ability.
 
 Examples:
 
-**Flanking Maneuver**
+**Swordsmen Advance**
 ```
 Top:
-  One unit attacks.
-  +1 Attack if adjacent to ally.
+  Activate Swordsmen:
+  - Up to 3 Swordsmen may move and attack.
+  - Gain +1 attack if adjacent to another Swordsman.
 
 Bottom:
-  Move one unit up to 3 spaces.
+  Move:
+  - Move up to 2 Swordsmen.
 ```
 
-**Forced March**
+**Archer Volley**
 ```
 Top:
-  One unit moves twice.
-  LOSE this card.
+  Activate Archers:
+  - Up to 2 Archers attack.
+  - Must target enemies within range.
 
 Bottom:
-  Two units each move 2 spaces.
-```
-
-**Volley**
-```
-Top:
-  Up to two ranged units attack.
-
-Bottom:
-  One ranged unit attacks after moving.
-```
-
-**Hold the Line**
-```
-Top:
-  One unit attacks.
-  Gains +1 Defense until next turn.
-
-Bottom:
-  Move two adjacent units 1 space.
+  Reposition:
+  - Move up to 2 Archers.
 ```
 
 ---

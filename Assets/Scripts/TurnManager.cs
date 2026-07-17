@@ -12,38 +12,38 @@ public enum TurnPhase
 
 public class TurnManager : MonoBehaviour
 {
-    [Header("Turn Settings")]
-    [SerializeField] private int playerActionsPerTurn = 2;
-    [SerializeField] private int aiActionsPerTurn = 2;
-
     [Header("References")]
     [SerializeField] private HexGrid grid;
     [SerializeField] private AIDirector aiDirector;
+    [SerializeField] private CardDeckManager cardDeckManager;
 
-    // State
+    [Header("Turn Settings")]
+    [SerializeField] private int handSize = 4;
+    [SerializeField] private int aiActionsPerTurn = 2;
+
     private TurnPhase currentPhase = TurnPhase.PlayerTurn;
-    private int remainingPlayerActions = 0;
     private int remainingAIActions = 0;
     private List<Unit> playerUnits = new List<Unit>();
     private List<Unit> enemyUnits = new List<Unit>();
 
-    // Events
     public UnityEvent<TurnPhase> OnPhaseChanged;
     public UnityEvent OnPlayerTurnStart;
     public UnityEvent OnPlayerTurnEnd;
     public UnityEvent OnAITurnStart;
     public UnityEvent OnAITurnEnd;
     public UnityEvent<Unit> OnUnitDied;
-    public UnityEvent<bool> OnGameOver; // true = player won, false = player lost
+    public UnityEvent<bool> OnGameOver;
 
     public TurnPhase CurrentPhase => currentPhase;
-    public int RemainingPlayerActions => remainingPlayerActions;
-    public int RemainingAIActions => remainingAIActions;
     public List<Unit> PlayerUnits => playerUnits;
     public List<Unit> EnemyUnits => enemyUnits;
 
     private void Start()
     {
+        if (grid == null) grid = FindObjectOfType<HexGrid>();
+        if (aiDirector == null) aiDirector = FindObjectOfType<AIDirector>();
+        if (cardDeckManager == null) cardDeckManager = FindObjectOfType<CardDeckManager>();
+
         StartPlayerTurn();
     }
 
@@ -84,17 +84,14 @@ public class TurnManager : MonoBehaviour
     {
         OnUnitDied?.Invoke(unit);
 
-        // Check commander death
         if (unit.IsCommander)
         {
             if (unit.IsEnemy)
             {
-                // Enemy commander died — player wins
                 EndGame(true);
             }
             else
             {
-                // David died — player loses
                 EndGame(false);
             }
         }
@@ -103,65 +100,22 @@ public class TurnManager : MonoBehaviour
     public void StartPlayerTurn()
     {
         currentPhase = TurnPhase.PlayerTurn;
-        remainingPlayerActions = playerActionsPerTurn;
 
-        // Refresh all player units
-        foreach (Unit unit in playerUnits)
-        {
-            unit.ResetForNewTurn();
-            unit.Refresh();
-        }
+        ResetPlayerUnitActivations();
 
-        // Refresh all enemy units
-        foreach (Unit unit in enemyUnits)
-        {
-            unit.ResetForNewTurn();
-            unit.Refresh();
-        }
+        cardDeckManager.DrawToHandSize(handSize);
+        cardDeckManager.ApplyFatigue();
 
         OnPhaseChanged?.Invoke(currentPhase);
         OnPlayerTurnStart?.Invoke();
 
-        Debug.Log($"Player turn started. Actions: {remainingPlayerActions}");
-    }
-
-    public bool SpendPlayerAction()
-    {
-        if (currentPhase != TurnPhase.PlayerTurn) return false;
-        if (remainingPlayerActions <= 0) return false;
-
-        remainingPlayerActions--;
-        Debug.Log($"Player action spent. Remaining: {remainingPlayerActions}");
-
-        if (remainingPlayerActions <= 0)
-        {
-            EndPlayerTurn();
-        }
-
-        return true;
-    }
-
-    /// <summary>
-    /// David-only Overwork: spend a 3rd action. David skips next turn entirely.
-    /// </summary>
-    public bool SpendOverworkAction(Unit david)
-    {
-        if (currentPhase != TurnPhase.PlayerTurn) return false;
-        if (remainingPlayerActions != 0) return false; // Must have used normal 2 actions first
-        if (!david.IsCommander || david.IsEnemy) return false;
-
-        // David skips his next turn entirely — set him to Exhausted and mark as acted
-        david.SetState(UnitState.Exhausted);
-        david.ResetForNewTurn(); // Reset so he can't act again this turn
-
-        Debug.Log("David uses Overwork! He will skip his next turn.");
-
-        EndPlayerTurn();
-        return true;
+        Debug.Log("Player turn started.");
     }
 
     public void EndPlayerTurn()
     {
+        if (currentPhase != TurnPhase.PlayerTurn) return;
+
         OnPlayerTurnEnd?.Invoke();
         StartAITurn();
     }
@@ -176,16 +130,25 @@ public class TurnManager : MonoBehaviour
 
         Debug.Log("AI turn started.");
 
-        // Let the AI director process its turn
         if (aiDirector != null)
         {
             aiDirector.ExecuteTurn(this, OnAITurnComplete);
         }
         else
         {
-            // No AI director — just end AI turn immediately
             OnAITurnComplete();
         }
+    }
+
+    public bool SpendAIAction()
+    {
+        if (currentPhase != TurnPhase.AITurn) return false;
+        if (remainingAIActions <= 0) return false;
+
+        remainingAIActions--;
+        Debug.Log($"AI action spent. Remaining: {remainingAIActions}");
+
+        return true;
     }
 
     private void OnAITurnComplete()
@@ -201,6 +164,17 @@ public class TurnManager : MonoBehaviour
         OnGameOver?.Invoke(playerWon);
 
         Debug.Log(playerWon ? "Victory! Player wins." : "Defeat! Player loses.");
+    }
+
+    private void ResetPlayerUnitActivations()
+    {
+        foreach (Unit unit in playerUnits)
+        {
+            if (unit != null)
+            {
+                unit.ResetActivation();
+            }
+        }
     }
 
     public bool IsPlayerTurn()

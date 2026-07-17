@@ -1,6 +1,6 @@
 # Command Cards — Master Catalog
 
-> **Design Philosophy:** Cards answer *"What orders am I giving?"* Each card represents a tactical command David can issue to his warband.
+> **Design Philosophy:** Cards answer *"What orders am I giving?"* Each card represents a tactical command David can issue to his warband. Your army composition determines which cards are available.
 
 ---
 
@@ -31,186 +31,132 @@ Every Command Card has:
 
 ---
 
-## Starting Deck Pool
+## Deck Building
 
-The player begins each run with these cards. Total: **10 cards**.
+Before a scenario, your command deck is built from your army composition:
 
-### Flanking Maneuver
-| | |
-|---|---|
-| **Top** | Attack — One unit attacks. +1 Attack if adjacent to an ally. |
-| **Bottom** | Move — One unit moves up to 3 spaces. |
-| **Lose?** | No |
-| **Design note** | Core tactical card. Rewards positioning and adjacency. |
+1. Choose your commander/faction.
+2. Choose your army units.
+3. Add command cards based on the units brought.
 
-### Forced March
-| | |
-|---|---|
-| **Top** | Move — One unit moves twice. **LOSE this card.** |
-| **Bottom** | Move — Two units each move 2 spaces. |
-| **Lose?** | Yes (Top ability only) |
-| **Design note** | High-risk, high-reward movement. Using the top costs you the card permanently. |
+Example:
+David + 3 Swordsmen + 2 Archers + 1 Scout
 
-### Volley
-| | |
-|---|---|
-| **Top** | Attack — Up to two ranged units attack. |
-| **Bottom** | Move + Attack — One ranged unit attacks after moving. |
-| **Lose?** | No |
-| **Design note** | Ranged-focused card. Essential for archers and slingers. |
+Command deck:
+- David Leadership cards
+- Swordsman command cards
+- Archer command cards
+- Scout command card
 
-### Hold the Line
-| | |
-|---|---|
-| **Top** | Attack + Buff — One unit attacks. Gains +1 Defense until next turn. |
-| **Bottom** | Move — Two adjacent units move 1 space. |
-| **Lose?** | No |
-| **Design note** | Defensive posture. Great for holding a position. |
-
-### Rally
-| | |
-|---|---|
-| **Top** | Buff — One unit gains +1 Attack this turn. |
-| **Bottom** | Move — Move one unit, then that unit may Basic Attack. |
-| **Lose?** | No |
-| **Design note** | Flexible combat card. Pairs well with any unit type. |
-
-### Shield Wall
-| | |
-|---|---|
-| **Top** | Buff — One adjacent unit gains +2 Defense until next turn. |
-| **Bottom** | Attack — One unit attacks with -1 damage but gains +1 Defense. |
-| **Lose?** | No |
-| **Design note** | Defensive card. Protects key units. |
-
-### Rapid Advance
-| | |
-|---|---|
-| **Top** | Move — One unit moves 3 spaces and may Basic Attack after moving. |
-| **Bottom** | Move — One unit moves 2 spaces. Another unit moves 1 space. |
-| **Lose?** | No |
-| **Design note** | Aggressive positioning card. Press the attack. |
-
-### Coordinated Strike
-| | |
-|---|---|
-| **Top** | Attack — Two units attack the same target. Combine damage. |
-| **Bottom** | Attack — One unit attacks with +1 damage. |
-| **Lose?** | No |
-| **Design note** | Boss-killer. Focus fire is powerful. |
-
-### Reform Ranks
-| | |
-|---|---|
-| **Top** | Move — Move all adjacent units 1 space. |
-| **Bottom** | Buff — One exhausted unit refreshes (can act again next turn as normal). |
-| **Lose?** | No |
-| **Design note** | Utility card. Reshuffles your formation. |
-
-### Desperate Stand
-| | |
-|---|---|
-| **Top** | Attack + Buff — One unit attacks. Then gains +2 Defense and cannot move next turn. **LOSE this card.** |
-| **Bottom** | Buff — One unit gains +1 Attack and +1 Defense this turn. |
-| **Lose?** | Yes (Top ability only) |
-| **Design note** | Last-resort card. Powerful but costly. |
+**Rule:** 1 copy per unit type brought, up to a max of 2 copies per card type.
 
 ---
 
-## Unlockable Cards (Reward Pool)
+## Universal Commands
 
-These cards can be added to the deck as run rewards.
+Every army has access to basic commands. These are always included regardless of army composition.
 
-### Ambush
+| Card | Top | Bottom | Lose? |
+|---|---|---|---|
+| **March** | — | Move up to 2 units of one type. | No |
+| **Engage** | — | Up to 2 units of one type attack. | No |
+
+Universal commands are weaker than specialized commands — they provide no bonuses.
+
+---
+
+## David's Company Command Cards
+
+These cards are unlocked by bringing the corresponding unit type.
+
+### David's Leadership
 | | |
 |---|---|
-| **Top** | Attack — One unit attacks a target that has already acted this turn. +2 damage. |
-| **Bottom** | Move — One unit moves 2 spaces. Enemy cannot target this unit until your next turn. |
+| **Unit Type** | David |
+| **Top** | Activate David + 1 ally: both may move and attack. Adjacent allies +1 damage this turn. |
+| **Bottom** | Move David up to 3 spaces. |
 | **Lose?** | No |
 
-### Counter-Charge
+### Swordsmen Advance
 | | |
 |---|---|
-| **Top** | Move + Attack — Move one unit 2 spaces toward an enemy, then attack with +1 damage. |
-| **Bottom** | Buff — One unit gains +1 Attack against adjacent enemies. |
+| **Unit Type** | Swordsman |
+| **Top** | Activate Swordsmen: Up to 3 Swordsmen may move and attack. +1 attack if adjacent to another Swordsman. |
+| **Bottom** | Move: Move up to 2 Swordsmen. |
 | **Lose?** | No |
 
-### Skirmish
+### Archer Volley
 | | |
 |---|---|
-| **Top** | Move + Attack — One unit moves 1 space, attacks, then moves 1 space (hit-and-run). |
-| **Bottom** | Move — One unit moves 2 spaces. |
+| **Unit Type** | Archer |
+| **Top** | Activate Archers: Up to 2 Archers attack. Must target enemies within range. |
+| **Bottom** | Reposition: Move up to 2 Archers. |
 | **Lose?** | No |
 
-### War Cry
+### Spear Wall
 | | |
 |---|---|
-| **Top** | Buff — All adjacent allies gain +1 Attack this turn. |
-| **Bottom** | Attack — One unit attacks. No damage bonus. |
+| **Unit Type** | Spearman |
+| **Top** | Activate Spearmen: Up to 2 Spearmen attack. Gain +1 defense against melee this turn. |
+| **Bottom** | Move: Move up to 2 Spearmen. They may not be targeted by melee until next turn. |
 | **Lose?** | No |
 
-### Disengage
+### Slinger Skirmish
 | | |
 |---|---|
-| **Top** | Move — One unit moves 3 spaces. Cannot be targeted by attacks of opportunity. |
-| **Bottom** | Heal — One unit recovers 1 HP (cannot exceed max HP). |
+| **Unit Type** | Slinger |
+| **Top** | Activate Slingers: Up to 2 Slingers attack. Ignore cover. |
+| **Bottom** | Move: Move up to 2 Slingers. They gain +1 move this turn. |
 | **Lose?** | No |
 
-### Overwatch
+### Scout Recon
 | | |
 |---|---|
-| **Top** | Attack — One ranged unit attacks any enemy that moves within range this turn. |
-| **Bottom** | Buff — One unit gains +2 range this turn. |
+| **Unit Type** | Scout |
+| **Top** | Activate Scouts: Up to 2 Scouts move and attack. They cannot be targeted until next turn. |
+| **Bottom** | Move: Move up to 3 Scouts. |
+| **Lose?** | No |
+
+### Refugee Aid
+| | |
+|---|---|
+| **Unit Type** | Refugee |
+| **Top** | Heal: Heal 1 HP on up to 2 units. |
+| **Bottom** | Move: Move up to 2 Refugees to safety (away from enemies). |
 | **Lose?** | No |
 
 ---
 
-## Card Types by Effect
+## Card Removal by Casualty
 
-### Attack
-| Card | Top | Bottom |
-|---|---|---|
-| Flanking Maneuver | Attack (+1 adjacent) | — |
-| Volley | Two ranged attack | Attack after move |
-| Hold the Line | Attack (+1 defense) | — |
-| Desperate Stand | Attack (+heavy buff, lose) | — |
-| Coordinated Strike | Two vs one (combined) | Attack (+1 dmg) |
-| Ambush | Attack (+2 vs acted) | — |
-| Counter-Charge | Move + attack (+1) | — |
-| Skirmish | Hit-and-run | — |
-| War Cry | — | Basic attack |
-| Overwatch | Ranged reacts to move | — |
+When the last unit of a type is eliminated, remove one matching command card from the deck.
 
-### Move
-| Card | Top | Bottom |
-|---|---|---|
-| Flanking Maneuver | — | Move 3 |
-| Forced March | Move twice (lose) | Two units move 2 |
-| Hold the Line | — | Two adjacent move 1 |
-| Rally | — | Move + basic attack |
-| Rapid Advance | Move 3 + basic attack | Move 2 + another move 1 |
-| Reform Ranks | All adjacent move 1 | — |
-| Counter-Charge | Move 2 + attack | — |
-| Skirmish | Hit-and-run | Move 2 |
-| Disengage | Move 3 (safe) | — |
-
-### Buff / Defense
-| Card | Top | Bottom |
-|---|---|---|
-| Hold the Line | +1 Defense after attack | — |
-| Rally | +1 Attack this turn | — |
-| Shield Wall | +2 Defense to adjacent | Attack with +1 Defense |
-| Desperate Stand | +2 Defense, can't move | +1 Atk & +1 Def |
-| Reform Ranks | — | Refresh exhausted unit |
-| War Cry | All adjacent +1 Attack | — |
-| Disengage | — | Heal 1 HP |
-| Overwatch | — | +2 Range |
-
-### Special (Lose on Use)
-| Card | Ability |
+| Unit Type Eliminated | Card Removed |
 |---|---|
-| Forced March (Top) | Move twice |
-| Desperate Stand (Top) | Attack + heavy buff, can't move next turn |
+| Last Swordsman | Swordsmen Advance |
+| Last Archer | Archer Volley |
+| Last Spearman | Spear Wall |
+| Last Slinger | Slinger Skirmish |
+| Last Scout | Scout Recon |
+| Last Refugee | Refugee Aid |
+| David | David's Leadership |
+
+**Priority:** Remove from Deck first, then Hand, then Spent pile. Card moves to Lost pile permanently.
+
+---
+
+## Fatigue System
+
+When refreshing your command hand at the start of a turn:
+- Draw back up to your hand size.
+- Lose one random card.
+
+Represents:
+- Commander fatigue.
+- Loss of communication.
+- Soldiers becoming harder to coordinate.
+
+Cards lost to fatigue go to the **Lost pile** permanently.
 
 ---
 
@@ -219,14 +165,15 @@ These cards can be added to the deck as run rewards.
 | Rule | Details |
 |---|---|
 | **Starting hand** | 2 cards |
-| **Draw per turn** | Up to 2 (hand fills to 4) |
+| **Draw per turn** | Up to hand size (hand fills to 4) |
+| **Fatigue** | Lose 1 random card after drawing |
 | **Cards chosen per turn** | 2 |
 | **Resolve** | Top of card A + Bottom of card B |
 | **After resolve** | Both cards → Spent pile |
 | **Lose on use** | Card → Lost pile (instead of Spent) |
 | **Lost recovery** | Only via run reward or special ability |
 | **Empty deck** | Auto-refresh from Spent pile |
-| **Starting deck size** | 10 cards |
+| **Starting deck** | Built from army composition + universal commands |
 | **Max hand size** | 4 cards |
 
 ---

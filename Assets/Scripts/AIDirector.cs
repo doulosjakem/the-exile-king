@@ -7,15 +7,11 @@ public class AIDirector : MonoBehaviour
 {
     [Header("AI Settings")]
     [SerializeField] private float commanderThreatRange = 2f;
-    [SerializeField] private float retreatThreshold = 0.3f; // 30% HP
+    [SerializeField] private float retreatThreshold = 0.3f;
 
     private System.Random rng = new System.Random();
     private DamagePopup damagePopup;
 
-    /// <summary>
-    /// Executes the AI turn using priority-based evaluation.
-    /// Calls onComplete when all AI actions are spent.
-    /// </summary>
     public void ExecuteTurn(TurnManager turnManager, Action onComplete)
     {
         if (damagePopup == null)
@@ -31,22 +27,17 @@ public class AIDirector : MonoBehaviour
         List<Unit> enemies = turnManager.EnemyUnits;
         List<Unit> players = turnManager.PlayerUnits;
 
-        // Get all ready enemy units
-        List<Unit> readyUnits = enemies.Where(u => u.CanAct()).ToList();
-
-        int actionsRemaining = turnManager.RemainingAIActions;
+        List<Unit> readyUnits = enemies.Where(u => u.CanActivate()).ToList();
 
         foreach (Unit unit in readyUnits)
         {
-            if (actionsRemaining <= 0) break;
+            if (!turnManager.SpendAIAction()) break;
 
-            // Evaluate priorities for this unit
             AIAction bestAction = EvaluatePriorities(unit, players, enemies);
 
             if (bestAction != null)
             {
                 ExecuteAIAction(unit, bestAction, turnManager);
-                actionsRemaining--;
             }
         }
 
@@ -55,11 +46,9 @@ public class AIDirector : MonoBehaviour
 
     private AIAction EvaluatePriorities(Unit unit, List<Unit> players, List<Unit> enemies)
     {
-        // Priority 1: Protect commander
         Unit commander = enemies.FirstOrDefault(u => u.IsCommander);
         if (commander != null && IsCommanderThreatened(commander, players))
         {
-            // Move toward the nearest threat to the commander
             Unit nearestThreat = FindNearestEnemy(commander.GridPosition, players);
             if (nearestThreat != null)
             {
@@ -72,7 +61,6 @@ public class AIDirector : MonoBehaviour
             }
         }
 
-        // Priority 2: Attack weak / isolated units
         Unit weakTarget = FindWeakestTarget(unit, players);
         if (weakTarget != null && CanAttack(unit, weakTarget))
         {
@@ -84,7 +72,6 @@ public class AIDirector : MonoBehaviour
             };
         }
 
-        // Priority 3: Focus isolated enemies
         Unit isolatedTarget = FindIsolatedTarget(unit, players);
         if (isolatedTarget != null && CanAttack(unit, isolatedTarget))
         {
@@ -96,7 +83,6 @@ public class AIDirector : MonoBehaviour
             };
         }
 
-        // Priority 4: Attack nearest enemy
         Unit nearestEnemy = FindNearestEnemy(unit.GridPosition, players);
         if (nearestEnemy != null)
         {
@@ -111,7 +97,6 @@ public class AIDirector : MonoBehaviour
             }
             else
             {
-                // Move toward nearest enemy
                 return new AIAction
                 {
                     type = AIActionType.MoveToward,
@@ -121,7 +106,6 @@ public class AIDirector : MonoBehaviour
             }
         }
 
-        // Priority 5: Retreat if low HP
         if (unit.CurrentHP < unit.MaxHP * retreatThreshold)
         {
             Unit retreatTarget = FindRetreatPosition(unit, enemies);
@@ -136,7 +120,6 @@ public class AIDirector : MonoBehaviour
             }
         }
 
-        // No valid action found
         return null;
     }
 
@@ -215,22 +198,15 @@ public class AIDirector : MonoBehaviour
 
     private Unit FindRetreatPosition(Unit unit, List<Unit> enemies)
     {
-        // Simple retreat: move toward the commander
         Unit commander = enemies.FirstOrDefault(u => u.IsCommander);
         return commander;
     }
 
     private bool CanAttack(Unit attacker, Unit target)
     {
-        List<UnitAction> actions = attacker.GetCurrentActions();
-        foreach (UnitAction action in actions)
-        {
-            if (attacker.CanPerformAction(action, target))
-            {
-                return true;
-            }
-        }
-        return false;
+        if (target == null) return false;
+        int distance = attacker.GridPosition.DistanceTo(target.GridPosition);
+        return distance <= attacker.GetAttackRange();
     }
 
     private void ExecuteAIAction(Unit unit, AIAction action, TurnManager turnManager)
@@ -238,43 +214,32 @@ public class AIDirector : MonoBehaviour
         switch (action.type)
         {
             case AIActionType.Attack:
-                // Find the best action to use against the target
-                List<UnitAction> availableActions = unit.GetCurrentActions();
-                UnitAction bestAction = null;
-                int bestDamage = 0;
-
-                foreach (UnitAction a in availableActions)
+                int damage = unit.GetAttackRange() > 1 ? 2 : 2;
+                if (damagePopup != null)
                 {
-                    if (unit.CanPerformAction(a, action.target) && a.damage > bestDamage)
-                    {
-                        bestDamage = a.damage;
-                        bestAction = a;
-                    }
+                    damagePopup.ShowDamage(action.target.GridPosition, damage);
                 }
-
-                if (bestAction != null)
-                {
-                    unit.PerformAction(bestAction, action.target);
-                    turnManager.SpendPlayerAction(); // Spend AI action (using same method for simplicity)
-                }
+                action.target.TakeDamage(damage);
+                unit.Activate();
                 break;
 
             case AIActionType.MoveToward:
-                // Move one step toward the target
                 HexCoord currentPos = unit.GridPosition;
                 HexCoord targetPos = action.target.GridPosition;
                 HexCoord moveTarget = GetStepToward(currentPos, targetPos);
 
                 if (moveTarget != currentPos)
                 {
-                    unit.GridPosition = moveTarget;
-                    unit.Act();
-                    turnManager.SpendPlayerAction();
+                    HexGrid grid = FindObjectOfType<HexGrid>();
+                    if (grid != null)
+                    {
+                        grid.PlaceUnit(unit, moveTarget);
+                    }
+                    unit.Activate();
                 }
                 break;
 
             case AIActionType.Retreat:
-                // Move one step toward the commander
                 if (action.target != null)
                 {
                     HexCoord unitPos = unit.GridPosition;
@@ -283,9 +248,12 @@ public class AIDirector : MonoBehaviour
 
                     if (retreatPos != unitPos)
                     {
-                        unit.GridPosition = retreatPos;
-                        unit.Act();
-                        turnManager.SpendPlayerAction();
+                        HexGrid grid = FindObjectOfType<HexGrid>();
+                        if (grid != null)
+                        {
+                            grid.PlaceUnit(unit, retreatPos);
+                        }
+                        unit.Activate();
                     }
                 }
                 break;

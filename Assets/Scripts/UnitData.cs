@@ -6,6 +6,7 @@ public class UnitData : ScriptableObject
 {
     [Header("Identity")]
     public string unitName = "Unit";
+    public UnitType unitType = UnitType.None;
     public bool isCommander = false;
     public bool isEnemy = false;
 
@@ -13,19 +14,9 @@ public class UnitData : ScriptableObject
     public ArmorTier armorTier = ArmorTier.Leather;
     public int maxHP = 1;
 
-    [Header("State Actions")]
-    public List<UnitStateActionData> stateActions = new List<UnitStateActionData>();
-
     [Header("Visual")]
     public Color teamColor = Color.blue;
     public UnitShape shape = UnitShape.Standard;
-}
-
-[System.Serializable]
-public class UnitStateActionData
-{
-    public UnitState state;
-    public List<ActionData> actions = new List<ActionData>();
 }
 
 [System.Serializable]
@@ -39,11 +30,11 @@ public class ActionData
 
 public enum UnitShape
 {
-    Standard,   // Swordsman/Spearman
-    Ranged,     // Slinger/Archer
-    Scout,      // Scout
-    Commander,   // David/Chieftain
-    Heavy       // Camel Rider
+    Standard,
+    Ranged,
+    Scout,
+    Commander,
+    Heavy
 }
 
 [CreateAssetMenu(fileName = "NewEncounter", menuName = "Game/Encounter")]
