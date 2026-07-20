@@ -34,10 +34,46 @@ public class CardAbilityResolver : MonoBehaviour
 
     public bool IsResolving => currentCard != null;
 
+    public int CurrentMaxActivations
+    {
+        get
+        {
+            if (currentCard == null) return 0;
+            return currentHalf == CardHalf.Top ? currentCard.topMaxActivations : currentCard.bottomMaxActivations;
+        }
+    }
+
     public CardEffectType GetCurrentEffect()
     {
         if (currentCard == null) return CardEffectType.Move;
         return currentHalf == CardHalf.Top ? currentCard.topEffect : currentCard.bottomEffect;
+    }
+
+    public Unit FindAttackTarget(Unit attacker)
+    {
+        if (currentCard == null || attacker == null) return null;
+
+        CardEffectType effect = currentHalf == CardHalf.Top ? currentCard.topEffect : currentCard.bottomEffect;
+        if (effect != CardEffectType.Attack && effect != CardEffectType.MultiAttack) return null;
+
+        int range = currentHalf == CardHalf.Top ? currentCard.topValue : currentCard.bottomValue;
+        if (range <= 0) return null;
+
+        Unit best = null;
+        int minDistance = int.MaxValue;
+
+        foreach (Unit enemy in turnManager.EnemyUnits)
+        {
+            if (enemy.CurrentHP <= 0) continue;
+            int distance = attacker.GridPosition.DistanceTo(enemy.GridPosition);
+            if (distance <= range && distance < minDistance)
+            {
+                minDistance = distance;
+                best = enemy;
+            }
+        }
+
+        return best;
     }
 
     public List<Unit> GetValidTargets()
@@ -46,7 +82,6 @@ public class CardAbilityResolver : MonoBehaviour
 
         UnitTypeFilter filter = currentHalf == CardHalf.Top ? currentCard.topUnitFilter : currentCard.bottomUnitFilter;
         UnitType specificType = currentHalf == CardHalf.Top ? currentCard.topSpecificUnitType : currentCard.bottomSpecificUnitType;
-        int maxActivations = currentHalf == CardHalf.Top ? currentCard.topMaxActivations : currentCard.bottomMaxActivations;
 
         List<Unit> allPlayerUnits = turnManager != null ? turnManager.PlayerUnits : new List<Unit>();
         List<Unit> validTargets = new List<Unit>();
@@ -57,11 +92,6 @@ public class CardAbilityResolver : MonoBehaviour
             if (!MatchesFilter(unit, filter, specificType)) continue;
 
             validTargets.Add(unit);
-        }
-
-        if (maxActivations > 0 && validTargets.Count > maxActivations)
-        {
-            validTargets = validTargets.GetRange(0, maxActivations);
         }
 
         return validTargets;

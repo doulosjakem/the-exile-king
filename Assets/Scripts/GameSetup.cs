@@ -73,6 +73,13 @@ public class GameSetup : MonoBehaviour
             new HexCoord(grid.Width - 3, 4), true);
 
         BuildInitialDeck();
+
+        if (turnManager != null) turnManager.StartPlayerTurn();
+    }
+
+    public void SetUnitPrefab(GameObject prefab)
+    {
+        unitPrefab = prefab;
     }
 
     public void SpawnBattle(int battleNumber, List<UnitTemplate> playerRoster)

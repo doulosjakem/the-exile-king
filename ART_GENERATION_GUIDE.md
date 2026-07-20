@@ -173,7 +173,7 @@ In the **Save Image** node:
 
 **Settings:** 512×512, steps 4, CFG 3, batch 5
 
-Generate **waist-up portraits** for use on card art and UI. Composite onto token bases in Unity.
+Generate **waist-up portraits** for use on card art and UI.
 
 **Era lock:** Every prompt includes "ONE PERSON ONLY", "bronze age Levantine / Israelite", "Mediterranean complexion, dark hair, Semitic features", and "NOT medieval, NOT fantasy, NOT European" to prevent DreamShaper from drifting into medieval/anachronistic territory.
 
@@ -203,27 +203,27 @@ Generate **waist-up portraits** for use on card art and UI. Composite onto token
 
 ---
 
-## Batch 4: Unit Token Icons (512×512, then downscale)
+## Batch 4: Unit Standees (512×512, then downscale)
 
 **Settings:** 512×512, steps 4, CFG 3, batch 5
 
 **Note:** Generating at 512×512 then downscaling to 256×256 in Unity gives better results than generating directly at 256×256.
 
-These are **circular board game tokens** — a single figure in the center of a round medallion, as if stamped onto a clay or wooden token. The figure is a simplified profile silhouette, hand-painted style.
+These are **board game standees** — a single full upright figure (head to toe) standing on a small circular base/disc, as if cut from a cardboard or wooden standee. The figure is a clean front-facing or 3/4 view, fully colored in the hand-painted illustration style, NOT a flat silhouette. Transparent background so it can be dropped onto the hex grid in Unity.
 
 **Era lock:** All prompts include "bronze age Levantine", "NOT medieval, NOT fantasy, NOT European", "Mediterranean complexion", and specific material details to prevent DreamShaper from drifting into medieval European aesthetics.
 
 | # | File Prefix | Prompt |
 |---|---|---|
-| 1 | `token_david` | `circular board game token, hand-painted ink illustration, a young bronze age Levantine man in profile silhouette, bronze age Israelite, dark curly hair and short beard, simple linen tunic with leather chest piece, brown wool cloak pinned at shoulder, bronze short sword at hip, leather sling in belt, no helmet, Mediterranean complexion, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 2 | `token_swordsman` | `circular board game token, hand-painted ink illustration, a bronze age Levantine infantryman in profile silhouette, bronze age Israelite warrior, dark hair, short beard, simple linen tunic, leather vest, brown wool cloak, small round hide-covered shield, bronze short sword with leaf-shaped blade, sandals, Mediterranean features, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 3 | `token_spearman` | `circular board game token, hand-painted ink illustration, a bronze age Levantine spearman in profile silhouette, bronze age Israelite, dark hair, linen tunic with leather shoulder piece, long wooden spear with bronze tip held in both hands, small hide shield on back, knife at waist, sandals, Mediterranean features, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 4 | `token_slinger` | `circular board game token, hand-painted ink illustration, a bronze age Levantine skirmisher in profile silhouette, bronze age Israelite slinger, dark hair, linen tunic with leather vest, leather sling raised overhead, pouch of stones at hip, small knife, crouched low ready stance, sandals, alert expression, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 5 | `token_archer` | `circular board game token, hand-painted ink illustration, a bronze age Levantine archer in profile silhouette, bronze age Israelite hunter, dark hair, linen tunic, leather vest, short composite bow drawn with arrow nocked, quiver on back, knife at waist, sandals, Mediterranean features, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 6 | `token_scout` | `circular board game token, hand-painted ink illustration, a bronze age Levantine scout in profile silhouette, lean bronze age Israelite tracker, dark hair, light linen tunic, leather vest, worn brown cloak, sling at belt, short spear, small hide shield on back, knife, alert watchful expression, sandals, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 7 | `token_chieftain_amalekite` | `circular board game token, hand-painted ink illustration, a bronze age Levantine warlord in profile silhouette, dark red-brown wrapped headdress, dark beard, leather and simple bronze chest piece, bronze short sword at hip, spear in hand, weathered authoritative face, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 8 | `token_raider_amalekite` | `circular board game token, hand-painted ink illustration, a bronze age Levantine desert raider in profile silhouette, dark windblown hair, weathered lean face, dusty red-brown wool cloak wrapped around body, leather tunic, bronze-tipped spear, curved knife at belt, sandals, hardened expression, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
-| 9 | `token_refugee` | `circular board game token, hand-painted ink illustration, a bronze age Levantine civilian in profile silhouette, simple linen tunic, worn brown cloak, bundle on stick over shoulder, sandals, weary but hopeful expression, no weapons, aged parchment circular medallion, dark ink outlines, no background, centered, NOT medieval, NOT fantasy, NOT European, 256x256, family friendly` |
+| 1 | `token_david` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a young bronze age Levantine man, bronze age Israelite, dark curly hair and short beard, simple linen tunic with leather chest piece, brown wool cloak pinned at shoulder, bronze short sword at hip, leather sling in belt, no helmet, sandals, Mediterranean complexion, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 2 | `token_swordsman` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a bronze age Levantine infantryman, bronze age Israelite warrior, dark hair, short beard, simple linen tunic, leather vest, brown wool cloak, small round hide-covered shield on arm, bronze short sword with leaf-shaped blade, sandals, Mediterranean features, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 3 | `token_spearman` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a bronze age Levantine spearman, bronze age Israelite, dark hair, linen tunic with leather shoulder piece, long wooden spear with bronze tip held in both hands, small hide shield on back, knife at waist, sandals, Mediterranean features, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 4 | `token_slinger` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a bronze age Levantine skirmisher, bronze age Israelite slinger, dark hair, linen tunic with leather vest, leather sling raised overhead, pouch of stones at hip, small knife, light ready stance, sandals, alert expression, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 5 | `token_archer` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a bronze age Levantine archer, bronze age Israelite hunter, dark hair, linen tunic, leather vest, short composite bow drawn with arrow nocked, quiver on back, knife at waist, sandals, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 6 | `token_scout` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a lean bronze age Levantine scout, bronze age Israelite tracker, dark hair, light linen tunic, leather vest, worn brown cloak, sling at belt, short spear, small hide shield on back, knife, alert watchful expression, sandals, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 7 | `token_chieftain_amalekite` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a bronze age Levantine warlord, dark red-brown wrapped headdress, dark beard, leather and simple bronze chest piece, bronze short sword at hip, spear in hand, weathered authoritative face, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 8 | `token_raider_amalekite` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a bronze age Levantine desert raider, dark windblown hair, weathered lean face, dusty red-brown wool cloak wrapped around body, leather tunic, bronze-tipped spear, curved knife at belt, sandals, hardened expression, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
+| 9 | `token_refugee` | `board game standee, single full upright figure from head to toe standing on a small circular base disc, hand-painted ink and watercolor illustration, a bronze age Levantine civilian, simple linen tunic, worn brown cloak, bundle on stick over shoulder, sandals, weary but hopeful expression, no weapons, dark ink outlines, full color, transparent background, centered, NOT medieval, NOT fantasy, NOT European, family friendly` |
 
 **Total: 9 prompts × 5 samples = 45 images**
 
@@ -267,7 +267,7 @@ Generate at larger size then downscale to target in Unity for better quality.
 | 1 | Command Card Art — Unit Specific | 9 | 5 | 45 |
 | 2 | Card Frame Template | 1 | 3 | 3 |
 | 3 | Unit Portrait Prompts | 12 | 5 | 60 |
-| 4 | Unit Token Icons | 9 | 5 | 45 |
+| 4 | Unit Standees | 9 | 5 | 45 |
 | 5 | Hex Tiles | 3 | 3 | 9 |
 | 6 | UI Elements | 4 | 3 | 12 |
 | **Total** | | **38** | | **174 images** |
@@ -281,7 +281,7 @@ Estimated time: **~10–15 minutes total** on GTX 1060 with DreamShaper XL Light
 After generating and picking the best, these are the final files needed in `Assets/Textures/`:
 
 ```
-Tokens/ (circular token icons, 256x256)
+Tokens/ (unit standees, full upright figure on circular base, 256x256)
   token_david.png
   token_swordsman.png
   token_spearman.png
@@ -330,7 +330,7 @@ UI/ (UI elements)
   ui_reward_panel.png
 ```
 
-Some of the old filenames from earlier drafts (like `unit_david.png`, `enemy_raider.png`, `equip_sword.png`, `ui_overwork.png`) are **deprecated** by the Command Card pivot. The new token system replaces unit portraits for MVP.
+Some of the old filenames from earlier drafts (like `unit_david.png`, `enemy_raider.png`, `equip_sword.png`, `ui_overwork.png`) are **deprecated** by the Command Card pivot. The new unit standee system replaces unit portraits for MVP.
 
 ---
 
@@ -348,5 +348,5 @@ Some of the old filenames from earlier drafts (like `unit_david.png`, `enemy_rai
 10. **If images have artifacts/extra limbs** — increase steps to 6, keep CFG at 3
 11. **Save seeds of good results** — the seed number appears in the image metadata. Write it down so you can regenerate if needed.
 12. **Pick the best, don't settle** — with 5 samples per prompt, you should get at least 1–2 usable ones
-13. **Downscale tokens in Unity** — generate at 512×512, set Pixels Per Unit to match the board scale
+13. **Downscale standees in Unity** — generate at 512×512, set Pixels Per Unit to match the board scale
 14. **Check the parchment style** — if results drift toward photorealism, add "watercolor, ink outlines, not realistic, not photograph" to the positive prompt

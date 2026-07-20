@@ -7,6 +7,7 @@ public class PlayerInputHandler : MonoBehaviour
     [SerializeField] private HexGrid grid;
     [SerializeField] private TurnManager turnManager;
     [SerializeField] private CardAbilityResolver abilityResolver;
+    [SerializeField] private CardTurnController cardTurnController;
 
     [Header("Visual Feedback")]
     [SerializeField] private GameObject moveHighlightPrefab;
@@ -16,7 +17,6 @@ public class PlayerInputHandler : MonoBehaviour
     private List<HexCoord> currentValidMoves = new List<HexCoord>();
     private List<HexCoord> currentValidAttacks = new List<HexCoord>();
     private List<GameObject> highlightObjects = new List<GameObject>();
-    private List<Unit> selectedUnitsForAbility = new List<Unit>();
 
     public System.Action<Unit> OnUnitSelected;
     public System.Action<Unit> OnUnitDeselected;
@@ -32,6 +32,7 @@ public class PlayerInputHandler : MonoBehaviour
         if (grid == null) grid = FindObjectOfType<HexGrid>();
         if (turnManager == null) turnManager = FindObjectOfType<TurnManager>();
         if (abilityResolver == null) abilityResolver = FindObjectOfType<CardAbilityResolver>();
+        if (cardTurnController == null) cardTurnController = FindObjectOfType<CardTurnController>();
         damagePopup = FindObjectOfType<DamagePopup>();
         if (damagePopup == null)
         {
@@ -81,9 +82,9 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void HandleUnitClick(Unit clickedUnit)
     {
-        if (abilityResolver != null && abilityResolver.IsResolving)
+        if (cardTurnController != null && cardTurnController.IsAwaitingInput)
         {
-            HandleCardAbilityUnitClick(clickedUnit);
+            cardTurnController.OnUnitClicked(clickedUnit);
             return;
         }
 
@@ -121,32 +122,11 @@ public class PlayerInputHandler : MonoBehaviour
         }
     }
 
-    private void HandleCardAbilityUnitClick(Unit clickedUnit)
-    {
-        List<Unit> validTargets = abilityResolver.GetValidTargets();
-
-        if (validTargets.Contains(clickedUnit))
-        {
-            if (!selectedUnitsForAbility.Contains(clickedUnit))
-            {
-                selectedUnitsForAbility.Add(clickedUnit);
-                UnitVisual visual = clickedUnit.GetComponent<UnitVisual>();
-                if (visual != null) visual.SetSelected(true);
-            }
-
-            int maxActivations = abilityResolver.GetValidTargets().Count;
-            if (selectedUnitsForAbility.Count >= maxActivations || maxActivations <= 0)
-            {
-                ResolveCardAbility();
-            }
-        }
-    }
-
     private void HandleHexClick(HexCoord hex)
     {
-        if (abilityResolver != null && abilityResolver.IsResolving)
+        if (cardTurnController != null && cardTurnController.IsAwaitingInput)
         {
-            HandleCardAbilityHexClick(hex);
+            cardTurnController.OnHexClicked(hex);
             return;
         }
 
@@ -171,21 +151,6 @@ public class PlayerInputHandler : MonoBehaviour
         }
 
         DeselectUnit();
-    }
-
-    private void HandleCardAbilityHexClick(HexCoord hex)
-    {
-        if (selectedUnit == null) return;
-        if (!selectedUnit.CanActivate()) return;
-
-        List<HexCoord> validMoves = abilityResolver.GetValidMoveHexes(selectedUnit);
-        if (validMoves.Contains(hex))
-        {
-            abilityResolver.ResolveMove(selectedUnit, hex);
-            ClearHighlights();
-            DeselectUnit();
-            ResolveCardAbility();
-        }
     }
 
     private void SelectUnit(Unit unit)
@@ -253,64 +218,6 @@ public class PlayerInputHandler : MonoBehaviour
             return grid.WorldToHexPosition(worldPos);
         }
         return null;
-    }
-
-    private void ResolveCardAbility()
-    {
-        if (abilityResolver == null || selectedUnitsForAbility.Count == 0) return;
-
-        CardEffectType effect = abilityResolver.GetCurrentEffect();
-
-        foreach (Unit unit in selectedUnitsForAbility)
-        {
-            switch (effect)
-            {
-                case CardEffectType.Attack:
-                case CardEffectType.MultiAttack:
-                    Unit nearestEnemy = FindNearestEnemy(unit);
-                    if (nearestEnemy != null)
-                    {
-                        abilityResolver.ResolveAttack(unit, nearestEnemy);
-                    }
-                    break;
-                case CardEffectType.Heal:
-                    abilityResolver.ResolveBuff(unit);
-                    break;
-                case CardEffectType.Move:
-                case CardEffectType.MultiMove:
-                    abilityResolver.ResolveMove(unit, unit.GridPosition);
-                    break;
-            }
-        }
-
-        foreach (Unit unit in selectedUnitsForAbility)
-        {
-            UnitVisual visual = unit.GetComponent<UnitVisual>();
-            if (visual != null) visual.SetSelected(false);
-        }
-
-        selectedUnitsForAbility.Clear();
-        ClearHighlights();
-        DeselectUnit();
-    }
-
-    private Unit FindNearestEnemy(Unit fromUnit)
-    {
-        List<Unit> enemies = turnManager != null ? turnManager.EnemyUnits : new List<Unit>();
-        Unit nearest = null;
-        int minDistance = int.MaxValue;
-
-        foreach (Unit enemy in enemies)
-        {
-            int distance = fromUnit.GridPosition.DistanceTo(enemy.GridPosition);
-            if (distance < minDistance)
-            {
-                minDistance = distance;
-                nearest = enemy;
-            }
-        }
-
-        return nearest;
     }
 
     #region Highlight Visualization

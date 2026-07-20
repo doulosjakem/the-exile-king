@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -8,6 +9,8 @@ public class GameUIController : MonoBehaviour
     [SerializeField] private TurnManager turnManager;
     [SerializeField] private PlayerInputHandler inputHandler;
     [SerializeField] private CardDeckManager cardDeckManager;
+    [SerializeField] private CardTurnController cardTurnController;
+    [SerializeField] private RunManager runManager;
 
     [Header("UI Elements")]
     [SerializeField] private GameObject canvas;
@@ -16,17 +19,27 @@ public class GameUIController : MonoBehaviour
     [SerializeField] private Text selectedUnitText;
     [SerializeField] private Text handSizeText;
     [SerializeField] private Text fatigueText;
+    [SerializeField] private Text promptText;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private Text gameOverText;
     [SerializeField] private Button restartButton;
     [SerializeField] private GameObject rewardPanel;
     [SerializeField] private Button[] rewardButtons = new Button[3];
 
+    [Header("Hand UI")]
+    [SerializeField] private int maxHandButtons = 8;
+
+    private readonly List<Button> handButtons = new List<Button>();
+    private Button revealButton;
+    private readonly Dictionary<CommandCard, Button> cardButtons = new Dictionary<CommandCard, Button>();
+
     private void Start()
     {
         if (turnManager == null) turnManager = FindObjectOfType<TurnManager>();
         if (inputHandler == null) inputHandler = FindObjectOfType<PlayerInputHandler>();
         if (cardDeckManager == null) cardDeckManager = FindObjectOfType<CardDeckManager>();
+        if (cardTurnController == null) cardTurnController = FindObjectOfType<CardTurnController>();
+        if (runManager == null) runManager = FindObjectOfType<RunManager>();
 
         CreateUI();
         SetupEvents();
@@ -51,18 +64,27 @@ public class GameUIController : MonoBehaviour
                 es.AddComponent<StandaloneInputModule>();
             }
 
-            endTurnButton = CreateButton("EndTurnButton", new Vector2(160, 50), new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 30f), new Color(0.3f, 0.5f, 0.8f));
+            endTurnButton = CreateButton("EndTurnButton", new Vector2(180, 54), new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 300f), new Color(0.3f, 0.5f, 0.8f));
             SetButtonText(endTurnButton, "End Turn", 18);
+
+            revealButton = CreateButton("RevealButton", new Vector2(180, 54), new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 230f), new Color(0.8f, 0.6f, 0.2f));
+            SetButtonText(revealButton, "Reveal", 18);
+            revealButton.gameObject.SetActive(false);
 
             phaseText = CreateText("PhaseText", new Vector2(300, 40), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -20f));
             phaseText.fontSize = 24;
             phaseText.alignment = TextAnchor.MiddleCenter;
 
+            promptText = CreateText("PromptText", new Vector2(600, 40), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -60f));
+            promptText.fontSize = 18;
+            promptText.alignment = TextAnchor.MiddleCenter;
+            promptText.color = new Color(1f, 1f, 0.8f, 1f);
+
             handSizeText = CreateText("HandSizeText", new Vector2(200, 40), new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-20f, -20f));
             handSizeText.fontSize = 20;
             handSizeText.alignment = TextAnchor.MiddleRight;
 
-            fatigueText = CreateText("FatigueText", new Vector2(300, 40), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -60f));
+            fatigueText = CreateText("FatigueText", new Vector2(300, 40), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -100f));
             fatigueText.fontSize = 18;
             fatigueText.alignment = TextAnchor.MiddleCenter;
             fatigueText.color = new Color(1f, 0.8f, 0.2f, 1f);
@@ -88,13 +110,30 @@ public class GameUIController : MonoBehaviour
 
             for (int i = 0; i < 3; i++)
             {
-                float xPos = (i - 1) * 220f;
-                rewardButtons[i] = CreateChildButton(rewardPanel, $"RewardButton_{i}", new Vector2(200, 80),
+                float xPos = (i - 1) * 240f;
+                rewardButtons[i] = CreateChildButton(rewardPanel, $"RewardButton_{i}", new Vector2(220, 80),
                     new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(xPos, 0f), new Color(0.3f, 0.5f, 0.8f));
                 int capture = i;
                 rewardButtons[i].onClick.AddListener(() => OnRewardClicked(capture));
             }
             rewardPanel.SetActive(false);
+        }
+
+        BuildHandButtons();
+    }
+
+    private void BuildHandButtons()
+    {
+        for (int i = 0; i < maxHandButtons; i++)
+        {
+            float spacing = 150f;
+            float xPos = (i - (maxHandButtons - 1) / 2f) * spacing;
+            Button cardBtn = CreateChildButton(canvas, $"HandCard_{i}", new Vector2(140, 190),
+                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(xPos, 110f), new Color(0.85f, 0.8f, 0.7f));
+            cardBtn.gameObject.SetActive(false);
+            int capture = i;
+            cardBtn.onClick.AddListener(() => OnHandCardClicked(capture));
+            handButtons.Add(cardBtn);
         }
     }
 
@@ -103,6 +142,9 @@ public class GameUIController : MonoBehaviour
         if (endTurnButton != null)
             endTurnButton.onClick.AddListener(OnEndTurnClicked);
 
+        if (revealButton != null)
+            revealButton.onClick.AddListener(OnRevealClicked);
+
         if (restartButton != null)
             restartButton.onClick.AddListener(OnRestartClicked);
 
@@ -110,6 +152,7 @@ public class GameUIController : MonoBehaviour
         {
             turnManager.OnPlayerTurnStart.AddListener(OnPlayerTurnStarted);
             turnManager.OnAITurnStart.AddListener(OnAITurnStarted);
+            turnManager.OnCardPhaseChanged.AddListener(OnCardPhaseChanged);
             turnManager.OnPhaseChanged.AddListener(OnPhaseChanged);
             turnManager.OnGameOver.AddListener(OnGameOver);
         }
@@ -126,33 +169,57 @@ public class GameUIController : MonoBehaviour
             cardDeckManager.OnCardLostToFatigue += OnCardLostToFatigue;
             cardDeckManager.OnCardLostToCasualty += OnCardLostToCasualty;
         }
+
+        if (cardTurnController != null)
+        {
+            cardTurnController.OnSelectionUpdated += OnSelectionUpdated;
+            cardTurnController.OnRevealed += OnCardsRevealed;
+            cardTurnController.OnHalfResolving += OnHalfResolving;
+            cardTurnController.OnResolutionComplete += OnResolutionComplete;
+            cardTurnController.OnPromptChanged += OnPromptChanged;
+        }
     }
 
     private void Update()
     {
         if (turnManager == null) return;
 
-        if (turnManager.IsPlayerTurn())
+        if (handSizeText != null && cardDeckManager != null)
         {
-            if (handSizeText != null && cardDeckManager != null)
-            {
-                handSizeText.text = $"Hand: {cardDeckManager.GetHandCount()}";
-            }
+            handSizeText.text = $"Hand:{cardDeckManager.GetHandCount()} Deck:{cardDeckManager.GetDeckCount()} Spent:{cardDeckManager.GetSpentCount()} Lost:{cardDeckManager.GetLostCount()}";
+        }
 
-            if (fatigueText != null && cardDeckManager != null)
-            {
-                fatigueText.text = cardDeckManager.GetLostCount() > 0 ? $"Lost: {cardDeckManager.GetLostCount()}" : "";
-            }
+        if (endTurnButton != null)
+        {
+            endTurnButton.interactable = turnManager.CanEndPlayerTurn();
         }
     }
 
     private void OnEndTurnClicked()
     {
-        if (turnManager != null && turnManager.IsPlayerTurn())
+        if (turnManager != null && turnManager.CanEndPlayerTurn())
         {
             if (inputHandler != null) inputHandler.DeselectUnit();
             turnManager.EndPlayerTurn();
         }
+    }
+
+    private void OnRevealClicked()
+    {
+        if (cardTurnController != null && cardTurnController.CanReveal())
+        {
+            cardTurnController.Reveal();
+        }
+    }
+
+    private void OnHandCardClicked(int index)
+    {
+        if (cardTurnController == null) return;
+        if (turnManager == null || !turnManager.IsPlayerTurn()) return;
+        if (turnManager.CurrentCardPhase != CardPhase.Selection) return;
+
+        if (index < 0 || index >= cardDeckManager.Hand.Count) return;
+        cardTurnController.ToggleCardSelection(cardDeckManager.Hand[index]);
     }
 
     private void OnRestartClicked()
@@ -164,13 +231,30 @@ public class GameUIController : MonoBehaviour
     private void OnPlayerTurnStarted()
     {
         if (phaseText != null) phaseText.text = "Your Turn";
-        if (fatigueText != null) fatigueText.text = "";
     }
 
     private void OnAITurnStarted()
     {
         if (phaseText != null) phaseText.text = "Enemy Turn...";
-        if (fatigueText != null) fatigueText.text = "";
+        if (revealButton != null) revealButton.gameObject.SetActive(false);
+        ClearHandButtons();
+    }
+
+    private void OnCardPhaseChanged(CardPhase phase)
+    {
+        if (phase == CardPhase.Selection)
+        {
+            if (revealButton != null) revealButton.gameObject.SetActive(false);
+            RefreshHandDisplay();
+        }
+        else if (phase == CardPhase.Resolution)
+        {
+            if (revealButton != null) revealButton.gameObject.SetActive(false);
+        }
+        else if (phase == CardPhase.Done)
+        {
+            ClearHandButtons();
+        }
     }
 
     private void OnPhaseChanged(TurnPhase phase)
@@ -180,6 +264,9 @@ public class GameUIController : MonoBehaviour
 
     private void OnGameOver(bool playerWon)
     {
+        ClearHandButtons();
+        if (revealButton != null) revealButton.gameObject.SetActive(false);
+
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);
@@ -202,34 +289,114 @@ public class GameUIController : MonoBehaviour
 
     private void OnHandChanged(List<CommandCard> hand)
     {
-        if (handSizeText != null && cardDeckManager != null)
+        RefreshHandDisplay();
+    }
+
+    private void OnSelectionUpdated(List<CommandCard> selected)
+    {
+        RefreshHandDisplay(selected);
+        if (revealButton != null)
+            revealButton.gameObject.SetActive(cardTurnController != null && cardTurnController.CanReveal());
+    }
+
+    private void OnCardsRevealed(CommandCard cardA, CommandCard cardB)
+    {
+        ClearHandButtons();
+    }
+
+    private void OnHalfResolving(CommandCard card, CardHalf half)
+    {
+        if (promptText != null)
         {
-            handSizeText.text = $"Hand: {cardDeckManager.GetHandCount()}";
+            string abilityName = half == CardHalf.Top ? card.topAbilityName : card.bottomAbilityName;
+            promptText.text = $"Resolving: {card.cardName} — {abilityName}";
         }
+    }
+
+    private void OnResolutionComplete()
+    {
+        if (promptText != null) promptText.text = "Orders complete. End your turn.";
+    }
+
+    private void OnPromptChanged(string prompt)
+    {
+        if (promptText != null) promptText.text = prompt;
     }
 
     private void OnCardLostToFatigue(CommandCard card)
     {
-        if (fatigueText != null)
+        if (promptText != null)
         {
-            fatigueText.text = $"Fatigue: {card.cardName} lost!";
-            Invoke("ClearFatigueText", 2.0f);
+            promptText.text = $"Fatigue: {card.cardName} lost!";
+            Invoke("ClearPromptText", 2.0f);
         }
     }
 
     private void OnCardLostToCasualty(CommandCard card)
     {
-        if (fatigueText != null)
+        if (promptText != null)
         {
-            fatigueText.text = $"Casualty: {card.cardName} lost!";
-            Invoke("ClearFatigueText", 2.0f);
+            promptText.text = $"Casualty: {card.cardName} lost!";
+            Invoke("ClearPromptText", 2.0f);
         }
     }
 
-    private void ClearFatigueText()
+    private void ClearPromptText()
     {
-        if (fatigueText != null)
-            fatigueText.text = "";
+        if (promptText != null) promptText.text = "";
+    }
+
+    private void RefreshHandDisplay()
+    {
+        RefreshHandDisplay(null);
+    }
+
+    private void RefreshHandDisplay(List<CommandCard> selected)
+    {
+        if (cardDeckManager == null) return;
+
+        List<CommandCard> hand = cardDeckManager.Hand;
+        cardButtons.Clear();
+
+        for (int i = 0; i < handButtons.Count; i++)
+        {
+            Button btn = handButtons[i];
+            if (i >= hand.Count)
+            {
+                btn.gameObject.SetActive(false);
+                continue;
+            }
+
+            CommandCard card = hand[i];
+            btn.gameObject.SetActive(true);
+            cardButtons[card] = btn;
+
+            Text txt = btn.GetComponentInChildren<Text>();
+            if (txt != null)
+            {
+                bool isSelected = selected != null && selected.Contains(card);
+                string marker = isSelected ? "[x] " : "";
+                txt.text = $"{marker}{card.cardName}\n---\nTOP: {card.topAbilityName}\n{card.topAbilityDescription}\n---\nBOT: {card.bottomAbilityName}\n{card.bottomAbilityDescription}";
+                txt.fontSize = 11;
+                txt.alignment = TextAnchor.UpperLeft;
+                txt.color = isSelected ? Color.yellow : Color.black;
+            }
+
+            ColorBlock colors = btn.colors;
+            colors.normalColor = selected != null && selected.Contains(card) ? new Color(1f, 0.9f, 0.4f) : new Color(0.85f, 0.8f, 0.7f);
+            colors.highlightedColor = colors.normalColor * 1.1f;
+            colors.pressedColor = colors.normalColor * 0.8f;
+            btn.colors = colors;
+        }
+    }
+
+    private void ClearHandButtons()
+    {
+        foreach (Button btn in handButtons)
+        {
+            btn.gameObject.SetActive(false);
+        }
+        cardButtons.Clear();
     }
 
     public void ShowRewardPanel(string[] options)
@@ -253,6 +420,10 @@ public class GameUIController : MonoBehaviour
 
     private void OnRewardClicked(int index)
     {
+        if (runManager != null)
+        {
+            runManager.OnRewardSelected(index);
+        }
         rewardPanel.SetActive(false);
     }
 
@@ -320,6 +491,14 @@ public class GameUIController : MonoBehaviour
 
     private void SetButtonText(Button button, string text, int fontSize)
     {
+        Text existing = button.GetComponentInChildren<Text>();
+        if (existing != null)
+        {
+            existing.text = text;
+            existing.fontSize = fontSize;
+            return;
+        }
+
         GameObject textObj = new GameObject("Text");
         textObj.transform.SetParent(button.transform, false);
         Text t = textObj.AddComponent<Text>();

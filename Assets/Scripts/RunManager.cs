@@ -18,6 +18,7 @@ public class RunManager : MonoBehaviour
 
     private int currentBattle = 0;
     private List<UnitTemplate> currentPlayerRoster = new List<UnitTemplate>();
+    private List<string> pendingRewards;
     private bool isBossBattle = false;
 
     private void Start()
@@ -43,7 +44,7 @@ public class RunManager : MonoBehaviour
         if (unit.IsEnemy) return;
 
         List<Unit> playerUnits = turnManager.PlayerUnits;
-        bool isLastOfType = !playerUnits.Any(u => u.UnitType == unit.UnitType && u != unit);
+        bool isLastOfType = !playerUnits.Any(u => u != unit && u.UnitType == unit.UnitType && u.CurrentHP > 0);
 
         if (isLastOfType && cardDeckManager != null)
         {
@@ -76,11 +77,11 @@ public class RunManager : MonoBehaviour
     {
         if (uiController == null) return;
 
-        string[] options = GenerateRewardOptions();
-        uiController.ShowRewardPanel(options);
+        pendingRewards = GenerateRewardOptions();
+        uiController.ShowRewardPanel(pendingRewards.ToArray());
     }
 
-    private string[] GenerateRewardOptions()
+    private List<string> GenerateRewardOptions()
     {
         List<string> options = new List<string>();
         System.Random rng = new System.Random();
@@ -105,19 +106,59 @@ public class RunManager : MonoBehaviour
             options.Add("Recover Lost Card");
         }
 
-        return options.ToArray();
+        return options;
     }
 
-    public void OnRewardSelected(int index, string rewardDescription)
+    public void OnRewardSelected(int index)
     {
-        Debug.Log($"Reward selected: {rewardDescription}");
+        if (pendingRewards == null || index < 0 || index >= pendingRewards.Count) return;
 
-        if (rewardDescription.Contains("Recover Lost Card") && cardDeckManager != null)
+        string reward = pendingRewards[index];
+        Debug.Log($"Reward selected: {reward}");
+        ApplyReward(reward);
+        pendingRewards = null;
+
+        SetupNextBattle();
+    }
+
+    private void ApplyReward(string reward)
+    {
+        if (reward.StartsWith("Recruit:"))
+        {
+            string typeName = reward.Substring("Recruit:".Length).Trim();
+            if (System.Enum.TryParse<UnitType>(typeName, out UnitType type) && currentPlayerRoster.Count < maxPlayerUnits)
+            {
+                ArmorTier tier = type == UnitType.Slinger || type == UnitType.Archer || type == UnitType.Scout
+                    ? ArmorTier.Leather : ArmorTier.Bronze;
+                currentPlayerRoster.Add(new UnitTemplate
+                {
+                    unitName = typeName,
+                    unitType = type,
+                    armorTier = tier,
+                    isCommander = false
+                });
+            }
+        }
+        else if (reward.StartsWith("Upgrade:"))
+        {
+            HealAllUnits(1);
+        }
+        else if (reward.StartsWith("Supplies") || reward.StartsWith("Heal all"))
+        {
+            HealAllUnits(99);
+        }
+        else if (reward.Contains("Recover Lost Card") && cardDeckManager != null)
         {
             cardDeckManager.RecoverLostCard();
         }
+    }
 
-        SetupNextBattle();
+    private void HealAllUnits(int amount)
+    {
+        foreach (Unit unit in turnManager.PlayerUnits)
+        {
+            unit.Heal(amount);
+        }
     }
 
     private void SetupNextBattle()

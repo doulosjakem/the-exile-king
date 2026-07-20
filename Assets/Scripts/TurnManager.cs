@@ -10,6 +10,14 @@ public enum TurnPhase
     GameOver
 }
 
+public enum CardPhase
+{
+    None,
+    Selection,   // player picks 2 cards from hand
+    Resolution,  // player resolves Top(A) + Bottom(B)
+    Done         // both halves resolved -> ready to end turn
+}
+
 public class TurnManager : MonoBehaviour
 {
     [Header("References")]
@@ -27,6 +35,7 @@ public class TurnManager : MonoBehaviour
     private List<Unit> enemyUnits = new List<Unit>();
 
     public UnityEvent<TurnPhase> OnPhaseChanged;
+    public UnityEvent<CardPhase> OnCardPhaseChanged;
     public UnityEvent OnPlayerTurnStart;
     public UnityEvent OnPlayerTurnEnd;
     public UnityEvent OnAITurnStart;
@@ -35,16 +44,24 @@ public class TurnManager : MonoBehaviour
     public UnityEvent<bool> OnGameOver;
 
     public TurnPhase CurrentPhase => currentPhase;
+    public CardPhase CurrentCardPhase => currentCardPhase;
     public List<Unit> PlayerUnits => playerUnits;
     public List<Unit> EnemyUnits => enemyUnits;
+
+    private CardPhase currentCardPhase = CardPhase.None;
+
+    public void SetCardPhase(CardPhase phase)
+    {
+        if (currentCardPhase == phase) return;
+        currentCardPhase = phase;
+        OnCardPhaseChanged?.Invoke(phase);
+    }
 
     private void Start()
     {
         if (grid == null) grid = FindObjectOfType<HexGrid>();
         if (aiDirector == null) aiDirector = FindObjectOfType<AIDirector>();
         if (cardDeckManager == null) cardDeckManager = FindObjectOfType<CardDeckManager>();
-
-        StartPlayerTurn();
     }
 
     public void RegisterUnit(Unit unit)
@@ -108,6 +125,7 @@ public class TurnManager : MonoBehaviour
 
         OnPhaseChanged?.Invoke(currentPhase);
         OnPlayerTurnStart?.Invoke();
+        SetCardPhase(CardPhase.Selection);
 
         Debug.Log("Player turn started.");
     }
@@ -115,9 +133,16 @@ public class TurnManager : MonoBehaviour
     public void EndPlayerTurn()
     {
         if (currentPhase != TurnPhase.PlayerTurn) return;
+        if (currentCardPhase != CardPhase.Done) return;
 
+        SetCardPhase(CardPhase.None);
         OnPlayerTurnEnd?.Invoke();
         StartAITurn();
+    }
+
+    public bool CanEndPlayerTurn()
+    {
+        return currentPhase == TurnPhase.PlayerTurn && currentCardPhase == CardPhase.Done;
     }
 
     public void StartAITurn()
