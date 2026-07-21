@@ -740,3 +740,393 @@ See `ROADMAP.md` for the full development plan from Sprint 0 through MVP.
 | 5 | Card resolution & unit linking | ⬜ Not started |
 | 6 | Updated turn flow & enemy AI | ⬜ Not started |
 | 7 | Campaign, deck rewards, & polish | ⬜ Not started |
+
+---
+
+# Open Design Questions
+
+---
+
+# Phase 1: Must Answer Before First Prototype
+
+## 1. What is the basic unit structure?
+
+Decide:
+
+- Is a miniature always one warrior?
+- Is a miniature a squad?
+- Does a "Spearman Order" control one spearman or multiple?
+
+Questions:
+
+- Does 1 card = 1 unit?
+- Does 1 card = a squad of similar units?
+- How does a larger force gain advantage without creating bookkeeping?
+
+---
+
+## 2. What are the core unit stats?
+
+Finalize the minimum stat line.
+
+Possible:
+
+- Health
+- Movement
+- Attack
+- Defense
+- Range
+- Initiative
+- Keywords
+
+Avoid unnecessary stats.
+
+---
+
+## 3. How does activation work exactly?
+
+When an Order says:
+
+"Activate up to 2 Spearmen"
+
+What happens?
+
+Questions:
+
+- Can the same unit activate twice?
+- Can units split movement and attacks?
+- Can activated units trigger reactions afterward?
+- Do units have exhaustion states?
+
+---
+
+## 4. How does combat resolve?
+
+Finalize:
+
+- Attack sequence.
+- Defense sequence.
+- Retaliation.
+- Damage.
+- Critical hits.
+- Misses.
+- Attack Modifier Deck effects.
+
+---
+
+## 5. How much randomness is desired?
+
+Current options:
+
+A. Shared Attack Modifier Deck
+
+B. Dice
+
+C. Hybrid
+
+Need to decide:
+
+- How much should planning overcome luck?
+- How swingy should combat feel?
+
+---
+
+## 6. What does a card actually contain?
+
+Finalize Order card structure.
+
+Example:
+
+Initiative number
+
+TOP:
+- Action
+
+BOTTOM:
+- Action
+
+Questions:
+
+- Unit requirement?
+- Range?
+- Keywords?
+- Persistent ability?
+- Flavor text?
+
+---
+
+# Phase 2: Command System
+
+## 7. Is drawing 2 Orders enough?
+
+Test:
+
+- Draw 2 every round.
+- Hand limit 4.
+- Extra draw effects.
+
+Questions:
+
+- Do players feel starved?
+- Do players feel forced into repetition?
+- Are extra draw abilities exciting?
+
+---
+
+## 8. How does Brainstorm trigger?
+
+Current:
+
+"When unable to draw enough Orders."
+
+Need to define:
+
+- Is it automatic?
+- Can players choose it early?
+- Can players intentionally discard to trigger it?
+
+---
+
+## 9. How does Regroup work?
+
+Finalize:
+
+- How much healing?
+- Does every unit heal?
+- Does it remove conditions?
+- Can enemies interrupt it?
+
+---
+
+## 10. How are Lost Orders handled physically?
+
+Need final elegant solution.
+
+Options:
+
+- Remove immediately.
+- Flip card.
+- Unit board slots.
+- Separate casualty area.
+
+Goal:
+
+No deck searching.
+
+---
+
+# Phase 3: Army Building
+
+## 11. How are armies created?
+
+Need:
+
+- Point system?
+- Scenario lists?
+- Campaign roster?
+- Commander limits?
+
+---
+
+## 12. How is command value balanced?
+
+Because command matters as much as units.
+
+Need formula for:
+
+Army strength =
+- Unit value
+- Commander value
+- Order quantity
+- Tactical flexibility
+
+---
+
+## 13. How many commanders can an army have?
+
+Questions:
+
+- One commander per faction?
+- Captains?
+- Mighty Men as secondary commanders?
+
+---
+
+# Phase 4: Enemy AI
+
+## 14. How does solo/co-op enemy AI work?
+
+Need:
+
+- Behavior rules.
+- Enemy Orders.
+- Priority system.
+
+Examples:
+
+Philistines:
+Advance and overwhelm.
+
+Amalekites:
+Strike isolated targets and retreat.
+
+Saul:
+Protect formation and pursue objectives.
+
+---
+
+## 15. Does AI use Orders?
+
+Options:
+
+A.
+AI has its own Orders Deck.
+
+B.
+AI uses behavior cards.
+
+C.
+AI uses priority rules.
+
+---
+
+# Phase 5: Scenarios
+
+## 16. What is the default victory condition?
+
+Avoid every battle being:
+
+"Kill everyone."
+
+Need:
+
+- Escape.
+- Survival.
+- Rescue.
+- Ambush.
+- Capture.
+- Delay.
+
+---
+
+## 17. What makes scenarios replayable?
+
+Need:
+
+- Random events?
+- Enemy deployment?
+- Objectives?
+- Terrain variation?
+
+---
+
+# Phase 6: Campaign
+
+## 18. How does Influence work?
+
+Define:
+
+Gain Influence from:
+
+- Victory.
+- Objectives.
+- Protecting allies.
+- Low casualties.
+
+Spend Influence on:
+
+- Recruitment.
+- New units.
+- New Orders.
+- Mighty Men.
+
+---
+
+## 19. How does progression work?
+
+Avoid simple +1 bonuses.
+
+Options:
+
+- New Orders.
+- New formations.
+- New followers.
+- New commanders.
+
+---
+
+## 20. How long is a campaign?
+
+Need target:
+
+- Short campaign?
+- Full David exile campaign?
+- Multiple books/expansions?
+
+---
+
+# Phase 7: Content
+
+## 21. What is the first playable faction set?
+
+Current:
+
+- David
+- Saul
+- Philistines
+- Amalekites
+
+Need:
+
+- Unit lists.
+- Commanders.
+- Orders.
+
+---
+
+## 22. What is the first scenario?
+
+Need one "proof of concept" battle.
+
+Ideal:
+
+- Uses movement.
+- Uses reactions.
+- Uses terrain.
+- Uses command decisions.
+
+---
+
+# Phase 8: Presentation
+
+## 23. How much biblical flavor?
+
+Need decide:
+
+- Historical simulation?
+- Biblical adventure?
+- Tactical game inspired by Scripture?
+
+---
+
+## 24. How are faith elements handled?
+
+Guiding principle:
+
+Do not turn faith into a resource.
+
+Need define:
+
+- How miracles/events are represented.
+- How providence is handled.
+- What is thematic versus mechanical.
+
+---
+
+# 25. What is the game's unique hook?
+
+Current candidate:
+
+"The army is your command deck."
+
+Need validate through playtesting.
