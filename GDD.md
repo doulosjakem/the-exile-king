@@ -1,1132 +1,873 @@
-# The Anointed Exile — Game Design Document
-
-> **Working Title:** David (Project Codename)
-> **Engine:** Unity 6 LTS (URP)
-> **Language:** C#
-> **Target Platform:** iOS (primary), Android, Steam, Web (future)
+# THE EXILE KING
+## Master Game Design Document (GDD)
+### Draft v0.7
 
 ---
 
-## Vision
+# PURPOSE
 
-A tactical strategy game inspired by **The Duke**, with the progression and replayability of **Slay the Spire**, set during David's years as a fugitive before becoming king.
+This document is the current source of truth for The Exile King.
 
-### Core Pillars
-- Easy to learn
-- Deep tactical gameplay
-- High replayability
-- Historically grounded (not fantasy)
-- Small enough for a solo developer
+It contains:
 
----
+- Current design decisions
+- Guiding principles
+- Mechanics
+- Remaining design questions
+- Prototype roadmap
 
-## Target Platform & Tech Stack
-
-| | |
-|---|---|
-| **Primary** | iOS |
-| **Future** | Android, Steam, Web |
-| **Engine** | Unity 6 LTS (URP) |
-| **Language** | C# |
-| **AI Workflow** | VS Code, Cline, Ollama (Qwen2.5-Coder), GitHub |
+Items in the **Open Questions** section are intentionally unresolved and should not be considered finalized.
 
 ---
 
-## Theme
+# VISION
 
-**Time Period:** David while fleeing Saul (c. 1 Samuel 18–31).
+The Exile King is a tactical skirmish game inspired by the life of David during his exile.
 
-**Possible Locations:**
-- Cave of Adullam
-- Wilderness of Judah
-- Ziklag
-- Amalekite territory
-- Philistine borderlands
+Players command small companies rather than individual heroes.
 
----
+The game emphasizes:
 
-## Factions & Scenario Participants
+- Leadership
+- Tactical positioning
+- Difficult command decisions
+- Battlefield endurance
+- Efficient use of limited command bandwidth
 
-The game is built around a **skirmish-first** philosophy. Factions have distinct rosters and playstyles. A campaign layer is built on top later, using the same faction rosters.
+The experience should feel somewhere between:
 
-### Core Player Faction: David's Company
+- Gloomhaven
+- Root
+- Historical skirmish games
 
-David's warband of refugees, outcasts, and loyal fighters. Flexible underdog playstyle. The only faction with the Command Card deck system.
-
-| Unit | Type | Notes |
-|---|---|---|
-| David | Commander | Unique — always available |
-| Refugees | Support | Non-combatants, provide passive bonuses |
-| Outcasts | Light Infantry | Desperate fighters, cheap |
-| Swordsmen | Infantry | Standard melee |
-| Spearmen | Infantry | Reach, anti-charge |
-| Slingers | Skirmisher | Ranged, light |
-| Archers | Ranged | Stationary damage |
-| Scouts | Light | Fast, hit-and-run |
-| Veterans | Elite | Upgraded base units (campaign) |
-| Mighty Men | Hero | Unique named units (late campaign) |
-
-### Primary Factions
-
-#### Saul's Kingdom (Enemy → Neutral → Ally)
-Relationship varies by scenario. Often pursuing David. Sometimes fights common enemies.
-
-| Unit | Type | Notes |
-|---|---|---|
-| Abner | Commander | Saul's general |
-| Royal Guard | Heavy Infantry | Iron armor, shield wall |
-| Benjamite Spearmen | Elite Infantry | Better spearmen, loyal tribe |
-| Israelite Archers | Ranged | Standard archers |
-| Officers | Support | Buff adjacent units |
-| Elite Bodyguards | Elite | Protect Saul/Abner |
-
-#### Jonathan's Followers (Ally)
-Small temporary allied force. Scenario-specific.
-
-| Unit | Type | Notes |
-|---|---|---|
-| Loyal Guards | Infantry | Devoted to Jonathan |
-| Elite Archers | Ranged | Crack shots |
-| Scouts | Light | Fast, intel |
-
-#### Philistines (Enemy OR Ally)
-David serves Achish for a time. Later they become enemies again.
-
-| Unit | Type | Notes |
-|---|---|---|
-| Achish | Commander | Philistine lord |
-| Spearmen | Infantry | Standard |
-| Heavy Infantry | Heavy | Slow, hit hard |
-| Archers | Ranged | Standard |
-| Chariots | Unique | Rare, devastating |
-| Champions | Elite | Duelists |
-| Lords of the Philistines | Commander variants | Scenario-specific |
-
-#### Amalekites (Enemy)
-Fast-moving desert raiders. Major campaign enemy. Raid Ziklag.
-
-| Unit | Type | Notes |
-|---|---|---|
-| Chieftain | Commander | |
-| Raiders | Infantry | Core melee |
-| Slingers | Skirmisher | Ranged |
-| Desert Scouts | Light | Fast skirmishers |
-| Camel Riders | Unique | Mobile heavy |
-
-### Minor Historical Peoples (Enemy — Expansion)
-
-#### Girzites (Girzites/Gizzites)
-Mentioned in 1 Samuel 27. David raids them while living among the Philistines. Very little historical information survives. Good opportunity for tasteful historical reconstruction.
-
-#### Geshurites (Southern Geshurites)
-Also mentioned in 1 Samuel 27. NOT the northern Kingdom of Geshur near Bashan. Likely desert or semi-desert tribal people.
-
-#### Gezerites
-Some Bible translations read "Gezrites." Textual tradition is debated. Could be treated as another small tribal group.
-
-### Optional / Late Campaign
-
-#### Judah Militia (Ally)
-Local village defenders, shepherd militia, and levies.
-
-| Unit | Type | Notes |
-|---|---|---|
-| Local Leader | Commander | |
-| Village Defender | Infantry | Light armor, motivated |
-| Shepherd | Skirmisher | Staff/sling, basic |
-
-#### Keilah (Ally → Neutral)
-David rescues Keilah. Later they are willing to hand him over to Saul. Could appear as a scenario-specific allied force or objective.
-
-#### Nabal's Household (Neutral)
-Could appear in diplomacy scenarios. Abigail eventually becomes David's wife.
-
-#### Priests of Nob (Ally)
-Supply/support scenarios. Historically significant for sheltering David.
-
-### Scenario-Only Participants
-
-These aren't full factions — they appear as objectives or environmental elements.
-
-**Civilians:**
-- Shepherds
-- Farmers
-- Families
-- Merchants
-
-**Wildlife:**
-- Lions
-- Bears
-- Wolves (optional)
-
-### Scenario Objectives
-
-Beyond "eliminate commander," scenarios can have varied objectives:
-
-- **Eliminate** — Defeat the enemy commander
-- **Rescue captives** — Reach and free allied prisoners
-- **Escort civilians** — Guide non-combatants to safety
-- **Recover livestock** — Capture resources from enemy camp
-- **Burn supplies** — Destroy enemy provisions
-- **Defend position** — Survive for N turns
-- **Escape pursuit** — Reach the opposite edge of the map
-- **Ambush patrol** — Eliminate a moving enemy unit before it escapes
-- **Breakthrough** — Get a specific unit to the opposite side
-
-### MVP Recommendation
-
-| Status | Factions |
-|---|---|
-| **Playable (MVP)** | David's Company, Saul's Army, Amalekites |
-| **Scenario allies** | Jonathan's Men, Philistines (select scenarios) |
-| **Expansion** | Girzites, Southern Geshurites, Judah Militia, Keilah |
-| **Late campaign** | Nabal's Household, Priests of Nob, Philistines (full), Mighty Men |
+while remaining mechanically distinct.
 
 ---
 
-## Recommended Loadouts (Skirmish Mode)
+# DESIGN PILLARS
 
-Pre-set team + card deck combinations for balanced pick-up games — inspired by **ROOT's** recommended setups. These are the quickest way to get playing.
+## Command over Heroics
 
-| Loadout | Player Faction | Enemy Faction | Player Units | Objective | Difficulty |
-|---|---|---|---|---|---|
-| **First Blood** | David's Company | Amalekites | David + 2 Scouts + 2 Spearmen | Eliminate chieftain | Easy |
-| **Desert Pursuit** | David's Company | Amalekites | David + Swordsman + Archer + Slinger | Eliminate chieftain | Medium |
-| **Hold the Pass** | David's Company | Amalekites | David + 3 Spearmen + Archer | Defend (survive 6 turns) | Medium |
-| **Rescue at Keilah** | David's Company | Saul's Army | David + Scout + 2 Swordsmen + Refugee | Escort civilians to safety | Hard |
-| **Escape Pursuit** | David's Company | Saul's Army | David + Scout + Refugee | Reach the opposite map edge | Hard |
-| **Ziklag Raid** | David's Company | Amalekites | David + 2 Veterans + Slinger + Refugee | Rescue captives | Hard |
-| **The Anointed** | David's Company | Philistines | David + Swordsman + Spearman + Archer + Scout | Eliminate commander | Very Hard |
+Victory comes through leadership.
 
-### Loadout Format
-Each loadout defines:
-- **Player faction** (always David's Company for MVP — other factions later)
-- **Enemy faction** (Amalekites, Saul's Army, Philistines)
-- **Player starting units** (which units + how many)
-- **Starting deck** (which Command Cards — default is the full 10-card deck unless specified)
-- **Scenario objective** (eliminate, rescue, escort, defend, escape, ambush)
+Not superheroes.
 
 ---
 
-## Inspirations
+## Positioning over Arithmetic
 
-| | |
-|---|---|
-| **Combat** | The Duke (tactical grid, unit states) |
-| **Campaign** | Slay the Spire (progression, replayability) |
-| **Presentation** | Modern board game, 2.5D / Isometric |
+Board position creates advantage.
+
+Avoid stacking modifiers.
 
 ---
 
-## Core Gameplay Loop
+## Tactical Decisions
 
-```
-Start Run
-    ↓
-Travel to encounter
-    ↓
-Fight tactical battle
-    ↓
-Receive reward
-    ↓
-Recruit / Upgrade / Deck Improvement
-    ↓
-Next encounter
-    ↓
-Boss
-    ↓
-Win or Lose
-    ↓
-Start another run
-```
+Hard choices.
+
+Simple calculations.
 
 ---
 
-## Tactical Battles
+## Elegance
 
-- **Grid:** 8×8 hex grid
-- **Player controls:** David + warband via Command Cards
-- **Enemy controls:** AI commander + troops
-- **Goal:** Defeat enemy commander OR complete scenario objective
+Every rule should justify its existence.
 
-### Turn Structure
+Reduce bookkeeping whenever possible.
 
-```
-Start Turn
-    ↓
-Draw until hand contains 4 Command Cards
-(first turn: start with 2, draw 2)
-LOSE one random card (Fatigue)
-    ↓
-Choose 2 Command Cards from hand
-    ↓
-Reveal both cards
-    ↓
+---
+
+## Theme First
+
+Mechanics reinforce the biblical narrative.
+
+Faith is never represented as a numerical resource.
+
+---
+
+# CORE DESIGN PHILOSOPHY
+
+Units provide capability.
+
+Orders provide intent.
+
+Commanders provide coordination.
+
+The game's true resource is **command bandwidth**.
+
+The player is constantly deciding:
+
+"What deserves my commander's attention?"
+
+---
+
+# UNIT STRUCTURE
+
+Units contain only inherent characteristics.
+
+## Core Stats
+
+Health
+
+Movement
+
+Attack
+
+Counterattack
+
+Attack Type
+
+- Melee
+- Ranged
+
+Range (if ranged)
+
+Keywords
+
+---
+
+## Intentionally Omitted
+
+No Defense stat.
+
+No Initiative stat.
+
+Very few inherent special abilities.
+
+Most interesting behavior comes from Orders.
+
+---
+
+# ORDERS
+
+Orders represent commands issued by a commander.
+
+They determine:
+
+- Which units activate.
+- What actions those units perform.
+- Temporary tactical advantages.
+- Persistent battlefield plans.
+
+Units define what they CAN do.
+
+Orders define what they DO.
+
+---
+
+# ORDERS DECK
+
+Each company contributes Orders.
+
+Example:
+
+David
+
+2 Orders
+
+Spearmen ×3
+
+3 Orders
+
+Scout
+
+1 Order
+
+Archer
+
+1 Order
+
+Total:
+
+7-card Orders Deck
+
+The deck represents command capability—not stamina.
+
+---
+
+# HAND
+
+Orders in Hand
+
+Players normally:
+
+Draw 2 Orders during Preparation.
+
+Maximum hand size:
+
+4 Orders.
+
+---
+
+# ISSUED ORDERS
+
+Played Orders move here.
+
+Recovered by:
+
+- Brainstorm
+- Regroup
+
+---
+
+# LOST ORDERS
+
+Orders permanently removed.
+
+Represent:
+
+- Fallen soldiers
+- Lost command opportunities
+- Long-term exhaustion
+- Campaign consequences
+
+Persistent Orders also move directly here after completion.
+
+---
+
+# ROUND STRUCTURE
+
+## 1. Preparation
+
+Draw 2 Orders.
+
+Choose:
+
+- Initiative Order
+- Support Order
+
+---
+
+## 2. Initiative
+
+Reveal Initiative Orders.
+
+Resolve from lowest initiative to highest.
+
+---
+
+## 3. Action Phase
+
 Resolve:
-  • Top ability of one card
-  • Bottom ability of the other card
-  (Each ability activates ONE unit — activation token placed)
-    ↓
-Discard both cards to Spent pile
-(or Lose pile if specified)
-    ↓
-Enemy Turn
-```
 
-### Unit Limitation Rule
+Top of one Order.
 
-Each unit can generally activate only **once per player turn**. When a unit activates, place an activation token on it. It cannot activate again until the next player turn.
+Bottom of the other.
 
-This prevents:
-- Moving the same powerful units repeatedly.
-- Ignoring half the army.
-- "Favorite three units" strategies.
+Orders determine:
+
+- Activated units
+- Sequence of actions
+- Modifiers
 
 ---
 
-## Battle Command System
+## 4. End Phase
 
-### Design Philosophy
+Resolve:
 
-- **Units** answer: *"Who am I?"*
-- **Cards** answer: *"What orders am I giving?"*
+Persistent Orders.
 
-The interesting decisions come from:
-- Which two commands to select from your hand
-- Which half of each command to use (top or bottom)
-- Which unit executes the command
-- Whether a powerful command is worth losing forever
+Scenario effects.
 
-### Command Deck Setup
+Victory conditions.
 
-Before a scenario:
-1. Choose your commander/faction.
-2. Choose your army units.
-3. Add command cards based on the units brought.
+Begin next Round.
 
-Example:
-David + 3 Swordsmen + 2 Archers + 1 Scout
+---
 
-Command deck:
-- David Leadership cards
-- Swordsman command cards
-- Archer command cards
-- Scout command card
+# BRAINSTORM
 
-### Card Design
+Emergency battlefield adaptation.
 
-Each command card has:
-- **TOP ACTION:** Primary command ability. Usually stronger or more specialized.
-- **BOTTOM ACTION:** Secondary command ability. Usually movement, positioning, support, or weaker action.
+Lose:
 
-### Universal Commands
+1 random Order.
 
-Every army has access to basic commands:
+Recover:
 
-- **March:** Activate up to 2 units of one type. Move them.
-- **Engage:** Activate up to 2 units of one type. They attack.
+All Issued Orders.
 
-Universal commands are weaker than specialized commands.
+Shuffle.
 
-### Card States
+Continue normally.
 
-```
-Deck
-  ↓
-Hand
-  ↓
-Played
-  ↓
-Spent
-  ↓
-Refresh
-  ↓
-Deck
-```
+---
 
-Some powerful abilities instead go:
+# REGROUP
 
-```
-Played
-  ↓
-Lost
-```
+Deliberate recovery.
 
-Lost cards do not return until a battle recovery (or a special ability recovers them).
+Skip your activation.
 
-### Starting Hand
+Recover:
 
-The player starts the game with **2 Command Cards** in hand. On the first turn, draw 2 more (hand of 4). Each subsequent turn, draw up to 2 to refill the hand back to 4.
+All Issued Orders.
 
-### Fatigue / Command Loss
+Lose:
 
-When refreshing your command hand:
-- Draw back up according to your hand rules.
-- Lose one random card.
+1 chosen Order.
 
-Represents:
-- Commander fatigue.
-- Loss of communication.
-- Soldiers becoming harder to coordinate.
+Heal your company.
 
-### Casualty System
+(Current healing amount TBD.)
 
-When a unit type is eliminated:
-- Remove one matching command card from the deck.
+---
 
-Example:
+# COMBAT PHILOSOPHY
 
-All David archers are destroyed.
+Combat comes from only three sources:
 
-Remove:
-"Archer Volley"
+1. Unit Stats
 
-Effect:
-- Your army loses tactical options as it suffers losses.
+2. Orders
 
-### Co-op / AI Possibility
+3. Shared Attack Modifier Deck
 
-Human-controlled faction:
-- Draw cards.
-- Choose best actions.
+Nearly every tactical decision should arise from:
 
-AI-controlled faction:
-- Reveal command cards randomly.
-- Execute the top action first.
-- Follow simple priority rules.
+- Positioning
+- Timing
+- Orders
+- Persistent Orders
+- Unit synergy
 
-Priority rules:
-1. Attack if possible.
-2. Move toward objective/enemy.
-3. Support nearby allies.
-4. If unable, reposition.
+Not arithmetic.
 
-### Command Cards
+---
 
-Cards represent David's battlefield orders. Each card has a **Top** ability and a **Bottom** ability. When resolving a turn, the player picks one card's top ability and the other card's bottom ability.
+# COMBAT (CURRENT DIRECTION)
+
+General sequence:
+
+1. Resolve Order.
+2. Activate units.
+3. Move / Attack according to the Order.
+4. Apply Order bonuses.
+5. Draw Attack Modifier.
+6. Deal damage.
+7. Resolve retaliation.
+8. Resolve Persistent effects.
+
+Exact timing remains under development.
+
+---
+
+# RETALIATION
+
+Units normally retaliate during melee attacks.
+
+Counterattack determines retaliation strength.
+
+Some units may have:
+
+Counterattack = 0
+
+Orders may grant additional reaction attacks.
 
 Examples:
 
-**Swordsmen Advance**
-```
-Top:
-  Activate Swordsmen:
-  - Up to 3 Swordsmen may move and attack.
-  - Gain +1 attack if adjacent to another Swordsman.
+- Spear Wall
+- Covering Fire
+- Ambush
+- Shield Wall
 
-Bottom:
-  Move:
-  - Move up to 2 Swordsmen.
-```
-
-**Archer Volley**
-```
-Top:
-  Activate Archers:
-  - Up to 2 Archers attack.
-  - Must target enemies within range.
-
-Bottom:
-  Reposition:
-  - Move up to 2 Archers.
-```
+These reactions are separate from normal retaliation.
 
 ---
 
-## Units — Player Roster (MVP)
+# PERSISTENT ORDERS
 
-Units have fixed base stats. Actions are enhanced by Command Cards.
+Persistent Orders represent ongoing battlefield commands.
 
-### David (Commander)
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 2 |
-| **Attack** | Melee dmg 2 |
-| **Range** | 1 |
-| **Passive** | Adjacent allies +1 damage (Commander Aura) |
-| **Special** | Lose David = lose battle |
+Examples:
 
-### Swordsman
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 2 |
-| **Attack** | Melee dmg 2 |
-| **Range** | 1 |
-| **Passive** | Shield Block (defend once per turn) |
+- Spear Wall
+- Covering Fire
+- Hold the Line
+- Shield Wall
 
-### Spearman
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 2 |
-| **Attack** | Spear Thrust dmg 2 |
-| **Range** | 2 |
-| **Passive** | Brace (bonus dmg vs charging enemies) |
+Persistent Orders:
 
-### Slinger
-| Stat | Value |
-|---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 2 |
-| **Attack** | Sling dmg 1 |
-| **Range** | 3 |
-| **Passive** | — |
+Require an activation.
 
-### Archer
-| Stat | Value |
-|---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 2 |
-| **Attack** | Bow Shot dmg 2 |
-| **Range** | 3 |
-| **Passive** | Aim (next shot +1 dmg if stationary) |
+Remain active.
 
-### Scout
-| Stat | Value |
-|---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 3 |
-| **Attack** | Javelin dmg 1 |
-| **Range** | 2 |
-| **Passive** | Retreat (gain +1 Move when disengaging) |
+Track a limited number of triggers.
+
+Immediately become Lost after completion.
+
+Persistent Orders intentionally trade long-term endurance for battlefield control.
 
 ---
 
-## Units — Enemy Roster (Amalekites)
+# COMMAND SCALE
 
-Historically nomadic raiders. Lightly armored, mobile. No heavy infantry.
+Players command companies.
 
-### Amalekite Scout
-| Stat | Value |
-|---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 3 |
-| **Attack** | Javelin dmg 1 |
-| **Range** | 2 |
-| **Passive** | Retreat |
+Not individual warriors.
 
-### Amalekite Raider (core melee)
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 2 |
-| **Attack** | Spear Thrust dmg 2 |
-| **Range** | 2 |
-| **Passive** | Shield Wall (defend) |
+Typical Order:
 
-### Amalekite Slinger
-| Stat | Value |
-|---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 2 |
-| **Attack** | Sling dmg 1 |
-| **Range** | 3 |
-| **Passive** | — |
+Activate:
 
-### Amalekite Archer (mounted)
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 3 |
-| **Attack** | Bow Shot dmg 2 |
-| **Range** | 3 |
-| **Passive** | Parthian Shot (move 1 + shoot, dmg 1) |
+1 unit.
 
-### Camel Rider (unique heavy)
-| Stat | Value |
-|---|---|
-| **HP** | 3 (Iron) |
-| **Move** | 3 |
-| **Attack** | Spear dmg 2 / Trample dmg 2 (pushes target 1 tile) |
-| **Range** | 2 |
-| **Passive** | Trample |
+Sometimes:
 
-### Amalekite Chieftain (commander)
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 2 |
-| **Attack** | Melee dmg 2 |
-| **Range** | 1 |
-| **Passive** | Command (rally adjacent exhausted ally → ready), War Cry (adjacent allies +1 dmg this turn) |
-| **Special** | Lose Chieftain = lose battle |
+Up to 2 units.
+
+Rarely:
+
+Entire formations with weaker effects.
+
+General principle:
+
+The broader the Order,
+
+the weaker or less precise it becomes.
 
 ---
 
-## Combat System
+# ARMY COMPOSITION
 
-### Health
-Simple armor-based tiers:
-
-| Armor | HP | Examples |
-|---|---|---|
-| Leather | 1 | Scouts, Slingers, Archers |
-| Bronze | 2 | Swordsmen, Spearmen, Raiders |
-| Iron | 3 | Camel Rider, Elite units |
-
-No complex RPG stats.
-
-### Damage
-- Leather sword: Damage 1
-- Bronze spear: Damage 2
-- Iron sword: Damage 3
-- Keep combat readable and predictable.
-
-### Ranged Attacks
-- Line-of-sight required
-- Blocked by units and obstacles
-- Uses Bresenham's line algorithm for LoS checking
-
-### Melee Attacks
-- Adjacent by default
-- Spearmen have range 2 melee (reach)
-### Counter-Attacks
-- **NOT in MVP**
-- Future consideration: specific units/equipment can have counter-attack as a perk
-
-### Commander Mechanic
-- David provides adjacent allies +1 damage (commander aura)
-- Lose David = lose the battle (immediate defeat)
-- Enemy Chieftain behaves identically
-
----
-
-## Progression & Rewards
-
-### After Each Battle
-Choose **ONE** from a random pool:
-1. Recruit new unit
-2. Upgrade existing unit (e.g., Young Slinger → Veteran Slinger → Elite Slinger)
-3. Improve equipment (Wood → Bronze → Iron)
-4. Gain supplies (heal wounded units)
-5. **Improve Command Deck** (add a new card, upgrade an existing card, or recover a Lost card)
-
-No random loot explosion. Meaningful choices.
-
-### Duplicates
-Allowed — you can have multiple swordsmen, slingers, etc.
-
-### Upgrade Path Example
-```
-Young Slinger
-    ↓
-Veteran Slinger (more HP, longer range)
-    ↓
-Elite Slinger (new actions, passive abilities)
-```
-
----
-
-## Run Structure (MVP)
-
-| Encounter | Difficulty | Est. Time |
-|---|---|---|
-| Battle 1 | Easy — 3 enemies + chieftain | ~5 min |
-| Battle 2 | Medium — 4 enemies + chieftain | ~7 min |
-| Battle 3 | Hard — 5 enemies + chieftain + elite | ~10 min |
-| Boss | Unique scenario | ~10 min |
-| **Total** | | **~30 min** |
-
----
-
-## AI Design
-
-Priority-based evaluation each turn:
-
-1. **Protect commander** — If commander is threatened (enemy within 2 tiles), move to protect or retreat commander
-2. **Attack weak units** — Target isolated or low-HP player units
-3. **Capture objectives** — If scenario has objectives, move toward them
-4. **Focus isolated enemies** — Prioritize units with no nearby allies
-5. **Retreat when appropriate** — If HP < 30% and no advantage, fall back toward commander
-
----
-
-## Art Style
-
-- **2.5D / Isometric** perspective
-- **Parchment / illuminated manuscript aesthetic**
-- Hand-painted historical illustration style
-- Watercolor and ink outlines
-- Muted earth tones
-- NOT realistic. NOT fantasy.
-- Inspired by ancient chronicles, illustrated manuscripts, and board game card art
-- Readable over realistic
-- Units rendered as small tokens on the battlefield
-- Selecting a unit opens a command card (like a playing card)
-
----
-
-## MVP Feature Checklist
-
-- [x] Hex grid (8×8)
-- [x] Click/tap movement
-- [x] Unit selection
-- [x] Enemy AI (priority-based)
-- [x] Basic attacks (melee & ranged)
-- [x] Health system (Leather/Bronze/Iron)
-- [x] **Command Card deck & hand management**
-- [ ] Card draw system (draw to 4 each turn)
-- [ ] Card selection UI (pick 2 from hand)
-- [ ] Top/bottom card resolution
-- [ ] Spent & Lost card piles
-- [x] Turn system (card-based player turn → enemy turn)
-- [x] Victory conditions (eliminate commander)
-- [x] Recruitment & upgrades (including deck improvement)
-- [x] Run structure (3 battles + boss)
-
----
-
-## NOT in MVP
-
-- Kingdom management
-- Crafting
-- Diplomacy
-- Base building
-- Multiplayer
-- Voice acting
-- Cutscenes
-- Large campaign map
-- Complex economy
-- Counter-attacks
-- Terrain bonuses
-- Fog of war
-
----
-
-## Long-Term Ideas
-
-- The Mighty Men (elite units)
-- David vs Saul campaign
-- Philistine campaign
-- Amalekite campaign
-- Story events
-- Equipment crafting
-- Morale system
-- Terrain bonuses
-- Fog of war
-- Campaign map
-- Boss encounters
-- Counter-attack perks
-- Unit-specific abilities
-
----
-
-## Development Philosophy
-
-> **Finish something fun before making it big.**
-
-Every feature must answer:
-> *"Does this make the tactical decisions more interesting?"*
-
-If not, don't build it.
-
----
-
-## Sprint Roadmap
-
-See `ROADMAP.md` for the full development plan from Sprint 0 through MVP.
-
-### Summary
-
-| Sprint | Focus | Status |
-|---|---|---|
-| 0 | Foundation (GDD, core scripts) | ✅ Done |
-| 1 | Visual grid & unit placement | ✅ Done |
-| 2 | Selection & movement | ✅ Done |
-| 3 | Command Card data system | ⬜ Not started |
-| 4 | Command Card UI & selection | ⬜ Not started |
-| 5 | Card resolution & unit linking | ⬜ Not started |
-| 6 | Updated turn flow & enemy AI | ⬜ Not started |
-| 7 | Campaign, deck rewards, & polish | ⬜ Not started |
-
----
-
-# Open Design Questions
-
----
-
-# Phase 1: Must Answer Before First Prototype
-
-## 1. What is the basic unit structure?
-
-Decide:
-
-- Is a miniature always one warrior?
-- Is a miniature a squad?
-- Does a "Spearman Order" control one spearman or multiple?
-
-Questions:
-
-- Does 1 card = 1 unit?
-- Does 1 card = a squad of similar units?
-- How does a larger force gain advantage without creating bookkeeping?
-
----
-
-## 2. What are the core unit stats?
-
-Finalize the minimum stat line.
-
-Possible:
-
-- Health
-- Movement
-- Attack
-- Defense
-- Range
-- Initiative
-- Keywords
-
-Avoid unnecessary stats.
-
----
-
-## 3. How does activation work exactly?
-
-When an Order says:
-
-"Activate up to 2 Spearmen"
-
-What happens?
-
-Questions:
-
-- Can the same unit activate twice?
-- Can units split movement and attacks?
-- Can activated units trigger reactions afterward?
-- Do units have exhaustion states?
-
----
-
-## 4. How does combat resolve?
-
-Finalize:
-
-- Attack sequence.
-- Defense sequence.
-- Retaliation.
-- Damage.
-- Critical hits.
-- Misses.
-- Attack Modifier Deck effects.
-
----
-
-## 5. How much randomness is desired?
-
-Current options:
-
-A. Shared Attack Modifier Deck
-
-B. Dice
-
-C. Hybrid
-
-Need to decide:
-
-- How much should planning overcome luck?
-- How swingy should combat feel?
-
----
-
-## 6. What does a card actually contain?
-
-Finalize Order card structure.
+Players are encouraged to build cohesive companies.
 
 Example:
 
-Initiative number
+4 Spearmen
 
-TOP:
-- Action
+2 Slingers
 
-BOTTOM:
-- Action
+rather than
 
-Questions:
+1 Spearman
 
-- Unit requirement?
-- Range?
-- Keywords?
-- Persistent ability?
-- Flavor text?
+1 Archer
 
----
+1 Scout
 
-# Phase 2: Command System
+1 Swordsman
 
-## 7. Is drawing 2 Orders enough?
+Mixed companies gain versatility.
 
-Test:
+Focused companies gain command efficiency.
 
-- Draw 2 every round.
-- Hand limit 4.
-- Extra draw effects.
-
-Questions:
-
-- Do players feel starved?
-- Do players feel forced into repetition?
-- Are extra draw abilities exciting?
+This is an intentional strategic tradeoff.
 
 ---
 
-## 8. How does Brainstorm trigger?
+# TERRAIN
 
-Current:
+Terrain primarily influences:
 
-"When unable to draw enough Orders."
+Movement
 
-Need to define:
+Visibility
 
-- Is it automatic?
-- Can players choose it early?
-- Can players intentionally discard to trigger it?
+Positioning
 
----
+Space control
 
-## 9. How does Regroup work?
-
-Finalize:
-
-- How much healing?
-- Does every unit heal?
-- Does it remove conditions?
-- Can enemies interrupt it?
+Avoid combat math whenever possible.
 
 ---
 
-## 10. How are Lost Orders handled physically?
+# ATTACK MODIFIER DECK
 
-Need final elegant solution.
+One shared deck.
 
-Options:
+Used by every player.
 
-- Remove immediately.
-- Flip card.
-- Unit board slots.
-- Separate casualty area.
+Represents:
+
+Battlefield uncertainty.
+
+Momentum.
+
+Human error.
+
+Providence.
+
+Current direction:
+
+Mostly:
+
+0
+
++1 Attack
+
+-1 Attack
+
++1 Counterattack
+
+-1 Counterattack
+
+Rare:
+
+Miss
+
+Counterattack fails
+
+±2
+
+Randomness should support tactics—not replace them.
+
+---
+
+# CAMPAIGN
+
+Regular followers:
+
+May permanently die.
+
+Replacement followers recruited using Influence.
+
+Named heroes:
+
+Become Wounded instead of dying.
+
+Unavailable until recovered.
+
+David's death:
+
+Lose the scenario.
+
+Retry.
+
+---
+
+# INITIAL FACTIONS
+
+David
+
+Saul
+
+Philistines
+
+Amalekites
+
+---
+
+# VERTICAL SLICE
+
+Target:
+
+4 factions.
+
+6–8 unit types.
+
+20–30 Orders.
+
+1 map.
+
+3 scenarios.
 
 Goal:
 
-No deck searching.
+Determine whether commanding companies is genuinely fun.
 
 ---
 
-# Phase 3: Army Building
+# OPEN DESIGN QUESTIONS
 
-## 11. How are armies created?
+## 1. Combat Resolution ⭐⭐⭐⭐⭐
 
-Need:
+Finalize:
 
-- Point system?
-- Scenario lists?
-- Campaign roster?
-- Commander limits?
-
----
-
-## 12. How is command value balanced?
-
-Because command matters as much as units.
-
-Need formula for:
-
-Army strength =
-- Unit value
-- Commander value
-- Order quantity
-- Tactical flexibility
+- Exact damage formula.
+- Counterattack timing.
+- Ranged retaliation.
+- Death timing.
+- Multiple attackers.
+- Order of operations.
 
 ---
 
-## 13. How many commanders can an army have?
+## 2. Order Card Design ⭐⭐⭐⭐⭐
 
-Questions:
+Design the standard Order template.
 
-- One commander per faction?
-- Captains?
-- Mighty Men as secondary commanders?
+Need to determine:
+
+- Typical Move values.
+- Typical Attack values.
+- Combined Move + Attack frequency.
+- Persistent Order frequency.
+- Commander Orders vs Unit Orders.
+- Shared Orders.
+- Typical activation counts.
 
 ---
 
-# Phase 4: Enemy AI
+## 3. Movement ⭐⭐⭐⭐☆
 
-## 14. How does solo/co-op enemy AI work?
+Need to finalize:
 
-Need:
+Can Orders allow:
 
-- Behavior rules.
-- Enemy Orders.
-- Priority system.
+- Move
+- Attack
+- Move → Attack
+- Attack → Move
+- Move → Attack → Move
+
+Current leaning:
+
+The Order defines the sequence.
+
+---
+
+## 4. Attack Modifier Deck ⭐⭐⭐⭐☆
+
+Finalize:
+
+Deck size.
+
+Distribution.
+
+Reshuffle timing.
+
+Rare effects.
+
+---
+
+## 5. Keywords ⭐⭐⭐☆
+
+Finalize reusable keyword system.
 
 Examples:
 
-Philistines:
-Advance and overwhelm.
+Reach
 
-Amalekites:
-Strike isolated targets and retreat.
+Scout
 
-Saul:
-Protect formation and pursue objectives.
+Shield
 
----
+Heavy
 
-## 15. Does AI use Orders?
+Volley
 
-Options:
-
-A.
-AI has its own Orders Deck.
-
-B.
-AI uses behavior cards.
-
-C.
-AI uses priority rules.
+Mounted
 
 ---
 
-# Phase 5: Scenarios
+## 6. Unit Costs ⭐⭐⭐☆
 
-## 16. What is the default victory condition?
+Develop point values.
 
-Avoid every battle being:
+Primarily solved through playtesting.
 
-"Kill everyone."
+---
+
+## 7. Orders Deck Construction ⭐⭐⭐☆
+
+Determine:
+
+Starting deck size.
+
+Commander Order count.
+
+Unit Order count.
+
+Shared Order count.
+
+---
+
+## 8. Enemy AI ⭐⭐⭐☆
 
 Need:
 
-- Escape.
-- Survival.
-- Rescue.
-- Ambush.
-- Capture.
-- Delay.
+Solo system.
+
+Co-op automation.
+
+Faction personalities.
+
+Behavior priorities.
 
 ---
 
-## 17. What makes scenarios replayable?
+## 9. Scenario Design ⭐⭐⭐☆
 
-Need:
+Objectives.
 
-- Random events?
-- Enemy deployment?
-- Objectives?
-- Terrain variation?
+Replayability.
 
----
+Scaling.
 
-# Phase 6: Campaign
-
-## 18. How does Influence work?
-
-Define:
-
-Gain Influence from:
-
-- Victory.
-- Objectives.
-- Protecting allies.
-- Low casualties.
-
-Spend Influence on:
-
-- Recruitment.
-- New units.
-- New Orders.
-- Mighty Men.
+Randomization.
 
 ---
 
-## 19. How does progression work?
+## 10. Campaign Progression ⭐⭐⭐☆
 
-Avoid simple +1 bonuses.
+Finalize:
 
-Options:
+Influence.
 
-- New Orders.
-- New formations.
-- New followers.
-- New commanders.
+Recruitment.
 
----
+Unlock cadence.
 
-## 20. How long is a campaign?
-
-Need target:
-
-- Short campaign?
-- Full David exile campaign?
-- Multiple books/expansions?
+Progression systems.
 
 ---
 
-# Phase 7: Content
+# PROTOTYPE ROADMAP
 
-## 21. What is the first playable faction set?
+Prototype 0.1
 
-Current:
+□ Core combat
 
-- David
-- Saul
-- Philistines
-- Amalekites
+□ Basic movement
 
-Need:
+□ David
 
-- Unit lists.
-- Commanders.
-- Orders.
+□ Saul
 
----
+□ Spearmen
 
-## 22. What is the first scenario?
+□ Swordsmen
 
-Need one "proof of concept" battle.
+□ Slingers
 
-Ideal:
+□ Archers
 
-- Uses movement.
-- Uses reactions.
-- Uses terrain.
-- Uses command decisions.
+□ ~20 Orders
+
+□ Shared Attack Modifier Deck
+
+□ Printable cards
 
 ---
 
-# Phase 8: Presentation
+Prototype 0.2
 
-## 23. How much biblical flavor?
+□ Four factions
 
-Need decide:
+□ AI
 
-- Historical simulation?
-- Biblical adventure?
-- Tactical game inspired by Scripture?
+□ Scenario objectives
 
----
-
-## 24. How are faith elements handled?
-
-Guiding principle:
-
-Do not turn faith into a resource.
-
-Need define:
-
-- How miracles/events are represented.
-- How providence is handled.
-- What is thematic versus mechanical.
+□ Campaign skeleton
 
 ---
 
-# 25. What is the game's unique hook?
+Prototype 0.3
 
-Current candidate:
+Blind playtesting.
 
-"The army is your command deck."
+Balance.
 
-Need validate through playtesting.
+Rulebook.
+
+---
+
+# PLAYTESTING PLAN
+
+Stage 1
+
+Designer solo testing.
+
+Question:
+
+"Does it function?"
+
+---
+
+Stage 2
+
+Trusted friends.
+
+Question:
+
+"Is it fun?"
+
+---
+
+Stage 3
+
+Experienced strategy gamers.
+
+Question:
+
+"Can they break it?"
+
+---
+
+Stage 4
+
+Casual gamers.
+
+Question:
+
+"Can they learn it?"
+
+---
+
+Stage 5
+
+Local game stores.
+
+Board game clubs.
+
+Question:
+
+"Would people play this again?"
+
+---
+
+# AI'S ROLE
+
+AI should help with:
+
+- Probability analysis
+- Unit costing
+- Balance suggestions
+- Edge-case discovery
+- Simulated game states
+- Rule consistency
+
+Humans determine:
+
+- Fun
+- Clarity
+- Excitement
+- Emotional pacing
+- Replayability
+
+---
+
+# NORTH STAR
+
+Whenever adding a rule, ask:
+
+"Does this improve the experience of commanding a company?"
+
+If not,
+
+it probably doesn't belong.
+
+---
+
+# Suggested Repository Structure (Future)
+
+Once the GDD grows beyond ~20 pages, split it into focused documents:
+
+docs/
+├── 01 Vision.md
+├── 02 Design Pillars.md
+├── 03 Core Rules.md
+├── 04 Combat.md
+├── 05 Units.md
+├── 06 Orders.md
+├── 07 Campaign.md
+├── 08 AI.md
+├── 09 Scenarios.md
+├── 10 Playtesting.md
+├── Open Questions.md
+└── Changelog.md
+
+Keep this master GDD until the prototype is stable. Then, move each section into its own file and let your coding/design agent treat each Markdown file as a single source of truth for that subsystem. That makes it easier for the agent to modify Combat without accidentally changing Campaign, for example, and makes Git history much cleaner.
