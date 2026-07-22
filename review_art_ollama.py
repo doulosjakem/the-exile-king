@@ -40,6 +40,10 @@ EXPECTED_PROMPTS = {
     # Enemy Portraits
     "raider": "ONE PERSON ONLY, solo portrait, waist-up, Amalekite raider, bronze age Levantine nomadic desert warrior, dark windblown hair, weathered lean face, dusty red-brown wool cloak wrapped around body, leather tunic underneath, bronze-tipped spear in hand, curved knife at belt, hardened squinting expression, standing on sandy desert ground with rocky outcrops, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
     "chieftain": "ONE PERSON ONLY, solo portrait, waist-up, Amalekite chieftain, bronze age Levantine nomadic warlord, dark hair and gray-streaked beard, dark red-brown wool cloak trimmed with rough fringe, leather and simple bronze chest piece, weathered authoritative face, bronze short sword at hip, spear in hand, wrapped headdress, standing on rocky outcrop overlooking warriors, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "slinger_amalekite": "ONE PERSON ONLY, solo portrait, waist-up, Amalekite slinger, bronze age Levantine nomadic skirmisher, dark hair, dusty red-brown cloak wrapped loose, leather sling in hand with pouch of stones at hip, simple leather tunic, sandals, crouched low in mobile throwing stance, alert predatory expression, standing on sandy desert terrain, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer_amalekite": "ONE PERSON ONLY, solo portrait, waist-up, Amalekite mounted archer, bronze age Levantine nomadic horseman, dark hair, dusty red-brown cloak flowing, riding small hardy desert horse, composite bow drawn with arrow aimed, quiver strapped to horse flank, weathered focused expression, horse mid-stride on open desert plain, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "scout_amalekite": "ONE PERSON ONLY, solo portrait, waist-up, Amalekite scout, bronze age Levantine desert tracker, lean wind-hardened build, dark hair, dusty red-brown cloak patched and worn, short javelin in hand, leather sling at belt, small hide shield on back, sandals, crouched and scanning horizon, keen narrowed eyes, standing on rocky desert ridge, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "camel_rider_amalekite": "ONE PERSON ONLY, solo portrait, waist-up, Amalekite camel rider, bronze age Levantine desert warrior, dark hair, dusty red-brown cloak and headwrap, bronze-tipped spear held upright, riding tall dromedary camel, leather reins in hand, weathered stern expression, camel standing on sandy desert ground with distant mountains, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
     # Command Cards
     "swordsmen-advance": "scene in illuminated manuscript style, two bronze age Levantine Israelite swordsmen advancing in formation, bronze short swords raised, hide shields overlapping, dust at their heels, linen tunics and leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare",
     "archer-volley": "scene in illuminated manuscript style, two bronze age Levantine Israelite archers on ridge aiming forward, composite bows drawn, arrows ready to loose, linen tunics, leather arm bracers, quivers on backs, aged parchment background, ink outlines with muted watercolor wash in ochre and faded ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
@@ -60,6 +64,9 @@ EXPECTED_PROMPTS = {
     "end-turn-button": "rounded rectangle button shape, aged warm parchment color, dark ink border outline, flat medieval manuscript style, game UI element, hand-painted texture, isolated on transparent background, family friendly",
     "command-card-back": "blank aged parchment card, rectangular, ink border, hand-painted texture, family friendly",
     "card-frame-template": "blank rectangular playing card, aged parchment background, ornate decorative ink border in dark brown, thin horizontal line dividing the card into top and bottom halves, corner ornaments, medieval manuscript border style, no text, hand-painted board game card",
+    "hp_bar_bg": "thin horizontal bar shape, dark brown ink wash texture, rough hand-painted edges, game UI health bar background, isolated on transparent background, family friendly",
+    "hp_bar_fill": "thin horizontal bar shape, faded crimson red ink wash, rough hand-painted edges, game UI health bar fill, isolated on transparent background, family friendly",
+    "reward_panel": "large aged parchment panel texture, darker edges, vignette effect, ink border with corner ornaments, rounded rectangle shape, game UI panel, hand-painted texture, isolated on transparent background, family friendly",
     # Hex Tiles
     "hex_sand": "top-down view of a flat hexagonal tile, sandy desert terrain, warm beige and light brown, subtle parchment-like texture, very fine grain, watercolor wash with soft edges, tileable seamless pattern, board game style, hand-painted texture, no grid lines",
     "hex_rock": "top-down view of a flat hexagonal tile, rocky gravel and small stones, gray-brown and warm umber tones, parchment texture overlay, watercolor wash, tileable seamless pattern, board game style, hand-painted texture, no grid lines",
@@ -127,20 +134,20 @@ def find_duplicates(images, threshold=40):
 
 PROMPT_CHECK_FOLDERS = {
     "player-units", "unit-tokens", "davids", "amalekite", "amalekites", "standees",
-    "portraits", "cards", "assets", "box-art", "equipment", "ui-elements"
+    "portraits", "cards", "card", "assets", "box-art", "equipment", "ui-elements", "to_review"
 }
 
 PROMPT_ALIASES = {
-    "camel rider": "camel",
-    "camel-rider": "camel",
-    "camal rider": "camel",
-    "camal": "camel",
+    "camel rider": "camel_rider_amalekite",
+    "camel-rider": "camel_rider_amalekite",
+    "camal rider": "camel_rider_amalekite",
+    "camal": "camel_rider_amalekite",
     "chieftain amalekite": "chieftain",
     "amalekite chieftain": "chieftain",
     "amalekite raider": "raider",
-    "amalekite slinger": "slinger",
-    "amalekite archer": "archer",
-    "amalekite scout": "scout",
+    "amalekite slinger": "slinger_amalekite",
+    "amalekite archer": "archer_amalekite",
+    "amalekite scout": "scout_amalekite",
     "young bronze age israelite commander": "david",
     "israelite commander": "david",
     "bronze age israelite swordsman": "swordsman",
@@ -221,8 +228,8 @@ CHARACTER_KEYS = {
     "token_david", "token_swordsman", "token_spearman", "token_slinger",
     "token_archer", "token_scout", "token_chieftain_amalekite", "token_raider_amalekite",
     "token_refugee", "david", "swordsman", "spearman", "slinger", "archer",
-    "scout", "raider", "chieftain", "refugee", "slinger_amalekite", "archer_amalekite",
-    "scout_amalekite", "camel_rider_amalekite", "camel rider"
+    "scout", "raider", "chieftain", "refugee",
+    "slinger_amalekite", "archer_amalekite", "scout_amalekite", "camel_rider_amalekite"
 }
 TILE_KEYS = {"hex_sand", "hex_rock", "hex_grass", "grass", "rock", "sand"}
 UI_KEYS = {"end-turn-button", "command-card-back", "card-frame-template", "hp_bar_bg", "hp_bar_fill", "reward_panel"}
@@ -388,52 +395,130 @@ def decide(answers, expected_prompt=None, asset_type="generic"):
     while len(answers) < expected_count:
         answers.append("YES")
 
-    painted = answers[0]
-    earth = answers[1]
-    modern = answers[2]
-    blurry = answers[3]
-    comp = answers[4]
-    anatomy = answers[5] if expected_count >= 7 else "NO"
-    weapon_era = answers[6] if expected_count >= 8 else "NO"
-    prompt_match = answers[7] if expected_count >= 8 else "YES"
+    if asset_type == "tile":
+        painted, earth, modern, blurry, tile_shape, grid_lines, prompt_match = answers[:7]
+        score = 5
+        reasons = []
+        if blurry == "YES":
+            score -= 2
+            reasons.append("blurry/corrupted")
+        if modern == "YES":
+            score -= 3
+            reasons.append("modern object/text detected")
+        if tile_shape == "NO":
+            score -= 3
+            reasons.append("not a top-down flat hex tile")
+        if grid_lines == "YES":
+            score -= 2
+            reasons.append("visible grid lines/borders")
+        if expected_prompt and prompt_match == "NO":
+            score -= 2
+            reasons.append("does not match expected prompt")
+        score = max(1, score)
+        reason = "; ".join(reasons) if reasons else "all checks passed"
+        if modern == "YES" or blurry == "YES" or tile_shape == "NO" or grid_lines == "YES" or score <= 2:
+            return "TRASH", reason, score
+        return "KEEP", reason, score
 
-    score = 5
-    reasons = []
+    elif asset_type == "ui":
+        painted, earth, modern, blurry, shape, prompt_match = answers[:6]
+        score = 5
+        reasons = []
+        if blurry == "YES":
+            score -= 2
+            reasons.append("blurry/corrupted")
+        if modern == "YES":
+            score -= 3
+            reasons.append("modern object/text detected")
+        if shape == "NO":
+            score -= 2
+            reasons.append("wrong shape for element")
+        if expected_prompt and prompt_match == "NO":
+            score -= 2
+            reasons.append("does not match expected prompt")
+        score = max(1, score)
+        reason = "; ".join(reasons) if reasons else "all checks passed"
+        if modern == "YES" or blurry == "YES" or shape == "NO" or score <= 2:
+            return "TRASH", reason, score
+        return "KEEP", reason, score
 
-    if painted == "NO":
-        score -= 2
-        reasons.append("not hand-painted")
-    if earth == "NO":
-        score -= 1
-        reasons.append("colors off")
-    if modern == "YES":
-        score -= 3
-        reasons.append("modern object/text detected")
-    if blurry == "YES":
-        score -= 2
-        reasons.append("blurry/corrupted")
-    if comp == "NO":
-        score -= 1
-        reasons.append("composition off")
-    if anatomy == "YES":
-        score -= 3
-        reasons.append("anatomical defect")
-    if weapon_era == "YES":
-        score -= 3
-        reasons.append("anachronistic item")
-    if expected_prompt and prompt_match == "NO":
-        score -= 2
-        reasons.append("does not match expected prompt")
+    elif asset_type == "equipment":
+        painted, earth, modern, blurry, accurate, prompt_match = answers[:6]
+        score = 5
+        reasons = []
+        if blurry == "YES":
+            score -= 2
+            reasons.append("blurry/corrupted")
+        if modern == "YES":
+            score -= 3
+            reasons.append("modern object/text detected")
+        if accurate == "NO":
+            score -= 3
+            reasons.append("not historically accurate bronze age")
+        if expected_prompt and prompt_match == "NO":
+            score -= 2
+            reasons.append("does not match expected prompt")
+        score = max(1, score)
+        reason = "; ".join(reasons) if reasons else "all checks passed"
+        if modern == "YES" or blurry == "YES" or accurate == "NO" or score <= 2:
+            return "TRASH", reason, score
+        return "KEEP", reason, score
 
-    score = max(1, score)
-    reason = "; ".join(reasons) if reasons else "all checks passed"
+    elif asset_type in ("character", "card"):
+        painted, earth, modern, blurry, comp, anatomy, weapon_era, prompt_match = answers[:8]
+        score = 5
+        reasons = []
+        if painted == "NO":
+            score -= 2
+            reasons.append("not hand-painted")
+        if earth == "NO":
+            score -= 1
+            reasons.append("colors off")
+        if modern == "YES":
+            score -= 3
+            reasons.append("modern object/text detected")
+        if blurry == "YES":
+            score -= 2
+            reasons.append("blurry/corrupted")
+        if comp == "NO":
+            score -= 1
+            reasons.append("composition off")
+        if anatomy == "YES":
+            score -= 3
+            reasons.append("anatomical defect")
+        if weapon_era == "YES":
+            score -= 3
+            reasons.append("anachronistic item")
+        if expected_prompt and prompt_match == "NO":
+            score -= 2
+            reasons.append("does not match expected prompt")
+        score = max(1, score)
+        reason = "; ".join(reasons) if reasons else "all checks passed"
+        if modern == "YES" or blurry == "YES" or anatomy == "YES" or weapon_era == "YES" or score <= 2:
+            return "TRASH", reason, score
+        return "KEEP", reason, score
 
-    if modern == "YES" or blurry == "YES" or anatomy == "YES" or weapon_era == "YES" or score <= 2:
-        decision = "TRASH"
     else:
-        decision = "KEEP"
-
-    return decision, reason, score
+        blurry, modern, comp, prompt_match = (answers + ["YES"] * 4)[:4]
+        score = 5
+        reasons = []
+        if blurry == "YES":
+            score -= 2
+            reasons.append("blurry/corrupted")
+        if modern == "YES":
+            score -= 3
+            reasons.append("modern object/text detected")
+        if comp == "NO":
+            score -= 1
+            reasons.append("composition off")
+        if expected_prompt and prompt_match == "NO":
+            score -= 2
+            reasons.append("does not match expected prompt")
+        score = max(1, score)
+        reason = "; ".join(reasons) if reasons else "all checks passed"
+        if modern == "YES" or blurry == "YES" or score <= 2:
+            return "TRASH", reason, score
+        return "KEEP", reason, score
 
 
 def main():
