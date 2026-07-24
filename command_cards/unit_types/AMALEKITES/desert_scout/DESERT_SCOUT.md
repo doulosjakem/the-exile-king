@@ -6,34 +6,32 @@
 
 ---
 
-## Formation: DESERT FLANK / EYES IN THE SAND
+## Formation: DESERT FLANK / EYES ON THE TARGET
 
 ### TOP ACTION — Desert Flank
 
-**Activations:** 2
+Activations: 2
 
-When an enemy enters line of sight:
-
-Immediately attack before normal initiative order.
+When an enemy enters line of sight of a Desert Scout,
+the Scout attacks immediately before normal initiative order.
 
 Deal 1 additional damage.
 
 **Purpose:**
-Ambush and punish careless movement.
+Ambush and punish careless enemy movement.
 
 ---
 
-### BOTTOM ACTION — Eyes in the Sand
+### BOTTOM ACTION — Eyes on the Target
 
-**Activations:** 3
+Activations: 3
 
-Choose an enemy unit.
-Reveal: Movement, Attack, Special Ability.
+Choose an enemy unit. Reveal: Movement, Attack, HP.
 
-Desert Scouts gain +1 Attack against that unit.
+All Desert Scouts gain +1 Attack against that unit this turn.
 
 **Purpose:**
-Intelligence advantage.
+Intelligence gathering that grants a combat bonus.
 
 ---
 

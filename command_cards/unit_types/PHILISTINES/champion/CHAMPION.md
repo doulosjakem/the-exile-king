@@ -31,7 +31,7 @@ Champion gains +3 Defense this turn.
 
 Champion cannot be targeted by non-champion or non-hero units.
 
-Purpose:
+**Purpose:**
 Focus fire only on the most dangerous threats.
 
 ---

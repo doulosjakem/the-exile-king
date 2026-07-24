@@ -30,7 +30,7 @@ Available in **MVP** (scenario allies only).
 - Jonathan's Followers are scenario-locked: they are not available in all scenarios.
 - Card removal works the same as David's Company (remove matching card when last unit of a type is eliminated).
 
-- **Faction-wide formation cards:** See [formations/JONAATHANS_FOLLOWERS.md](formations/JONAETHANS_FOLLOWERS.md)
+- **Faction-wide formation cards:** See [formations/JONATHANS_FOLLOWERS.md](formations/JONATHANS_FOLLOWERS.md)
 
 ---
 

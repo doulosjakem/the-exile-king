@@ -49,6 +49,6 @@ Double defense through mutual support.
 ## Notes
 
 - Royal Guard is the heaviest infantry unit in Saul's Kingdom.
-- Shield Wall is the premier defensive formation — makes the front line nearly impenetrable.
-- Iron Clad adds limited mobility to what is normally a slow unit.
+- Ancient Shield is the premier defensive formation — makes the front line nearly impenetrable and punishes attackers.
+- Iron Wall adds mutual support defense with an adjacent Royal Guard.
 - High discipline means they are reliable but inflexible — they cannot be kited.

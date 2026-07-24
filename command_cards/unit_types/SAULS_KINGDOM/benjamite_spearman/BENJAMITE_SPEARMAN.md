@@ -50,5 +50,5 @@ Elite defensive formation that anchors the line alongside Royal Guards.
 ## Notes
 
 - Benjamite Spearmen are elevated spearmen — better than standard spearmen.
-- Tribe Charge is an ambush tool — uses their +1 bonus against infantry.
-- Stand Firm makes them resilient anchors for the mid-line.
+- Tribe Charge is an anti-infantry tool — uses their +2 bonus against Infantry.
+- Hold Ranks makes them resilient anchors for the mid-line alongside Royal Guards.

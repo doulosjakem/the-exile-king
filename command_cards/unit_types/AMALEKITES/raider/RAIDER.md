@@ -53,5 +53,5 @@ Dispersion that makes Raiders hard to pin down with melee, but still vulnerable 
 
 - Raiders are the core melee unit of the Amalekites.
 - Raid Charge embodies the Amalekite raiding strategy — fast, hard, then gone.
-- Fall Back makes them extremely difficult to pin down.
+- Scatter makes them extremely difficult to pin down with melee (but still vulnerable to ranged).
 - Low discipline (1) and HP (1) mean they are unreliable individually but dangerous in groups.

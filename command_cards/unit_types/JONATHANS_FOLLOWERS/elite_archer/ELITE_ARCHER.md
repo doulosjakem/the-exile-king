@@ -6,30 +6,30 @@
 
 ---
 
-## Formation: SNIPER'S POSITION / COVERED VOLLEY
+## Formation: SNIPER'S VOLLEY / COVERED RETREAT
 
-### TOP ACTION — Sniper's Position
+### TOP ACTION — Sniper's Volley
 
-**Activations:** 3
+Activations: 3
 
-Choose 1 enemy unit.
-Deal 2 ranged damage (1d6+1).
+Choose the enemy unit with the highest Attack value.
+Elite Archers attack that unit with +2 Attack.
 
 **Purpose:**
-Precision elimination of high-value targets.
+Precision elimination of the most dangerous enemy.
 
 ---
 
-### BOTTOM ACTION — Covered Volley
+### BOTTOM ACTION — Covered Retreat
 
-**Activations:** 2
+Activations: 2
 
-All Elite Archers may attack once.
+Elite Archers gain +2 Defense this turn.
 
-They gain +1 Defense while doing so (protected positioning).
+May move 1 space after defending without provoking opportunity attacks.
 
 **Purpose:**
-Controlled area suppression.
+Survive and reposition away from melee threats.
 
 ---
 

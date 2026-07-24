@@ -53,6 +53,6 @@ Mobile area denial that damages everything in its path.
 ## Notes
 
 - Chariots are a unique unit type — fast and devastating but expensive.
-- Chariot Charge is the premier offensive card — speed + power + pursuit.
-- Wheel Formation is a disruption tool — damages all adjacent enemies while repositioning.
+- War Charge is the premier offensive card — speed + power + pursuit.
+- Wheel of War is a disruption tool — damages all adjacent enemies while repositioning.
 - Chariots ignore terrain penalties, making them effective across all map types.

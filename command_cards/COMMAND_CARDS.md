@@ -10,7 +10,7 @@
 ### Factions
 1. [David's Company](DAVIDS_COMPANY.md) — Primary player faction (MVP)
 2. [Saul's Kingdom](SAULS_KINGDOM.md) — Enemy → Neutral → Ally
-3. [Jonathan's Followers](JONAATHANS_FOLLOWERS.md) — Temporary ally (scenario)
+3. [Jonathan's Followers](JONATHANS_FOLLOWERS.md) — Temporary ally (scenario)
 4. [Philistines](PHILISTINES.md) — Enemy or Ally
 5. [Amalekites](AMALEKITES.md) — Major campaign enemy
 6. [Minor Factions](MINOR_FACTIONS.md) — Expansion (Girzites, Geshurites, Gezerites, etc.)
@@ -34,8 +34,8 @@
 | Israelite Archers | Saul's Kingdom | [unit_types/SAULS_KINGDOM/israelite_archer/ISRAELITE_ARCHER.md](unit_types/SAULS_KINGDOM/israelite_archer/ISRAELITE_ARCHER.md) |
 | Officers | Saul's Kingdom | [unit_types/SAULS_KINGDOM/OFFICER.md](unit_types/SAULS_KINGDOM/OFFICER.md) |
 | Elite Bodyguards | Saul's Kingdom | [unit_types/SAULS_KINGDOM/elite_bodyguard/ELITE_BODYGUARD.md](unit_types/SAULS_KINGDOM/elite_bodyguard/ELITE_BODYGUARD.md) |
-| Loyal Guards | Jonathan's Followers | [unit_types/JONAATHANS_FOLLOWERS/loyal_guard/LOYAL_GUARD.md](unit_types/JONAATHANS_FOLLOWERS/loyal_guard/LOYAL_GUARD.md) |
-| Elite Archers | Jonathan's Followers | [unit_types/JONAATHANS_FOLLOWERS/elite_archer/ELITE_ARCHER.md](unit_types/JONAATHANS_FOLLOWERS/elite_archer/ELITE_ARCHER.md) |
+| Loyal Guards | Jonathan's Followers | [unit_types/JONATHANS_FOLLOWERS/loyal_guard/LOYAL_GUARD.md](unit_types/JONATHANS_FOLLOWERS/loyal_guard/LOYAL_GUARD.md) |
+| Elite Archers | Jonathan's Followers | [unit_types/JONATHANS_FOLLOWERS/elite_archer/ELITE_ARCHER.md](unit_types/JONATHANS_FOLLOWERS/elite_archer/ELITE_ARCHER.md) |
 | Achish | Philistines | [unit_types/PHILISTINES/achish/ACHISH.md](unit_types/PHILISTINES/achish/ACHISH.md) |
 | Philistine Spearmen | Philistines | [unit_types/PHILISTINES/spearman/SPEARMAN.md](unit_types/PHILISTINES/spearman/SPEARMAN.md) |
 | Philistine Archers | Philistines | [unit_types/PHILISTINES/archer/ARCHER.md](unit_types/PHILISTINES/archer/ARCHER.md) |
