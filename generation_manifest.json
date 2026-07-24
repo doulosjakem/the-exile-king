@@ -1,0 +1,15 @@
+[
+  {
+    "id": "equipment-bronze-sword",
+    "prompt_key": "bronze-sword",
+    "output_subfolder": "equipment",
+    "count": 8,
+    "seed": 2021002530,
+    "files": [
+      "equipment\\bronze-sword_00010_.png",
+      "equipment\\bronze-sword_00011_.png",
+      "equipment\\bronze-sword_00012_.png",
+      "equipment\\bronze-sword_00013_.png"
+    ]
+  }
+]
