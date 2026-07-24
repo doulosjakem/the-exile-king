@@ -159,6 +159,15 @@
 
 ## Technical Ideas
 
+### Sunderfolk-Style Co-Op (Post-MVP)
+- One TV/PC build (authoritative hex grid, full board)
+- Thin web client on phones (player-specific hand + unit selection only)
+- Transport: Unity Game Server Hosting or equivalent relay
+- Turn-based card structure is well-suited for thin-client sync
+- Risk: doubles build surface (two clients + server authority)
+- Requires refactoring `CardAbilityResolver` and `PlayerInputHandler` from local-only to network authority
+- Not recommended until single-player MVP is proven fun and balanced
+
 ### Replay System
 - Record battles for review
 - Could be shared as shareable replays

@@ -178,9 +178,10 @@ Beyond "eliminate commander," scenarios can have varied objectives:
 | Status | Factions |
 |---|---|
 | **Playable (MVP)** | David's Company, Saul's Army, Amalekites |
-| **Scenario allies** | Jonathan's Men, Philistines (select scenarios) |
-| **Expansion** | Girzites, Southern Geshurites, Judah Militia, Keilah |
-| **Late campaign** | Nabal's Household, Priests of Nob, Philistines (full), Mighty Men |
+| **Scenario allies (MVP)** | Jonathan's Men |
+| **Playable (Post-MVP)** | Philistines, Judah Militia, Mighty Men commanders |
+| **Expansion (Post-MVP)** | Girzites, Southern Geshurites, Gezerites, Keilah, Nabal's Household, Priests of Nob |
+| **Late campaign (Post-MVP)** | Full Philistine Wars, Amalekite campaign, Joab/Amasa/Asahel |
 
 ---
 

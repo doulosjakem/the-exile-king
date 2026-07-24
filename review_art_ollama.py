@@ -372,14 +372,14 @@ def get_expected_count(asset_type):
     return counts.get(asset_type, 4)
 
 
-def review_image(model, image_path, expected_prompt=None, expected_key=None, timeout=180):
+def review_image(model, image_path, expected_prompt=None, expected_key=None, timeout=600):
     prompt = build_prompt(expected_prompt, expected_key)
     payload = {
         "model": model,
         "prompt": prompt,
         "images": [encode_image(image_path)],
         "stream": False,
-        "options": {"temperature": 0.1, "num_ctx": 4096}
+        "options": {"temperature": 0.1, "num_ctx": 4096, "num_gpu": 0}
     }
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(

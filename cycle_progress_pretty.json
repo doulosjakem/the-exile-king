@@ -1,0 +1,939 @@
+﻿{
+    "last_index":  8,
+    "results":  [
+                    {
+                        "item_id":  "equipment-bronze-sword",
+                        "prompt_key":  "bronze-sword",
+                        "timestamp":  "2026-07-22 15:29:26",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  14,
+                        "results":  [
+                                        {
+                                            "filename":  "equipment\\bow_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00002_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00003_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00004_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00005_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00006_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00007_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00008_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00009_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\camel_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\leather-shield_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\sling_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\spear_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        }
+                                    ]
+                    },
+                    {
+                        "item_id":  "equipment-leather-shield",
+                        "prompt_key":  "leather-shield",
+                        "timestamp":  "2026-07-22 15:41:26",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  14,
+                        "results":  [
+                                        {
+                                            "filename":  "equipment\\bow_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00002_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00003_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00004_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00005_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00006_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00007_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00008_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00009_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\camel_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\leather-shield_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\sling_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\spear_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        }
+                                    ]
+                    },
+                    {
+                        "item_id":  "equipment-spear",
+                        "prompt_key":  "spear",
+                        "timestamp":  "2026-07-22 15:53:28",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  14,
+                        "results":  [
+                                        {
+                                            "filename":  "equipment\\bow_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00002_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00003_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00004_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00005_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00006_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00007_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00008_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00009_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\camel_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\leather-shield_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\sling_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\spear_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        }
+                                    ]
+                    },
+                    {
+                        "item_id":  "equipment-sling",
+                        "prompt_key":  "sling",
+                        "timestamp":  "2026-07-22 16:05:33",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  14,
+                        "results":  [
+                                        {
+                                            "filename":  "equipment\\bow_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00002_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00003_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00004_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00005_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00006_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00007_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00008_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00009_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\camel_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\leather-shield_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\sling_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\spear_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        }
+                                    ]
+                    },
+                    {
+                        "item_id":  "equipment-bow",
+                        "prompt_key":  "bow",
+                        "timestamp":  "2026-07-22 16:17:40",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  14,
+                        "results":  [
+                                        {
+                                            "filename":  "equipment\\bow_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00002_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00003_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00004_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00005_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00006_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00007_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00008_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00009_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\camel_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\leather-shield_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\sling_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\spear_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        }
+                                    ]
+                    },
+                    {
+                        "item_id":  "equipment-camel",
+                        "prompt_key":  "camel",
+                        "timestamp":  "2026-07-22 16:29:40",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  14,
+                        "results":  [
+                                        {
+                                            "filename":  "equipment\\bow_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00002_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00003_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00004_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00005_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00006_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00007_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00008_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\bronze-sword_00009_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\camel_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\leather-shield_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\sling_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        },
+                                        {
+                                            "filename":  "equipment\\spear_00001_.png",
+                                            "decision":  "ERROR",
+                                            "score":  0,
+                                            "reason":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e",
+                                            "answers":  [
+
+                                                        ],
+                                            "raw_response":  "ERROR: \u003curlopen error [WinError 10061] No connection could be made because the target machine actively refused it\u003e"
+                                        }
+                                    ]
+                    },
+                    [
+
+                    ],
+                    {
+                        "item_id":  "card-archer-volley",
+                        "prompt_key":  "archer-volley",
+                        "timestamp":  "2026-07-22 16:50:01",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  0,
+                        "results":  [
+
+                                    ]
+                    },
+                    {
+                        "item_id":  "card-archer-volley",
+                        "prompt_key":  "archer-volley",
+                        "timestamp":  "2026-07-22 17:04:47",
+                        "generated":  8,
+                        "keep":  0,
+                        "trash":  0,
+                        "errors":  0,
+                        "results":  [
+
+                                    ]
+                    }
+                ],
+    "timestamp":  "2026-07-22 17:04:47"
+}

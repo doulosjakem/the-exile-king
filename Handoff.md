@@ -1,83 +1,98 @@
-# Handoff — The Anointed Exile
+# Handoff: Art Pipeline State
 
-> **Status:** Art pipeline ready. Code is pre-pivot. Card system needs implementation.
+## Project
+The Anointed Exile — board game with hand-painted bronze-age Levantine art style.
+Model: DreamShaper XL Lightning in ComfyUI portable.
+Review: Ollama minicpm-v:8b vision model.
 
----
+## What's Done
 
-## Current State
+### 1. Full Review Complete
+- **788 unique images** reviewed across entire output folder
+- **460 KEEP, 328 TRASH, 0 errors**
+- Report: `D:\Jake\ComfyUI_windows_portable\ComfyUI\output\ComfyUI\annointed-exile\art_review_report.json`
+- Review script: `D:\the-exile-king\review_art_ollama.py`
 
-**Built (Sprints 0–2):** Hex grid, procedural tiles, unit visuals, selection/movement, basic AI, damage popups, mobile input, run manager. All committed.
+### 2. Generation Queue Ready
+- **27 queue items** in `D:\the-exile-king\generation_queue.json`
+- Covers: tiles (30), equipment (48), cards (72), UI (30), portraits (24)
+- All items have `batch_size=1` (single images to avoid 6GB VRAM overflow)
 
-**Built (Command Card system — Sprints 3–6):** `UnitType.cs`, `CommandCard.cs`, `CardDeckManager.cs`, `CardAbilityResolver.cs`, `CardTurnController.cs` (new — select 2 cards, resolve Top(A)+Bottom(B)), `GameBootstrap.cs` (new — runtime wiring so the game runs from the near-empty scene), `UnitData.cs`/`EncounterData.cs`. TurnManager/GameSetup/GameUIController/RunManager/AIDirector refactored for the card turn flow (Selection → Resolution → Done → Enemy). Player UI shows the hand, pick-2 + Reveal, per-half targeting, Deck/Spent/Lost counters, and reward panel wired to RunManager.
+### 3. Generation Script Ready
+- `D:\the-exile-king\run_comfyui_generation.py` — standalone batch generator
+- `D:\the-exile-king\run_item_cycle.py` — item-by-item generate+review cycle
+- Both use portable ComfyUI Python: `D:\Jake\ComfyUI_windows_portable\python_embeded\python.exe`
+- Checkpoint: `dreamshaperXL_sfwLightningDPMSDE.safetensors`
 
-**Known MVP gaps (Sprint 7, not yet done):** card/deck state does not persist between battles in a run (`CardDeckManager.InitializeDeck` rebuilds each battle, so Lost cards from a prior battle are cleared); recruited units are not added to `currentPlayerRoster` so they don't carry to the next battle; ScriptableObject card *assets* in `Assets/Resources/CommandCards/` are not created (GameSetup builds them at runtime instead).
+### 4. Prompt Fixes Applied
+- Equipment prompts: removed "single person holding" → now "isolated single object centered on pure white background, clean cutout"
+- Added negative prompts for equipment: `person, people, human, hands, fingers, body, figure, face, background, scenery, aged parchment, board game card art`
+- Asset-type-aware positive/negative suffixes in generation script
 
-**IMPORTANT — project not yet opened in Unity:** there is no `Library/` and no `.cs.meta` files, and the scene only contains Camera/Light/Volume. `GameBootstrap` (via `[RuntimeInitializeOnLoadMethod]`) instantiates all managers and a runtime unit prefab on load, so the game is runnable once Unity imports the project. Open the project in Unity 6 before expecting a build.
+## What's Left
 
----
+### Generation Queue (27 items, ~162 images total)
+Already generated in earlier runs:
+- 10x grass tiles (hex_grass_00001-00010)
+- 10x rock tiles (hex_rock_00001-00010)
+- 10x sand tiles (hex_sand_00001-00010)
+- 9x bronze-sword (00001-00009, last one with fixed prompt)
+- 1x leather-shield, 1x spear, 1x sling, 1x bow, 1x camel
+- Standees, portraits, cards, UI from earlier sessions
 
-## Art Pipeline (Post-Pivot Thread Work)
+### Remaining to generate
+Most equipment, all cards, all UI, all Amalekite portraits still need fresh generation with fixed prompts.
 
-**PROMPTS.md** — 40 era-locked prompts across 7 batches:
-- Batch 1: 8 command card art scenes
-- Batch 2: 1 card frame template
-- Batch 3: 12 unit portraits (player + Amalekite)
-- Batch 4: 9 unit token icons
-- Batch 5: 3 hex tiles
-- Batch 6: 4 UI elements
-- Batch 7: 3 cover art variants
+## Critical Constraint
+**GTX 1060 6GB VRAM** — ComfyUI SDXL (~5GB) and Ollama vision (~5.5GB) CANNOT run simultaneously. Must alternate:
+1. Start ComfyUI → generate batch → stop ComfyUI
+2. Review with Ollama → fix prompts if needed
+3. Repeat
 
-All prompts include era-locking: "bronze age Levantine", "NOT medieval, NOT fantasy, NOT European", Mediterranean features, specific material details (hide shields, bronze-tipped spears, linen tunics, leather vests).
+## How to Continue
 
-**ART_GENERATION_GUIDE.md** — updated with:
-- Era-locked prompts for all 40 generation jobs
-- Corrected universal negative prompt (adds chainmail, longbow, knight, crusader, etc.)
-- ComfyUI setup with `--lowvram` for GTX 1060
-- Output folder structure with per-prompt subfolders and `to_trash/` sorting
-- Complete rejection criteria (3-tier check: Anatomy/era → Readability → Style match)
-- Review scoring system: 1–4 scale across 6 criteria
-- Folder mapping table for all 40 prompts
+### Option A: Run item-by-item cycle
+```powershell
+python "D:\the-exile-king\run_item_cycle.py"
+```
+This auto-generates one queue item, stops ComfyUI, reviews all images, suggests prompt fixes, and moves to next item. Progress saved to `D:\the-exile-king\cycle_progress.json`.
 
-**ComfyUI:** `D:\Jake\ComfyUI_windows_portable\run_nvidia_gpu.bat` updated with `--lowvram`. Model: DreamShaper XL Lightning. Output: `D:\Jake\ComfyUI_windows_portable\ComfyUI\output\exile_king_art\`.
+### Option B: Manual batch control
+```powershell
+# 1. Start ComfyUI (visible window recommended for debugging)
+D:\Jake\ComfyUI_windows_portable\python_embeded\python.exe -s ComfyUI\main.py --lowvram --windows-standalone-build -WorkingDirectory D:\Jake\ComfyUI_windows_portable
 
-**Images generated:** None yet — ready to start batch generation.
+# 2. Generate a batch
+python "D:\the-exile-king\run_comfyui_generation.py" --no-launch --items 3
 
----
+# 3. Stop ComfyUI (close window or kill process)
 
-## What To Do Next
+# 4. Review specific batch
+python "D:\the-exile-king\review_art_ollama.py" --output review.json
+```
 
-### 1. Open the project in Unity 6 and verify the card flow runs (FIRST)
-The card system is now implemented in code, but the project has **never been opened in Unity** (no `Library/`, no `.cs.meta`). `GameBootstrap` instantiates all managers + a runtime unit prefab on load, so it should run once Unity imports. Before any further work:
-- Open in Unity 6 LTS, let it import/compile.
-- Press Play → expect David + 2 Scouts vs Amalekites, hand of cards at the bottom, tap 2 → Reveal → resolve Top(A)+Bottom(B) → End Turn → AI acts.
-- Fix any console errors (most likely candidates: URP shader/material references, or an ordering edge case).
+## Key Files
+- `D:\the-exile-king\PROMPTS.md` — prompt reference
+- `D:\the-exile-king\generation_queue.json` — what to generate
+- `D:\the-exile-king\review_art_ollama.py` — review script with expected prompts
+- `D:\the-exile-king\run_comfyui_generation.py` — generation runner
+- `D:\the-exile-king\run_item_cycle.py` — full cycle
+- `D:\the-exile-king\CYCLE_PROGRESS.md` — human-readable progress
 
-### 2. Art Generation (parallel / independent thread)
-Follow ART_GENERATION_GUIDE.md. Order: tokens → tiles → UI → portraits → card art → frame → cover. Batch size 1, lowvram mode. Review with rejection criteria. None generated yet.
+## Known Issues
+- Ollama times out when ComfyUI is loaded (VRAM conflict)
+- Large batches (>1) can OOM on 6GB cards
+- Some old outputs in root output/ need moving to proper subfolders
+- `to_duplicates` folders got nested deeply from repeated dedupe runs
 
-### 3. Card System — remaining MVP gaps (Sprint 7)
-The current build works for a single battle but does **not** yet persist run state:
-- `CardDeckManager.InitializeDeck` rebuilds the deck every battle → Lost cards from a prior battle are cleared. Persist the deck Spent/Lost state across battles in a run.
-- Recruited/upgraded units are not added to `RunManager.currentPlayerRoster` → they don't carry into the next battle. Wire recruit/upgrade rewards into the roster used by `GameSetup.SpawnBattle`.
-- Create the `Assets/Resources/CommandCards/` ScriptableObject **assets** (per CARDS.md) instead of building cards at runtime in `GameSetup`, so art can be assigned and decks authored in-editor.
-- Wire victory/defeat screens to RunManager flow (currently only the basic panel shows).
+## Estimated Time Remaining
+With batch_size=1, ~4 min per image (generation + startup/shutdown):
+- ~120 images needing generation × 4 min = ~8 hours
+- Plus review time after each batch
 
-### 4. Card ability polish (post-basic)
-- Attack cards currently auto-target the nearest enemy in range. Optionally let the player pick the specific target (resolver already exposes `GetValidAttackTargets`).
-- Card art, ability icons, and "Lose" skull styling from CARDS.md are not yet shown.
-- Grey-out / remove cards whose linked unit type was eliminated (casualty removal already moves them to Lost).
-
-See GDD.md for card system spec. See CARDS.md for card list. See ROADMAP.md for the full sprint plan.
-
----
-
-## Key Context
-
-- **Era:** Bronze age Levantine. NOT medieval, NOT European. Mediterranean features, dark hair, linen/leather/wool, bronze weapons.
-- **Style:** Hand-painted ink + watercolor on parchment. Muted earth tones.
-- **Platform:** Unity 6 LTS, PC + mobile. GTX 1060 6GB for art.
-- **Focus:** Art generation first, then card system implementation.
-
----
-
-*Last updated: 2026-07-17*
+## User Preferences
+- Wants asset-type-aware review (not just character art)
+- Wants prompt comparison when possible
+- Wants continuous automation, not manual steps
+- Fine with it taking days
+- Wants periodic status updates via CYCLE_PROGRESS.md

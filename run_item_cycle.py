@@ -21,9 +21,10 @@ from review_art_ollama import EXPECTED_PROMPTS
 COMFYUI_DIR = r"D:\Jake\ComfyUI_windows_portable\ComfyUI"
 COMFYUI_ROOT = r"D:\Jake\ComfyUI_windows_portable"
 COMFYUI_PYTHON = r"D:\Jake\ComfyUI_windows_portable\python_embeded\python.exe"
-OUTPUT_BASE = os.path.join(COMFYUI_DIR, r"output\ComfyUI\annointed-exile")
+OUTPUT_BASE = r"G:\My Drive\Projects\Games\Exile King\Art and Assets"
 CHECKPOINT = "dreamshaperXL_sfwLightningDPMSDE.safetensors"
 OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "minicpm-v:8b")
 QUEUE_PATH = r"D:\the-exile-king\generation_queue.json"
 PROGRESS_PATH = r"D:\the-exile-king\cycle_progress.json"
 REVIEW_REPORT = os.path.join(OUTPUT_BASE, "_review_report.json")
@@ -141,7 +142,7 @@ def build_workflow(item, seed):
     }
 
 
-def submit_workflow(workflow):
+def submit_workflow(workflow, retries=5):
     payload = {"prompt": workflow}
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
@@ -150,8 +151,15 @@ def submit_workflow(workflow):
         headers={"Content-Type": "application/json"},
         method="POST"
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8")).get("prompt_id")
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                return json.loads(resp.read().decode("utf-8")).get("prompt_id")
+        except Exception as e:
+            last_err = e
+            time.sleep(5)
+    return None
 
 
 def wait_for_queue_empty(timeout=600):
@@ -169,6 +177,18 @@ def wait_for_queue_empty(timeout=600):
     return False
 
 
+def wait_for_output_file(prefix, timeout=300):
+    comfy_output = os.path.join(COMFYUI_DIR, "output")
+    start = time.time()
+    initial = len([f for f in os.listdir(comfy_output) if f.startswith(prefix)])
+    while time.time() - start < timeout:
+        current = len([f for f in os.listdir(comfy_output) if f.startswith(prefix)])
+        if current > initial:
+            return True
+        time.sleep(3)
+    return False
+
+
 def move_outputs(item):
     prefix = item.get("filename_prefix", "ComfyUI")
     subfolder = item.get("output_subfolder", "")
@@ -181,19 +201,21 @@ def move_outputs(item):
     for f in files:
         src = os.path.join(comfy_output, f)
         dest = os.path.join(dest_dir, f)
-        if not os.path.exists(dest):
-            shutil.move(src, dest)
-            moved.append(os.path.relpath(dest, OUTPUT_BASE))
+        if os.path.exists(dest):
+            os.remove(dest)
+        shutil.move(src, dest)
+        moved.append(os.path.relpath(dest, OUTPUT_BASE))
     return moved
 
 
 def start_comfyui():
-    cmd = [COMFYUI_PYTHON, "-s", "ComfyUI\\main.py", "--lowvram", "--windows-standalone-build"]
+    hard_cleanup()
+    cmd = [COMFYUI_PYTHON, "-s", "ComfyUI\\main.py", "--disable-auto-launch", "--lowvram", "--reserve-vram", "2.0", "--windows-standalone-build"]
     proc = subprocess.Popen(cmd, cwd=COMFYUI_ROOT, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return proc
 
 
-def wait_for_comfyui(timeout=180):
+def wait_for_comfyui(timeout=300):
     start = time.time()
     while time.time() - start < timeout:
         try:
@@ -213,13 +235,47 @@ def stop_comfyui(proc):
     except Exception:
         pass
     try:
-        proc.wait(timeout=15)
+        proc.wait(timeout=20)
     except subprocess.TimeoutExpired:
         proc.kill()
+    time.sleep(10)
+
+
+def hard_cleanup():
+    for name in ["ollama app", "ollama", "llama-server"]:
+        subprocess.run(["taskkill", "/F", "/T", "/IM", f"{name}.exe"], capture_output=True)
+    current_pid = os.getpid()
+    try:
+        out = subprocess.check_output(["tasklist", "/FO", "CSV", "/NH"]).decode("utf-8", errors="ignore")
+        for line in out.splitlines():
+            if "python.exe" not in line.lower():
+                continue
+            parts = [p.strip('"') for p in line.split(",")]
+            if len(parts) >= 2 and int(parts[1]) != current_pid:
+                subprocess.run(["taskkill", "/F", "/T", "/PID", parts[1]], capture_output=True)
+    except Exception:
+        pass
     time.sleep(5)
 
 
-def ollama_review(image_path, expected_prompt=None, asset_type="generic", timeout=180):
+def stop_ollama():
+    hard_cleanup()
+
+
+def start_ollama():
+    stop_ollama()
+    subprocess.Popen(["ollama", "serve"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    start = time.time()
+    while time.time() - start < 60:
+        try:
+            urllib.request.urlopen("http://127.0.0.1:11434/", timeout=2)
+            return True
+        except Exception:
+            time.sleep(2)
+    return False
+
+
+def ollama_review(image_path, expected_prompt=None, asset_type="generic", timeout=600):
     prompt_parts = [
         "You are an art reviewer for a board game. Judge ONLY these concrete visual features. Do NOT try to identify who or what is depicted.",
         "1. Does it look hand-painted (watercolor/ink)? YES/NO",
@@ -257,11 +313,11 @@ def ollama_review(image_path, expected_prompt=None, asset_type="generic", timeou
         img_b64 = base64.b64encode(f.read()).decode("utf-8")
 
     payload = {
-        "model": "minicpm-v:8b",
+        "model": OLLAMA_MODEL,
         "prompt": prompt,
         "images": [img_b64],
         "stream": False,
-        "options": {"temperature": 0.1, "num_ctx": 2048}
+        "options": {"temperature": 0.1, "num_ctx": 2048, "num_gpu": -1}
     }
 
     try:
@@ -275,6 +331,20 @@ def ollama_review(image_path, expected_prompt=None, asset_type="generic", timeou
             result = json.loads(resp.read().decode("utf-8"))
             return result.get("response", "").strip()
     except urllib.error.HTTPError as e:
+        if e.code == 500:
+            payload["options"]["num_gpu"] = 0
+            try:
+                req = urllib.request.Request(
+                    OLLAMA_URL,
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers={"Content-Type": "application/json"},
+                    method="POST"
+                )
+                with urllib.request.urlopen(req, timeout=timeout) as resp:
+                    result = json.loads(resp.read().decode("utf-8"))
+                    return "[FALLBACK CPU] " + result.get("response", "").strip()
+            except Exception:
+                pass
         return f"ERROR: HTTP {e.code}"
     except Exception as e:
         return f"ERROR: {str(e)}"
@@ -335,7 +405,7 @@ def decide(answers, asset_type="generic"):
     return "KEEP", reason, score
 
 
-def review_batch(item):
+def review_batch(item, files=None):
     subfolder = item.get("output_subfolder", "")
     target_dir = os.path.join(OUTPUT_BASE, subfolder)
     if not os.path.isdir(target_dir):
@@ -345,11 +415,12 @@ def review_batch(item):
     expected = EXPECTED_PROMPTS.get(prompt_key, prompt_key)
     asset_type = classify_asset_type(item)
 
-    files = sorted([
-        f for f in os.listdir(target_dir)
-        if f.lower().endswith((".png", ".jpg", ".jpeg"))
-        and not f.startswith(".")
-    ])
+    if files is None:
+        files = sorted([
+            f for f in os.listdir(target_dir)
+            if f.lower().endswith((".png", ".jpg", ".jpeg"))
+            and not f.startswith(".")
+        ])
     if not files:
         return []
 
@@ -456,12 +527,12 @@ def load_progress():
     return {"last_index": 0, "results": [], "retry_items": []}
 
 
-def process_item(item, base_seed=1000):
-    item_id = item.get("id", "unknown")
-    prompt_key = item.get("prompt_key", "unknown")
+def process_item(item, base_seed=1000, skip_review=False, comfy_proc=None):
+    item_id = item["id"]
+    prompt_key = item["prompt_key"]
     count = item.get("count", 1)
-    prefix = item.get("filename_prefix", "ComfyUI")
     subfolder = item.get("output_subfolder", "")
+    prefix = item.get("filename_prefix", "ComfyUI")
 
     print(f"\n{'='*60}")
     print(f"ITEM: {item_id}")
@@ -470,37 +541,130 @@ def process_item(item, base_seed=1000):
     print(f"Output: {subfolder}")
     print(f"{'='*60}")
 
+    we_started_comfy = comfy_proc is None
+
     # Generation phase
     print("\n--- GENERATION ---")
-    proc = start_comfyui()
-    try:
-        if not wait_for_comfyui():
-            print("ERROR: ComfyUI did not start")
-            return False, []
-
-        dest_dir = os.path.join(OUTPUT_BASE, subfolder)
-        os.makedirs(dest_dir, exist_ok=True)
-
-        for i in range(count):
-            seed = base_seed + i
-            batch_item = dict(item)
-            batch_item["batch_size"] = 1
-            workflow = build_workflow(batch_item, seed)
-            prompt_id = submit_workflow(workflow)
-            print(f"  Generated image {i+1}/{count} (seed {seed})")
-
-        if wait_for_queue_empty():
-            moved = move_outputs(item)
-            print(f"  Moved {len(moved)} files to {subfolder}")
+    dest_dir = os.path.join(OUTPUT_BASE, subfolder)
+    os.makedirs(dest_dir, exist_ok=True)
+    existing = [f for f in os.listdir(dest_dir) if f.startswith(prefix)]
+    if len(existing) >= count:
+        print(f"  SKIP: {len(existing)}/{count} files already exist in {subfolder}")
+        generated = len(existing)
+        moved_files = existing
+    else:
+        if we_started_comfy:
+            hard_cleanup()
+            proc = start_comfyui()
+            if not wait_for_comfyui():
+                print("ERROR: ComfyUI did not start")
+                return False, {
+                    "item_id": item_id,
+                    "prompt_key": prompt_key,
+                    "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "generated": 0,
+                    "keep": 0,
+                    "trash": 0,
+                    "errors": 1,
+                    "results": []
+                }
         else:
-            print("  WARNING: timeout waiting for generation")
-    finally:
-        print("  Stopping ComfyUI to free VRAM...")
-        stop_comfyui(proc)
+            proc = comfy_proc
+            if not wait_for_comfyui(timeout=10):
+                print("  ERROR: ComfyUI server unreachable between items")
+                return False, {
+                    "item_id": item_id,
+                    "prompt_key": prompt_key,
+                    "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "generated": 0,
+                    "keep": 0,
+                    "trash": 0,
+                    "errors": 1,
+                    "results": []
+                }
+
+        try:
+            failed = 0
+            generated = 0
+            moved_files = []
+            for i in range(count):
+                if not wait_for_comfyui(timeout=10):
+                    print("  ERROR: ComfyUI server unreachable")
+                    break
+                seed = base_seed + i
+                batch_item = dict(item)
+                batch_item["batch_size"] = 1
+                workflow = build_workflow(batch_item, seed)
+                prompt_id = submit_workflow(workflow)
+                if not prompt_id:
+                    failed += 1
+                    print(f"  FAILED image {i+1}/{count} (seed {seed})")
+                    if failed >= 3:
+                        print("  Too many generation failures, aborting item")
+                        break
+                    continue
+
+                if not wait_for_queue_empty(timeout=600):
+                    failed += 1
+                    print(f"  FAILED: queue did not complete for seed {seed}")
+                    if failed >= 3:
+                        print("  Too many generation failures, aborting item")
+                        break
+                    continue
+
+                time.sleep(5)
+
+                expected_name = f"{prefix}_{seed:05d}_.png"
+                if wait_for_output_file(prefix, timeout=120):
+                    print(f"  Generated image {i+1}/{count} (seed {seed})")
+                    generated += 1
+                else:
+                    failed += 1
+                    print(f"  FAILED: timeout waiting for {prefix} output")
+                    if failed >= 3:
+                        print("  Too many generation failures, aborting item")
+                        break
+                    continue
+
+            moved = move_outputs(item)
+            moved_files = moved
+            print(f"  Moved {len(moved)} files to {subfolder}")
+            if moved:
+                generated = len(moved)
+        finally:
+            if we_started_comfy:
+                print("  Stopping ComfyUI to free VRAM...")
+                stop_comfyui(proc)
+                time.sleep(15)
 
     # Review phase
+    if skip_review:
+        print("\n--- REVIEW SKIPPED (--skip-review) ---")
+        return True, {
+            "item_id": item_id,
+            "prompt_key": prompt_key,
+            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "generated": generated,
+            "keep": 0,
+            "trash": 0,
+            "errors": 0,
+            "results": []
+        }
+
     print("\n--- REVIEW ---")
-    results = review_batch(item)
+    if not start_ollama():
+        print("  ERROR: Ollama did not start")
+        return True, {
+            "item_id": item_id,
+            "prompt_key": prompt_key,
+            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "generated": generated,
+            "keep": 0,
+            "trash": 0,
+            "errors": 1,
+            "results": []
+        }
+    results = review_batch(item, files=[os.path.basename(f) for f in moved_files])
     keep, trash, errors = summarize(results)
 
     # Prompt fix suggestions
@@ -525,7 +689,7 @@ def process_item(item, base_seed=1000):
         "item_id": item_id,
         "prompt_key": prompt_key,
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
-        "generated": count,
+        "generated": generated,
         "keep": keep,
         "trash": trash,
         "errors": errors,
@@ -539,6 +703,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--queue", default=QUEUE_PATH)
     parser.add_argument("--start-index", type=int, default=0)
+    parser.add_argument("--skip-review", action="store_true", help="generate only, skip ollama review phase")
     parser.add_argument("--base-seed", type=int, default=1000)
     parser.add_argument("--max-retries", type=int, default=2)
     args = parser.parse_args()
@@ -557,26 +722,41 @@ def main():
     print()
 
     cycle = 0
-    while idx < len(queue):
-        item = queue[idx]
-        base_seed = args.base_seed + cycle * 1000
+    comfy_proc = None
+    try:
+        if not args.skip_review:
+            hard_cleanup()
+            comfy_proc = start_comfyui()
+            if not wait_for_comfyui(timeout=300):
+                print("ERROR: ComfyUI did not start")
+                return
+            print("ComfyUI started for generation phase\n")
 
-        success, item_report = process_item(item, base_seed=base_seed)
-        all_results.append(item_report)
+        while idx < len(queue):
+            item = queue[idx]
+            base_seed = args.base_seed + cycle * 1000
 
-        state = {
-            "last_index": idx + 1,
-            "results": all_results,
-            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-        }
-        save_progress(state)
+            success, item_report = process_item(
+                item,
+                base_seed=base_seed,
+                skip_review=args.skip_review,
+                comfy_proc=comfy_proc,
+            )
+            all_results.append(item_report)
 
-        if not success:
-            print("\nGeneration failed. Stopping.")
-            break
+            state = {
+                "last_index": idx + 1,
+                "results": all_results,
+                "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+            }
+            save_progress(state)
 
-        # Retry logic for bad items
-        if item_report["trash"] > 0 and cycle < args.max_retries:
+            if not success:
+                print("\nGeneration failed. Moving to next item.")
+                idx += 1
+                cycle += 1
+                continue
+
             retry_count = 0
             while retry_count < args.max_retries and item_report["trash"] > 0:
                 retry_count += 1
@@ -595,23 +775,32 @@ def main():
                     print(f"  Auto-fixed: {key}")
 
                 retry_seed = base_seed + retry_count * 50
-                success, item_report = process_item(item, base_seed=retry_seed)
+                success, item_report = process_item(
+                    item,
+                    base_seed=retry_seed,
+                    skip_review=args.skip_review,
+                    comfy_proc=comfy_proc,
+                )
                 all_results.append(item_report)
                 state["last_index"] = idx + 1
                 state["results"] = all_results
                 save_progress(state)
 
-        idx += 1
-        cycle += 1
+            idx += 1
+            cycle += 1
 
-        # Status update
-        total_keep = sum(1 for r in all_results if r.get("keep", 0) > 0)
-        total_trash = sum(r.get("trash", 0) for r in all_results)
-        print(f"\n{'='*60}")
-        print(f"STATUS: {idx}/{len(queue)} items complete")
-        print(f"Total KEEP: {total_keep}, TRASH: {total_trash}")
-        print(f"Progress saved to: {PROGRESS_PATH}")
-        print(f"{'='*60}")
+            # Status update
+            total_keep = sum(1 for r in all_results if r.get("keep", 0) > 0)
+            total_trash = sum(r.get("trash", 0) for r in all_results)
+            print(f"\n{'='*60}")
+            print(f"STATUS: {idx}/{len(queue)} items complete")
+            print(f"Total KEEP: {total_keep}, TRASH: {total_trash}")
+            print(f"Progress saved to: {PROGRESS_PATH}")
+            print(f"{'='*60}")
+    finally:
+        if comfy_proc is not None:
+            print("\nStopping ComfyUI...")
+            stop_comfyui(comfy_proc)
 
     print(f"\n{'='*60}")
     print(f"CYCLE COMPLETE")
