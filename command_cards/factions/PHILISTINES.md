@@ -32,6 +32,8 @@ Playable in **Post-MVP**.
 - Chariots are a unique unit type — they have special rules for movement and shock damage.
 - Champions are elite duelists — they target enemy commanders or high-value units preferentially.
 
+- **Faction-wide formation cards:** See [formations/PHILISTINES.md](formations/PHILISTINES.md)
+
 ---
 
 ## Formation Card Rules (Faction-Wide)

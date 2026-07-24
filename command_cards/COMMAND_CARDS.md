@@ -99,3 +99,4 @@ Purpose:
 - **GDD.md** — Core game design, faction rosters, unit stats, combat rules
 - **CARDS.md (Section: Card Removal by Casualty)** — When units die, matching command cards are removed from the deck
 - **POST_MVP_GDD.md** — Post-MVP faction expansions and additional unit types
+- **formations/** — Faction-wide and unit-specific formation cards for each non-David faction

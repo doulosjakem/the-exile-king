@@ -54,6 +54,8 @@ RULE:
 - **Cards chosen per turn:** 2.
 - **Resolve:** Top of card A + Bottom of card B.
 
+**Faction-wide formation cards** are included in each unit-type doc (see `unit_types/DAVIDS_COMPANY/`).
+
 ---
 
 ## Card Removal by Casualty

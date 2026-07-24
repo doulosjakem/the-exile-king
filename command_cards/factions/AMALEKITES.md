@@ -31,6 +31,8 @@ Available in **MVP** (enemy only).
 - Amalekites favor fast attacks, raids on objectives, and disengagement when outnumbered.
 - Camel Riders have unique movement rules (ignore terrain penalties, can cross desert quickly).
 
+- **Faction-wide formation cards:** See [formations/AMALEKITES.md](formations/AMALEKITES.md)
+
 ---
 
 ## Formation Card Rules (Faction-Wide)

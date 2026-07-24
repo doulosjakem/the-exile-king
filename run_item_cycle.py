@@ -210,7 +210,7 @@ def move_outputs(item):
 
 def start_comfyui():
     hard_cleanup()
-    cmd = [COMFYUI_PYTHON, "-s", "ComfyUI\\main.py", "--disable-auto-launch", "--lowvram", "--reserve-vram", "2.0", "--windows-standalone-build"]
+    cmd = [COMFYUI_PYTHON, "-s", "ComfyUI\\main.py", "--disable-auto-launch", "--windows-standalone-build"]
     proc = subprocess.Popen(cmd, cwd=COMFYUI_ROOT, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return proc
 
@@ -604,18 +604,8 @@ def process_item(item, base_seed=1000, skip_review=False, comfy_proc=None):
                         break
                     continue
 
-                if not wait_for_queue_empty(timeout=600):
-                    failed += 1
-                    print(f"  FAILED: queue did not complete for seed {seed}")
-                    if failed >= 3:
-                        print("  Too many generation failures, aborting item")
-                        break
-                    continue
-
-                time.sleep(5)
-
                 expected_name = f"{prefix}_{seed:05d}_.png"
-                if wait_for_output_file(prefix, timeout=120):
+                if wait_for_output_file(prefix, timeout=600):
                     print(f"  Generated image {i+1}/{count} (seed {seed})")
                     generated += 1
                 else:
@@ -724,13 +714,12 @@ def main():
     cycle = 0
     comfy_proc = None
     try:
-        if not args.skip_review:
-            hard_cleanup()
-            comfy_proc = start_comfyui()
-            if not wait_for_comfyui(timeout=300):
-                print("ERROR: ComfyUI did not start")
-                return
-            print("ComfyUI started for generation phase\n")
+        hard_cleanup()
+        comfy_proc = start_comfyui()
+        if not wait_for_comfyui(timeout=300):
+            print("ERROR: ComfyUI did not start")
+            return
+        print("ComfyUI started for generation phase\n")
 
         while idx < len(queue):
             item = queue[idx]
