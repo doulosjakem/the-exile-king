@@ -13,7 +13,7 @@
 **Activations:** 3
 
 Choose 1 adjacent allied unit.
-That unit gains +1 Attack and +1 Defense until your next turn.
+That unit gains +2 Attack and +1 Defense until your next turn.
 
 **Purpose:**
 Enhance a key unit's combat effectiveness.

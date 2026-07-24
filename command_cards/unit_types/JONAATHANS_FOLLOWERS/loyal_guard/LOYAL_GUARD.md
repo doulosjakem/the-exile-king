@@ -6,29 +6,31 @@
 
 ---
 
-## Formation: LOYAL CHARGE / GUARD FORMATION
+## Formation: LOYAL CHARGE / GUARD WALL
 
 ### TOP ACTION — Loyal Charge
 
 **Activations:** 3
 
-Loyal Guard may move 1 space and attack.
+Loyal Guard may move 2 spaces and attack.
+
 If the attack defeats an enemy, gain +1 Attack on the next attack this turn.
 
 **Purpose:**
-Fanatical frontline fighters that gain momentum.
+Momentum-based offensive that chains kills.
 
 ---
 
-### BOTTOM ACTION — Guard Formation
+### BOTTOM ACTION — Guard Wall
 
-**Activations:** 2
+Activations: 2
 
-Gain +2 Defense this turn.
-Adjacent allied units gain +1 Defense until your next turn.
+Loyal Guard gains +2 Defense this turn.
+
+Adjacent allied units (including non-Jonathan's Followers) gain +1 Defense until your next turn.
 
 **Purpose:**
-Protective defensive cluster.
+Defensive anchor that protects the whole formation.
 
 ---
 

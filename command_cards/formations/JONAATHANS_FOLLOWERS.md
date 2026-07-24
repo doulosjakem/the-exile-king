@@ -67,7 +67,7 @@ Momentum-based offensive that chains kills.
 **BOTTOM ACTION — Guard Wall**
 Activations: 2
 
-Loyal Guard gains +3 Defense this turn.
+Loyal Guard gains +2 Defense this turn.
 
 Adjacent allied units (including non-Jonathan's Followers) gain +1 Defense until your next turn.
 

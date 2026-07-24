@@ -6,31 +6,33 @@
 
 ---
 
-## Formation: RAID CHARGE / FALL BACK
+## Formation: RAID CHARGE / SCATTER
 
 ### TOP ACTION — Raid Charge
 
 **Activations:** 3
 
-Raiders may move 2 spaces and attack.
+Raiders may move 3 spaces and attack.
 
-Gain +1 Attack for this attack.
+Gain +1 Attack if this attack targets a unit with lower HP than the Raider.
 
 **Purpose:**
-Fast hit-and-run offensive strike.
+Pick off weakened enemies with speed and ferocity.
 
 ---
 
-### BOTTOM ACTION — Fall Back
+### BOTTOM ACTION — Scatter
 
-**Activations:** 2
+Activations: 2
 
-Raiders may move 3 spaces.
+All Raiders may move 3 spaces.
 
 They cannot be targeted by melee until your next turn.
 
+They can still be targeted by ranged attacks.
+
 **Purpose:**
-Disengage and reposition.
+Dispersion that makes Raiders hard to pin down with melee, but still vulnerable to ranged fire.
 
 ---
 

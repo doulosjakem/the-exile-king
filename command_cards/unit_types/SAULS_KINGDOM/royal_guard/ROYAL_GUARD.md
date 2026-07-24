@@ -6,32 +6,30 @@
 
 ---
 
-## Formation Card: IRON SHIELD PHALANX / IRON CLAD
+## Formation Card: ANCIENT SHIELD / IRON WALL
 
-### TOP ACTION — Iron Shield Phalanx
+### TOP ACTION — Ancient Shield
 
 **Activations:** 3
 
-When attacked by melee:
+When Royal Guard is attacked by melee, gain +3 Defense.
 
-- Gain +3 Defense this turn (heavy iron armor absorbs blows).
-- The attacker suffers 1 retaliation damage.
+After the attack, the attacker loses 1 Activation next turn.
 
 **Purpose:**
 Armored frontline that punishes melee attackers and punishes them for trying.
 
 ---
 
-### BOTTOM ACTION — Iron Clad
+### BOTTOM ACTION — Iron Wall
 
-**Activations:** 2
+Activations: 2
 
-Royal Guard may move 1 space after attacking.
-
-Gain +1 Attack for that attack.
+Royal Guard may form a wall with another adjacent Royal Guard.
+Both gain +2 Defense until your next turn.
 
 **Purpose:**
-Controlled offensive push with heavy armor.
+Double defense through mutual support.
 
 ---
 

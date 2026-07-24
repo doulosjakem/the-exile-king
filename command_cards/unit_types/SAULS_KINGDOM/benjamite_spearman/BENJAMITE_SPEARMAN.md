@@ -6,31 +6,31 @@
 
 ---
 
-## Formation Card: TRIBE CHARGE / STAND FIRM
+## Formation: TRIBE CHARGE / HOLD RANKS
 
 ### TOP ACTION — Tribe Charge
 
 **Activations:** 3
 
-Benjamite Spearmen may move 1 space and attack.
+Benjamite Spearmen may move 2 spaces and attack.
 
-Gain +1 Attack if targeting Swordsmen or other Infantry units.
+If the target is an Infantry unit, gain +2 Attack instead of +1.
 
 **Purpose:**
-Anti-infantry specialist — break enemy lines.
+Anti-infantry specialization using tribal fury.
 
 ---
 
-### BOTTOM ACTION — Stand Firm
+### BOTTOM ACTION — Hold Ranks
 
-**Activations:** 2
+Activations: 2
 
-Gain +2 Defense against melee attacks this turn.
+Benjamite Spearmen gain +2 Defense.
 
-If an adjacent ally is attacked instead, gain +1 Defense.
+Adjacent friendly Infantry units also gain +1 Defense.
 
 **Purpose:**
-Defensive wall that shares protection.
+Elite defensive formation that anchors the line alongside Royal Guards.
 
 ---
 

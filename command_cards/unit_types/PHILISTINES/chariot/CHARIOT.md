@@ -6,34 +6,33 @@
 
 ---
 
-## Formation: CHARIOT CHARGE / WHEEL FORMATION
+## Formation: WAR CHARGE / WHEEL OF WAR
 
-### TOP ACTION — Chariot Charge
+### TOP ACTION — War Charge
 
 **Activations:** 3
 
 Chariot may move up to 4 spaces and attack.
 
-Gain +1 Attack for this attack.
+Gain +2 Attack for this attack.
 
-If the attack defeats an enemy,
-may move 2 additional spaces.
+If this attack defeats an enemy, may move 2 additional spaces.
 
 **Purpose:**
-Shock damage and rapid battlefield traversal.
+Devastating shock assault with pursuit capability.
 
 ---
 
-### BOTTOM ACTION — Wheel Formation
+### BOTTOM ACTION — Wheel of War
 
-**Activations:** 2
+Activations: 2
 
-Chariot may move 2 spaces.
+Chariot may move 3 spaces.
 
-All adjacent enemy units suffer 1 damage.
+All enemy units within 1 space of the Chariot's path suffer 1 damage.
 
 **Purpose:**
-Crowd control and disruption via mobility.
+Mobile area denial that damages everything in its path.
 
 ---
 

@@ -50,6 +50,29 @@ Solidify the front line with layered defense.
 
 ## Unit-Specific Formations
 
+### Abner: COMMAND / BATTLE CRY
+
+**TOP ACTION — Command**
+Activations: 3
+
+Issue an order to all units of one type within 2 spaces of Abner.
+Those units may activate immediately this turn.
+
+**Purpose:**
+Concentrate force on a critical sector.
+
+---
+
+**BOTTOM ACTION — Battle Cry**
+Activations: 2
+
+All Saul's Kingdom units within 2 spaces of Abner gain +1 Attack this turn.
+
+**Purpose:**
+Boost the entire front line simultaneously.
+
+---
+
 ### Royal Guard: ANCIENT SHIELD / IRON WALL
 
 **TOP ACTION — Ancient Shield**
@@ -168,6 +191,8 @@ Active shield for the army's commander.
 Activations: 3
 
 When an adjacent enemy attacks any Saul's Kingdom unit, the Elite Bodyguard may instead take that damage.
+
+The Elite Bodyguard is eliminated after intercepting.
 
 **Purpose:**
 Sacrificial defense that absorbs hits for the army.

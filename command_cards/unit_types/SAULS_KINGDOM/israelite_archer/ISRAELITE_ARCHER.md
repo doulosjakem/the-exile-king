@@ -12,9 +12,9 @@
 
 **Activations:** 3
 
-All Israelite Archers target the same enemy.
+All Israelite Archers attack the same enemy.
 
-Gain +1 Attack.
+Gain +1 total Attack for each Archer in range.
 
 **Purpose:**
 Concentrated volley on a single target.
@@ -23,11 +23,9 @@ Concentrated volley on a single target.
 
 ### BOTTOM ACTION — Hold the Range
 
-**Activations:** 2
+Activations: 2
 
-Archers gain +2 Defense against melee attacks this turn.
-
-They cannot be targeted by melee this turn.
+Archers cannot be targeted by melee this turn.
 
 **Purpose:**
 Survive being closed on by melee units.

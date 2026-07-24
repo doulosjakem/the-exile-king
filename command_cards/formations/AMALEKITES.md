@@ -37,7 +37,7 @@ Superior mobility that outmaneuvers slower armies.
 
 ---
 
-### FORMATION: HARASSMENT CAMPAIGN
+### Formation: HARASSMENT CAMPAIGN
 
 **Activations:** 2
 
@@ -70,11 +70,12 @@ Commander leads from the front, striking hard and repositioning.
 **BOTTOM ACTION — Desert Ambush**
 Activations: 2
 
-Choose an enemy unit within 3 spaces.
+Chieftain attacks an adjacent enemy unit.
+
 Deal 1 damage and push the target 2 spaces.
 
 **Purpose:**
-Disruption from range that breaks enemy formations.
+Disrupt enemy formations at melee range.
 
 ---
 

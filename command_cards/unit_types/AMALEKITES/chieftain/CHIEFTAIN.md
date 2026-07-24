@@ -24,13 +24,14 @@ Strike fast and disengage before retaliation.
 
 ### BOTTOM ACTION — Desert Ambush
 
-**Activations:** 2
+Activations: 2
 
-Choose an enemy unit within 3 spaces.
-Deal 1 damage and push the target 1 space.
+Chieftain attacks an adjacent enemy unit.
+
+Deal 1 damage and push the target 2 spaces.
 
 **Purpose:**
-Disrupt enemy formations from range.
+Disrupt enemy formations at melee range.
 
 ---
 

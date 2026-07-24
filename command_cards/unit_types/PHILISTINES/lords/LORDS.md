@@ -42,4 +42,4 @@ Army-wide buff from the lord's authority.
 - Lords of the Philistines are scenario-specific variants with unique abilities.
 - Each lord is a lord-type commander with different flavor but similar function.
 - The Generic Lord deck above provides a template; individual lords may have unique effects.
-- Command range (3 spaces) exceeds Achish's (2 spaces), reflecting higher authority.
+- Lords have equal command range to Achish (3 spaces) but a broader army-wide buff (+1 Atk/+1 Def vs Achish's +2 Def only).

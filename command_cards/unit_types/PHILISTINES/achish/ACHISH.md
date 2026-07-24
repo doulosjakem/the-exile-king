@@ -6,28 +6,28 @@
 
 ---
 
-## Formation: LORD'S WILL / PHILISTINE ORDER
+## Formation: LORD'S DECREE / DIVINE RIGHT
 
-### TOP ACTION — Lord's Will
+### TOP ACTION — Lord's Decree
 
-**Activations:** 3
+Activations: 3
 
-Issue a command to all Philistine units within 2 spaces of Achish:
+Issue a command to all Philistine units within 3 spaces.
 Those units may activate immediately this turn.
 
 **Purpose:**
-Command authority across the battlefield.
+Broad command authority that keeps the army moving.
 
 ---
 
-### BOTTOM ACTION — Philistine Order
+### BOTTOM ACTION — Divine Right
 
-**Activations:** 2
+Activations: 2
 
-Achish may move 2 spaces. Adjacent allies gain +1 Defense until your next turn.
+All Philistine units within 3 spaces of Achish gain +2 Defense until your next turn.
 
 **Purpose:**
-Commander stays at the front, anchoring the formation.
+Commander aura that makes nearby units harder to kill.
 
 ---
 
@@ -48,5 +48,5 @@ Commander stays at the front, anchoring the formation.
 ## Notes
 
 - Achish is a Philistine lord — powerful commander with aura effects.
-- Lord's Will is the ultimate command card — lets an entire faction activate at once.
-- Philistine Order anchors the front line with heavy defensive buff.
+- Lord's Decree is the ultimate command card — lets an entire faction activate at once.
+- Divine Right anchors the front line with heavy defensive buff.

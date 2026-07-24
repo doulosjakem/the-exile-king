@@ -6,7 +6,7 @@
 
 ---
 
-## Formation: DESERT STORM / HARASSMENT
+## Formation: DESERT STORM / STONE GALLOP
 
 ### TOP ACTION — Desert Storm
 
@@ -14,24 +14,25 @@
 
 All Amalekite Slingers attack the same enemy.
 
-Gain +1 Attack on this attack.
+Gain +1 total Attack for each Slinger in range.
 
 **Purpose:**
-Concentrated ranged fire on a single target.
+Concentrated ranged fire that stacks with numbers.
 
 ---
 
-### BOTTOM ACTION — Harassment
+### BOTTOM ACTION — Stone Galop
 
-**Activations:** 2
+Activations: 2
 
-Choose an enemy unit within range.
-Deal 1 damage.
+Slingers may move 2 spaces and attack once.
 
-The Slingers may move 2 spaces afterward.
+Movement does not trigger opportunity attacks this turn.
+
+After attacking, Slingers must move at least 1 space further or suffer 1 damage.
 
 **Purpose:**
-Hit and run from a distance.
+Mobile ranged harassment that punishes static positioning — stay active or die.
 
 ---
 
