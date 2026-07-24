@@ -1,6 +1,6 @@
 # Generation + Review Cycle Progress
 
-**Started:** 2026-07-24 16:28:36
+**Started:** 2026-07-24 16:41:19
 **Mode:** Generation batch
 **Current GPU:** GTX 1060 6GB
 **ComfyUI flags:** `--disable-auto-launch --lowvram --reserve-vram 2.0 --windows-standalone-build`
@@ -9,8 +9,8 @@
 
 ## Current Status
 
-**Cycle state:** generating
-**Current item:** portrait-amalekite-chieftain
-**Current queue index:** 1 / 224
-**Images for current item:** 2 / 8
-**Base seed:** 1625416482
+**Cycle state:** complete
+**Current item:** portrait-amalekite-slinger
+**Current queue index:** 3 / 224
+**Images for current item:** 8 / 8
+**Base seed:** 1128336804
