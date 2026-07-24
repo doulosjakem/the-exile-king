@@ -1,6 +1,6 @@
 # Generation + Review Cycle Progress
 
-**Started:** 2026-07-24 13:33:30
+**Started:** 2026-07-24 13:41:53
 **Mode:** Generation batch
 **Current GPU:** GTX 1060 6GB
 **ComfyUI flags:** `--disable-auto-launch --lowvram --reserve-vram 2.0 --windows-standalone-build`
@@ -9,8 +9,8 @@
 
 ## Current Status
 
-**Cycle state:** generating
-**Current item:** portrait-amalekite-chieftain
-**Current queue index:** 31 / 152
-**Images for current item:** 2 / 8
-**Base seed:** 969805727
+**Cycle state:** queue ready
+**Original items remaining:** 122 (position 31–152 + 57 formation cards)
+**Formation cards:** 57 queued (appended at end, MVP factions only)
+**Total queue:** 179 items
+**Next action:** Run `python run_comfyui_generation.py --no-launch --no-shutdown`
