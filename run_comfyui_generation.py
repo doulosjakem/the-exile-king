@@ -18,6 +18,8 @@ COMFYUI_ROOT = r"D:\Jake\ComfyUI_windows_portable"
 COMFYUI_PYTHON = r"D:\Jake\ComfyUI_windows_portable\python_embeded\python.exe"
 OUTPUT_BASE = os.path.join(COMFYUI_DIR, r"output\ComfyUI\annointed-exile")
 CHECKPOINT = "dreamshaperXL_sfwLightningDPMSDE.safetensors"
+CYCLE_PROGRESS = os.path.join(r"D:\the-exile-king", "CYCLE_PROGRESS.md")
+GOOGLE_DRIVE_ROOT = r"G:\My Drive\ArtOutput\annointed-exile"
 
 UNIVERSAL_NEGATIVE = "photorealistic, hyperrealistic, realistic skin texture, photograph, cinematic lighting, ray tracing, 3d render, octane render, unity engine, video game screenshot, modern clothing, plate armor, steel armor, chainmail, scale armor, fantasy armor, elaborate armor, longbow, long sword, greatsword, crossguard, medieval helmet, horned helmet, winged helmet, knight, crusader, viking, samurai, European castle, stone castle, heraldry, coat of arms, shield with cross, shield with lion, glowing, neon, bright colors, anime, manga, cartoon, digital art, illustration, signature, watermark, text, logo, ugly, deformed, blurry, low quality, worst quality, bad anatomy, extra limbs, merged body, duplicate, clone, two people, three people, group, crowded, person, people, human, hands, fingers, nsfw, gore, blood"
 
@@ -51,6 +53,9 @@ def load_prompts():
 def resolve_prompt(prompt_key):
     if prompt_key in EXPECTED_PROMPTS:
         return EXPECTED_PROMPTS[prompt_key]
+    normalized = prompt_key.replace("-", "_")
+    if normalized in EXPECTED_PROMPTS:
+        return EXPECTED_PROMPTS[normalized]
     return prompt_key.replace("-", " ")
 
 def classify_asset_type(item):
@@ -100,8 +105,6 @@ def build_workflow(item, seed):
     
     width = item.get("width", 512)
     height = item.get("height", 512)
-    count = item.get("count", 1)
-    batch_size = item.get("batch_size", max(1, count))
     steps = item.get("steps", 4)
     cfg = item.get("cfg", 3)
     prefix = item.get("filename_prefix", "ComfyUI")
@@ -133,7 +136,7 @@ def build_workflow(item, seed):
             "inputs": {
                 "width": width,
                 "height": height,
-                "batch_size": item.get("batch_size", count)
+                "batch_size": 1
             }
         },
         "6": {
@@ -224,6 +227,43 @@ def move_outputs(item, manifest_entry):
     return moved
 
 
+def upload_to_google_drive(src_path, dest_relative):
+    if not os.path.isfile(src_path):
+        return None
+    dest = os.path.join(GOOGLE_DRIVE_ROOT, dest_relative)
+    os.makedirs(os.path.dirname(dest), exist_ok=True)
+    shutil.copy2(src_path, dest)
+    return dest
+
+
+def update_cycle_progress(item_id, idx, total_items, count, moved_count, status="generating", seed=None, error=None):
+    now = time.strftime("%Y-%m-%d %H:%M:%S")
+    lines = [
+        "# Generation + Review Cycle Progress",
+        "",
+        f"**Started:** {now}",
+        "**Mode:** Generation batch",
+        f"**Current GPU:** GTX 1060 6GB",
+        "**ComfyUI flags:** `--disable-auto-launch --lowvram --reserve-vram 2.0 --windows-standalone-build`",
+        "**Batch size:** 1 image at a time, sequential",
+        "**Review:** deferred",
+        "",
+        "## Current Status",
+        "",
+        f"**Cycle state:** {status}",
+        f"**Current item:** {item_id}",
+        f"**Current queue index:** {idx} / {total_items}",
+        f"**Images for current item:** {moved_count} / {count}",
+    ]
+    if seed is not None:
+        lines.append(f"**Base seed:** {seed}")
+    if error:
+        lines.append(f"**Last error:** {error}")
+    content = "\n".join(lines) + "\n"
+    with open(CYCLE_PROGRESS, "w", encoding="utf-8") as f:
+        f.write(content)
+
+
 def start_comfyui():
     cmd = [COMFYUI_PYTHON, "-s", "ComfyUI\\main.py", "--lowvram", "--windows-standalone-build"]
     proc = subprocess.Popen(cmd, cwd=COMFYUI_ROOT, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -257,12 +297,17 @@ def main():
     parser.add_argument("--manifest", default=r"D:\the-exile-king\generation_manifest.json")
     parser.add_argument("--no-launch", action="store_true", help="assume ComfyUI already running")
     parser.add_argument("--no-shutdown", action="store_true", help="leave ComfyUI running after queue")
+    parser.add_argument("--limit", type=int, default=0, help="limit number of queue items to process")
+    parser.add_argument("--limit-images", type=int, default=0, help="limit total images generated")
     args = parser.parse_args()
 
     load_prompts()
 
     with open(args.queue, "r", encoding="utf-8") as f:
         queue = json.load(f)
+
+    if args.limit > 0:
+        queue = queue[:args.limit]
 
     print(f"=== ComfyUI Generation Runner ===")
     print(f"Queue items: {len(queue)}")
@@ -286,9 +331,8 @@ def main():
         for idx, item in enumerate(queue):
             item_id = item.get("id", f"item-{idx}")
             count = item.get("count", 1)
-            batch_size = item.get("batch_size", max(1, count))
             base_seed = hash(item_id + str(time.time())) % (2**31)
-            print(f"[{idx+1}/{total_items}] {item_id} ({count} images, batch={batch_size}) ... ", end="", flush=True)
+            print(f"[{idx+1}/{total_items}] {item_id} ({count} images) ... ", end="", flush=True)
             moved_all = []
             for i in range(count):
                 seed = base_seed + i
@@ -297,7 +341,15 @@ def main():
                 wait_for_prompt(prompt_id)
                 moved = move_outputs(item, {})
                 moved_all.extend(moved)
+                update_cycle_progress(item_id, idx + 1, total_items, count, len(moved_all), status="generating", seed=base_seed)
+                for rel_path in moved:
+                    try:
+                        src_path = os.path.join(OUTPUT_BASE, rel_path)
+                        upload_to_google_drive(src_path, rel_path)
+                    except Exception as e:
+                        print(f"\n  GD upload warning: {e}")
             print(f"done ({len(moved_all)} files)")
+            update_cycle_progress(item_id, idx + 1, total_items, count, count, status="complete", seed=base_seed)
             manifest.append({
                 "id": item_id,
                 "prompt_key": item.get("prompt_key"),
@@ -314,6 +366,7 @@ def main():
     with open(args.manifest, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
+    update_cycle_progress("-", total_items, total_items, 0, 0, status="complete")
     print(f"\n=== GENERATION COMPLETE ===")
     print(f"Manifest saved to: {args.manifest}")
     return 0

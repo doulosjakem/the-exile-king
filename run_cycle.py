@@ -16,6 +16,9 @@ import base64
 import re
 
 sys.path.insert(0, r"D:\the-exile-king")
+from run_comfyui_generation import (
+    build_workflow, submit_workflow, move_outputs, wait_for_prompt
+)
 from review_art_ollama import EXPECTED_PROMPTS, load_expected_prompts
 
 COMFYUI_DIR = r"D:\Jake\ComfyUI_windows_portable\ComfyUI"
@@ -460,19 +463,17 @@ def generation_phase(queue_items, base_seed=1000):
                 if f.startswith(prefix) and not f.startswith(".")
             ]) if os.path.isdir(dest_dir) else 0
 
+            moved_all = []
             for i in range(count):
                 seed = base_seed + idx * 100 + i
                 batch_item = dict(item)
                 batch_item["batch_size"] = 1
                 workflow = build_workflow(batch_item, seed)
                 prompt_id = submit_workflow(workflow)
-
-            if wait_for_queue_empty():
-                moved = move_outputs(item)
-                print(f"done ({len(moved)} moved, {existing} pre-existing)")
-            else:
-                print("TIMEOUT")
-                return False
+                wait_for_prompt(prompt_id)
+                moved = move_outputs(batch_item)
+                moved_all.extend(moved)
+            print(f"done ({len(moved_all)} moved, {existing} pre-existing)")
         return True
     finally:
         print("Stopping ComfyUI to free VRAM for review...")
