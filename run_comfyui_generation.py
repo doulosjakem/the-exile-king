@@ -227,6 +227,27 @@ def move_outputs(item, manifest_entry):
     return moved
 
 
+def generate_one_image(item, seed, retries=3):
+    prefix = item.get("filename_prefix", "ComfyUI")
+    attempt = 0
+    last_error = None
+    while attempt < retries:
+        try:
+            workflow = build_workflow(item, seed)
+            prompt_id = submit_workflow(workflow)
+            wait_for_prompt(prompt_id)
+            moved = move_outputs(item, {})
+            if moved:
+                return moved, attempt
+            last_error = "No outputs moved"
+        except Exception as e:
+            last_error = str(e)
+        attempt += 1
+        if attempt < retries:
+            time.sleep(3)
+    return [], attempt
+
+
 def upload_to_google_drive(src_path, dest_relative):
     if not os.path.isfile(src_path):
         return None
@@ -299,6 +320,8 @@ def main():
     parser.add_argument("--no-shutdown", action="store_true", help="leave ComfyUI running after queue")
     parser.add_argument("--limit", type=int, default=0, help="limit number of queue items to process")
     parser.add_argument("--limit-images", type=int, default=0, help="limit total images generated")
+    parser.add_argument("--retries", type=int, default=3, help="retries per image on failure")
+    parser.add_argument("--fill-missing", action="store_true", help="scan outputs and regenerate any missing images")
     args = parser.parse_args()
 
     load_prompts()
@@ -326,6 +349,10 @@ def main():
 
     manifest = []
     total_items = len(queue)
+    total_attempted = sum(item.get("count", 1) for item in queue)
+    total_generated = 0
+    total_retries_exhausted = 0
+    fill_missing_count = 0
 
     try:
         for idx, item in enumerate(queue):
@@ -336,10 +363,9 @@ def main():
             moved_all = []
             for i in range(count):
                 seed = base_seed + i
-                workflow = build_workflow(item, seed)
-                prompt_id = submit_workflow(workflow)
-                wait_for_prompt(prompt_id)
-                moved = move_outputs(item, {})
+                moved, retries = generate_one_image(item, seed, args.retries)
+                if not moved and retries >= args.retries:
+                    total_retries_exhausted += 1
                 moved_all.extend(moved)
                 update_cycle_progress(item_id, idx + 1, total_items, count, len(moved_all), status="generating", seed=base_seed)
                 for rel_path in moved:
@@ -349,6 +375,7 @@ def main():
                     except Exception as e:
                         print(f"\n  GD upload warning: {e}")
             print(f"done ({len(moved_all)} files)")
+            total_generated += len(moved_all)
             update_cycle_progress(item_id, idx + 1, total_items, count, count, status="complete", seed=base_seed)
             manifest.append({
                 "id": item_id,
@@ -358,6 +385,41 @@ def main():
                 "seed": base_seed,
                 "files": moved_all
             })
+
+        if args.fill_missing:
+            for item in queue:
+                item_id = item.get("id")
+                count = item.get("count", 1)
+                subfolder = item.get("output_subfolder", "")
+                prefix = item.get("filename_prefix", "ComfyUI")
+                dest_dir = os.path.join(OUTPUT_BASE, subfolder)
+                existing = 0
+                if os.path.isdir(dest_dir):
+                    existing = len([f for f in os.listdir(dest_dir) if f.startswith(prefix)])
+                if existing < count:
+                    needed = count - existing
+                    print(f"Fill-missing: {item_id} needs {needed} more images")
+                    for i in range(needed):
+                        fill_seed = (int(time.time() * 1000) + i) % (2**31)
+                        moved, _ = generate_one_image(item, fill_seed, args.retries)
+                        if moved:
+                            fill_missing_count += len(moved)
+                            total_generated += len(moved)
+                            for rel_path in moved:
+                                try:
+                                    src_path = os.path.join(OUTPUT_BASE, rel_path)
+                                    upload_to_google_drive(src_path, rel_path)
+                                except Exception as e:
+                                    print(f"\n  GD upload warning: {e}")
+                        else:
+                            total_retries_exhausted += 1
+                    for entry in manifest:
+                        if entry["id"] == item_id:
+                            current_files = set(entry.get("files", []))
+                            if os.path.isdir(dest_dir):
+                                new_files = [os.path.relpath(os.path.join(dest_dir, f), OUTPUT_BASE) for f in os.listdir(dest_dir) if f.startswith(prefix)]
+                                entry["files"] = list(current_files.union(new_files))
+                            break
     finally:
         if not args.no_shutdown:
             print("Shutting down ComfyUI...")
@@ -369,6 +431,10 @@ def main():
     update_cycle_progress("-", total_items, total_items, 0, 0, status="complete")
     print(f"\n=== GENERATION COMPLETE ===")
     print(f"Manifest saved to: {args.manifest}")
+    print(f"Total generated: {total_generated}")
+    print(f"Retries exhausted: {total_retries_exhausted}")
+    if args.fill_missing:
+        print(f"Fill-missing images generated: {fill_missing_count}")
     return 0
 
 
