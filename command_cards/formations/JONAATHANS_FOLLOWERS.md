@@ -41,7 +41,7 @@ Disengage and reposition — no unit is left behind.
 **Activations:** 2
 
 When any Jonathan's Followers unit would take damage,
-adjacent Jonathan's Followers units may share the damage equally.
+adjacent Jonathan's Followers units may each absorb half the damage (round up).
 
 **Purpose:**
 Shared suffering makes the small force resilient.
@@ -92,7 +92,7 @@ Precision elimination of the most dangerous enemy.
 **BOTTOM ACTION — Covered Retreat**
 Activations: 2
 
-Elite Archers gain +3 Defense this turn.
+Elite Archers gain +2 Defense this turn.
 
 May move 1 space after defending without provoking opportunity attacks.
 

@@ -28,6 +28,8 @@ Centralized command protects the core of the army.
 
 All Saul's Kingdom Infantry units within 3 spaces of Abner may move 1 space and attack.
 
+Only 1 Infantry unit may use this effect per activation.
+
 **Purpose:**
 Coordinated push that leverages discipline and heavy armor.
 
@@ -37,12 +39,12 @@ Coordinated push that leverages discipline and heavy armor.
 
 **Activations:** 2
 
-All Saul's Kingdom units on the front line gain +2 Defense this turn.
+All Saul's Kingdom units on the front line gain +1 Defense this turn.
 
 Adjacent friendly units gain +1 Defense until your next turn.
 
 **Purpose:**
-Lock the front line into an immovable barrier.
+Solidify the front line with layered defense.
 
 ---
 

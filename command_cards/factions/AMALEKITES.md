@@ -20,7 +20,7 @@ Available in **MVP** (enemy only).
 | Raiders | Infantry | Core melee |
 | Slingers | Skirmisher | Ranged |
 | Desert Scouts | Light | Fast skirmishers |
-| Camel Riders | Unique | Mobile heavy |
+| Desert Raiders | Unique | Fast mounted raiders; ignore terrain |
 
 ---
 
@@ -29,7 +29,7 @@ Available in **MVP** (enemy only).
 - Amalekites are AI-controlled in MVP scenarios.
 - They use the command token system for AI decision-making (see GDD AI section).
 - Amalekites favor fast attacks, raids on objectives, and disengagement when outnumbered.
-- Camel Riders have unique movement rules (ignore terrain penalties, can cross desert quickly).
+- Desert Raiders have unique movement rules (ignore terrain penalties, can cross desert quickly).
 
 - **Faction-wide formation cards:** See [formations/AMALEKITES.md](formations/AMALEKITES.md)
 
@@ -44,6 +44,6 @@ Same as David's Company formation card rules.
 ## Notes
 
 - Amalekite strategy is aggressive and mobile — they attack fast and retreat before the enemy can consolidate.
-- Desert Scouts and Camel Riders give them superior battlefield mobility compared to other factions.
+- Desert Scouts and Desert Raiders give them superior battlefield mobility compared to other factions.
 - They have no heavy infantry or ranged units (besides slingers) — they lack the staying power for prolonged engagements.
 - The Amalekite campaign is a key late-game scenario (raid on Ziklag).

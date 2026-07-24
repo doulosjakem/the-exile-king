@@ -6,19 +6,19 @@
 
 ---
 
-## Formation Card: SHIELD WALL / IRON CLAD
+## Formation Card: IRON SHIELD PHALANX / IRON CLAD
 
-### TOP ACTION — Shield Wall
+### TOP ACTION — Iron Shield Phalanx
 
 **Activations:** 3
 
 When attacked by melee:
 
-- Gain +2 Defense this turn.
-- Adjacent Royal Guards gain +1 Defense until your next turn.
+- Gain +3 Defense this turn (heavy iron armor absorbs blows).
+- The attacker suffers 1 retaliation damage.
 
 **Purpose:**
-Unbreakable front line.
+Armored frontline that punishes melee attackers and punishes them for trying.
 
 ---
 
@@ -31,7 +31,7 @@ Royal Guard may move 1 space after attacking.
 Gain +1 Attack for that attack.
 
 **Purpose:**
-Controlled offensive push.
+Controlled offensive push with heavy armor.
 
 ---
 

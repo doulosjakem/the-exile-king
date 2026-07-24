@@ -26,12 +26,12 @@ Broad army-wide buff reflecting superior equipment and training.
 
 **Activations:** 2
 
-All Philistine Heavy Infantry and Chariots gain +3 Defense this turn.
+All Philistine Heavy Infantry and Chariots gain +2 Defense this turn.
 
 They cannot be pushed or moved by enemy effects.
 
 **Purpose:**
-Anchor the front line with immovable heaviness.
+Anchor the front line with heavy resistance.
 
 ---
 
@@ -104,7 +104,7 @@ Defensive push that controls enemy positioning.
 **TOP ACTION — Iron Clad**
 Activations: 3
 
-Heavy Infantry gains +3 Defense this turn.
+Heavy Infantry gains +2 Defense this turn.
 
 May move 1 space after defending.
 
@@ -116,12 +116,12 @@ Mobile fortress that can reposition while being nearly invulnerable.
 **BOTTOM ACTION — Colossal Stand**
 Activations: 2
 
-Heavy Infantry gains +4 Defense this turn.
+Heavy Infantry gains +3 Defense this turn.
 
-Cannot attack this turn.
+May attack this turn with -1 Attack penalty.
 
 **Purpose:**
-Absolute defensive anchor for the front line.
+Defensive anchor that can still fight back when needed.
 
 ---
 
@@ -142,7 +142,7 @@ Coordinated ranged destruction of a single target.
 **BOTTOM ACTION — Covered Position**
 Activations: 2
 
-Philistine Archers gain +3 Defense this turn.
+Philistine Archers gain +2 Defense this turn.
 
 The first enemy that moves within 2 spaces of an Archer suffers 2 damage.
 
@@ -198,7 +198,7 @@ Elite duelist that dismantles the enemy's strongest units.
 **BOTTOM ACTION — Champion's Stand**
 Activations: 2
 
-Champion gains +5 Defense this turn.
+Champion gains +3 Defense this turn.
 
 Only other Champion or Hero units can target the Champion.
 

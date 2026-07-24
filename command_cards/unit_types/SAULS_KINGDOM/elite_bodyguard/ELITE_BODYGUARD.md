@@ -28,6 +28,8 @@ When an adjacent enemy attacks the Commander,
 the Elite Bodyguard may intercept:
 take the damage instead.
 
+The Elite Bodyguard is eliminated after intercepting.
+
 **Purpose:**
 Shield the commander from harm.
 
@@ -49,7 +51,7 @@ Shield the commander from harm.
 ## Notes
 
 - Elite Bodyguards exist solely to protect the Commander.
-- Intercept is the signature ability — sacrifices the Bodyguard to save the Commander.
+- Intercept is the signature ability — sacrifices the Bodyguard to save the Commander. Bodyguards are lost after intercepting.
 - Protect positions Bodyguards as a shield wall around the command unit.
 - Without the Commander, Bodyguards are just above-average melee units.
 - If the Commander is eliminated, Bodyguards lose their special abilities.

@@ -1,41 +1,42 @@
-# Camel Rider — Command Cards
+# Desert Raider — Command Cards
 
-> **Unit Type:** Unique (Mobile heavy)
+> **Unit Type:** Unique (Mobile heavy — fast mounted raiders)
 > **Faction:** Amalekites
 > **Availability:** MVP (enemy)
+> **Note:** Represents fast donkeys/horses used by desert raiders; game calls this unit "Camel Rider" for simplicity
 
 ---
 
-## Formation: CHARGE / DISENGAGE
+## Formation: RAID CHARGE / DESERT DASH
 
-### TOP ACTION — Charge
+### TOP ACTION — Raid Charge
 
 **Activations:** 3
 
-Camel Rider may move 3 spaces and attack.
+Desert Raider may move 4 spaces and attack.
 
-Gain +1 Attack for this attack.
+Gain +2 Attack for this attack.
 
 If the attack defeats an enemy,
-may move 1 additional space.
+may move 2 additional spaces.
 
 **Purpose:**
-Heavy mobile striking power.
+Devastating deep strike that ignores the battlefield.
 
 ---
 
-### BOTTOM ACTION — Disengage
+### BOTTOM ACTION — Desert Dash
 
 **Activations:** 2
 
-Camel Rider may move 2 spaces.
+Desert Raider may move 3 spaces.
 
-Ignores terrain penalties this turn.
+All enemy units within 1 space of the Raider's path suffer 1 damage.
 
-Cannot be targeted by melee until your next turn.
+Ignores terrain penalties during this move.
 
 **Purpose:**
-Withdraw from unfavorable engagements.
+Mobile area denial that cuts through enemy lines.
 
 ---
 
@@ -55,7 +56,8 @@ Withdraw from unfavorable engagements.
 
 ## Notes
 
-- Camel Riders are the Amalekite unique unit — mobile, heavy, and hard to pin down.
-- Charge embodies the desert raiding style — fast attack, high damage, then move on.
-- Disengage leverages the camel's mobility to escape melee traps.
-- Ignores terrain penalties, making them effective in desert scenarios.
+- Desert Raiders are the Amalekite unique unit — fast, hard-hitting, and mobile.
+- Raid Charge is the premier offensive card — speed + power + pursuit on the enemy's terms.
+- Desert Dash leverages fast movement for area denial while ignoring terrain.
+- Mount represents a fast desert horse or donkey, not a camel — camels were not used as war mounts by Amalekites in this period.
+- These units are effective across all desert map types and ignore terrain penalties.

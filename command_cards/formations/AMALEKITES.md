@@ -99,8 +99,10 @@ All Raiders may move 3 spaces.
 
 They cannot be targeted by melee until your next turn.
 
+They can still be targeted by ranged attacks.
+
 **Purpose:**
-Mass dispersion that makes the army impossible to pin down.
+Dispersion that makes Raiders hard to pin down with melee, but still vulnerable to ranged fire.
 
 ---
 
@@ -123,10 +125,12 @@ Activations: 2
 
 Slingers may move 2 spaces and attack once.
 
-Movement does not trigger opportunity attacks.
+Movement does not trigger opportunity attacks this turn.
+
+After attacking, Slingers must move at least 1 space further or suffer 1 damage.
 
 **Purpose:**
-Mobile ranged harassment that avoids melee traps.
+Mobile ranged harassment that punishes static positioning — stay active or die.
 
 ---
 
@@ -157,12 +161,12 @@ Intelligence gathering that grants a combat bonus.
 
 ---
 
-### Camel Rider: CHARGE OF THE CAMEL / DESERT WIND
+### Camel Rider: CHARGE OF THE CAMEL / DESERT DASH
 
-**TOP ACTION — Charge of the Camel**
+**TOP ACTION — Raid Charge**
 Activations: 3
 
-Camel Rider may move 4 spaces and attack.
+Desert Raider may move 4 spaces and attack.
 
 Gain +2 Attack for this attack.
 
@@ -173,12 +177,36 @@ Devastating deep strike that ignores the battlefield.
 
 ---
 
-**BOTTOM ACTION — Desert Wind**
+**BOTTOM ACTION — Desert Dash**
 Activations: 2
 
-Camel Rider may move 3 spaces.
+Desert Raider may move 3 spaces.
 
-All enemy units within 1 space of the Camel Rider's path suffer 1 damage.
+All enemy units within 1 space of the Desert Raider's path suffer 1 damage.
 
 **Purpose:**
 Mobile area denial that cuts through enemy lines.
+
+---
+
+## Unit Stats (from GDD)
+
+| Stat | Value |
+|---|---|
+| Melee Combat | 1d8 |
+| Range | Melee only |
+| Move | 4 spaces |
+| Discipline | 3 |
+| HP | 3 |
+| Armor | Medium |
+| Notes | Ignores terrain; mobile heavy unit; fast donkey/horse mount |
+
+---
+
+## Notes
+
+- Desert Raiders are the Amalekite unique unit — fast, hard-hitting, and mobile.
+- Raid Charge is the premier offensive card — speed + power + pursuit on the enemy's terms.
+- Desert Dash leverages fast movement for area denial while ignoring terrain.
+- Mount represents a fast desert horse or donkey, not a camel — camels were not used as war mounts by Amalekites in this period.
+- These units are effective across all desert map types and ignore terrain penalties.
