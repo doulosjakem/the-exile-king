@@ -505,7 +505,7 @@ def review_image(model, image_path, expected_prompt=None, expected_key=None, tim
         "prompt": prompt,
         "images": [encode_image(image_path)],
         "stream": False,
-        "options": {"temperature": 0.1, "num_ctx": 4096, "num_gpu": 0}
+        "options": {"temperature": 0.1, "num_ctx": 4096, "num_gpu": 1}
     }
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
@@ -686,6 +686,7 @@ def main():
     args = parser.parse_args()
 
     images = gather_images(args.base)
+    images = [(rel, full) for rel, full in images if 'to_duplicates' not in rel and 'to_trash' not in rel]
     if args.limit > 0:
         images = images[:args.limit]
 
@@ -704,6 +705,9 @@ def main():
             duplicate_count += 1
         print(f"Duplicates moved to '{args.dedupe_dir}/' folders")
         print(f"---\n")
+        images = gather_images(args.base)
+        images = [(rel, full) for rel, full in images if 'to_duplicates' not in rel and 'to_trash' not in rel and os.path.exists(full)]
+        print(f"After dedupe: {len(images)} images remaining")
 
     print(f"=== Ollama Art Review (full folder, anatomy + prompt check) ===")
     print(f"Model: {args.model}")

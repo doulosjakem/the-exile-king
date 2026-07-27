@@ -180,9 +180,13 @@ def submit_workflow(workflow):
         headers={"Content-Type": "application/json"},
         method="POST"
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        result = json.loads(resp.read().decode("utf-8"))
-        return result.get("prompt_id")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            return result.get("prompt_id")
+    except Exception as e:
+        print(f"\n  submit_workflow ERROR: {e}")
+        raise
 
 
 def wait_for_prompt(prompt_id, timeout=600):
@@ -227,25 +231,16 @@ def move_outputs(item, manifest_entry):
     return moved
 
 
-def generate_one_image(item, seed, retries=3):
-    prefix = item.get("filename_prefix", "ComfyUI")
-    attempt = 0
-    last_error = None
-    while attempt < retries:
-        try:
-            workflow = build_workflow(item, seed)
-            prompt_id = submit_workflow(workflow)
-            wait_for_prompt(prompt_id)
-            moved = move_outputs(item, {})
-            if moved:
-                return moved, attempt
-            last_error = "No outputs moved"
-        except Exception as e:
-            last_error = str(e)
-        attempt += 1
-        if attempt < retries:
-            time.sleep(3)
-    return [], attempt
+def generate_one_image(item, seed):
+    try:
+        workflow = build_workflow(item, seed)
+        prompt_id = submit_workflow(workflow)
+        wait_for_prompt(prompt_id)
+        moved = move_outputs(item, {})
+        return moved
+    except Exception as e:
+        print(f"\n  FAILED seed {seed}: {e}")
+        return []
 
 
 def upload_to_google_drive(src_path, dest_relative):
@@ -320,8 +315,8 @@ def main():
     parser.add_argument("--no-shutdown", action="store_true", help="leave ComfyUI running after queue")
     parser.add_argument("--limit", type=int, default=0, help="limit number of queue items to process")
     parser.add_argument("--limit-images", type=int, default=0, help="limit total images generated")
-    parser.add_argument("--retries", type=int, default=3, help="retries per image on failure")
     parser.add_argument("--fill-missing", action="store_true", help="scan outputs and regenerate any missing images")
+    parser.add_argument("--start-from", type=int, default=0, help="skip first N queue items")
     args = parser.parse_args()
 
     load_prompts()
@@ -331,6 +326,8 @@ def main():
 
     if args.limit > 0:
         queue = queue[:args.limit]
+    if args.start_from > 0:
+        queue = queue[args.start_from:]
 
     print(f"=== ComfyUI Generation Runner ===")
     print(f"Queue items: {len(queue)}")
@@ -349,6 +346,7 @@ def main():
 
     manifest = []
     total_items = len(queue)
+    start_index = args.start_from
     total_attempted = sum(item.get("count", 1) for item in queue)
     total_generated = 0
     total_retries_exhausted = 0
@@ -357,17 +355,16 @@ def main():
     try:
         for idx, item in enumerate(queue):
             item_id = item.get("id", f"item-{idx}")
+            display_idx = start_index + idx + 1
             count = item.get("count", 1)
             base_seed = hash(item_id + str(time.time())) % (2**31)
-            print(f"[{idx+1}/{total_items}] {item_id} ({count} images) ... ", end="", flush=True)
+            print(f"[{display_idx}/{total_items + start_index}] {item_id} ({count} images) ... ", end="", flush=True)
             moved_all = []
             for i in range(count):
                 seed = base_seed + i
-                moved, retries = generate_one_image(item, seed, args.retries)
-                if not moved and retries >= args.retries:
-                    total_retries_exhausted += 1
+                moved = generate_one_image(item, seed)
                 moved_all.extend(moved)
-                update_cycle_progress(item_id, idx + 1, total_items, count, len(moved_all), status="generating", seed=base_seed)
+                update_cycle_progress(item_id, display_idx, total_items + start_index, count, len(moved_all), status="generating", seed=base_seed)
                 for rel_path in moved:
                     try:
                         src_path = os.path.join(OUTPUT_BASE, rel_path)
@@ -376,7 +373,7 @@ def main():
                         print(f"\n  GD upload warning: {e}")
             print(f"done ({len(moved_all)} files)")
             total_generated += len(moved_all)
-            update_cycle_progress(item_id, idx + 1, total_items, count, count, status="complete", seed=base_seed)
+            update_cycle_progress(item_id, display_idx, total_items + start_index, count, count, status="complete", seed=base_seed)
             manifest.append({
                 "id": item_id,
                 "prompt_key": item.get("prompt_key"),
@@ -401,7 +398,7 @@ def main():
                     print(f"Fill-missing: {item_id} needs {needed} more images")
                     for i in range(needed):
                         fill_seed = (int(time.time() * 1000) + i) % (2**31)
-                        moved, _ = generate_one_image(item, fill_seed, args.retries)
+                        moved = generate_one_image(item, fill_seed)
                         if moved:
                             fill_missing_count += len(moved)
                             total_generated += len(moved)
@@ -411,8 +408,6 @@ def main():
                                     upload_to_google_drive(src_path, rel_path)
                                 except Exception as e:
                                     print(f"\n  GD upload warning: {e}")
-                        else:
-                            total_retries_exhausted += 1
                     for entry in manifest:
                         if entry["id"] == item_id:
                             current_files = set(entry.get("files", []))
