@@ -1,0 +1,31 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Sunday, July 26, 2026 2:43:33 PM
+   Source : D:\Jake\ComfyUI_windows_portable\ComfyUI\output\ComfyUI\annointed-exile\
+     Dest = G:\My Drive\ArtOutput\annointed-exile\
+
+    Files : *.png
+	    *.jpg
+	    *.jpeg
+	    
+  Options : /NDL /NFL /S /E /DCOPY:DA /COPY:DAT /NP /XO /R:3 /W:1 
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :        72        32        40         0         0         0
+   Files :      2160       516      1644         0         0        63
+   Bytes :   1.854 g  608.03 m   1.260 g         0         0   29.23 m
+   Times :   0:00:40   0:00:38                       0:00:00   0:00:01
+
+
+   Speed :            16584102 Bytes/sec.
+   Speed :             948.949 MegaBytes/min.
+   Ended : Sunday, July 26, 2026 2:44:13 PM
+
