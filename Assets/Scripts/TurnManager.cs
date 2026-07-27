@@ -13,9 +13,9 @@ public enum TurnPhase
 public enum CardPhase
 {
     None,
-    Selection,   // player picks 2 cards from hand
-    Resolution,  // player resolves Top(A) + Bottom(B)
-    Done         // both halves resolved -> ready to end turn
+    Selection,
+    Resolution,
+    Done
 }
 
 public class TurnManager : MonoBehaviour
@@ -33,8 +33,11 @@ public class TurnManager : MonoBehaviour
     private int remainingAIActions = 0;
     private List<Unit> playerUnits = new List<Unit>();
     private List<Unit> enemyUnits = new List<Unit>();
+    private int currentPlayerIndex = 0;
+    private const int PlayerCount = 2;
 
     public UnityEvent<TurnPhase> OnPhaseChanged;
+    public UnityEvent<int> OnSubTurnChanged;
     public UnityEvent<CardPhase> OnCardPhaseChanged;
     public UnityEvent OnPlayerTurnStart;
     public UnityEvent OnPlayerTurnEnd;
@@ -47,6 +50,8 @@ public class TurnManager : MonoBehaviour
     public CardPhase CurrentCardPhase => currentCardPhase;
     public List<Unit> PlayerUnits => playerUnits;
     public List<Unit> EnemyUnits => enemyUnits;
+    public int CurrentPlayerIndex => currentPlayerIndex;
+    public int TotalPlayers => PlayerCount;
 
     private CardPhase currentCardPhase = CardPhase.None;
 
@@ -55,6 +60,19 @@ public class TurnManager : MonoBehaviour
         if (currentCardPhase == phase) return;
         currentCardPhase = phase;
         OnCardPhaseChanged?.Invoke(phase);
+    }
+
+    public void OnSubTurnComplete()
+    {
+        currentPlayerIndex++;
+        if (currentPlayerIndex >= PlayerCount)
+        {
+            EndPlayerTurn();
+        }
+        else
+        {
+            StartPlayerSubTurn();
+        }
     }
 
     private void Start()
@@ -117,23 +135,28 @@ public class TurnManager : MonoBehaviour
     public void StartPlayerTurn()
     {
         currentPhase = TurnPhase.PlayerTurn;
+        currentPlayerIndex = 0;
 
+        StartPlayerSubTurn();
+    }
+
+    private void StartPlayerSubTurn()
+    {
         ResetPlayerUnitActivations();
 
-        cardDeckManager.DrawToHandSize(handSize);
-        cardDeckManager.ApplyFatigue();
+        cardDeckManager.DrawToHandSize(currentPlayerIndex, handSize);
+        cardDeckManager.ApplyFatigue(currentPlayerIndex);
 
         OnPhaseChanged?.Invoke(currentPhase);
-        OnPlayerTurnStart?.Invoke();
+        OnSubTurnChanged?.Invoke(currentPlayerIndex);
         SetCardPhase(CardPhase.Selection);
 
-        Debug.Log("Player turn started.");
+        Debug.Log($"Player {currentPlayerIndex + 1} sub-turn started.");
     }
 
     public void EndPlayerTurn()
     {
         if (currentPhase != TurnPhase.PlayerTurn) return;
-        if (currentCardPhase != CardPhase.Done) return;
 
         SetCardPhase(CardPhase.None);
         OnPlayerTurnEnd?.Invoke();
@@ -142,7 +165,7 @@ public class TurnManager : MonoBehaviour
 
     public bool CanEndPlayerTurn()
     {
-        return currentPhase == TurnPhase.PlayerTurn && currentCardPhase == CardPhase.Done;
+        return currentPhase == TurnPhase.PlayerTurn;
     }
 
     public void StartAITurn()

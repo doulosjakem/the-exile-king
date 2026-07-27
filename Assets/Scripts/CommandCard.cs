@@ -30,6 +30,7 @@ public class CommandCard : ScriptableObject
     [Header("Top Ability")]
     public string topAbilityName;
     public string topAbilityDescription;
+    public int topInitiative;
     public CardEffectType topEffect;
     public int topValue;
     public UnitTypeFilter topUnitFilter;
@@ -39,6 +40,7 @@ public class CommandCard : ScriptableObject
     [Header("Bottom Ability")]
     public string bottomAbilityName;
     public string bottomAbilityDescription;
+    public int bottomInitiative;
     public CardEffectType bottomEffect;
     public int bottomValue;
     public UnitTypeFilter bottomUnitFilter;

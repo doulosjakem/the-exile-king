@@ -11,15 +11,16 @@ public class CardTurnController : MonoBehaviour
     [SerializeField] private PlayerInputHandler inputHandler;
     [SerializeField] private HexGrid grid;
 
-    public event Action<List<CommandCard>> OnSelectionUpdated;
-    public event Action<CommandCard, CommandCard> OnRevealed;
-    public event Action<CommandCard, CardHalf> OnHalfResolving;
-    public event Action OnResolutionComplete;
-    public event Action<string> OnPromptChanged;
+    public event Action<int, List<CommandCard>> OnSelectionUpdated;
+    public event Action<int, CommandCard, CommandCard> OnRevealed;
+    public event Action<int, CommandCard, CardHalf> OnHalfResolving;
+    public event Action<int> OnResolutionComplete;
+    public event Action<int, string> OnPromptChanged;
 
     private CommandCard cardA;
     private CommandCard cardB;
     private readonly List<CommandCard> selectedCards = new List<CommandCard>();
+    private int currentPlayerIndex = 0;
 
     private int resolvingHalfIndex = 0;
     private readonly List<Unit> halfSelection = new List<Unit>();
@@ -42,7 +43,21 @@ public class CardTurnController : MonoBehaviour
         if (turnManager != null)
         {
             turnManager.OnCardPhaseChanged.AddListener(OnCardPhaseChanged);
+            turnManager.OnSubTurnChanged.AddListener(OnSubTurnChanged);
         }
+    }
+
+    private void OnSubTurnChanged(int playerIndex)
+    {
+        currentPlayerIndex = playerIndex;
+        selectedCards.Clear();
+        cardA = null;
+        cardB = null;
+        resolvingHalfIndex = 0;
+        halfSelection.Clear();
+        destinationIndex = 0;
+        ClearHighlights();
+        resolver.EndResolution();
     }
 
     private void OnCardPhaseChanged(CardPhase phase)
@@ -70,19 +85,19 @@ public class CardTurnController : MonoBehaviour
         cardB = null;
         selectedCards.Clear();
         resolver.EndResolution();
-        OnSelectionUpdated?.Invoke(selectedCards);
-        OnPromptChanged?.Invoke("Choose 2 Command Cards");
+        OnSelectionUpdated?.Invoke(currentPlayerIndex, selectedCards);
+        OnPromptChanged?.Invoke(currentPlayerIndex, $"P{currentPlayerIndex + 1} — Choose 2 cards");
     }
 
     public List<CommandCard> GetHand()
     {
-        return cardDeckManager != null ? cardDeckManager.Hand : new List<CommandCard>();
+        return cardDeckManager != null ? cardDeckManager.GetHand(currentPlayerIndex) : new List<CommandCard>();
     }
 
     public void ToggleCardSelection(CommandCard card)
     {
         if (turnManager == null || turnManager.CurrentCardPhase != CardPhase.Selection) return;
-        if (card == null || !cardDeckManager.Hand.Contains(card)) return;
+        if (card == null || !cardDeckManager.GetHand(currentPlayerIndex).Contains(card)) return;
 
         if (selectedCards.Contains(card))
         {
@@ -94,15 +109,15 @@ public class CardTurnController : MonoBehaviour
             selectedCards.Add(card);
         }
 
-        OnSelectionUpdated?.Invoke(selectedCards);
+        OnSelectionUpdated?.Invoke(currentPlayerIndex, selectedCards);
 
         if (selectedCards.Count == 2)
         {
-            OnPromptChanged?.Invoke("Reveal your orders!");
+            OnPromptChanged?.Invoke(currentPlayerIndex, "Reveal your orders!");
         }
         else
         {
-            OnPromptChanged?.Invoke("Choose 2 Command Cards");
+            OnPromptChanged?.Invoke(currentPlayerIndex, $"P{currentPlayerIndex + 1} — Choose 2 cards");
         }
     }
 
@@ -152,13 +167,13 @@ public class CardTurnController : MonoBehaviour
 
         if (valid.Count == 0)
         {
-            OnPromptChanged?.Invoke($"No valid units for {abilityName} — skipping.");
+            OnPromptChanged?.Invoke(currentPlayerIndex, $"No valid units for {abilityName} — skipping.");
             CompleteHalf();
             return;
         }
 
         int maxActivations = Math.Min(resolver.CurrentMaxActivations, valid.Count);
-        OnPromptChanged?.Invoke($"Tap up to {maxActivations} unit(s) to {abilityName}");
+        OnPromptChanged?.Invoke(currentPlayerIndex, $"P{currentPlayerIndex + 1} — tap up to {maxActivations} unit(s) to {abilityName}");
     }
 
     public void OnUnitClicked(Unit unit)
@@ -274,7 +289,7 @@ public class CardTurnController : MonoBehaviour
         CommandCard card = resolvingHalfIndex == 0 ? cardA : cardB;
         if (card != null)
         {
-            cardDeckManager.PlayCard(card);
+            cardDeckManager.PlayCard(currentPlayerIndex, card);
         }
 
         resolver.EndResolution();
@@ -294,9 +309,9 @@ public class CardTurnController : MonoBehaviour
 
     private void FinishTurn()
     {
-        OnResolutionComplete?.Invoke();
-        OnPromptChanged?.Invoke("Orders complete — end your turn.");
-        turnManager.SetCardPhase(CardPhase.Done);
+        OnResolutionComplete?.Invoke(currentPlayerIndex);
+        OnPromptChanged?.Invoke(currentPlayerIndex, "Orders complete — pass to next player.");
+        turnManager.OnSubTurnComplete();
     }
 
     #region Highlight Visualization

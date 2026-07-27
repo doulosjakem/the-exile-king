@@ -1,55 +1,84 @@
-# Fix: Sequential Single-Image Generation (OOM + Timeout)
+# Plan: Build Printable Playable Prototype
 
-## Diagnosis
+## Goal
 
-Two failure modes on GTX 1060 6GB:
+Produce a cut-out-and-play tabletop prototype printed on standard letter paper, plus a concise rule book.
 
-1. **Timeout:** `run_cycle.py` `generation_phase()` (lines 463–474) submits all `count` workflows (e.g., 8 for one item) without waiting between submissions, then calls `wait_for_queue_empty()` for the entire batch. 8 images × ~94s each = ~752s, exceeding the 600s timeout → always fires.
-2. **OOM root cause:** The queue flooding + timeout abort cycle causes ComfyUI to be stopped and restarted mid-batch, fragmenting VRAM. Also, `build_workflow()` currently reads `batch_size` from the item dict; if anyone passes `batch_size: 8`, ComfyUI tries to generate 8 images in one forward pass and OOMs immediately.
+## Current State
 
-The user confirmed: **we CAN queue multiple workflows.** ComfyUI will process them one at a time. The hard constraint is: **no single workflow may have `batch_size > 1`.** Multiple sequential 1-image workflows are fine.
+**We have:**
+- Art assets generated/queued for portraits, standees, tokens, tiles, command cards, equipment, UI, box art
+- GDD with full rules: turn structure, combat, command card system, AI priority, scenarios
+- Unit stats defined for **David's Company** (7 units) and **Amalekites** (6 units)
+- Command card design formula + activation framework docs
+- 8×8 hex grid requirement
 
-## Fix
+**We do NOT have:**
+- Unit stats for most factions (Saul's Army, Jonathan's Followers, Philistines, Mighty Men, minor factions, neutrals)
+- Rule book text (not written)
+- Printable sheet layouts (no design for how tokens/tiles/cards are arranged on paper)
+- Command card text (user is actively designing this elsewhere)
 
-### In `D:\the-exile-king\run_cycle.py` `generation_phase()` (lines 463–474):
+## Gaps to Close
 
-- Import `wait_for_prompt` from `run_comfyui_generation`
-- Replace the "submit all count workflows, then wait for queue empty" block with a per-image loop:
-  `submit_workflow` → `wait_for_prompt(prompt_id)` → `move_outputs(batch_item)` → next image
-- This removes the timeout cascade and eliminates queue flooding
+### 1. Unit Stats (Critical)
+Only **13 units** have stat blocks in the GDD. For a playable prototype we need at minimum the MVP factions:
+- David's Company: 7 units (done)
+- Amalekites: 6 units (done)
+- Saul's Army: 6 units (missing)
+- Jonathan's Followers: 4–8 units (missing)
 
-### In `D:\the-exile-king\run_comfyui_generation.py` `build_workflow()` (line 139):
+That's ~10–14 missing stat blocks. Post-MVP factions (Philistines, Mighty Men, minor factions) can follow later.
 
-- Hardcode `"batch_size": 1` in the `EmptyLatentImage` dict — don't read it from the item
-- Remove or ignore the `batch_size = item.get(...)` variable on line 107 so it can never leak in
+### 2. Rule Book
+Needs to cover, in 1–4 pages:
+- Setup (army building, command deck)
+- Turn structure (draw → fatigue → choose 2 cards → resolve → enemy turn)
+- Activation rules (one activation per unit per turn)
+- Combat (range, LoS, damage, armor)
+- Commander mechanics (aura, death = loss)
+- AI rules (for solo play)
+- Victory conditions
 
-### In `D:\the-exile-king\run_cycle.py` `build_workflow()` (line 123):
+Content exists in GDD but is not formatted for printing.
 
-- `"batch_size": 1` is already hardcoded — leave it, but the OOM fix ensures this can never be overridden
+### 3. Component Layouts (Print-Ready)
+Need designed pages for:
+- **Unit token sheets** — cut-out tokens with portrait + stats on the same piece
+- **Hex board** — 8×8 grid, either as 64 individual hex tiles or one full board
+- **Command cards** — text + art layout (depends on what user designs elsewhere)
+- **Activation/status tokens** — simple markers for activated units, HP tracking
+- **Scenario cards** — objective, deployment, enemy list
 
-### Invariant to enforce
+### 4. Missing Art for Some Units
+Not all unit portraits/tokens may be generated yet. Need to verify coverage for whatever stat blocks we define.
 
-Every workflow submitted to ComfyUI has `batch_size: 1` in its `EmptyLatentImage`. Multiple workflows may be queued, but each generates exactly 1 image.
+## Key Decision Needed
 
-## Steps
+**Prototype scope:**
 
-1. **Edit `D:\the-exile-king\run_cycle.py`**:
-   - Add `wait_for_prompt` to the import from `run_comfyui_generation`
-   - In `generation_phase()`, replace lines 463–474 with the per-image submit→wait→move loop
+Option A: **MVP factions only** (David's Company + Amalekites + Saul's Army + Jonathan's Followers ≈ 20–25 units). Fastest path to playable.
 
-2. **Edit `D:\the-exile-king\run_comfyui_generation.py`**:
-   - In `build_workflow()`, change `"batch_size": 1` to be a literal (not a variable), or leave line 107's variable unused and keep line 139 hardcoded
-   - Remove `batch_size` from line 107 to prevent future misuse
+Option B: **All 54 units** from the roster. More complete, but requires writing ~36 missing stat blocks and generating/curating art for all of them.
 
-3. **Verify**:
-   - Run `python run_cycle.py --limit 1 --items 1` and confirm the first queue item (8 images) completes without timeout
-   - Confirm no OOM by checking ComfyUI logs / nvidia-smi during the run
+Option C: **Hybrid** — MVP factions get full stat blocks and print sheets. Everything else gets placeholder cards: "Coming soon / expansion unit."
 
-## Risk
+## Recommendation
 
-- Low. Per-image wait is already proven in `run_comfyui_generation.py` (~94s/image, no timeout).
-- Hardcoding `batch_size: 1` prevents future misconfiguration from reintroducing OOM.
+**Option A or C.** A playable prototype with 20–30 well-defined units is enough to validate the core loop. Once the game plays well, expanding to 54 units is just data entry and art assembly.
 
-## Open Decisions
+## Open Questions
 
-- None. Ready to implement.
+1. **Which scope do you want?** A = MVP factions (~25 units), B = all 54, or C = MVP now, rest later?
+2. **Token format:** standee style (portrait on top, stats on a base tab) or poker-card style (portrait front, stats back)?
+3. **Hex board:** individual tiles you arrange, or one pre-laid-out 8×8 sheet?
+4. **Rule book length:** quickstart (1 page) or full reference (4 pages)?
+
+## Next Steps (after decisions)
+
+1. Write missing unit stat blocks for chosen scope
+2. Write concise rule book
+3. Design printable page layouts (letter-size, cut lines, bleed)
+4. Assemble art + text into print-ready sheets
+5. Verify all required art exists; trigger generation for anything missing
+6. Export as PDF

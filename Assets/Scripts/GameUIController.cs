@@ -182,11 +182,12 @@ public class GameUIController : MonoBehaviour
 
     private void Update()
     {
-        if (turnManager == null) return;
+        if (turnManager == null || cardDeckManager == null) return;
 
-        if (handSizeText != null && cardDeckManager != null)
+        int playerIndex = turnManager.CurrentPlayerIndex;
+        if (handSizeText != null)
         {
-            handSizeText.text = $"Hand:{cardDeckManager.GetHandCount()} Deck:{cardDeckManager.GetDeckCount()} Spent:{cardDeckManager.GetSpentCount()} Lost:{cardDeckManager.GetLostCount()}";
+            handSizeText.text = $"P{playerIndex + 1} Hand:{cardDeckManager.GetHandCount(playerIndex)} Deck:{cardDeckManager.GetDeckCount()} Spent:{cardDeckManager.GetSpentCount()} Lost:{cardDeckManager.GetLostCount()}";
         }
 
         if (endTurnButton != null)
@@ -214,12 +215,13 @@ public class GameUIController : MonoBehaviour
 
     private void OnHandCardClicked(int index)
     {
-        if (cardTurnController == null) return;
-        if (turnManager == null || !turnManager.IsPlayerTurn()) return;
+        if (cardTurnController == null || turnManager == null || cardDeckManager == null) return;
+        if (!turnManager.IsPlayerTurn()) return;
         if (turnManager.CurrentCardPhase != CardPhase.Selection) return;
 
-        if (index < 0 || index >= cardDeckManager.Hand.Count) return;
-        cardTurnController.ToggleCardSelection(cardDeckManager.Hand[index]);
+        List<CommandCard> hand = cardDeckManager.GetHand(turnManager.CurrentPlayerIndex);
+        if (index < 0 || index >= hand.Count) return;
+        cardTurnController.ToggleCardSelection(hand[index]);
     }
 
     private void OnRestartClicked()
@@ -287,24 +289,24 @@ public class GameUIController : MonoBehaviour
             selectedUnitText.text = "";
     }
 
-    private void OnHandChanged(List<CommandCard> hand)
+    private void OnHandChanged(int playerIndex, List<CommandCard> hand)
     {
         RefreshHandDisplay();
     }
 
-    private void OnSelectionUpdated(List<CommandCard> selected)
+    private void OnSelectionUpdated(int playerIndex, List<CommandCard> selected)
     {
         RefreshHandDisplay(selected);
         if (revealButton != null)
             revealButton.gameObject.SetActive(cardTurnController != null && cardTurnController.CanReveal());
     }
 
-    private void OnCardsRevealed(CommandCard cardA, CommandCard cardB)
+    private void OnCardsRevealed(int playerIndex, CommandCard cardA, CommandCard cardB)
     {
         ClearHandButtons();
     }
 
-    private void OnHalfResolving(CommandCard card, CardHalf half)
+    private void OnHalfResolving(int playerIndex, CommandCard card, CardHalf half)
     {
         if (promptText != null)
         {
@@ -313,17 +315,17 @@ public class GameUIController : MonoBehaviour
         }
     }
 
-    private void OnResolutionComplete()
+    private void OnResolutionComplete(int playerIndex)
     {
-        if (promptText != null) promptText.text = "Orders complete. End your turn.";
+        if (promptText != null) promptText.text = "Orders complete. Pass to next player or end turn.";
     }
 
-    private void OnPromptChanged(string prompt)
+    private void OnPromptChanged(int playerIndex, string prompt)
     {
         if (promptText != null) promptText.text = prompt;
     }
 
-    private void OnCardLostToFatigue(CommandCard card)
+    private void OnCardLostToFatigue(int playerIndex, CommandCard card)
     {
         if (promptText != null)
         {
@@ -332,7 +334,7 @@ public class GameUIController : MonoBehaviour
         }
     }
 
-    private void OnCardLostToCasualty(CommandCard card)
+    private void OnCardLostToCasualty(int playerIndex, CommandCard card)
     {
         if (promptText != null)
         {
@@ -353,9 +355,9 @@ public class GameUIController : MonoBehaviour
 
     private void RefreshHandDisplay(List<CommandCard> selected)
     {
-        if (cardDeckManager == null) return;
+        if (cardDeckManager == null || turnManager == null) return;
 
-        List<CommandCard> hand = cardDeckManager.Hand;
+        List<CommandCard> hand = cardDeckManager.GetHand(turnManager.CurrentPlayerIndex);
         cardButtons.Clear();
 
         for (int i = 0; i < handButtons.Count; i++)
@@ -376,7 +378,7 @@ public class GameUIController : MonoBehaviour
             {
                 bool isSelected = selected != null && selected.Contains(card);
                 string marker = isSelected ? "[x] " : "";
-                txt.text = $"{marker}{card.cardName}\n---\nTOP: {card.topAbilityName}\n{card.topAbilityDescription}\n---\nBOT: {card.bottomAbilityName}\n{card.bottomAbilityDescription}";
+                txt.text = $"{marker}{card.cardName}\nINIT: T{card.topInitiative}/B{card.bottomInitiative}\n---\nTOP: {card.topAbilityName}\n{card.topAbilityDescription}\n---\nBOT: {card.bottomAbilityName}\n{card.bottomAbilityDescription}";
                 txt.fontSize = 11;
                 txt.alignment = TextAnchor.UpperLeft;
                 txt.color = isSelected ? Color.yellow : Color.black;

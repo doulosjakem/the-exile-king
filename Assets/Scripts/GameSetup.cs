@@ -56,30 +56,75 @@ public class GameSetup : MonoBehaviour
 
     private void SetupDefaultBattle()
     {
-        SpawnUnit(new UnitTemplate { unitName = "David", unitType = UnitType.David, armorTier = ArmorTier.Bronze, isCommander = true },
-            new HexCoord(1, 3), false);
-        SpawnUnit(new UnitTemplate { unitName = "Scout", unitType = UnitType.Scout, armorTier = ArmorTier.Leather, isCommander = false },
-            new HexCoord(1, 1), false);
-        SpawnUnit(new UnitTemplate { unitName = "Scout", unitType = UnitType.Scout, armorTier = ArmorTier.Leather, isCommander = false },
-            new HexCoord(1, 5), false);
-
-        SpawnUnit(new UnitTemplate { unitName = "Amalekite Chieftain", unitType = UnitType.Chieftain, armorTier = ArmorTier.Bronze, isCommander = true },
-            new HexCoord(grid.Width - 2, 3), true);
-        SpawnUnit(new UnitTemplate { unitName = "Amalekite Raider", unitType = UnitType.Raider, armorTier = ArmorTier.Bronze, isCommander = false },
-            new HexCoord(grid.Width - 2, 1), true);
-        SpawnUnit(new UnitTemplate { unitName = "Amalekite Slinger", unitType = UnitType.Slinger, armorTier = ArmorTier.Leather, isCommander = false },
-            new HexCoord(grid.Width - 2, 5), true);
-        SpawnUnit(new UnitTemplate { unitName = "Amalekite Scout", unitType = UnitType.EnemyScout, armorTier = ArmorTier.Leather, isCommander = false },
-            new HexCoord(grid.Width - 3, 4), true);
-
-        BuildInitialDeck();
-
-        if (turnManager != null) turnManager.StartPlayerTurn();
+        SpawnCoopScenario();
     }
 
     public void SetUnitPrefab(GameObject prefab)
     {
         unitPrefab = prefab;
+    }
+
+    public void SpawnCoopScenario()
+    {
+        // P1: David's Company (left edge)
+        SpawnUnit(new UnitTemplate { unitName = "David", unitType = UnitType.David, armorTier = ArmorTier.Bronze, isCommander = true },
+            new HexCoord(0, 3), false);
+        SpawnUnit(new UnitTemplate { unitName = "Swordsman", unitType = UnitType.Swordsman, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(0, 2), false);
+        SpawnUnit(new UnitTemplate { unitName = "Swordsman", unitType = UnitType.Swordsman, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(0, 4), false);
+        SpawnUnit(new UnitTemplate { unitName = "Spearman", unitType = UnitType.Spearman, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(0, 5), false);
+        SpawnUnit(new UnitTemplate { unitName = "Slinger", unitType = UnitType.Slinger, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(1, 2), false);
+        SpawnUnit(new UnitTemplate { unitName = "Slinger", unitType = UnitType.Slinger, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(1, 4), false);
+        SpawnUnit(new UnitTemplate { unitName = "Archer", unitType = UnitType.Archer, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(1, 3), false);
+        SpawnUnit(new UnitTemplate { unitName = "Scout", unitType = UnitType.Scout, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(1, 1), false);
+
+        // P2: Jonathan's Followers (left edge flank)
+        SpawnUnit(new UnitTemplate { unitName = "Jonathan", unitType = UnitType.Jonathan, armorTier = ArmorTier.Bronze, isCommander = true },
+            new HexCoord(0, 1), false);
+        SpawnUnit(new UnitTemplate { unitName = "Loyal Guard", unitType = UnitType.LoyalGuard, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(0, 0), false);
+        SpawnUnit(new UnitTemplate { unitName = "Loyal Guard", unitType = UnitType.LoyalGuard, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(0, 6), false);
+        SpawnUnit(new UnitTemplate { unitName = "Elite Archer", unitType = UnitType.EliteArcher, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(1, 0), false);
+        SpawnUnit(new UnitTemplate { unitName = "Elite Archer", unitType = UnitType.EliteArcher, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(1, 7), false);
+        SpawnUnit(new UnitTemplate { unitName = "Scout", unitType = UnitType.Scout, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(1, 6), false);
+
+        // Enemy: Philistines (right edge)
+        SpawnUnit(new UnitTemplate { unitName = "Achish", unitType = UnitType.Achish, armorTier = ArmorTier.Bronze, isCommander = true },
+            new HexCoord(grid.Width - 1, 6), true);
+        SpawnUnit(new UnitTemplate { unitName = "Philistine Lord", unitType = UnitType.PhilistineLord, armorTier = ArmorTier.Bronze, isCommander = true },
+            new HexCoord(grid.Width - 1, 1), true);
+        SpawnUnit(new UnitTemplate { unitName = "Philistine Spearman", unitType = UnitType.Spearman, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(grid.Width - 1, 3), true);
+        SpawnUnit(new UnitTemplate { unitName = "Philistine Spearman", unitType = UnitType.Spearman, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(grid.Width - 2, 2), true);
+        SpawnUnit(new UnitTemplate { unitName = "Philistine Spearman", unitType = UnitType.Spearman, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(grid.Width - 2, 4), true);
+        SpawnUnit(new UnitTemplate { unitName = "Heavy Infantry", unitType = UnitType.HeavyInfantry, armorTier = ArmorTier.Iron, isCommander = false },
+            new HexCoord(grid.Width - 2, 1), true);
+        SpawnUnit(new UnitTemplate { unitName = "Heavy Infantry", unitType = UnitType.HeavyInfantry, armorTier = ArmorTier.Iron, isCommander = false },
+            new HexCoord(grid.Width - 2, 5), true);
+        SpawnUnit(new UnitTemplate { unitName = "Archer", unitType = UnitType.Archer, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(grid.Width - 1, 4), true);
+        SpawnUnit(new UnitTemplate { unitName = "Archer", unitType = UnitType.Archer, armorTier = ArmorTier.Leather, isCommander = false },
+            new HexCoord(grid.Width - 1, 2), true);
+        SpawnUnit(new UnitTemplate { unitName = "Champion", unitType = UnitType.Champion, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(grid.Width - 2, 3), true);
+        SpawnUnit(new UnitTemplate { unitName = "Chariot", unitType = UnitType.Chariot, armorTier = ArmorTier.Bronze, isCommander = false },
+            new HexCoord(grid.Width - 3, 4), true);
+
+        BuildInitialDeck();
+
+        if (turnManager != null) turnManager.StartPlayerTurn();
     }
 
     public void SpawnBattle(int battleNumber, List<UnitTemplate> playerRoster)
@@ -338,6 +383,153 @@ public class GameSetup : MonoBehaviour
                 card.bottomSpecificUnitType = UnitType.Scout;
                 card.bottomMaxActivations = 2;
                 card.linkedUnitTypes = new List<UnitType> { UnitType.Scout };
+                break;
+
+            case UnitType.Jonathan:
+                card.cardName = "Jonathan's Leadership";
+                card.topAbilityName = "Lead the Benjamites";
+                card.topAbilityDescription = "Jonathan moves and attacks. All Loyal Guards within 2 tiles gain +1 defense this turn.";
+                card.topEffect = CardEffectType.Attack;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.CommanderOnly;
+                card.topMaxActivations = 1;
+                card.bottomAbilityName = "Empower Archers";
+                card.bottomAbilityDescription = "One Elite Archer within 2 tiles may attack twice this turn.";
+                card.bottomEffect = CardEffectType.Buff;
+                card.bottomValue = 1;
+                card.bottomUnitFilter = UnitTypeFilter.SpecificType;
+                card.bottomSpecificUnitType = UnitType.EliteArcher;
+                card.bottomMaxActivations = 1;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.Jonathan };
+                break;
+
+            case UnitType.LoyalGuard:
+                card.cardName = "Guard Formation";
+                card.topAbilityName = "Shield Wall";
+                card.topAbilityDescription = "Loyal Guards gain +2 defense until next player turn if adjacent to Jonathan.";
+                card.topEffect = CardEffectType.Buff;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.SpecificType;
+                card.topSpecificUnitType = UnitType.LoyalGuard;
+                card.topMaxActivations = 2;
+                card.bottomAbilityName = "Protect Commander";
+                card.bottomAbilityDescription = "Move Loyal Guard adjacent to friendly commander; commander gains -1 damage taken.";
+                card.bottomEffect = CardEffectType.Move;
+                card.bottomValue = 2;
+                card.bottomUnitFilter = UnitTypeFilter.SpecificType;
+                card.bottomSpecificUnitType = UnitType.LoyalGuard;
+                card.bottomMaxActivations = 1;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.LoyalGuard };
+                break;
+
+            case UnitType.EliteArcher:
+                card.cardName = "Elite Archer Volley";
+                card.topAbilityName = "Precision Shot";
+                card.topAbilityDescription = "One Elite Archer attacks. Ignores 1 defense. +1 range if not moved this turn.";
+                card.topEffect = CardEffectType.Attack;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.SpecificType;
+                card.topSpecificUnitType = UnitType.EliteArcher;
+                card.topMaxActivations = 1;
+                card.bottomAbilityName = "Move Archers";
+                card.bottomAbilityDescription = "Move up to 2 Elite Archers.";
+                card.bottomEffect = CardEffectType.MultiMove;
+                card.bottomValue = 2;
+                card.bottomUnitFilter = UnitTypeFilter.SpecificType;
+                card.bottomSpecificUnitType = UnitType.EliteArcher;
+                card.bottomMaxActivations = 2;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.EliteArcher };
+                break;
+
+            case UnitType.Achish:
+                card.cardName = "Achish's Strength";
+                card.topAbilityName = "Command and Strike";
+                card.topAbilityDescription = "Achish moves and attacks. Adjacent Philistines gain Shielded (first damage prevented this turn).";
+                card.topEffect = CardEffectType.Attack;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.CommanderOnly;
+                card.topMaxActivations = 1;
+                card.bottomAbilityName = "Shield the Giants";
+                card.bottomAbilityDescription = "Adjacent Giants and Heavy Infantry gain +1 defense. (Command Board, 2 activations)";
+                card.bottomEffect = CardEffectType.Buff;
+                card.bottomValue = 1;
+                card.bottomUnitFilter = UnitTypeFilter.Any;
+                card.bottomMaxActivations = 2;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.Achish };
+                break;
+
+            case UnitType.PhilistineLord:
+                card.cardName = "Lord's Command";
+                card.topAbilityName = "Offensive Aura";
+                card.topAbilityDescription = "Philistine Lord moves and attacks. Adjacent allies gain +1 attack this turn.";
+                card.topEffect = CardEffectType.Attack;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.CommanderOnly;
+                card.topMaxActivations = 1;
+                card.bottomAbilityName = "Champion's boost";
+                card.bottomAbilityDescription = "Grant one Champion or Heavy Infantry within 2 tiles an extra activation.";
+                card.bottomEffect = CardEffectType.Buff;
+                card.bottomValue = 1;
+                card.bottomUnitFilter = UnitTypeFilter.Any;
+                card.bottomMaxActivations = 1;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.PhilistineLord };
+                break;
+
+            case UnitType.HeavyInfantry:
+                card.cardName = "Heavy Infantry Command";
+                card.topAbilityName = "Advance";
+                card.topAbilityDescription = "Up to 2 Heavy Infantry move 1 tile and attack with +1 damage.";
+                card.topEffect = CardEffectType.MultiAttack;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.SpecificType;
+                card.topSpecificUnitType = UnitType.HeavyInfantry;
+                card.topMaxActivations = 2;
+                card.bottomAbilityName = "Brace";
+                card.bottomAbilityDescription = "Up to 2 Heavy Infantry gain +2 defense until next player turn.";
+                card.bottomEffect = CardEffectType.Buff;
+                card.bottomValue = 2;
+                card.bottomUnitFilter = UnitTypeFilter.SpecificType;
+                card.bottomSpecificUnitType = UnitType.HeavyInfantry;
+                card.bottomMaxActivations = 2;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.HeavyInfantry };
+                break;
+
+            case UnitType.Champion:
+                card.cardName = "Champion's Duel";
+                card.topAbilityName = "Duelist Strike";
+                card.topAbilityDescription = "Champion attacks target enemy commander or Hero. Ignores 2 defense.";
+                card.topEffect = CardEffectType.Attack;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.SpecificType;
+                card.topSpecificUnitType = UnitType.Champion;
+                card.topMaxActivations = 1;
+                card.bottomAbilityName = "Move Champion";
+                card.bottomAbilityDescription = "Champion moves up to 2 tiles and gains +1 attack and +1 defense.";
+                card.bottomEffect = CardEffectType.Move;
+                card.bottomValue = 2;
+                card.bottomUnitFilter = UnitTypeFilter.SpecificType;
+                card.bottomSpecificUnitType = UnitType.Champion;
+                card.bottomMaxActivations = 1;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.Champion };
+                break;
+
+            case UnitType.Chariot:
+                card.cardName = "Chariot Charge";
+                card.topAbilityName = "Breakthrough Charge";
+                card.topAbilityDescription = "Chariot moves up to 3 tiles (must move ≥2), then attacks with +1 damage. Push target 1 tile.";
+                card.topEffect = CardEffectType.Attack;
+                card.topValue = 2;
+                card.topUnitFilter = UnitTypeFilter.SpecificType;
+                card.topSpecificUnitType = UnitType.Chariot;
+                card.topMaxActivations = 1;
+                card.bottomAbilityName = "Reposition";
+                card.bottomAbilityDescription = "Chariot moves up to 3 tiles through friendly units without obstruction.";
+                card.bottomEffect = CardEffectType.Move;
+                card.bottomValue = 3;
+                card.bottomUnitFilter = UnitTypeFilter.SpecificType;
+                card.bottomSpecificUnitType = UnitType.Chariot;
+                card.bottomMaxActivations = 1;
+                card.linkedUnitTypes = new List<UnitType> { UnitType.Chariot };
                 break;
 
             case UnitType.Refugee:

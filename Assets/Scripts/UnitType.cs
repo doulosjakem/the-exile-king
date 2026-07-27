@@ -13,5 +13,14 @@ public enum UnitType
     Raider,
     EnemyArcher,
     EnemyScout,
-    CamelRider
+    CamelRider,
+    Jonathan,
+    LoyalGuard,
+    EliteArcher,
+    Achish,
+    PhilistineLord,
+    HeavyInfantry,
+    Champion,
+    Chariot,
+    Giant
 }

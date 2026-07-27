@@ -51,7 +51,7 @@ The game is built around a **skirmish-first** philosophy. Factions have distinct
 
 ### Core Player Faction: David's Company
 
-David's warband of refugees, outcasts, and loyal fighters. Flexible underdog playstyle. The only faction with the Command Card deck system.
+David's warband of refugees, outcasts, and loyal fighters. Flexible underdog playstyle.
 
 | Unit | Type | Notes |
 |---|---|---|
@@ -60,9 +60,9 @@ David's warband of refugees, outcasts, and loyal fighters. Flexible underdog pla
 | Outcasts | Light Infantry | Desperate fighters, cheap |
 | Swordsmen | Infantry | Standard melee |
 | Spearmen | Infantry | Reach, anti-charge |
-| Slingers | Skirmisher | Ranged, light |
-| Archers | Ranged | Stationary damage |
+| Elite Slingers | Skirmisher | Long range, high mobility |
 | Scouts | Light | Fast, hit-and-run |
+| Shield Bearers | Heavy | Tank/defender |
 | Veterans | Elite | Upgraded base units (campaign) |
 | Mighty Men | Hero | Unique named units (late campaign) |
 
@@ -80,27 +80,42 @@ Relationship varies by scenario. Often pursuing David. Sometimes fights common e
 | Officers | Support | Buff adjacent units |
 | Elite Bodyguards | Elite | Protect Saul/Abner |
 
-#### Jonathan's Followers (Ally)
+#### Jonathan's Followers (Ally — Blue)
 Small temporary allied force. Scenario-specific.
 
 | Unit | Type | Notes |
 |---|---|---|
+| Jonathan | Commander | Unique — always available in ally scenarios |
 | Loyal Guards | Infantry | Devoted to Jonathan |
 | Elite Archers | Ranged | Crack shots |
-| Scouts | Light | Fast, intel |
+| Archers | Ranged | Standard ranged support |
+| Spearmen | Infantry | Reach, anti-charge |
+| Shield Bearers | Heavy | Tank/defender |
 
-#### Philistines (Enemy OR Ally)
+#### Philistines (Enemy OR Ally — Red / Green)
 David serves Achish for a time. Later they become enemies again.
+
+##### Achish's Host — Lord of Gath (Red)
 
 | Unit | Type | Notes |
 |---|---|---|
-| Achish | Commander | Philistine lord |
-| Spearmen | Infantry | Standard |
-| Heavy Infantry | Heavy | Slow, hit hard |
-| Archers | Ranged | Standard |
-| Chariots | Unique | Rare, devastating |
-| Champions | Elite | Duelists |
-| Lords of the Philistines | Commander variants | Scenario-specific |
+| Achish | Commander | Philistine lord of Gath |
+| Giants | Heavy | Gath's giant warriors, slow and devastating |
+| Swordsmen | Infantry | Standard Philistine melee |
+| Spearmen | Infantry | Reach, anti-charge |
+| Archers | Ranged | Standard ranged support |
+| Shield Bearers | Heavy | Tank/defender |
+
+##### Lord of Ekron's Host (Green)
+
+| Unit | Type | Notes |
+|---|---|---|
+| Philistine Lord | Commander | Lord of Ekron |
+| Chariots | Unique | Fast assault, coastal plain warfare |
+| Slingers | Skirmisher | Long range harassment |
+| Swordsmen | Infantry | Standard Philistine melee |
+| Spearmen | Infantry | Reach, anti-charge |
+| Shield Bearers | Heavy | Tank/defender |
 
 #### Amalekites (Enemy)
 Fast-moving desert raiders. Major campaign enemy. Raid Ziklag.
@@ -177,10 +192,10 @@ Beyond "eliminate commander," scenarios can have varied objectives:
 
 | Status | Factions |
 |---|---|
-| **Playable (MVP)** | David's Company, Saul's Army, Amalekites |
-| **Scenario allies (MVP)** | Jonathan's Men |
-| **Playable (Post-MVP)** | Philistines, Judah Militia, Mighty Men commanders |
-| **Expansion (Post-MVP)** | Girzites, Southern Geshurites, Gezerites, Keilah, Nabal's Household, Priests of Nob |
+| **Playable (MVP)** | David's Company (Purple), Jonathan's Followers (Blue), Achish's Host (Red), Lord of Ekron's Host (Green) |
+| **Scenario allies (MVP)** | N/A — all four are playable/standalone |
+| **Playable (Post-MVP)** | Saul's Kingdom, Judah Militia, Mighty Men commanders |
+| **Expansion (Post-MVP)** | Amalekites, Girzites, Southern Geshurites, Gezerites, Keilah, Nabal's Household, Priests of Nob |
 | **Late campaign (Post-MVP)** | Full Philistine Wars, Amalekite campaign, Joab/Amasa/Asahel |
 
 ---
@@ -191,13 +206,13 @@ Pre-set team + card deck combinations for balanced pick-up games — inspired by
 
 | Loadout | Player Faction | Enemy Faction | Player Units | Objective | Difficulty |
 |---|---|---|---|---|---|
-| **First Blood** | David's Company | Amalekites | David + 2 Scouts + 2 Spearmen | Eliminate chieftain | Easy |
-| **Desert Pursuit** | David's Company | Amalekites | David + Swordsman + Archer + Slinger | Eliminate chieftain | Medium |
-| **Hold the Pass** | David's Company | Amalekites | David + 3 Spearmen + Archer | Defend (survive 6 turns) | Medium |
-| **Rescue at Keilah** | David's Company | Saul's Army | David + Scout + 2 Swordsmen + Refugee | Escort civilians to safety | Hard |
-| **Escape Pursuit** | David's Company | Saul's Army | David + Scout + Refugee | Reach the opposite map edge | Hard |
-| **Ziklag Raid** | David's Company | Amalekites | David + 2 Veterans + Slinger + Refugee | Rescue captives | Hard |
-| **The Anointed** | David's Company | Philistines | David + Swordsman + Spearman + Archer + Scout | Eliminate commander | Very Hard |
+| **First Blood** | David's Company | Lord of Ekron | David + 2 Swordsmen + 2 Spearmen | Eliminate commander | Easy |
+| **Desert Pursuit** | Jonathan's Followers | Achish's Host | Jonathan + Swordsman + Spearman + Elite Archer | Eliminate commander | Medium |
+| **Hold the Pass** | David's Company | Achish's Host | David + 3 Spearmen + Shield Bearer | Defend (survive 6 turns) | Medium |
+| **Rescue at Keilah** | Jonathan's Followers | Lord of Ekron | Jonathan + Scout + 2 Swordsmen + Shield Bearer | Escort civilians to safety | Hard |
+| **Escape Pursuit** | David's Company | Lord of Ekron | David + Scout + 2 Elite Slingers | Reach the opposite map edge | Hard |
+| **Ziklag Raid** | David's Company | Achish's Host | David + 2 Elite Slingers + Shield Bearer + Scout | Rescue captives | Hard |
+| **The Anointed** | Jonathan's Followers | Achish's Host | Jonathan + Swordsman + Spearman + Archer + Elite Archer | Eliminate commander | Very Hard |
 
 ### Loadout Format
 Each loadout defines:
@@ -306,12 +321,12 @@ Before a scenario:
 3. Add command cards based on the units brought.
 
 Example:
-David + 3 Swordsmen + 2 Archers + 1 Scout
+David + 3 Swordsmen + 2 Elite Slingers + 1 Scout
 
 Command deck:
 - David Leadership cards
 - Swordsman command cards
-- Archer command cards
+- Elite Slinger command cards
 - Scout command card
 
 ### Card Design
@@ -380,7 +395,7 @@ Example:
 All David archers are destroyed.
 
 Remove:
-"Archer Volley"
+"Archer Volley" (or appropriate type card)
 
 Effect:
 - Your army loses tactical options as it suffers losses.
@@ -466,23 +481,24 @@ Units have fixed base stats. Actions are enhanced by Command Cards.
 | **Range** | 2 |
 | **Passive** | Brace (bonus dmg vs charging enemies) |
 
-### Slinger
+### Slinger (Elite Slingers)
+
 | Stat | Value |
 |---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 2 |
+| **HP** | 2 (Bronze) |
+| **Move** | 3 |
 | **Attack** | Sling dmg 1 |
 | **Range** | 3 |
-| **Passive** | — |
+| **Passive** | Mobile skirmisher — harass at long range, avoid direct fights |
 
 ### Archer
 | Stat | Value |
 |---|---|
-| **HP** | 1 (Leather) |
+| **HP** | 2 (Bronze) |
 | **Move** | 2 |
 | **Attack** | Bow Shot dmg 2 |
-| **Range** | 3 |
-| **Passive** | Aim (next shot +1 dmg if stationary) |
+| **Range** | 2 |
+| **Passive** | — |
 
 ### Scout
 | Stat | Value |
@@ -493,66 +509,40 @@ Units have fixed base stats. Actions are enhanced by Command Cards.
 | **Range** | 2 |
 | **Passive** | Retreat (gain +1 Move when disengaging) |
 
----
-
-## Units — Enemy Roster (Amalekites)
-
-Historically nomadic raiders. Lightly armored, mobile. No heavy infantry.
-
-### Amalekite Scout
-| Stat | Value |
-|---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 3 |
-| **Attack** | Javelin dmg 1 |
-| **Range** | 2 |
-| **Passive** | Retreat |
-
-### Amalekite Raider (core melee)
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 2 |
-| **Attack** | Spear Thrust dmg 2 |
-| **Range** | 2 |
-| **Passive** | Shield Wall (defend) |
-
-### Amalekite Slinger
-| Stat | Value |
-|---|---|
-| **HP** | 1 (Leather) |
-| **Move** | 2 |
-| **Attack** | Sling dmg 1 |
-| **Range** | 3 |
-| **Passive** | — |
-
-### Amalekite Archer (mounted)
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 3 |
-| **Attack** | Bow Shot dmg 2 |
-| **Range** | 3 |
-| **Passive** | Parthian Shot (move 1 + shoot, dmg 1) |
-
-### Camel Rider (unique heavy)
+### Shield Bearer
 | Stat | Value |
 |---|---|
 | **HP** | 3 (Iron) |
-| **Move** | 3 |
-| **Attack** | Spear dmg 2 / Trample dmg 2 (pushes target 1 tile) |
-| **Range** | 2 |
-| **Passive** | Trample |
-
-### Amalekite Chieftain (commander)
-| Stat | Value |
-|---|---|
-| **HP** | 2 (Bronze) |
-| **Move** | 2 |
-| **Attack** | Melee dmg 2 |
+| **Move** | 1 |
+| **Attack** | Shield Bash dmg 1 |
 | **Range** | 1 |
-| **Passive** | Command (rally adjacent exhausted ally → ready), War Cry (adjacent allies +1 dmg this turn) |
-| **Special** | Lose Chieftain = lose battle |
+| **Passive** | Tank — high defense, slows enemy advance |
+
+---
+
+## Units — Enemy Roster (Philistines)
+
+### Achish's Host — Lord of Gath (Red)
+
+| Unit | Type | Notes |
+|---|---|---|
+| Achish | Commander | Philistine lord of Gath |
+| Giant | Heavy | Slow, high damage, high health |
+| Swordsman | Infantry | Standard melee |
+| Spearman | Infantry | Reach, anti-charge |
+| Archer | Ranged | Standard ranged |
+| Shield Bearer | Heavy | Tank/defender |
+
+### Lord of Ekron's Host (Green)
+
+| Unit | Type | Notes |
+|---|---|---|
+| Philistine Lord | Commander | Lord of Ekron |
+| Chariot | Unique | Fast assault, open terrain dominance |
+| Slinger | Skirmisher | Long range harassment |
+| Swordsman | Infantry | Standard melee |
+| Spearman | Infantry | Reach, anti-charge |
+| Shield Bearer | Heavy | Tank/defender |
 
 ---
 
@@ -563,9 +553,9 @@ Simple armor-based tiers:
 
 | Armor | HP | Examples |
 |---|---|---|
-| Leather | 1 | Scouts, Slingers, Archers |
-| Bronze | 2 | Swordsmen, Spearmen, Raiders |
-| Iron | 3 | Camel Rider, Elite units |
+| Leather | 1 | Scouts |
+| Bronze | 2 | Swordsmen, Spearmen, Elite Slingers |
+| Iron | 3 | Shield Bearers, Giants |
 
 No complex RPG stats.
 
@@ -588,9 +578,12 @@ No complex RPG stats.
 - Future consideration: specific units/equipment can have counter-attack as a perk
 
 ### Commander Mechanic
-- David provides adjacent allies +1 damage (commander aura)
-- Lose David = lose the battle (immediate defeat)
-- Enemy Chieftain behaves identically
+- Each commander provides a unique passive aura to adjacent allies.
+- David: Adjacent allies gain +1 attack.
+- Jonathan: Adjacent allies gain +1 defense. Elite Archers gain +1 range when within 2 tiles.
+- Achish: Adjacent Philistines gain -1 damage taken.
+- Philistine Lord: Adjacent allies gain +1 attack.
+- Lose commander = lose the battle (immediate defeat).
 
 ---
 

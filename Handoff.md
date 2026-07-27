@@ -1,9 +1,52 @@
 # Handoff: Art Pipeline State
 
 ## Project
-The Anointed Exile — board game with hand-painted bronze-age Levantine art style.
+The Anointed Exile — printable board game prototype with hand-painted bronze-age Levantine art style.
 Model: DreamShaper XL Lightning in ComfyUI portable.
 Review: Ollama minicpm-v:8b vision model.
+
+## Current Prototype Roster
+
+### Commanders & Factions
+
+| Commander | Faction | Color | Unit Types |
+|---|---|---|---|
+| David | David's Company | Purple | Swordsman, Spearman, Elite Slingers, Scouts, Shield Bearers |
+| Jonathan | Jonathan's Followers | Blue | Loyal Guards, Elite Archers, Archers, Spearmen, Shield Bearers |
+| Achish | Achish's Host (Lord of Gath) | Red | Giants, Swordsmen, Spearmen, Archers, Shield Bearers |
+| Philistine Lord | Lord of Ekron's Host | Green | Chariots, Slingers, Swordsmen, Spearmen, Shield Bearers |
+
+### Unit Discs Needed (2" diameter, colored border)
+
+| Disc | Border Color | Notes |
+|---|---|---|
+| David | Purple | Commander portrait |
+| Jonathan | Blue | Commander portrait |
+| Achish | Red | Commander portrait |
+| Philistine Lord | Green | Commander portrait |
+| Swordsman | Purple/Blue/Red/Green | 4 faction variants |
+| Spearman | Purple/Blue/Red/Green | 4 faction variants |
+| Elite Slingers | Purple | David only |
+| Slinger | Green | Ekron only |
+| Scout | Purple | David only |
+| Shield Bearer | Purple/Blue/Red/Green | 4 faction variants |
+| Loyal Guard | Blue | Jonathan only |
+| Elite Archer | Blue | Jonathan only |
+| Archer | Blue/Red | 2 faction variants |
+| Giant | Red | Achish only |
+| Chariot | Green | Ekron only |
+
+### Art Asset Counts
+
+| Asset Type | Count | Status |
+|---|---|---|
+| Unit disc portraits | 25 unique designs | In queue |
+| Commander card fronts | 40 unique (10 per commander) | In queue |
+| Unit-type card fronts | 100 unique (5 types × 5 cards × 4 factions) | In queue |
+| Card back | 1 shared design | In queue |
+| Hex tiles | 30 (grass, rock, sand) | Mostly generated |
+| Equipment icons | 48 | In queue |
+| UI elements | 30 | In queue |
 
 ## What's Done
 
@@ -41,7 +84,7 @@ Already generated in earlier runs:
 - Standees, portraits, cards, UI from earlier sessions
 
 ### Remaining to generate
-Most equipment, all cards, all UI, all Amalekite portraits still need fresh generation with fixed prompts.
+Most equipment, all cards, all UI, all commander/unit portraits still need fresh generation with fixed prompts.
 
 ## Critical Constraint
 **GTX 1060 6GB VRAM** — ComfyUI SDXL (~5GB) and Ollama vision (~5.5GB) CANNOT run simultaneously. Must alternate:

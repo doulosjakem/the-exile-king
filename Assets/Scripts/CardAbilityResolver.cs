@@ -178,11 +178,13 @@ public class CardAbilityResolver : MonoBehaviour
                 return specificType != UnitType.None && unit.UnitType == specificType;
             case UnitTypeFilter.RangedOnly:
                 return unit.UnitType == UnitType.Archer || unit.UnitType == UnitType.Slinger ||
-                       unit.UnitType == UnitType.EnemyArcher;
+                       unit.UnitType == UnitType.EnemyArcher || unit.UnitType == UnitType.EliteArcher;
             case UnitTypeFilter.MeleeOnly:
                 return unit.UnitType == UnitType.Swordsman || unit.UnitType == UnitType.Spearman ||
                        unit.UnitType == UnitType.David || unit.UnitType == UnitType.Raider ||
-                       unit.UnitType == UnitType.Chieftain || unit.UnitType == UnitType.CamelRider;
+                       unit.UnitType == UnitType.Chieftain || unit.UnitType == UnitType.CamelRider ||
+                       unit.UnitType == UnitType.LoyalGuard || unit.UnitType == UnitType.HeavyInfantry ||
+                       unit.UnitType == UnitType.Champion || unit.UnitType == UnitType.Giant;
             case UnitTypeFilter.CommanderOnly:
                 return unit.IsCommander;
             default:
