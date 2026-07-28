@@ -47,7 +47,7 @@
 | Raiders | Amalekites | [unit_types/AMALEKITES/raider/RAIDER.md](unit_types/AMALEKITES/raider/RAIDER.md) |
 | Amalekite Slingers | Amalekites | [unit_types/AMALEKITES/slinger/SLINGER.md](unit_types/AMALEKITES/slinger/SLINGER.md) |
 | Desert Scouts | Amalekites | [unit_types/AMALEKITES/desert_scout/DESERT_SCOUT.md](unit_types/AMALEKITES/desert_scout/DESERT_SCOUT.md) |
-| Camel Riders | Amalekites | [unit_types/AMALEKITES/camel_rider/CAMEL_RIDER.md](unit_types/AMALEKITES/camel_rider/CAMEL_RIDER.md) |
+| Desert Mounts | Amalekites | [unit_types/AMALEKITES/desert_mount/DESERT_MOUNT.md](unit_types/AMALEKITES/desert_mount/DESERT_MOUNT.md) |
 
 ---
 

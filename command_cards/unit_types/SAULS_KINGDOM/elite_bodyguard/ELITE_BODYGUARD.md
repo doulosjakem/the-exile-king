@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: PROTECT / INTERCEPT
+## Formation Card: GUARD / SHIELD BROTHER
 
-### TOP ACTION — Protect
+### TOP ACTION — Guard
 
 **Activations:** 2
 
@@ -20,7 +20,7 @@ Anchor defense around the commander.
 
 ---
 
-### BOTTOM ACTION — Intercept
+### BOTTOM ACTION — Shield Brother
 
 **Activations:** 3
 
@@ -51,7 +51,7 @@ Shield the commander from harm.
 ## Notes
 
 - Elite Bodyguards exist solely to protect the Commander.
-- Intercept is the signature ability — sacrifices the Bodyguard to save the Commander. Bodyguards are lost after intercepting.
-- Protect positions Bodyguards as a shield wall around the command unit.
+- Shield Brother is the signature ability — sacrifices the Bodyguard to save the Commander. Bodyguards are lost after intercepting.
+- Guard positions Bodyguards as a shield wall around the command unit.
 - Without the Commander, Bodyguards are just above-average melee units.
 - If the Commander is eliminated, Bodyguards lose their special abilities.

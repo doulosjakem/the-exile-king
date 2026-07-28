@@ -6,9 +6,9 @@
 
 ---
 
-## Formation: WAR CHARGE / WHEEL OF WAR
+## Formation: CHARIOT CHARGE / SCYTHED WHEEL
 
-### TOP ACTION — War Charge
+### TOP ACTION — Chariot Charge
 
 **Activations:** 3
 
@@ -23,7 +23,7 @@ Devastating shock assault with pursuit capability.
 
 ---
 
-### BOTTOM ACTION — Wheel of War
+### BOTTOM ACTION — Scythed Wheel
 
 Activations: 2
 

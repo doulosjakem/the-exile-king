@@ -1,56 +1,31 @@
-# Archer — Formation Cards
+# Archer — Command Cards
 
-> **Unit Type:** Ranged (Stationary damage)
-> **Faction:** David's Company
-> **Availability:** MVP
-
----
-
-## Formation: FOCUSED VOLLEY / SUPPRESSING FIRE
-
-### TOP ACTION — Focused Volley Formation
-
-**Activations:** 3
-
-All attacks from this unit target the same enemy.
-
-Gain +1 Attack.
-
-**Purpose:**
-Eliminate high-value targets.
+> **Unit Type:** Ranged
+> **Faction:** All factions (common unit)
+> **Availability:** Prototype
 
 ---
-
-### BOTTOM ACTION — Suppressing Fire Formation
-
-**Activations:** 2
-
-Choose an area within range.
-
-The first enemy entering that area
-suffers 2 damage.
-
-**Purpose:**
-Controls enemy movement.
-
----
-
-## Unit Stats (from GDD)
 
 | Stat | Value |
 |---|---|
-| Ranged Combat | 1d6 |
-| Range | 3 spaces |
-| Move | 0 spaces (stationary) |
-| Discipline | 2 |
-| HP | 1 |
-| Armor | None |
+| Range | 2 |
+| Attack | 2 |
+| Defense | 1 |
+| Health | 2 |
+| Move | 2 |
 
 ---
 
-## Notes
+## Cards
 
-- Archers cannot move. Formation cards are critical to their effectiveness.
-- Focused Volley is ideal for assassinating enemy commanders or high-value targets.
-- Suppressing Fire controls chokepoints and forces enemies into unfavorable positions.
-- Low HP makes them vulnerable to melee; pair with Spear Wall or Locked Shields for protection.
+### Archer Volley
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 6 | 3 |
+| Effect | Activate up to 2 Archers: each attacks. Must target enemies within range. | Activate up to 2 Archers: move and gain Aim (+1 dmg on next shot if stationary). |
+
+### Archer Formation
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 5 | 5 |
+| Effect | Overwatch: Archers may make free attack when enemy moves into range. (1 activation) | Marksman: one Archer ignores 1 defense this turn. (2 activations) |

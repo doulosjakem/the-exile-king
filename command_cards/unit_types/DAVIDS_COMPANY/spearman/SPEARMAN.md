@@ -1,60 +1,37 @@
-# Spearman — Formation Cards
+# Spearman — Command Cards
 
-> **Unit Type:** Infantry (Anti-charge specialist)
-> **Faction:** David's Company
-> **Availability:** MVP
-
----
-
-## Formation: SPEAR WALL / HOLD THE LINE
-
-### TOP ACTION — Spear Wall Formation
-
-**Activations:** 3
-
-The first time an enemy moves into an adjacent space,
-Spearmen immediately make a melee attack.
-
-**Attack:** 2
-**Modifiers:** None
-
-The enemy may counterattack normally.
-
-**Purpose:**
-Punishes enemy charges and controls space.
+> **Unit Type:** Infantry (Reach melee)
+> **Faction:** All factions (common unit)
+> **Availability:** Prototype
 
 ---
-
-### BOTTOM ACTION — Hold the Line Formation
-
-**Activations:** 2
-
-When attacked by an adjacent enemy:
-
-- Gain +2 Defense for that attack.
-- After the attack resolves,
-  deal 1 automatic damage to the attacker.
-
-**Purpose:**
-Creates an immovable defensive position.
-
----
-
-## Unit Stats (from GDD)
 
 | Stat | Value |
 |---|---|
-| Melee Combat | 1d6 + 1 |
-| Range | Melee only |
-| Move | 2 spaces |
-| Discipline | 3 |
-| HP | 2 |
-| Armor | Medium |
+| Range | 2 (reach) |
+| Attack | 2 |
+| Defense | 1 |
+| Health | 2 |
+| Move | 2 |
 
 ---
 
-## Notes
+## Cards
 
-- Spearmen are the primary anti-charge unit.
-- Formation cards synergize with their defensive nature: Spear Wall punishes enemies that close the gap, Hold the Line makes them even harder to dislodge.
-- Best positioned at the front line to absorb and punish charges.
+### Spear Wall
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 5 | 3 |
+| Effect | Activate up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Activate up to 2 Spearmen: each gains brace (+1 defense vs melee until next turn). |
+
+### Spearman Formation
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 4 | 5 |
+| Effect | Brace Shields: adjacent Spearmen gain +2 defense until next player turn. (2 activations) | Spear Support: Spearmen attack with reach without penalty against charging enemies. (1 activation) |
+
+### Spearman Screen
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 3 | 6 |
+| Effect | Screen: adjacent friendly units gain -1 damage taken. (2 activations) | Spear Wall: Spearmen may make free attack when enemy enters melee range. (1 activation) |

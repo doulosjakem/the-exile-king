@@ -6,9 +6,9 @@
 
 ---
 
-## Formation: IRON WALL / POWER STRIKE
+## Formation: IRON SHIELD WALL / HEAVY STRIKE
 
-### TOP ACTION — Iron Wall
+### TOP ACTION — Iron Shield Wall
 
 **Activations:** 3
 
@@ -21,7 +21,7 @@ Immovable defensive anchor.
 
 ---
 
-### BOTTOM ACTION — Power Strike
+### BOTTOM ACTION — Heavy Strike
 
 **Activations:** 2
 
@@ -50,6 +50,6 @@ Slow but devastating offensive push.
 ## Notes
 
 - Heavy Infantry is the hardest-hitting melee unit in the Philistine roster.
-- Iron Wall makes them nearly impossible to dislodge from the front line.
-- Power Strike trades mobility for devastating damage.
+- Iron Shield Wall makes them nearly impossible to dislodge from the front line.
+- Heavy Strike trades mobility for devastating damage.
 - Slow (1 space move) but high HP and armor make them a defensive wall.

@@ -50,41 +50,45 @@ Review: Ollama minicpm-v:8b vision model.
 
 ## What's Done
 
-### 1. Full Review Complete
-- **788 unique images** reviewed across entire output folder
-- **460 KEEP, 328 TRASH, 0 errors**
-- Report: `D:\Jake\ComfyUI_windows_portable\ComfyUI\output\ComfyUI\annointed-exile\art_review_report.json`
-- Review script: `D:\the-exile-king\review_art_ollama.py`
+### 1. Prototype Roster Locked
+- **GDD.md** updated: removed Amalekites/Saul's Kingdom from prototype scope; locked 4-commander roster.
+- **Command cards** rewritten for 4 playable factions: David's Company, Jonathan's Followers, Achish's Host, Ekron's Host.
+- **RULEBOOK.md** updated: 3 play modes (co-op, 1v1, 2v2), shared ruleset, prototype-specific deployment.
+- **Command card files** updated: `command_cards/factions/*.md` and `command_cards/unit_types/*/*.md` aligned to prototype.
 
-### 2. Generation Queue Ready
-- **27 queue items** in `D:\the-exile-king\generation_queue.json`
-- Covers: tiles (30), equipment (48), cards (72), UI (30), portraits (24)
-- All items have `batch_size=1` (single images to avoid 6GB VRAM overflow)
+### 2. Art Generation Queue Rebuilt
+- **216 queue items** in `D:\the-exile-king\generation_queue.json`
+- **448 total images** to generate
+- Covers: 25 unit discs, 40 commander cards, 100 unit cards, 1 card back, 30 hex tiles, 10 equipment, 4 UI elements
+- Output subfolders: `prototype/unit-discs`, `prototype/commander-cards`, `prototype/unit-cards`, etc.
 
-### 3. Generation Script Ready
-- `D:\the-exile-king\run_comfyui_generation.py` — standalone batch generator
-- `D:\the-exile-king\run_item_cycle.py` — item-by-item generate+review cycle
-- Both use portable ComfyUI Python: `D:\Jake\ComfyUI_windows_portable\python_embeded\python.exe`
-- Checkpoint: `dreamshaperXL_sfwLightningDPMSDE.safetensors`
+### 3. Prompt Pipeline Updated
+- **56 new expected prompts** added to `review_art_ollama.py`
+- `classify_asset_type` in `run_comfyui_generation.py` updated to recognize `card_front_*`, `card_back`, and new equipment/UI keys
+- All prompt keys in the queue are resolved
 
-### 4. Prompt Fixes Applied
-- Equipment prompts: removed "single person holding" → now "isolated single object centered on pure white background, clean cutout"
-- Added negative prompts for equipment: `person, people, human, hands, fingers, body, figure, face, background, scenery, aged parchment, board game card art`
-- Asset-type-aware positive/negative suffixes in generation script
+### 4. Generation Scripts Ready
+- `run_comfyui_generation.py` — standalone batch generator
+- `review_art_ollama.py` — Ollama vision review
+- Both use portable ComfyUI Python and DreamShaper XL Lightning checkpoint
 
 ## What's Left
 
-### Generation Queue (27 items, ~162 images total)
-Already generated in earlier runs:
-- 10x grass tiles (hex_grass_00001-00010)
-- 10x rock tiles (hex_rock_00001-00010)
-- 10x sand tiles (hex_sand_00001-00010)
-- 9x bronze-sword (00001-00009, last one with fixed prompt)
-- 1x leather-shield, 1x spear, 1x sling, 1x bow, 1x camel
-- Standees, portraits, cards, UI from earlier sessions
+### Art Generation
+All prototype assets need generation. Total 448 images.
+
+Already generated in earlier runs (old roster):
+- 788 unique images reviewed, 460 KEEP / 328 TRASH
+- These are in `box-art`, `player-units/amalekites`, etc. and are NOT part of the new prototype queue.
 
 ### Remaining to generate
-Most equipment, all cards, all UI, all commander/unit portraits still need fresh generation with fixed prompts.
+- All unit discs (25 designs)
+- All commander cards (40 designs)
+- All unit-type cards (100 designs)
+- Card back
+- Hex tiles (30)
+- Equipment (10)
+- UI elements (4)
 
 ## Critical Constraint
 **GTX 1060 6GB VRAM** — ComfyUI SDXL (~5GB) and Ollama vision (~5.5GB) CANNOT run simultaneously. Must alternate:
@@ -105,8 +109,8 @@ This auto-generates one queue item, stops ComfyUI, reviews all images, suggests 
 # 1. Start ComfyUI (visible window recommended for debugging)
 D:\Jake\ComfyUI_windows_portable\python_embeded\python.exe -s ComfyUI\main.py --lowvram --windows-standalone-build -WorkingDirectory D:\Jake\ComfyUI_windows_portable
 
-# 2. Generate a batch
-python "D:\the-exile-king\run_comfyui_generation.py" --no-launch --items 3
+# 2. Generate a batch (limit to N items)
+python "D:\the-exile-king\run_comfyui_generation.py" --no-launch --limit 5
 
 # 3. Stop ComfyUI (close window or kill process)
 
@@ -116,7 +120,7 @@ python "D:\the-exile-king\review_art_ollama.py" --output review.json
 
 ## Key Files
 - `D:\the-exile-king\PROMPTS.md` — prompt reference
-- `D:\the-exile-king\generation_queue.json` — what to generate
+- `D:\the-exile-king\generation_queue.json` — 216 prototype queue items (448 images)
 - `D:\the-exile-king\review_art_ollama.py` — review script with expected prompts
 - `D:\the-exile-king\run_comfyui_generation.py` — generation runner
 - `D:\the-exile-king\run_item_cycle.py` — full cycle
@@ -129,9 +133,9 @@ python "D:\the-exile-king\review_art_ollama.py" --output review.json
 - `to_duplicates` folders got nested deeply from repeated dedupe runs
 
 ## Estimated Time Remaining
-With batch_size=1, ~4 min per image (generation + startup/shutdown):
-- ~120 images needing generation × 4 min = ~8 hours
-- Plus review time after each batch
+With batch_size=1, ~4 min per image:
+- **448 prototype images × 4 min = ~30 hours of generation**
+- Plus review time. At 5-10 items per session, expect ~10–20 sessions to complete.
 
 ## User Preferences
 - Wants asset-type-aware review (not just character art)

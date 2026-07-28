@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: LEADERSHIP / RALLY
+## Formation Card: SHEPHERD'S CALL / WILDERNESS RALLY
 
-### TOP ACTION — Leadership
+### TOP ACTION — Shepherd's Call
 
 **Activations:** 3
 
@@ -21,7 +21,7 @@ Boost nearby units during the critical moment.
 
 ---
 
-### BOTTOM ACTION — Rally
+### BOTTOM ACTION — Wilderness Rally
 
 **Activations:** 2
 
@@ -51,6 +51,6 @@ Reclaim initiative and extend the turn's effectiveness.
 ## Notes
 
 - David is the only commander. He cannot be replaced if eliminated — army loses the scenario.
-- Leadership is the most powerful formation — it lets David and an ally act twice in one turn.
-- Rally is the recovery tool — it lets a dormant unit act again, extending the army's turn.
+- Shepherd's Call is the most powerful formation — it lets David and an ally act twice in one turn.
+- Wilderness Rally is the recovery tool — it lets a dormant unit act again, extending the army's turn.
 - Commander cards are not lost when David is eliminated; they are removed from the deck at deck construction time if David is in the army.

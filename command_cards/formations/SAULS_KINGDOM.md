@@ -73,9 +73,9 @@ Boost the entire front line simultaneously.
 
 ---
 
-### Royal Guard: ANCIENT SHIELD / IRON WALL
+### Royal Guard: ROYAL SHIELD / KING'S WALL
 
-**TOP ACTION — Ancient Shield**
+**TOP ACTION — Royal Shield**
 Activations: 3
 
 When Royal Guard is attacked by melee, gain +3 Defense.
@@ -87,7 +87,7 @@ Immune frontline that punishes melee attackers.
 
 ---
 
-**BOTTOM ACTION — Iron Wall**
+**BOTTOM ACTION — King's Wall**
 Activations: 2
 
 Royal Guard may form a wall with another adjacent Royal Guard.

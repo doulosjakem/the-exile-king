@@ -64,11 +64,11 @@ def classify_asset_type(item):
     
     if any(x in prompt_key for x in ["hex_", "tile", "grass", "rock", "sand"]):
         return "tile"
-    if any(x in prompt_key for x in ["swordsmen-advance", "archer-volley", "spear-wall", "slinger-skirmish", "scout-recon", "refugee-aid", "davids-leadership", "march", "engage"]):
+    if any(x in prompt_key for x in ["card_front", "card_back", "swordsmen-advance", "archer-volley", "spear-wall", "slinger-skirmish", "scout-recon", "refugee-aid", "davids-leadership", "march", "engage", "card-frame-template", "command-card-back", "hp-bar"]) or "card" in subfolder:
         return "card"
-    if any(x in prompt_key for x in ["end-turn", "command-card", "card-frame", "hp-bar", "reward-panel"]) or "ui" in subfolder:
+    if any(x in prompt_key for x in ["end-turn", "hp-bar", "reward-panel", "commander-aura-marker", "activation-token", "lost-pile-marker", "setup-sheet"]) or "ui" in subfolder:
         return "ui"
-    if any(x in prompt_key for x in ["bronze-sword", "leather-shield", "spear", "sling", "bow", "camel"]) or "equipment" in subfolder:
+    if any(x in prompt_key for x in ["bronze-sword", "leather-shield", "spear", "sling", "bow", "camel", "sword-sheath", "quiver", "bronze-helm", "bronze-greaves", "leather-belt"]) or "equipment" in subfolder:
         return "equipment"
     return "character"
 

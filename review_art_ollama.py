@@ -224,9 +224,127 @@ EXPECTED_PROMPTS = {
     "box-art-wounded-bear": "game box art, painting in illuminated manuscript style, close-up of a hand gripping a spear shaft thrust into fur, a wounded bear rears, David's boot and the lower half of his tunic are visible, blood is implied through a single stroke of faded crimson, mythic and primal grounded in the historical David legend, hand-painted historical illustration, aged parchment background with ink outlines, muted earth tones ochre umber faded crimson, board game cover art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine",
     "box-art-ziklag-burned": "game box art, painting in illuminated manuscript style, the settlement of Ziklag smoldering at dawn, walls collapsed, smoke rising, David's warriors fall to their knees weeping, the Amalekite raiders visible as tiny dust specks on the horizon fleeing with captives, composition is low and crushing, hand-painted historical illustration, aged parchment background with ink outlines, muted earth tones umber ochre faded crimson, board game cover art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine",
 
+    "jonathan_commander": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan son of Saul, bronze age Levantine prince and warrior, dark hair, handsome features, rich blue-purple cloak over linen tunic, leather vest, composite bow in hand, quiver on back, bronze short sword at hip, noble brave expression, standing confidently, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "philistine_lord_commander": "ONE PERSON ONLY, solo portrait, waist-up, Philistine lord, bronze age Levantine city-state ruler, dark hair, rich embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_david": "ONE PERSON ONLY, solo portrait, waist-up, David's shield bearer, bronze age Levantine heavy infantry, dark hair, linen tunic with leather armor, brown cloak, large round hide shield with bronze rim, bronze short sword, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "giant_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine giant warrior from Gath, bronze age Levantine giant, enormous build, dark hair and beard, worn leather tunic, bronze scales on shoulders, small shield, massive bronze-tipped spear, fierce expression, towering menacing figure, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsman_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's swordsman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsman_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsman_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine spearman of Gath, bronze age Levantine warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on rocky ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "slinger_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's archer, bronze age Levantine archer, dark hair, simple linen tunic with leather vest, brown cloak, short composite bow drawn with arrow nocked, quiver of arrows slung across back, knife at waist, sandals, drawing bow with focused precision, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine archer of Ekron, bronze age Levantine archer, dark hair, linen tunic with leather vest, short composite bow in hand with arrow nocked, quiver on back, knife at waist, focused expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron charioteer, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak flowing, standing beside bronze-rimmed chariot, spear in hand, weathered determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_david": "hand-painted royal portrait of David the future king of Israel, young bronze age Levantine commander, dark curly hair and trimmed beard, simple linen tunic with leather chest piece, brown wool cloak pinned at shoulder with bronze brooch, bronze short sword at hip, leather sling tucked in belt, shepherd's staff in hand, determined watchful expression, standing on rocky Judean hillside under overcast sky, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_jonathan": "hand-painted noble portrait of Jonathan son of Saul, bronze age Levantine prince and warrior, dark hair, handsome features, rich blue-purple cloak over linen tunic, leather vest, composite bow in hand, quiver on back, bronze short sword at hip, noble brave expression, standing confidently, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_achish": "hand-painted regal portrait of Achish lord of Gath, bronze age Levantine Philistine ruler, dark hair, rich purple cloak over linen tunic, bronze chest plate, bronze sword at hip, stern unreadable expression, seated authority on folding stool, flanked by spearmen, warm lamplight, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_philistine_lord": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsmen-advance": "scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen advancing in formation, bronze short swords raised, hide shields overlapping, dust at their heels, linen tunics and leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsmen-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen in shield wall formation, shields locked, spears resting on shoulders, grim defensive stance, linen tunics, leather vests, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spear-wall": "scene in illuminated manuscript style, bronze age Levantine Israelite spearmen in tight formation, long wooden spears with bronze tips angled outward, shields locked, braced defensive stance, linen tunics, leather armor, grim expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite spearmen advancing in lockstep, spears angled forward, shields overlapping, discipline and order, linen tunics, brown cloaks, leather armor, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman-screen": "scene in illuminated manuscript style, bronze age Levantine spearmen holding ground, shields forward, spears thrusting, protecting allies behind them, linen tunics, leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "circle-and-strike": "scene in illuminated manuscript style, bronze age Levantine Israelite slingers in mobile skirmish formation, leather slings raised, stones in pouches, light armor, crouched mobile stances, alert expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "stone-volley": "scene in illuminated manuscript style, bronze age Levantine Israelite slingers releasing a volley of stones, leather slings snapping forward, projectiles arcing through air, concentrated fire on one target, linen tunics, leather vests, focused expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer-volley": "scene in illuminated manuscript style, bronze age Levantine Israelite archers on ridge aiming forward, composite bows drawn, arrows ready to loose, linen tunics, leather arm bracers, quivers on backs, aged parchment background, ink outlines with muted watercolor wash in ochre and faded ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite archers in disciplined formation, bows lowered watching, ready for overwatch, linen tunics, leather vests, alert expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "scout-recon": "scene in illuminated manuscript style, bronze age Levantine Israelite scouts moving swiftly through rocky terrain, light clothing, scanning horizon, short spears and slings, alert watchful expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "scout-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite scouts hidden in rocky ambush, covered by cloaks and scrub, one scout peering over rock with hand raised signal to hold, linen tunics, worn cloaks, alert expressions, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "guard-formation": "scene in illuminated manuscript style, Jonathan's loyal guards in shield wall formation, spears locked, shields overlapping, disciplined elite infantry, white linen tunics with dark borders, leather vests, brown cloaks, grim expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "jonathans-mark": "scene in illuminated manuscript style, Jonathan's elite archer taking careful aim at a distant target, composite bow drawn, one eye closed in concentration, arrow aligned, linen tunic, leather bracers, brown cloak, focused precise expression, aged parchment background, ink outlines with muted watercolor wash in ochre and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "perfect-shot": "scene in illuminated manuscript style, Jonathan's elite archer standing perfectly still drawing bow to full draw, arrow nocked, target visible in distance, linen tunic, leather vest, brown cloak, focused expression, aged parchment background, ink outlines with muted watercolor wash in ochre and amber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "giants-might": "scene in illuminated manuscript style, Philistine giant warrior crushing enemy shield with massive spear, enormous build, worn leather tunic, bronze scales on shoulders, small shield, massive bronze-tipped spear, fierce expression, towering menacing figure, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "unstoppable": "scene in illuminated manuscript style, Philistine giant warrior crushing through enemy line, massive spear raised, enemy scattering before him, enormous build, simple tunic, bronze shoulder scales, fierce expression, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "berserker-rage": "scene in illuminated manuscript style, wounded Philistine giant warrior going berserk, massive spear swinging, armor dented, furious expression, enemies recoiling, enormous build, worn tunic, bloodied but fighting harder, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "ekron-archer-command": "scene in illuminated manuscript style, Ekron archers firing coordinated volley, composite bows drawn, arrows loosing in unison, linen tunics, leather vests, quivers on backs, focused concerted expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "ekron-archer-formation-1": "scene in illuminated manuscript style, Ekron archers opening volley before advance, bows drawn, arrows flying ahead of marching infantry, linen tunics, leather bracers, quivers on backs, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "ekron-archer-formation-2": "scene in illuminated manuscript style, Ekron archers targeting same enemy position with combined fire, multiple arrows arcing toward one tile, focused concerted bombardment, linen tunics, leather vests, quivers, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot-charge": "scene in illuminated manuscript style, Ekron chariot smashing through enemy line, bronze-rimmed wheels, horse or runners straining, spear lowered for impact, linen tunic, leather armor, brown cloak flowing, determined expression, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot-formation-1": "scene in illuminated manuscript style, Ekron chariot breaking through enemy shield wall, bronze-rimmed wheels, spear thrusting forward, pushing enemies aside, linen tunic, leather armor, brown cloak, aggressive expression, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot-formation-2": "scene in illuminated manuscript style, Ekron charioteer riding past after striking, wheels spinning, cloak billowing, weapon still raised, linen tunic, leather armor, brown cloak, hit-and-run tactic, aged parchment background, ink outlines with muted watercolor wash in ochre and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield-wall": "scene in illuminated manuscript style, shield bearers locking shields, large round hide shields overlapping, bronze rims, protective formation, steadfast unyielding expression, linen tunics, leather armor, brown cloaks, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "phalanx-advance": "scene in illuminated manuscript style, shield bearer and allies advancing carefully, shield held high, moving as one solid wall, linen tunics, leather armor, brown cloaks, determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_back": "blank aged parchment card back, rectangular, ornate decorative ink border in dark brown, corner ornaments, medieval manuscript border style, no text, hand-painted board game card texture, aged warm parchment, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "sword-sheath": "bronze age leather sword sheath, worn brown leather, bronze tip protector, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "quiver": "bronze age leather quiver with arrows, worn leather, fletched arrows, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "bronze-helm": "bronze age simple bronze helmet, rounded cap with nose guard, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "bronze-greaves": "bronze age bronze shin guards, simple pair, aged patina, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "leather-belt": "bronze age simple leather belt, worn brown leather, bronze buckle, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "commander-aura-marker": "soft glowing circle on ground, commander presence area, warm golden light, board game UI element, transparent background, hand-painted illustration, NOT medieval, NOT fantasy, NOT European",
+    "activation-token": "small wooden token shape, aged warm parchment color, dark ink border outline, flat board game token, game UI element, isolated on transparent background, family friendly",
+    "lost-pile-marker": "small marker disk, aged parchment with dark X mark, board game token style, game UI element, isolated on transparent background, family friendly",
+    "setup-sheet": "game setup reference sheet, aged parchment background, dark ink text boxes, checkmark list style, board game reference card, hand-painted texture, no background",
+    "jonathan_commander": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan son of Saul, bronze age Levantine prince and warrior, dark hair, handsome features, rich blue-purple cloak over linen tunic, leather vest, composite bow in hand, quiver on back, bronze short sword at hip, noble brave expression, standing confidently, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "philistine_lord_commander": "ONE PERSON ONLY, solo portrait, waist-up, Philistine lord, bronze age Levantine city-state ruler, dark hair, rich embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_david": "ONE PERSON ONLY, solo portrait, waist-up, David's shield bearer, bronze age Levantine heavy infantry, dark hair, linen tunic with leather armor, brown cloak, large round hide shield with bronze rim, bronze short sword, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield_bearer_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "giant_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine giant warrior from Gath, bronze age Levantine giant, enormous build, dark hair and beard, worn leather tunic, bronze scales on shoulders, small shield, massive bronze-tipped spear, fierce expression, towering menacing figure, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsman_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's swordsman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsman_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsman_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine spearman of Gath, bronze age Levantine warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on rocky ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "slinger_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's archer, bronze age Levantine archer, dark hair, simple linen tunic with leather vest, brown cloak, short composite bow drawn with arrow nocked, quiver of arrows slung across back, knife at waist, sandals, drawing bow with focused precision, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer_achish": "ONE PERSON ONLY, solo portrait, waist-up, Philistine archer of Ekron, bronze age Levantine archer, dark hair, linen tunic with leather vest, short composite bow in hand with arrow nocked, quiver on back, knife at waist, focused expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot_ekron": "ONE PERSON ONLY, solo portrait, waist-up, Ekron charioteer, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak flowing, standing beside bronze-rimmed chariot, spear in hand, weathered determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_david": "hand-painted royal portrait of David the future king of Israel, young bronze age Levantine commander, dark curly hair and trimmed beard, simple linen tunic with leather chest piece, brown wool cloak pinned at shoulder with bronze brooch, bronze short sword at hip, leather sling tucked in belt, shepherd's staff in hand, determined watchful expression, standing on rocky Judean hillside under overcast sky, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_jonathan": "hand-painted noble portrait of Jonathan son of Saul, bronze age Levantine prince and warrior, dark hair, handsome features, rich blue-purple cloak over linen tunic, leather vest, composite bow in hand, quiver on back, bronze short sword at hip, noble brave expression, standing confidently, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_achish": "hand-painted regal portrait of Achish lord of Gath, bronze age Levantine Philistine ruler, dark hair, rich purple cloak over linen tunic, bronze chest plate, bronze sword at hip, stern unreadable expression, seated authority on folding stool, flanked by spearmen, warm lamplight, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_front_philistine_lord": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsmen-advance": "scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen advancing in formation, bronze short swords raised, hide shields overlapping, dust at their heels, linen tunics and leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "swordsmen-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen in shield wall formation, shields locked, spears resting on shoulders, grim defensive stance, linen tunics, leather vests, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spear-wall": "scene in illuminated manuscript style, bronze age Levantine Israelite spearmen in tight formation, long wooden spears with bronze tips angled outward, shields locked, braced defensive stance, linen tunics, leather armor, grim expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite spearmen advancing in lockstep, spears angled forward, shields overlapping, discipline and order, linen tunics, brown cloaks, leather armor, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman-screen": "scene in illuminated manuscript style, bronze age Levantine spearmen holding ground, shields forward, spears thrusting, protecting allies behind them, linen tunics, leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "circle-and-strike": "scene in illuminated manuscript style, bronze age Levantine Israelite slingers in mobile skirmish formation, leather slings raised, stones in pouches, light armor, crouched mobile stances, alert expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "stone-volley": "scene in illuminated manuscript style, bronze age Levantine Israelite slingers releasing a volley of stones, leather slings snapping forward, projectiles arcing through air, concentrated fire on one target, linen tunics, leather vests, focused expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer-volley": "scene in illuminated manuscript style, bronze age Levantine Israelite archers on ridge aiming forward, composite bows drawn, arrows ready to loose, linen tunics, leather arm bracers, quivers on backs, aged parchment background, ink outlines with muted watercolor wash in ochre and faded ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "archer-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite archers in disciplined formation, bows lowered watching, ready for overwatch, linen tunics, leather vests, alert expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "scout-recon": "scene in illuminated manuscript style, bronze age Levantine Israelite scouts moving swiftly through rocky terrain, light clothing, scanning horizon, short spears and slings, alert watchful expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "scout-formation": "scene in illuminated manuscript style, bronze age Levantine Israelite scouts hidden in rocky ambush, covered by cloaks and scrub, one scout peering over rock with hand raised signal to hold, linen tunics, worn cloaks, alert expressions, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "guard-formation": "scene in illuminated manuscript style, Jonathan's loyal guards in shield wall formation, spears locked, shields overlapping, disciplined elite infantry, white linen tunics with dark borders, leather vests, brown cloaks, grim expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "jonathans-mark": "scene in illuminated manuscript style, Jonathan's elite archer taking careful aim at a distant target, composite bow drawn, one eye closed in concentration, arrow aligned, linen tunic, leather bracers, brown cloak, focused precise expression, aged parchment background, ink outlines with muted watercolor wash in ochre and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "perfect-shot": "scene in illuminated manuscript style, Jonathan's elite archer standing perfectly still drawing bow to full draw, arrow nocked, target visible in distance, linen tunic, leather vest, brown cloak, focused expression, aged parchment background, ink outlines with muted watercolor wash in ochre and amber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "giants-might": "scene in illuminated manuscript style, Philistine giant warrior crushing enemy shield with massive spear, enormous build, worn leather tunic, bronze scales on shoulders, small shield, massive bronze-tipped spear, fierce expression, towering menacing figure, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "unstoppable": "scene in illuminated manuscript style, Philistine giant warrior crushing through enemy line, massive spear raised, enemy scattering before him, enormous build, simple tunic, bronze shoulder scales, fierce expression, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "berserker-rage": "scene in illuminated manuscript style, wounded Philistine giant warrior going berserk, massive spear swinging, armor dented, furious expression, enemies recoiling, enormous build, worn tunic, bloodied but fighting harder, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "ekron-archer-command": "scene in illuminated manuscript style, Ekron archers firing coordinated volley, composite bows drawn, arrows loosing in unison, linen tunics, leather vests, quivers on backs, focused concerted expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "ekron-archer-formation-1": "scene in illuminated manuscript style, Ekron archers opening volley before advance, bows drawn, arrows flying ahead of marching infantry, linen tunics, leather bracers, quivers on backs, aged parchment background, ink outlines with muted watercolor wash in ochre and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "ekron-archer-formation-2": "scene in illuminated manuscript style, Ekron archers targeting same enemy position with combined fire, multiple arrows arcing toward one tile, focused concerted bombardment, linen tunics, leather vests, quivers, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot-charge": "scene in illuminated manuscript style, Ekron chariot smashing through enemy line, bronze-rimmed wheels, horse or runners straining, spear lowered for impact, linen tunic, leather armor, brown cloak flowing, determined expression, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot-formation-1": "scene in illuminated manuscript style, Ekron chariot breaking through enemy shield wall, bronze-rimmed wheels, spear thrusting forward, pushing enemies aside, linen tunic, leather armor, brown cloak, aggressive expression, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "chariot-formation-2": "scene in illuminated manuscript style, Ekron charioteer riding past after striking, wheels spinning, cloak billowing, weapon still raised, linen tunic, leather armor, brown cloak, hit-and-run tactic, aged parchment background, ink outlines with muted watercolor wash in ochre and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "shield-wall": "scene in illuminated manuscript style, shield bearers locking shields, large round hide shields overlapping, bronze rims, protective formation, steadfast unyielding expression, linen tunics, leather armor, brown cloaks, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "phalanx-advance": "scene in illuminated manuscript style, shield bearer and allies advancing carefully, shield held high, moving as one solid wall, linen tunics, leather armor, brown cloaks, determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "card_back": "blank aged parchment card back, rectangular, ornate decorative ink border in dark brown, corner ornaments, medieval manuscript border style, no text, hand-painted board game card texture, aged warm parchment, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "sword-sheath": "bronze age leather sword sheath, worn brown leather, bronze tip protector, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "quiver": "bronze age leather quiver with arrows, worn leather, fletched arrows, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "bronze-helm": "bronze age simple bronze helmet, rounded cap with nose guard, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "bronze-greaves": "bronze age bronze shin guards, simple pair, aged patina, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "leather-belt": "bronze age simple leather belt, worn brown leather, bronze buckle, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
+    "commander-aura-marker": "soft glowing circle on ground, commander presence area, warm golden light, board game UI element, transparent background, hand-painted illustration, NOT medieval, NOT fantasy, NOT European",
+    "activation-token": "small wooden token shape, aged warm parchment color, dark ink border outline, flat board game token, game UI element, isolated on transparent background, family friendly",
+    "lost-pile-marker": "small marker disk, aged parchment with dark X mark, board game token style, game UI element, isolated on transparent background, family friendly",
+    "setup-sheet": "game setup reference sheet, aged parchment background, dark ink text boxes, checkmark list style, board game reference card, hand-painted texture, no background",
+    "swordsman_david": "ONE PERSON ONLY, solo portrait, waist-up, David's swordsman, bronze age Levantine Israelite warrior, dark hair and short beard, simple linen tunic with layered leather vest, worn brown wool cloak pinned at shoulder, bronze short sword with leaf-shaped blade in hand, small round hide-covered shield on arm, leather wrapped grip, sandals, alert expression, standing on rocky Judean ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "spearman_david": "ONE PERSON ONLY, solo portrait, waist-up, David's spearman, bronze age Levantine Israelite warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on hillside overlooking wilderness valleys, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "slinger_david": "ONE PERSON ONLY, solo portrait, waist-up, David's slinger, bronze age Levantine Israelite skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch at belt, pouch of smooth stones at hip, small knife, crouched lightly ready to pivot and throw, alert watchful expression, standing on rocky slope, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "david_commander": "ONE PERSON ONLY, solo portrait, waist-up, young bronze age Israelite commander, bronze age Levantine man, dark curly hair and trimmed beard, simple linen tunic with leather chest piece, brown wool cloak pinned at shoulder with bronze brooch, bronze short sword at hip, leather sling tucked in belt, shepherd's staff in hand, determined watchful expression, standing on rocky Judean hillside under overcast sky, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine",
+    "achish_commander": "ONE PERSON ONLY, solo portrait, waist-up, Philistine lord of Gath, bronze age Levantine Philistine ruler, dark hair, rich purple cloak over linen tunic, bronze chest plate, bronze sword at hip, stern unreadable expression, seated authority on folding stool, flanked by spearmen, warm lamplight, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "scout_david": "ONE PERSON ONLY, solo portrait, waist-up, David's scout, bronze age Levantine tracker and skirmisher, lean shepherd-skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, sandals, sling at belt, short spear, small hide shield on back, knife at waist, alert watchful expression, standing lightly on rocky Judean hillside, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "elite_archer_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's elite archer, bronze age Levantine archer, dark hair, white linen tunic with dark border, leather vest, brown cloak, composite bow drawn with arrow nocked, quiver on back, bronze short sword at hip, noble precise expression, standing with disciplined poise, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+    "loyal_guard_jonathan": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's loyal guard, bronze age Levantine elite infantryman, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, loyal protective expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
 }
-
-
 def gather_images(base):
     images = []
     for root, dirs, files in os.walk(base):
@@ -283,7 +401,7 @@ def find_duplicates(images, threshold=40):
 
 
 PROMPT_CHECK_FOLDERS = {
-    "player-units", "unit-tokens", "davids", "amalekite", "amalekites", "standees",
+    "prototype",     "player-units", "unit-tokens", "davids", "amalekite", "amalekites", "standees",
     "portraits", "cards", "card", "assets", "box-art", "equipment", "ui-elements", "to_review"
 }
 
@@ -325,8 +443,67 @@ PROMPT_ALIASES = {
     "reward panel": "end-turn-button",
 }
 
+
+
+PROTOTYPE_STEM_ALIASES = {
+    "david": "david_commander",
+    "jonathan": "jonathan_commander",
+    "achish": "achish_commander",
+    "philistine-lord": "philistine_lord_commander",
+    "giant": "giant_achish",
+    "chariot": "chariot_ekron",
+    "scout-david": "scout_david",
+    "elite-archer": "elite_archer_jonathan",
+    "loyal-guard": "loyal_guard_jonathan",
+}
+
+
+def _prototype_lookup(folder, stem):
+    parts = folder.replace('\\', '/').split('/')
+    subfolder = parts[-1] if parts else folder
+
+    clean = re.sub(r'[-_]\d+', '', stem)
+    clean = clean.rstrip('_-')
+
+    if subfolder == "card-backs":
+        if "card_back" in EXPECTED_PROMPTS:
+            return "card_back"
+
+    elif subfolder == "commander-cards":
+        commander = re.sub(r'-\d+$', '', clean)
+        return f"card_front_{commander}".replace("-", "_")
+
+    elif subfolder == "unit-cards":
+        m = re.match(r'^(.+?)(?:-\d+)+$', clean)
+        if m:
+            return m.group(1)
+        return clean
+
+    elif subfolder == "hex-tiles":
+        m = re.match(r'^hex-(.+?)(?:-\d+)+$', clean)
+        if m:
+            return f"hex_{m.group(1)}"
+        return clean.replace("-", "_")
+
+    elif subfolder in ("equipment", "ui"):
+        return clean
+
+    elif subfolder == "unit-discs":
+        if clean in PROTOTYPE_STEM_ALIASES:
+            return PROTOTYPE_STEM_ALIASES[clean]
+        if "-" in clean:
+            return clean.replace("-", "_")
+        return clean
+
+    elif subfolder == "prototype":
+        return clean
+
+    return None
+
 def lookup_expected_prompt(rel_path):
     folder = os.path.dirname(rel_path).lower()
+    if not folder:
+        folder = "."
     basename = os.path.basename(rel_path).lower()
     stem = os.path.splitext(basename)[0]
     path_no_numbers = re.sub(r'[\d_]+', '', stem)
@@ -340,6 +517,54 @@ def lookup_expected_prompt(rel_path):
 
     if not prompt_check:
         return None, None
+
+    if "prototype" in folder.split(os.sep):
+        proto_key = _prototype_lookup(folder, stem)
+        if proto_key and proto_key in EXPECTED_PROMPTS:
+            return EXPECTED_PROMPTS[proto_key], proto_key
+
+    parts = [p.lower() for p in folder.replace('\\\\', '/').split('/')] + re.split(r'[\s_-]', basename)
+    combined = " ".join(parts)
+
+    best_key = None
+    best_len = 0
+
+    for key in EXPECTED_PROMPTS:
+        k = key.lower()
+        if k in parts or k in path_dashed:
+            score = len(k)
+            if score > best_len:
+                best_len = score
+                best_key = key
+            continue
+        words = k.split()
+        if len(words) > 1:
+            if all(w in parts or w in path_dashed for w in words):
+                score = len(k)
+                if score > best_len:
+                    best_len = score
+                    best_key = key
+
+    if not best_key:
+        best_key = _prototype_lookup(folder, stem)
+
+    if not best_key:
+        for alias, canonical in PROMPT_ALIASES.items():
+            if alias in combined:
+                best_key = canonical
+                break
+
+    if best_key:
+        return EXPECTED_PROMPTS[best_key], best_key
+    return None, None
+
+
+
+
+    if "prototype" in folder.split(os.sep):
+        proto_key = _prototype_lookup(folder, stem)
+        if proto_key and proto_key in EXPECTED_PROMPTS:
+            return EXPECTED_PROMPTS[proto_key], proto_key
 
     parts = [p.lower() for p in re.split(r'[/\\]', folder)] + re.split(r'[\s_-]', basename)
     combined = " ".join(parts)
@@ -364,6 +589,44 @@ def lookup_expected_prompt(rel_path):
                     best_key = key
 
     if not best_key:
+        best_key = _prototype_lookup(folder, stem)
+
+    if not best_key:
+        for alias, canonical in PROMPT_ALIASES.items():
+            if alias in combined:
+                best_key = canonical
+                break
+
+    if best_key:
+        return EXPECTED_PROMPTS[best_key], best_key
+    return None, None
+
+    parts = [p.lower() for p in re.split(r'[/\\]', folder)] + re.split(r'[\s_-]', basename)
+    combined = " ".join(parts)
+
+    best_key = None
+    best_len = 0
+
+    for key in EXPECTED_PROMPTS:
+        k = key.lower()
+        if k in parts or k in path_dashed:
+            score = len(k)
+            if score > best_len:
+                best_len = score
+                best_key = key
+            continue
+        words = k.split()
+        if len(words) > 1:
+            if all(w in parts or w in path_dashed for w in words):
+                score = len(k)
+                if score > best_len:
+                    best_len = score
+                    best_key = key
+
+    if not best_key:
+        best_key = _prototype_lookup(folder, stem)
+
+    if not best_key:
         for alias, canonical in PROMPT_ALIASES.items():
             if alias in combined:
                 best_key = canonical
@@ -379,12 +642,25 @@ CHARACTER_KEYS = {
     "token_archer", "token_scout", "token_chieftain_amalekite", "token_raider_amalekite",
     "token_refugee", "david", "swordsman", "spearman", "slinger", "archer",
     "scout", "raider", "chieftain", "refugee",
-    "slinger_amalekite", "archer_amalekite", "scout_amalekite", "camel_rider_amalekite"
+    "slinger_amalekite", "archer_amalekite", "scout_amalekite", "camel_rider_amalekite",
+    "david_commander", "jonathan_commander", "achish_commander", "philistine_lord_commander",
+    "shield_bearer_david", "shield_bearer_jonathan", "shield_bearer_achish", "shield_bearer_ekron",
+    "giant_achish", "swordsman_jonathan", "swordsman_achish", "swordsman_ekron",
+    "spearman_jonathan", "spearman_achish", "spearman_ekron", "slinger_ekron",
+    "archer_jonathan", "archer_achish", "chariot_ekron", "loyal_guard_jonathan",
+    "elite_archer_jonathan", "jonathan_commander",
+    "swordsman_david", "spearman_david", "slinger_david",
 }
 TILE_KEYS = {"hex_sand", "hex_rock", "hex_grass", "grass", "rock", "sand"}
-UI_KEYS = {"end-turn-button", "command-card-back", "card-frame-template", "hp_bar_bg", "hp_bar_fill", "reward_panel"}
-EQUIPMENT_KEYS = {"bronze-sword", "leather-shield", "spear", "sling", "bow", "camel"}
-CARD_KEYS = {"swordsmen-advance", "archer-volley", "spear-wall", "slinger-skirmish", "scout-recon", "refugee-aid", "davids-leadership", "march", "engage"}
+UI_KEYS = {"end-turn-button", "command-card-back", "card-frame-template", "hp_bar_bg", "hp_bar_fill", "reward_panel", "commander-aura-marker", "activation-token", "lost-pile-marker", "setup-sheet"}
+EQUIPMENT_KEYS = {"bronze-sword", "leather-shield", "spear", "sling", "bow", "camel", "sword-sheath", "quiver", "bronze-helm", "bronze-greaves", "leather-belt"}
+CARD_KEYS = {"swordsmen-advance", "archer-volley", "spear-wall", "slinger-skirmish", "scout-recon", "refugee-aid", "davids-leadership", "march", "engage",
+              "swordsmen-formation", "spearman-formation", "spearman-screen", "circle-and-strike", "stone-volley",
+              "archer-formation", "scout-formation", "guard-formation", "jonathans-mark", "perfect-shot",
+              "giants-might", "unstoppable", "berserker-rage", "ekron-archer-command", "ekron-archer-formation-1",
+              "ekron-archer-formation-2", "chariot-charge", "chariot-formation-1", "chariot-formation-2",
+              "shield-wall", "phalanx-advance", "card_back",
+              "card_front_david", "card_front_jonathan", "card_front_achish", "card_front_philistine_lord"}
 
 def classify_asset(expected_key):
     if not expected_key:
@@ -808,8 +1084,6 @@ def main():
         print(f"\n--- TRASH FILES ({len(trash_list)}) ---")
         for t in trash_list:
             print(f"  {t['filename']} | {t['score']} | {t['reason']}")
-
-    return 0
 
 
 if __name__ == "__main__":

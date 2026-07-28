@@ -12,9 +12,9 @@ Lords of the Philistines are scenario-specific commander variants. Each lord may
 
 ---
 
-## Generic Lord Formation: COMMAND / IRON EDICT
+## Generic Lord Formation: LORD'S DECREE / IRON WORD
 
-### TOP ACTION — Command
+### TOP ACTION — Lord's Decree
 
 **Activations:** 3
 
@@ -26,7 +26,7 @@ Broader command range than Achish.
 
 ---
 
-### BOTTOM ACTION — Iron Edict
+### BOTTOM ACTION — Iron Word
 
 **Activations:** 2
 

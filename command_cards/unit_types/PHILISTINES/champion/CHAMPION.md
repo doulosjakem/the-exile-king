@@ -6,9 +6,9 @@
 
 ---
 
-## Formation: DUELIST'S STANCE / CHAMPION'S RESPITE
+## Formation: CHAMPION'S DUEL / VICTOR'S PAUSE
 
-### TOP ACTION — Duelist's Stance
+### TOP ACTION — Champion's Duel
 
 **Activations:** 3
 
@@ -23,7 +23,7 @@ Elite duelist that targets high-value enemies.
 
 ---
 
-### BOTTOM ACTION — Champion's Respite
+### BOTTOM ACTION — Victor's Pause
 
 **Activations:** 2
 

@@ -1,52 +1,25 @@
 # Achish — Command Cards
 
 > **Unit Type:** Commander
-> **Faction:** Philistines
-> **Availability:** Post-MVP
+> **Faction:** Achish's Host
+> **Availability:** Prototype
 
 ---
-
-## Formation: LORD'S DECREE / DIVINE RIGHT
-
-### TOP ACTION — Lord's Decree
-
-Activations: 3
-
-Issue a command to all Philistine units within 3 spaces.
-Those units may activate immediately this turn.
-
-**Purpose:**
-Broad command authority that keeps the army moving.
-
----
-
-### BOTTOM ACTION — Divine Right
-
-Activations: 2
-
-All Philistine units within 3 spaces of Achish gain +2 Defense until your next turn.
-
-**Purpose:**
-Commander aura that makes nearby units harder to kill.
-
----
-
-## Unit Stats (from GDD)
 
 | Stat | Value |
 |---|---|
-| Role | Commander |
-| Melee Combat | 1d6 + 1 |
-| Range | Melee only |
-| Move | 2 spaces |
-| Discipline | 4 |
-| HP | 3 |
-| Armor | Heavy |
+| Range | 1 (melee) |
+| Attack | 2 |
+| Defense | 1 |
+| Health | 2 |
+| Move | 2 |
 
 ---
 
-## Notes
+## Cards
 
-- Achish is a Philistine lord — powerful commander with aura effects.
-- Lord's Decree is the ultimate command card — lets an entire faction activate at once.
-- Divine Right anchors the front line with heavy defensive buff.
+### Philistine Might
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 7 | 3 |
+| Effect | Activate Achish: move up to 2, then attack. All adjacent Philistines gain Shielded (first damage prevented this turn). | Place on Command Board. Adjacent Giants and Heavy Infantry gain +1 defense. (2 activations) |

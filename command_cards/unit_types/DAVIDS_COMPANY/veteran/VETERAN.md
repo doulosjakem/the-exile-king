@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: VETERAN FORMATION / BATTLE Hardened
+## Formation Card: BATTLE-TESTED / UNBROKEN
 
-### TOP ACTION — Veteran Assault
+### TOP ACTION — Battle-Tested
 
 **Activations:** 3
 
@@ -22,7 +22,7 @@ Elite frontline fighters that chain kills.
 
 ---
 
-### BOTTOM ACTION — Battle Hardened
+### BOTTOM ACTION — Unbroken
 
 **Activations:** 2
 
@@ -52,6 +52,6 @@ Anchors the defensive line with elite resilience.
 ## Notes
 
 - Veterans are upgraded base units with better stats than their standard counterparts.
-- Veteran Assault is the offensive powerhouse — chain kills can end fights quickly.
-- Battle Hardened makes Veterans near-immovable front-line anchors.
+- Battle-Tested is the offensive powerhouse — chain kills can end fights quickly.
+- Unbroken makes Veterans near-immovable front-line anchors.
 - High HP and heavy armor make them expensive but reliable.

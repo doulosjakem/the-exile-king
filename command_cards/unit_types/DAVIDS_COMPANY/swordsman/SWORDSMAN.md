@@ -1,59 +1,31 @@
-# Swordsman — Formation Cards
+# Swordsman — Command Cards
 
 > **Unit Type:** Infantry (Standard melee)
-> **Faction:** David's Company
-> **Availability:** MVP
+> **Faction:** All factions (common unit)
+> **Availability:** Prototype
 
 ---
-
-## Formation: SHIELD BROTHERS / LOCKED SHIELDS
-
-### TOP ACTION — Aggressive Push Formation
-
-**Activations:** 3
-
-After this unit attacks,
-it may move 1 space.
-
-If it moves into the enemy's former space,
-gain +1 Attack on its next attack.
-
-**Purpose:**
-Break enemy formations through momentum.
-
----
-
-### BOTTOM ACTION — Locked Shields Formation
-
-**Activations:** 2
-
-When attacked:
-
-- Gain +1 Defense.
-- Adjacent friendly units gain +1 Defense
-  until your next turn.
-
-**Purpose:**
-Creates a defensive cluster.
-
----
-
-## Unit Stats (from GDD)
 
 | Stat | Value |
 |---|---|
-| Melee Combat | 1d6 |
-| Range | Melee only |
-| Move | 2 spaces |
-| Discipline | 2 |
-| HP | 2 |
-| Armor | Light |
+| Range | 1 (melee) |
+| Attack | 2 |
+| Defense | 1 |
+| Health | 2 |
+| Move | 2 |
 
 ---
 
-## Notes
+## Cards
 
-- Swordsman is the balanced mid-line unit.
-- Aggressive Push is the offensive formation — ideal for breaking through enemy lines.
-- Locked Shields is the defensive formation — pairs well with Spear Wall for a front-line cluster.
-- The +1 Attack from Aggressive Push stacks with buffs from David's Leadership or Officers.
+### Swordsmen Advance
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 6 | 2 |
+| Effect | Activate up to 3 Swordsmen: each may move and attack. Gain +1 attack if adjacent to another Swordsman. | Move up to 2 Swordsmen up to 2 tiles each. |
+
+### Swordsmen Formation
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 4 | 5 |
+| Effect | Shield Wall: adjacent Swordsmen gain +1 defense until next player turn. (2 activations) | Covenant Support: Swordsmen may attack without penalty when adjacent to friendly Spearmen. (1 activation) |

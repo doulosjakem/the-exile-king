@@ -1,75 +1,105 @@
 # Rulebook
 
-## Raid on the Philistine Outpost
+## The Anointed Exile — Printable Prototype
 
 ---
 
 ## Game Overview
 
-**Players:** 2 (cooperative)
-**Enemy:** Philistines (AI-controlled)
+**Players:** 1–4 (co-op, 1v1, or 2v2)
+**Enemy:** Philistines (AI or human)
 **Playing Time:** 15–20 minutes
 **Ages:** 12+
 
-David and Jonathan join forces against a Philistine raiding force. Two commanders, one shared command deck, and a ruthless enemy stand between you and victory.
+David and Jonathan join forces against a Philistine raiding force — or face each other across the battlefield. Two to four commanders, shared or opposing command decks, and ruthless enemies stand between you and victory.
+
+### Play Modes
+
+- **Co-op (2 players vs AI):** David + Jonathan team up against Achish + Philistine Lord.
+- **1v1 Head-to-Head:** One commander versus one commander.
+- **2v2 Head-to-Head:** Two commanders team up versus two commanders.
 
 ---
 
 ## Components
 
 - 8×8 hex grid board
-- 21 unit tokens (with stat blocks)
-- 16 Command Cards
-- 2 Commander Aura markers
-- 4 Activation tokens
-- 1 Lost Pile marker
+- 24 unit discs (2" diameter, colored border)
+- 90 Command Cards (commander cards + unit-type cards)
+- Card back ×1
+- Commander Standees ×4
+- Activation tokens
+- Lost Pile marker
+- Setup reference sheet
 
-### Unit Tokens
+### Unit Discs
 
-| Faction | Commander | Units | Total |
+| Faction | Commander | Unit Types | Total Discs |
 |---|---|---|---|
-| David's Company | David | 2 Swordsmen, 1 Spearman, 2 Slingers, 1 Archer, 1 Scout | 7 |
-| Jonathan's Followers | Jonathan | 2 Loyal Guards, 2 Elite Archers, 1 Scout | 5 |
-| Philistines | Achish, Philistine Lord | 3 Spearmen, 2 Heavy Infantry, 2 Archers, 1 Champion, 1 Chariot | 10 |
+| David's Company | David | Swordsman, Spearman, Slinger, Scout, Shield Bearer | 7 |
+| Jonathan's Followers | Jonathan | Loyal Guard, Elite Archer, Archer, Spearman, Shield Bearer | 6 |
+| Achish's Host | Achish | Giant, Swordsman, Spearman, Archer, Shield Bearer | 7 |
+| Lord of Ekron's Host | Philistine Lord | Chariot, Slinger, Swordsman, Spearman, Shield Bearer | 7 |
 
-**Grand total: 22 tokens**
+**Grand total: 27 discs**
 
 ---
 
 ## Setup
 
 1. Place the 8×8 hex board.
-2. Place terrain obstacles (2 rock clusters) in the middle of the board.
-3. Deploy units as follows:
+2. Place terrain obstacles (2 rock clusters) randomly, avoiding deployment zones.
+3. Shuffle the Command Card deck. Deal 4 cards to each player's hand.
+4. Place the deck face-down. Place the Lost Pile marker nearby.
 
-### Player Deployment (Left Edge)
+### Army Building
 
-**David's Company (top-left cluster):**
-- David at (0,3)
-- Swordsmen at (0,2), (0,4)
-- Spearman at (0,5)
-- Slingers at (1,2), (1,4)
-- Archer at (1,3)
-- Scout at (1,1)
+Each side selects exactly **1 commander** plus enough units to reach **6 total units** (including commander).
 
-**Jonathan's Followers (bottom-left flank):**
-- Jonathan at (0,1)
-- Loyal Guards at (0,0), (0,6)
-- Elite Archers at (1,0), (1,7)
-- Scout at (1,6)
+- Must include **at least 3 different unit types**.
+- Units are drawn only from the selected commander's faction roster.
 
-### Enemy Deployment (Right Edge)
+### Deck Construction
 
-**Philistines:**
-- Achish at (7,6) — bottom-right
-- Philistine Lord at (7,1) — top-right
-- Spearmen at (7,3), (7,2), (7,4)
-- Heavy Infantry at (6,1), (6,5)
-- Archers at (7,4), (7,2)
-- Champion at (6,3)
-- Chariot at (6,4)
+Build a deck of exactly **10 cards**.
 
-4. Shuffle the Command Card deck. Deal 2 cards to each player's hand. Place the deck face-down.
+| Step | Draw | Count | Source |
+|---|---|---|---|
+| 2a | Unit cards | 1 per squad type | Random from each unit type's pool |
+| 2b | Commander cards | 1 | Random from commander's 5-card pool |
+| 2c | Fill to target | Remainder | Player selects 1 additional pool; draw random from combined pool |
+
+**Example (Small/10 cards):** David brings Swordsman, Spearman, Slinger, Scout
+- Step 2a: 1 random Swordsman card, 1 Spearman, 1 Slinger, 1 Scout = 4 cards
+- Step 2b: 1 random David card = 1 card
+- Step 2c: 5 more cards from "David + Swordsman" combined pool
+
+### Deployment
+
+Deploy within your assigned deployment zone. Place commanders first, then remaining units.
+
+#### Co-op Deployment
+
+| Side | Commander | Units |
+|---|---|---|
+| David's Company | David at left-center | 4 units (at least 3 types) |
+| Jonathan's Followers | Jonathan at left-flank | 4 units (at least 3 types) |
+| Philistine AI | Achish at right-center | 4 units |
+| Philistine AI | Philistine Lord at right-flank | 4 units |
+
+#### 1v1 Deployment
+
+| Player | Side |
+|---|---|
+| Player 1 (Commander A) | Left side |
+| Player 2 (Commander B) | Right side |
+
+#### 2v2 Deployment
+
+| Team | Side |
+|---|---|
+| Team A (Commanders 1+2) | Left side |
+| Team B (Commanders 3+4) | Right side |
 
 ---
 
@@ -81,18 +111,18 @@ David and Jonathan join forces against a Philistine raiding force. Two commander
 |---|---|---|---|---|---|---|
 | David | 1 | 2 | 1 | 2 | 2 | Commander |
 | Jonathan | 1 | 2 | 1 | 2 | 2 | Commander |
-| Swordsman | 1 | 2 | 1 | 2 | 2 | Infantry |
-| Spearman | 2 | 2 | 1 | 2 | 2 | Infantry |
-| Loyal Guard | 1 | 2 | 1 | 2 | 2 | Infantry |
-| Heavy Infantry | 1 | 2 | 2 | 3 | 1 | Heavy |
-| Archer | 2 | 2 | 1 | 2 | 2 | Ranged |
-| Elite Archer | 2 | 2 | 1 | 2 | 2 | Ranged |
-| Scout | 2 | 1 | 1 | 1 | 3 | Light |
-| Slinger | 3 | 1 | 1 | 2 | 3 | Skirmish |
-| Champion | 1 | 2 | 1 | 2 | 2 | Elite |
-| Chariot | 1 | 2 | 1 | 2 | 3 | Unique |
 | Achish | 1 | 2 | 1 | 2 | 2 | Commander |
 | Philistine Lord | 1 | 2 | 1 | 2 | 2 | Commander |
+| Swordsman | 1 | 2 | 1 | 2 | 2 | Infantry |
+| Spearman | 2 | 2 | 1 | 2 | 2 | Infantry |
+| Shield Bearer | 1 | 1 | 2 | 3 | 1 | Heavy |
+| Scout | 2 | 1 | 1 | 1 | 3 | Light |
+| Loyal Guard | 1 | 2 | 1 | 2 | 2 | Infantry |
+| Elite Archer | 2 | 2 | 1 | 2 | 2 | Ranged |
+| Archer | 2 | 2 | 1 | 2 | 2 | Ranged |
+| Slinger | 3 | 1 | 1 | 2 | 3 | Skirmish |
+| Giant | 1 | 3 | 2 | 4 | 1 | Heavy |
+| Chariot | 1 | 2 | 1 | 2 | 3 | Unique |
 
 ### Stat Definitions
 
@@ -101,14 +131,6 @@ David and Jonathan join forces against a Philistine raiding force. Two commander
 - **Defense:** Reduces incoming damage by this amount.
 - **Health:** Total damage the unit can take before being eliminated.
 - **Move:** Maximum hexes the unit can move in one activation.
-
-### Health Tiers
-
-| Armor | Health |
-|---|---|
-| Leather | 1 |
-| Bronze | 2 |
-| Iron | 3 |
 
 ---
 
@@ -120,14 +142,14 @@ Commanders are always on the board. Losing your commander means defeat.
 |---|---|
 | **David** | Adjacent allies gain +1 attack. |
 | **Jonathan** | Adjacent allies gain +1 defense. Elite Archers gain +1 range when within 2 tiles. |
-| **Achish** | Adjacent Philistines gain -1 damage taken. |
+| **Achish** | Adjacent Philistines gain Shielded (first damage prevented this turn). |
 | **Philistine Lord** | Adjacent allies gain +1 attack. |
 
 ---
 
 ## Turn Sequence
 
-Players share a single Command Card deck. The turn has 5 phases.
+The turn has 5 phases. In co-op, players alternate turns. In head-to-head, players alternate. In 2v2, teams alternate but both players on a team share one hand.
 
 ### Phase 1: Draw & Fatigue
 
@@ -139,12 +161,11 @@ Players share a single Command Card deck. The turn has 5 phases.
 
 1. Current player chooses **2 cards** from their hand.
 2. Place them face-down. Do not reveal yet.
-3. Next player repeats.
 
 ### Phase 3: Initiative & Resolution
 
-1. Both players reveal their 2 selected cards simultaneously.
-2. Sort all 4 revealed cards by **initiative** (highest number acts first).
+1. Reveal selected cards.
+2. Sort all revealed cards by **initiative** (highest number acts first).
 3. Resolve each card in initiative order:
    - Owner chooses **Top** or **Bottom** ability.
    - Assign the ability to valid units.
@@ -159,13 +180,13 @@ The Philistines take their turn. Each enemy unit can activate once. The AI follo
 1. Protect threatened commanders.
 2. Attack isolated or low-HP player units.
 3. Advance toward the nearest player commander.
-4. Support allies (archers cover infantry, champion duels commanders).
+4. Support allies (archers cover infantry, chariots break lines).
 
 ### Phase 5: Cleanup
 
 1. Remove all activation tokens.
 2. Discard played cards to the Spent Pile.
-3. Pass to the next player. Repeat from Phase 1.
+3. Pass to the next player or team. Repeat from Phase 1.
 
 ---
 
@@ -188,9 +209,8 @@ When resolving, you pick **one card's top ability** and the **other card's botto
 
 #### Formation Cards
 - Choose Top **OR** Bottom when played.
-- Place on the table.
-- Spend activations each time the effect triggers.
-- When the last activation is spent, the card is Lost.
+- Some effects persist until a condition is met.
+- When the final activation is spent, the card is Lost.
 
 ### Card Loss
 
@@ -218,140 +238,82 @@ Some abilities push targets 1 hex away. The target must move to a valid empty he
 
 ---
 
-## Command Card Draft
+## Victory & Defeat
 
-*All cards include Initiative, Top ability, and Bottom ability.*
+### Co-op
+- **Victory:** Eliminate both Philistine commanders (Achish and Philistine Lord).
+- **Defeat:** Lose either David or Jonathan.
+- The battle ends immediately when a commander is eliminated.
 
-### David's Leadership
-- **Initiative:** Top 7 / Bottom 3
-- **Top:** Activate David. Move up to 2, then attack. Adjacent allies gain +1 attack this turn.
-- **Bottom:** Grant one friendly unit within 2 tiles an extra activation this turn.
+### 1v1 Head-to-Head
+- **Victory:** Eliminate the opponent's commander.
+- **Defeat:** Lose your commander.
+- If both commanders fall simultaneously, the player with more surviving units wins. If tied, it's a draw.
 
-### Swordsmen Advance
-- **Initiative:** Top 6 / Bottom 2
-- **Top:** Activate up to 3 Swordsmen. Each may move and attack. Gain +1 attack if adjacent to another Swordsman.
-- **Bottom:** Move up to 2 Swordsmen up to 2 tiles each.
-
-### Swordsmen Formation
-- **Initiative:** Top 4 / Bottom 5
-- **Top:** Shield Wall — adjacent Swordsmen gain +1 defense until next player turn. (2 activations)
-- **Bottom:** Phalanx — Swordsmen may attack without penalty when adjacent to friendly Spearmen. (1 activation)
-
-### Spear Wall
-- **Initiative:** Top 5 / Bottom 3
-- **Top:** Activate up to 2 Spearmen. Attack with +1 damage vs charging enemies.
-- **Bottom:** Activate up to 2 Spearmen. Move up to 2 tiles, gain brace (+1 defense vs melee until next turn).
-
-### Spearman Formation 1
-- **Initiative:** Top 4 / Bottom 5
-- **Top:** Lock Shields — adjacent Philistine Spearmen gain +2 defense until next player turn. (2 activations)
-- **Bottom:** Thrust Line — Spearmen attack with reach without penalty against charging enemies. (1 activation)
-
-### Spearman Formation 2
-- **Initiative:** Top 3 / Bottom 6
-- **Top:** Screen — adjacent friendly Heavy Infantry gain -1 damage taken. (2 activations)
-- **Bottom:** Spear Wall — Spearmen may make free attack when enemy enters melee range. (1 activation)
-
-### Circle and Strike (Slingers)
-- **Initiative:** Top 8 / Bottom 4
-- **Top:** Activate up to 2 Slingers. Each may move then attack. If moved ≥2 tiles, attack gains +1 damage.
-- **Bottom:** Activate up to 2 Slingers. Move up to 3 tiles each.
-
-### Stone Volley (Slingers)
-- **Initiative:** Top 9 / Bottom 2
-- **Top:** Activate all Slingers. Combine fire on one target. Each Slinger adds +1 damage.
-- **Bottom:** Activate 1 Slinger. Attack. If another Slinger is within 2 tiles, this attack gains +1 damage.
-
-### Archer Volley
-- **Initiative:** Top 6 / Bottom 3
-- **Top:** Activate up to 2 Archers. Each attacks. Must target enemies within range.
-- **Bottom:** Activate up to 2 Archers. Move and gain Aim (+1 damage on next shot if stationary).
-
-### Archer Formation
-- **Initiative:** Top 5 / Bottom 5
-- **Top:** Overwatch — Archers may make free attack when enemy moves into range. (1 activation)
-- **Bottom:** Marksman — one Archer ignores 1 defense this turn. (2 activations)
-
-### Scout Recon
-- **Initiative:** Top 7 / Bottom 5
-- **Top:** Activate 1 Scout. Move up to 4 tiles (ignores terrain), then make a free attack.
-- **Bottom:** Activate 1 Scout. Move up to 3 tiles. If ends adjacent to enemy, retreat 1 tile after interaction.
-
-### Scout Formation
-- **Initiative:** Top 6 / Bottom 4
-- **Top:** Ambush — Scouts start hidden. First attack gains +2 damage and enemy cannot counter. (1 activation)
-- **Bottom:** Screen — Scouts block LoS for enemies within 1 tile. (2 activations)
-
-### Jonathan's Leadership
-- **Initiative:** Top 7 / Bottom 3
-- **Top:** Activate Jonathan. Move and attack. All Loyal Guards within 2 tiles gain +1 defense this turn.
-- **Bottom:** Grant one Elite Archer within 2 tiles the ability to attack twice this turn.
-
-### Guard Formation
-- **Initiative:** Top 5 / Bottom 4
-- **Top:** Shield Wall — Loyal Guards gain +2 defense until next player turn if adjacent to Jonathan. (2 activations)
-- **Bottom:** Protect Commander — move Loyal Guard adjacent to friendly commander; commander gains -1 damage taken. (1 activation)
-
-### Jonathan's Mark (Elite Archers)
-- **Initiative:** Top 8 / Bottom 3
-- **Top:** Target one enemy with an Elite Archer. This Archer gains +1 attack and ignores 1 defense.
-- **Bottom:** Activate Elite Archer. Move up to 2 tiles, then attack with +1 range this turn.
-
-### Perfect Shot (Elite Archers)
-- **Initiative:** Top 9 / Bottom 2
-- **Top:** If Elite Archer has not moved this turn: attack with +2 range and +1 damage.
-- **Bottom:** Activate Elite Archer. Attack. If stationary, gain +1 damage.
-
-### March (Universal)
-- **Initiative:** Top 1 / Bottom —
-- **Top:** Activate up to 2 units of one type. Each moves up to its full movement.
-
-### Engage (Universal)
-- **Initiative:** Top 2 / Bottom —
-- **Top:** Activate up to 2 units of one type. Each attacks once.
-
-### Achish's Strength
-- **Initiative:** Top 7 / Bottom 3
-- **Top:** Activate Achish. Move up to 2 tiles, then attack. All adjacent Philistines gain Shielded (first damage prevented this turn).
-- **Bottom:** Place on Command Board. Adjacent Giants and Heavy Infantry gain +1 defense. (2 activations)
-
-### Lord's Command
-- **Initiative:** Top 6 / Bottom 4
-- **Top:** Activate Philistine Lord. Move up to 2 tiles and attack. Adjacent allies gain +1 attack this turn.
-- **Bottom:** Grant one Champion or Heavy Infantry within 2 tiles an extra activation this turn.
-
-### Philistine Spearmen
-- **Initiative:** Top 5 / Bottom 3
-- **Top:** Activate up to 2 Philistine Spearmen. Each may move up to 2 tiles and attack with +1 damage vs charging enemies.
-- **Bottom:** Activate up to 2 Philistine Spearmen. Each gains brace (+1 defense vs melee until next turn).
-
-### Heavy Infantry Command
-- **Initiative:** Top 4 / Bottom 2
-- **Top:** Activate up to 2 Heavy Infantry. Each may move up to 1 tile and attack with +1 damage.
-- **Bottom:** Activate up to 2 Heavy Infantry. Each gains +2 defense until next player turn.
-
-### Ekron Archer Command
-- **Initiative:** Top 6 / Bottom 3
-- **Top:** Activate up to 2 Ekron Archers. Each attacks. Enemies hit lose 1 movement next turn.
-- **Bottom:** Activate up to 2 Ekron Archers. Move up to 1 tile each and gain +1 range this turn.
-
-### Champion's Duel
-- **Initiative:** Top 8 / Bottom 2
-- **Top:** Activate Champion. Target enemy commander or Hero unit. This attack ignores 2 defense.
-- **Bottom:** Activate Champion. Move up to 2 tiles. Gain +1 attack and +1 defense until end of turn.
-
-### Chariot Charge
-- **Initiative:** Top 9 / Bottom 4
-- **Top:** Activate Chariot. Move up to 3 tiles (must move ≥2), then attack with +1 damage. Push target 1 tile.
-- **Bottom:** Activate Chariot. Move up to 3 tiles through friendly units without obstruction.
+### 2v2 Head-to-Head
+- **Victory:** Eliminate both opponent commanders.
+- **Defeat:** Lose either of your commanders.
+- If both commanders on a side fall, the other team wins immediately.
 
 ---
 
-## Victory & Defeat
+## Army Building Reference
 
-- **Victory:** Eliminate **both** Philistine commanders (Achish and Philistine Lord).
-- **Defeat:** Lose **either** David or Jonathan.
-- The battle ends immediately when a commander is eliminated.
+### David's Company (Purple)
+
+| Unit | Type | Count | Notes |
+|---|---|---|---|
+| David | Commander | 1 | Always included |
+| Swordsman | Infantry | 4 | Standard melee |
+| Spearman | Infantry | 4 | Reach, anti-charge |
+| Slinger | Skirmisher | 3 | Long range, high mobility |
+| Scout | Light | 4 | Fast recon |
+| Shield Bearer | Heavy | 4 | Tank/defender |
+
+### Jonathan's Followers (Blue)
+
+| Unit | Type | Count | Notes |
+|---|---|---|---|
+| Jonathan | Commander | 1 | Always included |
+| Loyal Guard | Infantry | 4 | Devoted to Jonathan |
+| Elite Archer | Ranged | 3 | Crack shots |
+| Archer | Ranged | 4 | Standard ranged support |
+| Spearman | Infantry | 4 | Reach, anti-charge |
+| Shield Bearer | Heavy | 4 | Tank/defender |
+
+### Achish's Host (Red)
+
+| Unit | Type | Count | Notes |
+|---|---|---|---|
+| Achish | Commander | 1 | Always included |
+| Giant | Heavy | 2 | Slow, devastating |
+| Swordsman | Infantry | 4 | Standard melee |
+| Spearman | Infantry | 4 | Reach, anti-charge |
+| Archer | Ranged | 4 | Standard ranged support |
+| Shield Bearer | Heavy | 4 | Tank/defender |
+
+### Lord of Ekron's Host (Green)
+
+| Unit | Type | Count | Notes |
+|---|---|---|---|
+| Philistine Lord | Commander | 1 | Always included |
+| Chariot | Unique | 2 | Fast assault |
+| Slinger | Skirmisher | 3 | Long range harassment |
+| Swordsman | Infantry | 4 | Standard melee |
+| Spearman | Infantry | 4 | Reach, anti-charge |
+| Shield Bearer | Heavy | 4 | Tank/defender |
+
+---
+
+## Card Reference
+
+Full card text is printed on each card. For quick reference, card libraries are available in:
+
+- `command_cards/factions/DAVIDS_COMPANY.md`
+- `command_cards/factions/JONATHANS_FOLLOWERS.md`
+- `command_cards/factions/PHILISTINES.md` (Achish's Host)
+- `command_cards/factions/EKRONS_HOST.md`
+- `command_cards/unit_types/` subfolders for each unit type
 
 ---
 
@@ -371,3 +333,9 @@ A: Shuffle the Spent Pile to create a new deck. Lost cards are gone forever.
 
 **Q: Do commander auras stack?**
 A: Yes. If a unit is adjacent to both David and Jonathan, it gains +1 attack and +1 defense.
+
+**Q: In 2v2, do we share one hand?**
+A: Yes. Both players on a team share one hand and one deck. Discuss strategy before playing cards.
+
+**Q: Can I field fewer than 6 units?**
+A: No. All sides must field exactly 6 units (including commander) for the prototype. At least 3 unit types are required.

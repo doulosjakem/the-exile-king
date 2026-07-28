@@ -162,12 +162,12 @@ Intelligence gathering that grants a combat bonus.
 
 ---
 
-### Camel Rider: CHARGE OF THE CAMEL / DESERT DASH
+### Desert Mount: DESERT CHARGE / SAND DASH
 
-**TOP ACTION — Raid Charge**
+**TOP ACTION — Desert Charge**
 Activations: 3
 
-Desert Raider may move 4 spaces and attack.
+Desert Mount may move 4 spaces and attack.
 
 Gain +2 Attack for this attack.
 
@@ -178,12 +178,12 @@ Devastating deep strike that ignores the battlefield.
 
 ---
 
-**BOTTOM ACTION — Desert Dash**
+**BOTTOM ACTION — Sand Dash**
 Activations: 2
 
-Desert Raider may move 3 spaces.
+Desert Mount may move 3 spaces.
 
-All enemy units within 1 space of the Desert Raider's path suffer 1 damage.
+All enemy units within 1 space of the Desert Mount's path suffer 1 damage.
 
 **Purpose:**
 Mobile area denial that cuts through enemy lines.

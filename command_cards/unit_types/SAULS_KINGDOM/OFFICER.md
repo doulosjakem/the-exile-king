@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: BUFF / RALLY POINT
+## Formation Card: OFFICER'S BOOST / RALLY STANDARD
 
-### TOP ACTION — Buff
+### TOP ACTION — Officer's Boost
 
 **Activations:** 3
 
@@ -20,7 +20,7 @@ Enhance a key unit's combat effectiveness.
 
 ---
 
-### BOTTOM ACTION — Rally Point
+### BOTTOM ACTION — Rally Standard
 
 **Activations:** 2
 
@@ -49,6 +49,6 @@ Extend the turn's activation through officer leadership.
 ## Notes
 
 - Officers are the support backbone of Saul's Kingdom.
-- Buff is a direct combat enhancer — pairs well with heavy units like Royal Guard.
-- Rally Point extends activation economy — lets dormant units act again.
+- Officer's Boost is a direct combat enhancer — pairs well with heavy units like Royal Guard.
+- Rally Standard extends activation economy — lets dormant units act again.
 - Officers are vulnerable and should be protected by front-line units.

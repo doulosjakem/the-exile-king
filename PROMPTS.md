@@ -68,7 +68,7 @@ Full prompt (unit name + description + suffix). Add negative prompt from the tem
 | **Slinger** | `ONE PERSON ONLY, solo portrait, waist-up, Amalekite slinger, bronze age Levantine nomadic skirmisher, dark hair, dusty red-brown cloak wrapped loose, leather sling in hand with pouch of stones at hip, simple leather tunic, sandals, crouched low in mobile throwing stance, alert predatory expression, standing on sandy desert terrain, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European` |
 | **Archer** | `ONE PERSON ONLY, solo portrait, waist-up, Amalekite mounted archer, bronze age Levantine nomadic horseman, dark hair, dusty red-brown cloak flowing, riding small hardy desert horse, composite bow drawn with arrow aimed, quiver strapped to horse flank, weathered focused expression, horse mid-stride on open desert plain, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European` |
 | **Scout** | `ONE PERSON ONLY, solo portrait, waist-up, Amalekite scout, bronze age Levantine desert tracker, lean wind-hardened build, dark hair, dusty red-brown cloak patched and worn, short javelin in hand, leather sling at belt, small hide shield on back, sandals, crouched and scanning horizon, keen narrowed eyes, standing on rocky desert ridge, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European` |
-| **Camel Rider** | `ONE PERSON ONLY, solo portrait, waist-up, Amalekite camel rider, bronze age Levantine desert warrior, dark hair, dusty red-brown cloak and headwrap, bronze-tipped spear held upright, riding tall dromedary camel, leather reins in hand, weathered stern expression, camel standing on sandy desert ground with distant mountains, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Desert Mount** | `ONE PERSON ONLY, solo portrait, waist-up, Amalekite camel rider, bronze age Levantine desert warrior, dark hair, dusty red-brown cloak and headwrap, bronze-tipped spear held upright, riding tall dromedary camel, leather reins in hand, weathered stern expression, camel standing on sandy desert ground with distant mountains, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European` |
 | **Chieftain** | `ONE PERSON ONLY, solo portrait, waist-up, Amalekite chieftain, bronze age Levantine nomadic warlord, dark hair and gray-streaked beard, dark red-brown wool cloak trimmed with rough fringe, leather and simple bronze chest piece, weathered authoritative face, bronze short sword at hip, spear in hand, wrapped headdress, standing on rocky outcrop overlooking warriors, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European` |
 
 ---
@@ -312,7 +312,7 @@ Estimated time: **~10–15 minutes total** on GTX 1060 with DreamShaper XL Light
 
 | Card | Prompt |
 |---|---|
-| **Spear Wall** | `scene in illuminated manuscript style, bronze age Levantine Israelite spearmen in tight phalanx formation, long wooden spears with bronze tips angled outward, shields locked, first enemy advancing into spears, linen tunics and leather armor, determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
+| **Spear Wall** | `scene in illuminated manuscript style, bronze age Levantine Israelite spearmen in tight shield line formation, long wooden spears with bronze tips angled outward, shields braced, first enemy advancing into spears, linen tunics and leather armor, determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
 | **Hold Line** | `scene in illuminated manuscript style, bronze age Levantine Israelite spearmen holding defensive line, shields locked, spears braced, taking impact from enemy attack, linen tunics visible beneath leather armor, grim determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
 | **Aggressive Push** | `scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen pushing forward in aggressive advance, bronze short swords raised, dust at their heels, breaking through enemy line, linen tunics and leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
 | **Locked Shields** | `scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen with shields locked in tight defensive cluster, overlapping hide shields, spears and swords ready, grim defensive stance, linen tunics and leather armor, standing shoulder to shoulder, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
@@ -337,8 +337,8 @@ Estimated time: **~10–15 minutes total** on GTX 1060 with DreamShaper XL Light
 | **Battle Line** | `scene in illuminated manuscript style, Saul's Kingdom army holding solid battle line, overlapping shields, spears and javelins ready, layered defense, iron and leather armor, grim professional expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
 | **Abner Command** | `scene in illuminated manuscript style, Abner commander issuing orders to Saul's Kingdom units, arm raised in command, nearby units activating, iron armor, leather cloak, authoritative expression, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine` |
 | **Abner Battle Cry** | `scene in illuminated manuscript style, Abner leading battle cry, sword raised, nearby Saul's Kingdom warriors boosted with attack bonus, iron armor gleaming, fierce determined expression, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
-| **Ancient Shield** | `scene in illuminated manuscript style, Saul's Royal Guard taking melee hit with iron shield phalanx, shields locked, iron armor gleaming, attacker's weapon bouncing off, retaliation in their eyes, heavy iron armor, disciplined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
-| **Iron Wall** | `scene in illuminated manuscript style, two Saul's Royal Guards forming iron wall together, shields overlapping, unbreakable defensive position, iron armor gleaming, immovable stance, linen tunics visible beneath armor, grim expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
+| **Royal Shield** | `scene in illuminated manuscript style, Saul's Royal Guard taking melee hit with shields locked, iron armor gleaming, attacker's weapon bouncing off, retaliation in their eyes, heavy iron armor, disciplined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
+| **King's Wall** | `scene in illuminated manuscript style, two Saul's Royal Guards forming king's wall together, shields overlapping, unbreakable defensive position, iron armor gleaming, immovable stance, linen tunics visible beneath armor, grim expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
 | **Tribe Charge** | `scene in illuminated manuscript style, Benjamite spearmen of Benjamin tribe charging into enemy infantry, long spears angled forward, tribal fury in their eyes, dust and motion, leather armor with bronze elements, fierce expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
 | **Hold Ranks** | `scene in illuminated manuscript style, Benjamite spearmen holding ranks in defensive formation, spears angled outward, adjacent infantry gaining protection, tight disciplined line, leather armor and shields, grim determined expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
 | **Ranged Barrage** | `scene in illuminated manuscript style, Israelite archers firing concentrated volley at single enemy target, composite bows drawn and aimed, coordinated fire, arrows flying toward target, linen tunics and leather vests, focused expressions, aged parchment background, ink outlines with muted watercolor wash in umber and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine warfare` |
@@ -510,3 +510,36 @@ Some of the old filenames from earlier drafts (like `unit_david.png`, `enemy_rai
 4. Improve art later
 
 The game itself is valuable. The development process is equally valuable.
+
+---
+
+## Prototype Roster Quick Reference (Printable Co-op)
+
+**Roster:** David, Jonathan, Achish, Philistine Lord
+
+| Faction | Color | Commander | Units |
+|---|---|---|---|
+| David's Company | Purple | David | Swordsman, Spearman, Slinger, Scout, Shield Bearer |
+| Jonathan's Followers | Blue | Jonathan | Loyal Guard, Elite Archer, Archer, Spearman, Shield Bearer |
+| Achish's Host | Red | Achish | Giant, Swordsman, Spearman, Archer, Shield Bearer |
+| Lord of Ekron's Host | Green | Philistine Lord | Chariot, Slinger, Swordsman, Spearman, Shield Bearer |
+
+### New Art Assets (Prototype Cycle)
+
+| Category | Count | Notes |
+|---|---|---|
+| Unit disc portraits | 25 unique designs | 2" diameter, faction-colored border added in layout |
+| Commander cards | 40 unique designs | 10 per commander |
+| Unit-type cards | 100 unique designs | 5 cards × 20 unit variants |
+| Card back | 1 shared design | Reversible |
+| Hex tiles | 30 unique designs | Grass, rock, sand |
+| Equipment icons | 10 unique designs | Swords, shields, spears, slings, bows, helmets, greaves, belts, quivers, sheaths |
+| UI elements | 4 unique designs | Aura marker, activation token, lost-pile marker, setup sheet |
+
+### Generation Cycle
+
+Queue file: `generation_queue.json` (216 items, 448 images)
+Review script: `review_art_ollama.py`
+Start: `python run_comfyui_generation.py --limit 20`
+Last updated: 2026-07-27
+

@@ -1,14 +1,14 @@
-# Philistines — Command Cards
+# Achish's Host — Command Cards
 
-> **Faction Philosophy:** Dominant regional power with heavy infantry, chariots, and elite champions. Can play as either enemy or ally depending on scenario.
+> **Faction Philosophy:** Dominant regional power with giants, heavy infantry, and devastating archers. Professional army with superior equipment.
 
 ---
 
 ## Faction Overview
 
-The Philistine army is a professional force with superior equipment and heavier units. Historically David's primary antagonist.
+Achish's Host — Lord of Gath. The Philistine army is a professional force with superior equipment and heavier units. Historically David's primary antagonist during his stay among the Philistines.
 
-Playable in **Post-MVP**.
+Playable in **Prototype**.
 
 ---
 
@@ -16,36 +16,85 @@ Playable in **Post-MVP**.
 
 | Unit | Type | Notes |
 |---|---|---|
-| Achish | Commander | Philistine lord |
-| Spearmen | Infantry | Standard |
-| Heavy Infantry | Heavy | Slow, hit hard |
-| Archers | Ranged | Standard |
-| Chariots | Unique | Rare, devastating |
-| Champions | Elite | Duelists |
-| Lords of the Philistines | Commander variants | Scenario-specific |
+| Achish | Commander | Philistine lord of Gath |
+| Giant | Heavy | Gath's giant warriors, slow and devastating |
+| Swordsman | Infantry | Standard Philistine melee |
+| Spearman | Infantry | Reach, anti-charge |
+| Archer | Ranged | Standard ranged support |
+| Shield Bearer | Heavy | Tank/defender |
 
 ---
 
-## Faction Rules
+## Deck Construction
 
-- Philistines may use either a Command Card deck (if allied) or a command token system (if enemy).
-- Chariots are a unique unit type — they have special rules for movement and shock damage.
-- Champions are elite duelists — they target enemy commanders or high-value units preferentially.
-
-- **Faction-wide formation cards:** See [formations/PHILISTINES.md](formations/PHILISTINES.md)
+Same as David's Company.
 
 ---
 
-## Formation Card Rules (Faction-Wide)
+## Turn Structure
 
-Same as David's Company formation card rules.
+Same as David's Company.
+
+---
+
+## Commander Cards (Achish)
+
+| Card | Initiative Top | Initiative Bottom | Top Effect | Bottom Effect |
+|---|---|---|---|---|
+| Achish's Strength | 7 | 3 | Activate Achish: move up to 2, then attack. All adjacent Philistines gain Shielded (first damage prevented this turn). | Place on Command Board. Adjacent Giants and Heavy Infantry gain +1 defense. (2 activations) |
+
+---
+
+## Unit Cards (Prototype Pool)
+
+### Giant
+| Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
+|---|---|---|---|---|
+| Giant's Might | 8 | 2 | Activate Giant: attack with +2 damage. Ignore 1 defense on target. | Activate Giant: move 1 tile. Gain +1 defense until next turn. |
+| Unstoppable | 7 | 3 | Giant may move after attacking (up to 1 tile). Push target 1 tile. (1 activation) | Giant ignores zone of control. (2 activations) |
+| Berserker Rage | 6 | 4 | If Giant has taken damage this turn: attack gains +1 damage and ignores all defense. (1 activation) | Nearby enemies cannot attack Giant this turn unless they also have at least 2 HP. (2 activations) |
+
+### Swordsman
+| Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
+|---|---|---|---|---|
+| Swordsmen Advance | 6 | 2 | Activate up to 3 Swordsmen: each may move and attack. Gain +1 attack if adjacent to another Swordsman. | Move up to 2 Swordsmen up to 2 tiles each. |
+| Swordsmen Formation | 4 | 5 | Shield Wall: adjacent Swordsmen gain +1 defense until next player turn. (2 activations) | Formation Support: Swordsmen may attack without penalty when adjacent to friendly Spearmen. (1 activation) |
+
+### Spearman
+| Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
+|---|---|---|---|---|
+| Philistine Spearmen | 5 | 3 | Activate up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Activate up to 2 Spearmen: each gains brace (+1 defense vs melee until next turn). |
+| Spearman Formation | 4 | 5 | Brace Shields: adjacent Spearmen gain +2 defense until next player turn. (2 activations) | Spear Support: Spearmen attack with reach without penalty against charging enemies. (1 activation) |
+| Spearman Screen | 3 | 6 | Screen: adjacent friendly Heavy Infantry gain -1 damage taken. (2 activations) | Spear Wall: Spearmen may make free attack when enemy enters melee range. (1 activation) |
+
+### Archer
+| Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
+|---|---|---|---|---|
+| Ekron Archer Command | 6 | 3 | Activate up to 2 Archers: each attacks. Enemies hit lose 1 movement next turn. | Activate up to 2 Archers: move 1 tile each and gain +1 range this turn. |
+| Ekron Archer Formation | 5 | 4 | Opening Volley: Archers attack before all movement this turn. (1 activation) | Covering Fire: after an ally moves, one Archer may make a free attack. (2 activations) |
+| Coordinated Volley | 3 | 6 | Multiple Archers targeting same tile gain +1 damage each. (2 activations) | Break Formation: enemies hit by Archers cannot move next turn. (1 activation) |
+
+### Shield Bearer
+| Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
+|---|---|---|---|---|
+| Shield Wall | 4 | 5 | Adjacent friendly units gain +1 defense until next player turn. (2 activations) | Bracing: Shield Bearer gains +1 defense this turn. |
+| Formation Advance | 3 | 6 | Activate Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
+
+---
+
+## Universal Cards (Available to All Factions)
+
+| Card | Initiative Top | Initiative Bottom | Top Effect | Bottom Effect |
+|---|---|---|---|---|
+| March | 1 | — | Activate up to 2 units of one type: each moves up to its full movement. | — |
+| Engage | 2 | — | Activate up to 2 units of one type: each attacks once. | — |
+
+**Notes:** See David's Company for full rules.
 
 ---
 
 ## Notes
 
-- Philistine faction is the Post-MVP playable expansion of the enemy faction from GDD.
-- Chariots provide mobile heavy striking power — a key differentiator from other factions.
-- Philistines as allies in early scenarios will use Jonathan's Followers mechanics (shared deck system).
-- Philistines as enemies will use AI command tokens (see GDD for AI rules).
-- Full Philistine roster details are in POST_MVP_GDD.md.
+- Achish's Host is a professional army with Giants as the heavy hitter.
+- Giants provide the slow-but-devastating anchor.
+- Archers specialize in coordinated volley and suppression.

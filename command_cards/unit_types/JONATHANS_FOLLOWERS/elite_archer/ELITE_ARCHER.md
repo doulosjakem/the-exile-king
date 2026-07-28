@@ -1,54 +1,31 @@
-# Elite Archer — Formation Cards
+# Elite Archer — Command Cards
 
-> **Unit Type:** Ranged
+> **Unit Type:** Ranged (Crack shots)
 > **Faction:** Jonathan's Followers
-> **Availability:** MVP (scenario allies)
+> **Availability:** Prototype
 
 ---
-
-## Formation: SNIPER'S VOLLEY / COVERED RETREAT
-
-### TOP ACTION — Sniper's Volley
-
-Activations: 3
-
-Choose the enemy unit with the highest Attack value.
-Elite Archers attack that unit with +2 Attack.
-
-**Purpose:**
-Precision elimination of the most dangerous enemy.
-
----
-
-### BOTTOM ACTION — Covered Retreat
-
-Activations: 2
-
-Elite Archers gain +2 Defense this turn.
-
-May move 1 space after defending without provoking opportunity attacks.
-
-**Purpose:**
-Survive and reposition away from melee threats.
-
----
-
-## Unit Stats (from GDD)
 
 | Stat | Value |
 |---|---|
-| Ranged Combat | 1d6 + 1 |
-| Range | 3 spaces |
-| Move | 1 space |
-| Discipline | 2 |
-| HP | 1 |
-| Armor | Light |
+| Range | 2 |
+| Attack | 2 |
+| Defense | 1 |
+| Health | 2 |
+| Move | 2 |
 
 ---
 
-## Notes
+## Cards
 
-- Elite Archers are Jonathan's ranged specialists — better stats than standard archers.
-- Sniper's Position is the offensive card — focused fire on priority targets.
-- Covered Volley lets archers shoot without being completely exposed.
-- Low HP (1) means they need front-line protection.
+### Benjamin's Arrow
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 8 | 3 |
+| Effect | Target one enemy with an Elite Archer. This Archer gains +1 attack and ignores 1 defense. | Activate Elite Archer: move up to 2 tiles, then attack with +1 range this turn. |
+
+### True Aim
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 9 | 2 |
+| Effect | If Elite Archer has not moved this turn: attack with +2 range and +1 damage. | Activate Elite Archer: attack. If stationary, gain +1 damage. |

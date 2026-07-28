@@ -6,7 +6,7 @@
 
 ---
 
-## Formation: DESERT FLANK / EYES ON THE TARGET
+## Formation: DESERT FLANK / DESERT WATCH
 
 ### TOP ACTION — Desert Flank
 
@@ -22,7 +22,7 @@ Ambush and punish careless enemy movement.
 
 ---
 
-### BOTTOM ACTION — Eyes on the Target
+### BOTTOM ACTION — Desert Watch
 
 Activations: 3
 

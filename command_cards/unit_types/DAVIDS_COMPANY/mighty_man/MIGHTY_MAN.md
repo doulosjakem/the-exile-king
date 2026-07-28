@@ -6,9 +6,9 @@
 
 ---
 
-## Formation: DAVID'S CHAMPIONS / STAND TOGETHER
+## Formation: MIGHTY MEN'S CHARGE / COVENANT BOND
 
-### TOP ACTION — David's Champions Formation
+### TOP ACTION — Mighty Men's Charge
 
 **Activations:** 3
 
@@ -23,7 +23,7 @@ Elite warriors breaking enemy lines.
 
 ---
 
-### BOTTOM ACTION — Stand Together Formation
+### BOTTOM ACTION — Covenant Bond
 
 **Activations:** 2
 
@@ -54,7 +54,7 @@ Protect the army's key pieces.
 ## Notes
 
 - Mighty Men are the elite hero units of David's Company.
-- David's Champions Formation is the premier offensive card — extra damage plus movement on kill makes them relentless.
-- Stand Together is the defensive tool — Mighty Men sacrifice themselves to protect weaker units.
+- Mighty Men's Charge is the premier offensive card — extra damage plus movement on kill makes them relentless.
+- Covenant Bond is the defensive tool — Mighty Men sacrifice themselves to protect weaker units.
 - Each Mighty Man has a unique name and may have a unique ability in the full roster.
 - These units are only available in the late campaign (post-MVP).

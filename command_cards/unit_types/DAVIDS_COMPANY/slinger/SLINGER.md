@@ -1,57 +1,31 @@
-# Slinger — Formation Cards
+# Slinger — Command Cards
 
-> **Unit Type:** Skirmisher (Ranged, light)
-> **Faction:** David's Company
-> **Availability:** MVP
-
----
-
-## Formation: SKIRMISH TACTICS / STONE BARRAGE
-
-### TOP ACTION — Skirmish Tactics Formation
-
-**Activations:** 3
-
-After attacking,
-this unit may move 2 spaces.
-
-This movement does not trigger opportunity attacks.
-
-**Purpose:**
-Hit-and-run warfare.
+> **Unit Type:** Skirmisher (Long range, high mobility)
+> **Faction:** All factions (common unit)
+> **Availability:** Prototype
 
 ---
-
-### BOTTOM ACTION — Stone Barrage Formation
-
-**Activations:** 2
-
-When an enemy moves within range:
-
-- Deal 1 damage.
-- Push the enemy 1 space.
-
-**Purpose:**
-Disrupt enemy advances.
-
----
-
-## Unit Stats (from GDD)
 
 | Stat | Value |
 |---|---|
-| Ranged Combat | 1d4 |
-| Range | 2 spaces |
-| Move | 3 spaces |
-| Discipline | 2 |
-| HP | 1 |
-| Armor | Light |
+| Range | 3 |
+| Attack | 1 |
+| Defense | 1 |
+| Health | 2 |
+| Move | 3 |
 
 ---
 
-## Notes
+## Cards
 
-- Slingers are the most mobile ranged unit. Skirmish Tactics enhances their hit-and-run playstyle.
-- Stone Barrage is a reactive formation — it triggers when enemies enter range, punishing advances.
-- Low damage (1d4) but high mobility makes them excellent for harassment and objective control.
-- Push effect from Stone Barrage can knock enemies off chokepoints or into unfavorable terrain.
+### Circle and Strike
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 8 | 4 |
+| Effect | Activate up to 2 Slingers: each may move then attack. If moved ≥2 tiles, attack gains +1 damage. | Activate up to 2 Slingers: move up to 3 tiles each. |
+
+### Stone Volley
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 9 | 2 |
+| Effect | Activate all Slingers: combine fire on one target. Each Slinger adds +1 damage. | Activate 1 Slinger: attack. If another Slinger is within 2 tiles, this attack gains +1 damage. |

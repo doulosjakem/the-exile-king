@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: DESPERATE CHARGE / FALL BACK
+## Formation Card: FUGITIVE'S CHARGE / SCATTER
 
-### TOP ACTION — Desperate Charge
+### TOP ACTION — Fugitive's Charge
 
 **Activations:** 2
 
@@ -21,7 +21,7 @@ Commit to a high-risk, high-reward offensive push.
 
 ---
 
-### BOTTOM ACTION — Fall Back
+### BOTTOM ACTION — Scatter
 
 **Activations:** 3
 
@@ -51,6 +51,6 @@ Survive enemy harassment and reposition.
 ## Notes
 
 - Outcasts are the cheap melee unit. Low discipline means they are unreliable but expendable.
-- Desperate Charge gives them a burst of damage, but they are vulnerable after attacking.
-- Fall Back is the survival tool — use it to keep Outcasts alive when under ranged pressure.
+- Fugitive's Charge gives them a burst of damage, but they are vulnerable after attacking.
+- Scatter is the survival tool — use it to keep Outcasts alive when under ranged pressure.
 - Outcasts are best used as meat shields or to absorb enemy activations.

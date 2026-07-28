@@ -84,7 +84,7 @@ Source: `GDD.md` + `generation_queue.json` + `review_art_ollama.py`
 | Raiders | Infantry | Core melee | Fast, light |
 | Slingers | Skirmisher | Ranged | Mobile fire |
 | Desert Scouts | Light | Fast skirmishers | Hit-and-run |
-| Camel Riders | Unique | Mobile heavy | Mounted unit |
+| Desert Mounts | Unique | Mobile heavy | Mounted unit |
 
 ---
 
@@ -115,7 +115,7 @@ Source: `GDD.md` + `generation_queue.json` + `review_art_ollama.py`
 |------|------|------|
 | Geshurite Archer | Ranged | Desert archer |
 | Geshurite Spearman | Infantry | Desert infantry |
-| Geshurite Camel Rider | Unique | Mounted warrior |
+| Geshurite Desert Mount | Unique | Mounted warrior |
 | Geshurite Clansman | Light | Tribal warrior |
 
 ### Gezerites

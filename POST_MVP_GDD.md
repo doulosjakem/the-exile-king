@@ -104,7 +104,7 @@ Desert or semi-desert tribal people. David raids their territory (1 Samuel 27:8)
 |---|---|---|
 | Geshurite Archer | Ranged | Accurate with composite bow |
 | Spearman | Infantry | Hold the line in desert skirmishes |
-| Camel Rider | Unique | Dominates desert tracks |
+| Desert Mount | Unique | Dominates desert tracks |
 | Clansman | Infantry | Fights with sling and javelin |
 
 ### Gezerites (Enemy)
@@ -312,11 +312,11 @@ Build **single-player MVP first** (Sprints 3–7). Once the core game is fun and
 | Saul's Army | Saul, Abner, Royal Guard, Benjamite Spearman, Israelite Archer, Officer, Elite Bodyguard | portraits/saul-faction | 7 |
 | Jonathan's Followers | Jonathan, Loyal Guard, Elite Archer, Scout, Armor-Bearer, Shield-Bearer, Jonathan Spearman | portraits/jonathan-faction | 10 |
 | Philistines | Achish, Philistine Lord, Philistine Spearman, Heavy Infantry, Archer, Charioteer, Champion, Goliath, Lahmi, Saph | portraits/philistines | 10 |
-| Amalekites | Amalekite Raider, Slinger, Archer, Scout, Camel Rider, Chieftain | player-units/amalekites | 6 |
+| Amalekites | Amalekite Raider, Slinger, Archer, Scout, Desert Mount, Chieftain | player-units/amalekites | 6 |
 | Mighty Men | Josheb-basshebeth, Eleazar, Shammah, Abishai, Benaiah | portraits/mighty-men | 5 |
 | Inner Circle | Joab, Amasa, Asahel | portraits/inner-circle | 3 |
 | Girzites | Girzite Chief, Raider, Scout, Shepherd-Raider | portraits/minor-factions/girzites | 4 |
-| Geshurites | Geshurite Archer, Spearman, Camel Rider, Clansman | portraits/minor-factions/geshurites | 4 |
+| Geshurites | Geshurite Archer, Spearman, Desert Mount, Clansman | portraits/minor-factions/geshurites | 4 |
 | Gezerites | Gezerite Defender, Archer, Scout | portraits/minor-factions/gezerites | 3 |
 
 **Total portrait queue:** 59 items (8 images each = 472 images)

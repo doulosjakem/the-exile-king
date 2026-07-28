@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: COMMAND / BATTLE CRY
+## Formation Card: ABNER'S COMMAND / HOST'S CRY
 
-### TOP ACTION — Command
+### TOP ACTION — Abner's Command
 
 **Activations:** 3
 
@@ -20,7 +20,7 @@ Concentrate force on a critical sector.
 
 ---
 
-### BOTTOM ACTION — Battle Cry
+### BOTTOM ACTION — Host's Cry
 
 **Activations:** 2
 

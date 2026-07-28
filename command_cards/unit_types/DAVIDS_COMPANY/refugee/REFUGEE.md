@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: AID / EVACUATE
+## Formation Card: PROVISION / FLIGHT
 
-### TOP ACTION — Aid
+### TOP ACTION — Provision
 
 **Activations:** 3
 
@@ -19,7 +19,7 @@ Keep key units alive in prolonged engagements.
 
 ---
 
-### BOTTOM ACTION — Evacuate
+### BOTTOM ACTION — Flight
 
 **Activations:** 2
 
@@ -48,6 +48,6 @@ Protect non-combatants and free up board space.
 ## Notes
 
 - Refugees do not fight. Their value is keeping survivors alive and drawing enemy attention away from combat units.
-- Aid is the only healing option in David's Company deck.
-- Evacuate is critical for protecting Refugees from melee enemies.
+- Provision is the only healing option in David's Company deck.
+- Flight is critical for protecting Refugees from melee enemies.
 - When the last Refugee is eliminated, Refugee Aid is removed from the deck.

@@ -126,7 +126,7 @@ Fast-moving desert raiders. Major campaign enemy. Raid Ziklag.
 | Raiders | Infantry | Core melee |
 | Slingers | Skirmisher | Ranged |
 | Desert Scouts | Light | Fast skirmishers |
-| Camel Riders | Unique | Mobile heavy |
+| Desert Mounts | Unique | Mobile heavy |
 
 ### Minor Historical Peoples (Enemy — Expansion)
 

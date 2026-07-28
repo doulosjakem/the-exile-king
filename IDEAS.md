@@ -17,7 +17,7 @@
 - **Rough terrain** — costs 2 movement to enter (instead of 1)
 - **Cover** — units behind obstacles get defense bonus against ranged
 - **Hazards** — fire, broken ground, etc.
-- **Dynamic terrain** — slingers could create smoke screens, Camel Rider trample could leave rough terrain
+- **Dynamic terrain** — slingers could create smoke screens, Desert Mount trample could leave rough terrain
 
 ### Morale System
 - Units break and flee if allies die nearby

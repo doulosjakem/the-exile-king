@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: ANCIENT SHIELD / IRON WALL
+## Formation Card: ROYAL SHIELD / KING'S WALL
 
-### TOP ACTION — Ancient Shield
+### TOP ACTION — Royal Shield
 
 **Activations:** 3
 
@@ -21,7 +21,7 @@ Armored frontline that punishes melee attackers and punishes them for trying.
 
 ---
 
-### BOTTOM ACTION — Iron Wall
+### BOTTOM ACTION — King's Wall
 
 Activations: 2
 
@@ -49,6 +49,6 @@ Double defense through mutual support.
 ## Notes
 
 - Royal Guard is the heaviest infantry unit in Saul's Kingdom.
-- Ancient Shield is the premier defensive formation — makes the front line nearly impenetrable and punishes attackers.
-- Iron Wall adds mutual support defense with an adjacent Royal Guard.
+- Royal Shield is the premier defensive formation — makes the front line nearly impenetrable and punishes attackers.
+- King's Wall adds mutual support defense with an adjacent Royal Guard.
 - High discipline means they are reliable but inflexible — they cannot be kited.

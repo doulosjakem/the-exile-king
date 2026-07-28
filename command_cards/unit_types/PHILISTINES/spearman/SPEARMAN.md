@@ -1,55 +1,39 @@
-# Spearman (Philistine) — Formation Cards
+# Spearman (Achish's Host) — Command Cards
 
-> **Unit Type:** Infantry (Standard)
-> **Faction:** Philistines
-> **Availability:** Post-MVP
-
----
-
-## Formation: PHILISTINE LINE / HOLD THE GATE
-
-### TOP ACTION — Philistine Line
-
-**Activations:** 3
-
-All Philistine Spearmen within 2 spaces may attack.
-
-Gain +1 Attack for each adjacent friendly Philistine Spearman.
-
-**Purpose:**
-Coordinated line formation for maximum firepower.
+> **Unit Type:** Infantry (Reach melee)
+> **Faction:** Achish's Host
+> **Availability:** Prototype
 
 ---
-
-### BOTTOM ACTION — Hold the Gate
-
-**Activations:** 2
-
-Gain +2 Defense against melee attacks this turn.
-
-Opponents that attack a Philistine Spearman in this formation
-suffer 1 damage after the attack resolves.
-
-**Purpose:**
-Defensive anchor that punishes attackers.
-
----
-
-## Unit Stats (from GDD)
 
 | Stat | Value |
 |---|---|
-| Melee Combat | 1d6 |
-| Range | Melee only |
-| Move | 2 spaces |
-| Discipline | 3 |
-| HP | 2 |
-| Armor | Medium |
+| Range | 2 (reach) |
+| Attack | 2 |
+| Defense | 1 |
+| Health | 2 |
+| Move | 2 |
 
 ---
 
-## Notes
+## Cards
 
-- Philistine Spearmen are standard infantry but benefit from coordinated formation.
-- Philistine Line is the offensive formation — stacking Adjacent bonuses makes it deadly.
-- Hold the Gate is the defensive counterpart with a punishment mechanic.
+### Philistine Spearmen
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 5 | 3 |
+| Effect | Activate up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Activate up to 2 Spearmen: each gains brace (+1 defense vs melee until next turn). |
+
+### Spearman Formation
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 4 | 5 |
+| Effect | Brace Shields: adjacent Spearmen gain +2 defense until next player turn. (2 activations) | Spear Support: Spearmen attack with reach without penalty against charging enemies. (1 activation) |
+
+### Spearman Screen
+| | Top | Bottom |
+|---|---|---|
+| Initiative | 3 | 6 |
+| Effect | Screen: adjacent friendly units gain -1 damage taken. (2 activations) | Spear Wall: Spearmen may make free attack when enemy enters melee range. (1 activation) |
+
+**Notes:** Philistine Spearmen are heavier and better drilled than earlier versions. The "Philistine Spearmen" card emphasizes coordinated defense and anti-charge tactics.

@@ -6,7 +6,7 @@
 
 ---
 
-## Formation: DESERT STORM / STONE GALLOP
+## Formation: DESERT STORM / NOMAD GALLOP
 
 ### TOP ACTION — Desert Storm
 
@@ -21,7 +21,7 @@ Concentrated ranged fire that stacks with numbers.
 
 ---
 
-### BOTTOM ACTION — Stone Galop
+### BOTTOM ACTION — Nomad Gallop
 
 Activations: 2
 

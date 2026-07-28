@@ -6,9 +6,9 @@
 
 ---
 
-## Formation: TRIBE CHARGE / HOLD RANKS
+## Formation: BENJAMITE CHARGE / TRIBE'S STAND
 
-### TOP ACTION — Tribe Charge
+### TOP ACTION — Benjamite Charge
 
 **Activations:** 3
 
@@ -21,7 +21,7 @@ Anti-infantry specialization using tribal fury.
 
 ---
 
-### BOTTOM ACTION — Hold Ranks
+### BOTTOM ACTION — Tribe's Stand
 
 Activations: 2
 
@@ -50,5 +50,5 @@ Elite defensive formation that anchors the line alongside Royal Guards.
 ## Notes
 
 - Benjamite Spearmen are elevated spearmen — better than standard spearmen.
-- Tribe Charge is an anti-infantry tool — uses their +2 bonus against Infantry.
-- Hold Ranks makes them resilient anchors for the mid-line alongside Royal Guards.
+- Benjamite Charge is an anti-infantry tool — uses their +2 bonus against Infantry.
+- Tribe's Stand makes them resilient anchors for the mid-line alongside Royal Guards.

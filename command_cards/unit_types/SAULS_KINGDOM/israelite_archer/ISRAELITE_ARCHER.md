@@ -6,9 +6,9 @@
 
 ---
 
-## Formation Card: RANKED VOLLEY / HOLD THE RANGE
+## Formation Card: ISRAELITE VOLLEY / DEFENDER'S RANGE
 
-### TOP ACTION — Ranked Volley
+### TOP ACTION — Israelite Volley
 
 **Activations:** 3
 
@@ -21,7 +21,7 @@ Concentrated volley on a single target.
 
 ---
 
-### BOTTOM ACTION — Hold the Range
+### BOTTOM ACTION — Defender's Range
 
 Activations: 2
 
@@ -48,6 +48,6 @@ Survive being closed on by melee units.
 ## Notes
 
 - Israelite Archers are standard ranged support for Saul's Kingdom.
-- Ranked Volley is identical in concept to David's Archer Focused Volley but without the +2 damage on Suppressing Fire.
-- Hold the Range is the defensive counterpart — archers are fragile and need protection from melee.
+- Israelite Volley is identical in concept to David's Archer Focused Volley but without the +2 damage on Suppressing Fire.
+- Defender's Range is the defensive counterpart — archers are fragile and need protection from melee.
 - Best positioned behind Royal Guard or Benjamite Spearmen.
