@@ -1,5 +1,5 @@
 """
-Batch art review using Ollama minicpm-v:8b with subject-agnostic checklist.
+Batch art review using Ollama moondream:1.8b with subject-agnostic checklist.
 Reviews all images in output folder and outputs a JSON report.
 Auto-moves TRASH candidates to to_trash/ (but keeps KEEP files in place).
 Stage 1: dedupe via aHash. Stage 2: quality + anatomical + prompt-match review.
@@ -401,8 +401,11 @@ def find_duplicates(images, threshold=40):
 
 
 PROMPT_CHECK_FOLDERS = {
-    "prototype",     "player-units", "unit-tokens", "davids", "amalekite", "amalekites", "standees",
-    "portraits", "cards", "card", "assets", "box-art", "equipment", "ui-elements", "to_review"
+    "player-units", "unit-tokens", "davids", "amalekite", "amalekites", "standees",
+    "portraits", "cards", "card", "assets", "box-art", "equipment", "ui-elements", "to_review",
+    "prototype", "prototype-unit-discs", "prototype-commander-cards", "prototype-unit-cards",
+    "prototype-hex-tiles", "prototype-equipment", "prototype-ui", "prototype-card-backs",
+    "unit-discs", "commander-cards", "unit-cards", "hex-tiles", "ui", "card-backs"
 }
 
 PROMPT_ALIASES = {
@@ -459,6 +462,7 @@ PROTOTYPE_STEM_ALIASES = {
 
 
 def _prototype_lookup(folder, stem):
+    # Work from the deepest folder segment; Windows paths may be flat when --base points inside prototype/
     parts = folder.replace('\\', '/').split('/')
     subfolder = parts[-1] if parts else folder
 
@@ -495,9 +499,6 @@ def _prototype_lookup(folder, stem):
             return clean.replace("-", "_")
         return clean
 
-    elif subfolder == "prototype":
-        return clean
-
     return None
 
 def lookup_expected_prompt(rel_path):
@@ -518,7 +519,7 @@ def lookup_expected_prompt(rel_path):
     if not prompt_check:
         return None, None
 
-    if "prototype" in folder.split(os.sep):
+    if "prototype" in folder.split(os.sep) or folder.split(os.sep)[-1] in {"unit-discs", "commander-cards", "unit-cards", "hex-tiles", "equipment", "ui", "card-backs"}:
         proto_key = _prototype_lookup(folder, stem)
         if proto_key and proto_key in EXPECTED_PROMPTS:
             return EXPECTED_PROMPTS[proto_key], proto_key
@@ -557,85 +558,6 @@ def lookup_expected_prompt(rel_path):
     if best_key:
         return EXPECTED_PROMPTS[best_key], best_key
     return None, None
-
-
-
-
-    if "prototype" in folder.split(os.sep):
-        proto_key = _prototype_lookup(folder, stem)
-        if proto_key and proto_key in EXPECTED_PROMPTS:
-            return EXPECTED_PROMPTS[proto_key], proto_key
-
-    parts = [p.lower() for p in re.split(r'[/\\]', folder)] + re.split(r'[\s_-]', basename)
-    combined = " ".join(parts)
-
-    best_key = None
-    best_len = 0
-
-    for key in EXPECTED_PROMPTS:
-        k = key.lower()
-        if k in parts or k in path_dashed:
-            score = len(k)
-            if score > best_len:
-                best_len = score
-                best_key = key
-            continue
-        words = k.split()
-        if len(words) > 1:
-            if all(w in parts or w in path_dashed for w in words):
-                score = len(k)
-                if score > best_len:
-                    best_len = score
-                    best_key = key
-
-    if not best_key:
-        best_key = _prototype_lookup(folder, stem)
-
-    if not best_key:
-        for alias, canonical in PROMPT_ALIASES.items():
-            if alias in combined:
-                best_key = canonical
-                break
-
-    if best_key:
-        return EXPECTED_PROMPTS[best_key], best_key
-    return None, None
-
-    parts = [p.lower() for p in re.split(r'[/\\]', folder)] + re.split(r'[\s_-]', basename)
-    combined = " ".join(parts)
-
-    best_key = None
-    best_len = 0
-
-    for key in EXPECTED_PROMPTS:
-        k = key.lower()
-        if k in parts or k in path_dashed:
-            score = len(k)
-            if score > best_len:
-                best_len = score
-                best_key = key
-            continue
-        words = k.split()
-        if len(words) > 1:
-            if all(w in parts or w in path_dashed for w in words):
-                score = len(k)
-                if score > best_len:
-                    best_len = score
-                    best_key = key
-
-    if not best_key:
-        best_key = _prototype_lookup(folder, stem)
-
-    if not best_key:
-        for alias, canonical in PROMPT_ALIASES.items():
-            if alias in combined:
-                best_key = canonical
-                break
-
-    if best_key:
-        return EXPECTED_PROMPTS[best_key], best_key
-    return None, None
-
 
 CHARACTER_KEYS = {
     "token_david", "token_swordsman", "token_spearman", "token_slinger",
@@ -949,7 +871,7 @@ def decide(answers, expected_prompt=None, asset_type="generic"):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="minicpm-v:8b")
+    parser.add_argument("--model", default="moondream:1.8b")
     parser.add_argument("--base", default=r"D:\Jake\ComfyUI_windows_portable\ComfyUI\output\ComfyUI\annointed-exile")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--output", default="art_review_report.json")
