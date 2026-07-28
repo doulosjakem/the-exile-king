@@ -1,5 +1,5 @@
 """
-Batch art review using Ollama moondream:1.8b with subject-agnostic checklist.
+Batch art review using Ollama llava-phi3 with short checklist.
 Reviews all images in output folder and outputs a JSON report.
 Auto-moves TRASH candidates to to_trash/ (but keeps KEEP files in place).
 Stage 1: dedupe via aHash. Stage 2: quality + anatomical + prompt-match review.
@@ -18,6 +18,25 @@ import shutil
 from PIL import Image
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
+
+
+def _load_generation_queue():
+    queue_path = os.path.join(os.path.dirname(__file__), "generation_queue.json")
+    if not os.path.exists(queue_path):
+        return {}
+    with open(queue_path, "r", encoding="utf-8") as f:
+        items = json.load(f)
+    mapping = {}
+    for item in items:
+        subfolder = item.get("output_subfolder", "")
+        if subfolder.startswith("prototype"):
+            prefix = item.get("filename_prefix", "")
+            prompt_key = item.get("prompt_key", "")
+            if prefix and prompt_key:
+                mapping[prefix] = prompt_key
+    return mapping
+
+FILENAME_TO_PROMPT = _load_generation_queue()
 
 EXPECTED_PROMPTS = {
     # Unit Standees
@@ -478,10 +497,13 @@ def _prototype_lookup(folder, stem):
         return f"card_front_{commander}".replace("-", "_")
 
     elif subfolder == "unit-cards":
+        prefix = re.sub(r'_\d+_$', '', stem)
+        if prefix in FILENAME_TO_PROMPT:
+            return FILENAME_TO_PROMPT[prefix]
         m = re.match(r'^(.+?)(?:-\d+)+$', clean)
         if m:
-            return m.group(1)
-        return clean
+            return m.group(1).replace("-", "_")
+        return clean.replace("-", "_")
 
     elif subfolder == "hex-tiles":
         m = re.match(r'^hex-(.+?)(?:-\d+)+$', clean)
@@ -607,93 +629,50 @@ def build_prompt(expected_prompt, expected_key=None):
     if expected_prompt:
         parts.append(
             "Expected prompt for this image:\n"
-            f"\"{expected_prompt}\"\n"
+            f'"{expected_prompt}"\n'
             "Compare the actual image to the expected prompt. If the image does NOT match the requested subject, scene, style, era, or composition, flag it.\n"
         )
 
-    if asset_type == "character":
-        parts.append(
-            "Look at this image. Judge ONLY these concrete visual features. Do NOT try to identify who or what is depicted.\n"
-            "1. Does it look hand-painted (watercolor/ink on parchment)? YES/NO\n"
-            "2. Are the colors muted earth tones? YES/NO\n"
-            "3. Is there any out-of-place modern object or text? YES/NO\n"
-            "4. Is the image blurry or corrupted? YES/NO\n"
-            "5. Is the composition centered and usable? YES/NO\n"
-            "6. Any extra heads, extra limbs, extra fingers, or misformed body parts? YES/NO\n"
-            "7. Any weapons or armor wrong for bronze age Levantine (no longswords, crossguards, plate armor, steel, longbows, medieval helmets, horned helmets, fantasy elements)? YES/NO\n"
-            "8. Does the image closely match the expected prompt above? YES/NO\n"
-            "Output: ANSWER1,ANSWER2,ANSWER3,ANSWER4,ANSWER5,ANSWER6,ANSWER7,ANSWER8"
-        )
-    elif asset_type == "tile":
-        parts.append(
-            "Look at this image. Judge ONLY these concrete visual features.\n"
-            "1. Does it look hand-painted (watercolor/ink wash style)? YES/NO\n"
-            "2. Are the colors muted earth tones? YES/NO\n"
-            "3. Is there any modern object, text, or logo? YES/NO\n"
-            "4. Is the image blurry or corrupted? YES/NO\n"
-            "5. Does it look like a top-down flat hex tile with seamless edges? YES/NO\n"
-            "6. Any visible grid lines or borders? YES/NO\n"
-            "7. Does the image closely match the expected prompt above? YES/NO\n"
-            "Output: ANSWER1,ANSWER2,ANSWER3,ANSWER4,ANSWER5,ANSWER6,ANSWER7"
-        )
-    elif asset_type == "ui":
-        parts.append(
-            "Look at this image. Judge ONLY these concrete visual features.\n"
-            "1. Does it look hand-painted (ink/parchment style)? YES/NO\n"
-            "2. Are the colors appropriate for the UI element? YES/NO\n"
-            "3. Is there any modern object, text, or logo (except intended UI elements)? YES/NO\n"
-            "4. Is the image blurry or corrupted? YES/NO\n"
-            "5. Is the shape correct for the intended UI element? YES/NO\n"
-            "6. Does the image closely match the expected prompt above? YES/NO\n"
-            "Output: ANSWER1,ANSWER2,ANSWER3,ANSWER4,ANSWER5,ANSWER6"
-        )
-    elif asset_type == "equipment":
-        parts.append(
-            "Look at this image. Judge ONLY these concrete visual features.\n"
-            "1. Does it look hand-painted (watercolor/ink)? YES/NO\n"
-            "2. Are the colors muted earth tones? YES/NO\n"
-            "3. Is there any modern object, text, or logo? YES/NO\n"
-            "4. Is the image blurry or corrupted? YES/NO\n"
-            "5. Is the object a historically accurate bronze age Levantine item (no modern, medieval, or fantasy variants)? YES/NO\n"
-            "6. Does the image closely match the expected prompt above? YES/NO\n"
-            "Output: ANSWER1,ANSWER2,ANSWER3,ANSWER4,ANSWER5,ANSWER6"
-        )
-    elif asset_type == "card":
-        parts.append(
-            "Look at this image. Judge ONLY these concrete visual features.\n"
-            "1. Does it look hand-painted (watercolor/ink on parchment)? YES/NO\n"
-            "2. Are the colors muted earth tones? YES/NO\n"
-            "3. Is there any modern object, text, or logo (except intended card art)? YES/NO\n"
-            "4. Is the image blurry or corrupted? YES/NO\n"
-            "5. Is the composition centered and usable for a game card? YES/NO\n"
-            "6. Any extra heads, extra limbs, extra fingers, or misformed body parts? YES/NO\n"
-            "7. Any weapons or armor wrong for bronze age Levantine? YES/NO\n"
-            "8. Does the image closely match the expected prompt above? YES/NO\n"
-            "Output: ANSWER1,ANSWER2,ANSWER3,ANSWER4,ANSWER5,ANSWER6,ANSWER7,ANSWER8"
-        )
-    else:
-        parts.append(
-            "Look at this image. Judge ONLY these concrete visual features.\n"
-            "1. Is the image blurry or corrupted? YES/NO\n"
-            "2. Is there any out-of-place modern object, text, or logo? YES/NO\n"
-            "3. Is the composition acceptable for its asset type? YES/NO\n"
-            "4. Does the image closely match the expected prompt above? YES/NO\n"
-            "Output: ANSWER1,ANSWER2,ANSWER3,ANSWER4"
-        )
+    parts.append(
+        "Look at this image. Judge ONLY these concrete visual features. Do NOT try to identify who or what is depicted.\n"
+        "1. Does it look hand-painted (watercolor/ink on parchment)? YES/NO\n"
+        "2. Is there any out-of-place modern object, text, or logo (except intended card/UI elements)? YES/NO\n"
+        "3. Is the image blurry, corrupted, or anatomically broken (extra heads/limbs/fingers)? YES/NO\n"
+        "4. Does the image closely match the expected prompt above? YES/NO\n"
+        "Output: ANSWER1,ANSWER2,ANSWER3,ANSWER4"
+    )
 
     return "\n".join(parts)
 
 
 def get_expected_count(asset_type):
-    counts = {
-        "character": 8,
-        "card": 8,
-        "tile": 7,
-        "ui": 6,
-        "equipment": 6,
-        "generic": 4,
-    }
-    return counts.get(asset_type, 4)
+    return 4
+
+
+def decide(answers, expected_prompt=None, asset_type="generic"):
+    painted, modern, blurry, prompt_match = (answers + ["YES"] * 4)[:4]
+    score = 5
+    reasons = []
+
+    if painted == "NO":
+        score -= 1
+        reasons.append("not hand-painted")
+    if modern == "YES":
+        score -= 3
+        reasons.append("modern object/text detected")
+    if blurry == "YES":
+        score -= 2
+        reasons.append("blurry/corrupted; anatomical defect")
+    if expected_prompt and prompt_match == "NO":
+        score -= 2
+        reasons.append("does not match expected prompt")
+
+    score = max(1, score)
+    reason = "; ".join(reasons) if reasons else "all checks passed"
+
+    if modern == "YES" or blurry == "YES" or score <= 2:
+        return "TRASH", reason, score
+    return "KEEP", reason, score
 
 
 def review_image(model, image_path, expected_prompt=None, expected_key=None, timeout=600):
@@ -703,7 +682,7 @@ def review_image(model, image_path, expected_prompt=None, expected_key=None, tim
         "prompt": prompt,
         "images": [encode_image(image_path)],
         "stream": False,
-        "options": {"temperature": 0.1, "num_ctx": 4096, "num_gpu": 1}
+        "options": {"temperature": 0.0, "num_ctx": 4096, "num_gpu": 1}
     }
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
@@ -722,156 +701,25 @@ def review_image(model, image_path, expected_prompt=None, expected_key=None, tim
         return f"ERROR: {str(e)}"
 
 
-def parse_answers(response, expected_count=8):
+def parse_answers(response, expected_count=4):
     lines = response.strip().split("\n")
     for line in lines:
         parts = [p.strip().upper() for p in line.split(",")]
-        if len(parts) >= 5 and all(p in ("YES", "NO") for p in parts[:5]):
+        if len(parts) >= 4 and all(p in ("YES", "NO") for p in parts[:4]):
             while len(parts) < expected_count:
                 parts.append("YES")
             return parts[:expected_count]
     matches = re.findall(r'\b(YES|NO)\b', response.upper())
-    if len(matches) >= 5:
+    if len(matches) >= 4:
         while len(matches) < expected_count:
             matches.append("YES")
         return matches[:expected_count]
     return ["YES"] * expected_count
 
 
-def decide(answers, expected_prompt=None, asset_type="generic"):
-    expected_count = get_expected_count(asset_type)
-    while len(answers) < expected_count:
-        answers.append("YES")
-
-    if asset_type == "tile":
-        painted, earth, modern, blurry, tile_shape, grid_lines, prompt_match = answers[:7]
-        score = 5
-        reasons = []
-        if blurry == "YES":
-            score -= 2
-            reasons.append("blurry/corrupted")
-        if modern == "YES":
-            score -= 3
-            reasons.append("modern object/text detected")
-        if tile_shape == "NO":
-            score -= 3
-            reasons.append("not a top-down flat hex tile")
-        if grid_lines == "YES":
-            score -= 2
-            reasons.append("visible grid lines/borders")
-        if expected_prompt and prompt_match == "NO":
-            score -= 2
-            reasons.append("does not match expected prompt")
-        score = max(1, score)
-        reason = "; ".join(reasons) if reasons else "all checks passed"
-        if modern == "YES" or blurry == "YES" or tile_shape == "NO" or grid_lines == "YES" or score <= 2:
-            return "TRASH", reason, score
-        return "KEEP", reason, score
-
-    elif asset_type == "ui":
-        painted, earth, modern, blurry, shape, prompt_match = answers[:6]
-        score = 5
-        reasons = []
-        if blurry == "YES":
-            score -= 2
-            reasons.append("blurry/corrupted")
-        if modern == "YES":
-            score -= 3
-            reasons.append("modern object/text detected")
-        if shape == "NO":
-            score -= 2
-            reasons.append("wrong shape for element")
-        if expected_prompt and prompt_match == "NO":
-            score -= 2
-            reasons.append("does not match expected prompt")
-        score = max(1, score)
-        reason = "; ".join(reasons) if reasons else "all checks passed"
-        if modern == "YES" or blurry == "YES" or shape == "NO" or score <= 2:
-            return "TRASH", reason, score
-        return "KEEP", reason, score
-
-    elif asset_type == "equipment":
-        painted, earth, modern, blurry, accurate, prompt_match = answers[:6]
-        score = 5
-        reasons = []
-        if blurry == "YES":
-            score -= 2
-            reasons.append("blurry/corrupted")
-        if modern == "YES":
-            score -= 3
-            reasons.append("modern object/text detected")
-        if accurate == "NO":
-            score -= 3
-            reasons.append("not historically accurate bronze age")
-        if expected_prompt and prompt_match == "NO":
-            score -= 2
-            reasons.append("does not match expected prompt")
-        score = max(1, score)
-        reason = "; ".join(reasons) if reasons else "all checks passed"
-        if modern == "YES" or blurry == "YES" or accurate == "NO" or score <= 2:
-            return "TRASH", reason, score
-        return "KEEP", reason, score
-
-    elif asset_type in ("character", "card"):
-        painted, earth, modern, blurry, comp, anatomy, weapon_era, prompt_match = answers[:8]
-        score = 5
-        reasons = []
-        if painted == "NO":
-            score -= 2
-            reasons.append("not hand-painted")
-        if earth == "NO":
-            score -= 1
-            reasons.append("colors off")
-        if modern == "YES":
-            score -= 3
-            reasons.append("modern object/text detected")
-        if blurry == "YES":
-            score -= 2
-            reasons.append("blurry/corrupted")
-        if comp == "NO":
-            score -= 1
-            reasons.append("composition off")
-        if anatomy == "YES":
-            score -= 3
-            reasons.append("anatomical defect")
-        if weapon_era == "YES":
-            score -= 3
-            reasons.append("anachronistic item")
-        if expected_prompt and prompt_match == "NO":
-            score -= 2
-            reasons.append("does not match expected prompt")
-        score = max(1, score)
-        reason = "; ".join(reasons) if reasons else "all checks passed"
-        if modern == "YES" or blurry == "YES" or anatomy == "YES" or weapon_era == "YES" or score <= 2:
-            return "TRASH", reason, score
-        return "KEEP", reason, score
-
-    else:
-        blurry, modern, comp, prompt_match = (answers + ["YES"] * 4)[:4]
-        score = 5
-        reasons = []
-        if blurry == "YES":
-            score -= 2
-            reasons.append("blurry/corrupted")
-        if modern == "YES":
-            score -= 3
-            reasons.append("modern object/text detected")
-        if comp == "NO":
-            score -= 1
-            reasons.append("composition off")
-        if expected_prompt and prompt_match == "NO":
-            score -= 2
-            reasons.append("does not match expected prompt")
-        score = max(1, score)
-        reason = "; ".join(reasons) if reasons else "all checks passed"
-        if modern == "YES" or blurry == "YES" or score <= 2:
-            return "TRASH", reason, score
-        return "KEEP", reason, score
-
-
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="moondream:1.8b")
+    parser.add_argument("--model", default="llava-phi3:3.8b")
     parser.add_argument("--base", default=r"D:\Jake\ComfyUI_windows_portable\ComfyUI\output\ComfyUI\annointed-exile")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--output", default="art_review_report.json")
