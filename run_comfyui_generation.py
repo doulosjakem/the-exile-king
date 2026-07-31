@@ -181,7 +181,7 @@ def submit_workflow(workflow):
         method="POST"
     )
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=300) as resp:
             result = json.loads(resp.read().decode("utf-8"))
             return result.get("prompt_id")
     except Exception as e:
@@ -189,7 +189,7 @@ def submit_workflow(workflow):
         raise
 
 
-def wait_for_prompt(prompt_id, timeout=600):
+def wait_for_prompt(prompt_id, timeout=1800):
     start = time.time()
     was_running = False
     while time.time() - start < timeout:
@@ -199,7 +199,12 @@ def wait_for_prompt(prompt_id, timeout=600):
                 queue = json.loads(resp.read().decode("utf-8"))
                 running = queue.get("queue_running", [])
                 pending = queue.get("queue_pending", [])
-                is_running = any(item.get("prompt_id") == prompt_id for item in running)
+                # queue_running items are lists: [number, prompt_id, workflow_dict]
+                is_running = any(
+                    (isinstance(item, list) and len(item) > 1 and item[1] == prompt_id) or
+                    (isinstance(item, dict) and item.get("prompt_id") == prompt_id)
+                    for item in running
+                )
                 if is_running:
                     was_running = True
                 elif was_running:
@@ -231,16 +236,86 @@ def move_outputs(item, manifest_entry):
     return moved
 
 
-def generate_one_image(item, seed):
+def interrupt_comfyui():
+    """Try to interrupt any running prompt in ComfyUI."""
     try:
-        workflow = build_workflow(item, seed)
-        prompt_id = submit_workflow(workflow)
-        wait_for_prompt(prompt_id)
-        moved = move_outputs(item, {})
-        return moved
-    except Exception as e:
-        print(f"\n  FAILED seed {seed}: {e}")
-        return []
+        req = urllib.request.Request("http://127.0.0.1:8188/interrupt", method="POST")
+        urllib.request.urlopen(req, timeout=5)
+        return True
+    except Exception:
+        return False
+
+
+def clear_comfyui_queue():
+    """Try to clear the pending queue in ComfyUI."""
+    try:
+        req = urllib.request.Request("http://127.0.0.1:8188/queue", method="DELETE")
+        urllib.request.urlopen(req, timeout=5)
+        return True
+    except Exception:
+        return False
+
+
+def restart_comfyui():
+    """Restart ComfyUI by stopping and starting it again."""
+    global _comfyui_proc
+    try:
+        # Stop current ComfyUI
+        stop_comfyui()
+        time.sleep(2)
+        if _comfyui_proc and _comfyui_proc.poll() is None:
+            _comfyui_proc.terminate()
+            _comfyui_proc.wait(timeout=10)
+    except Exception:
+        pass
+    time.sleep(2)
+    # Start new ComfyUI
+    _comfyui_proc = start_comfyui()
+    if wait_for_comfyui(timeout=180):
+        print("  ComfyUI restarted successfully")
+        return True
+    return False
+
+
+_comfyui_proc = None
+
+
+def generate_one_image(item, seed, max_retries=2):
+    for attempt in range(max_retries + 1):
+        try:
+            workflow = build_workflow(item, seed)
+            prompt_id = submit_workflow(workflow)
+            wait_for_prompt(prompt_id)
+            moved = move_outputs(item, {})
+            return moved
+        except RuntimeError as e:
+            # wait_for_prompt timed out - interrupt the stuck prompt
+            print(f"\n  FAILED seed {seed}: {e}")
+            if attempt < max_retries:
+                print(f"  Interrupting prompt and retrying (attempt {attempt + 1}/{max_retries})...")
+                interrupt_comfyui()
+                time.sleep(5)
+                clear_comfyui_queue()
+                continue
+            else:
+                print(f"  Max retries reached, restarting ComfyUI for next item...")
+                interrupt_comfyui()
+                time.sleep(2)
+                restart_comfyui()
+                return []
+        except Exception as e:
+            # submit_workflow etc. failed - restart ComfyUI
+            print(f"\n  FAILED seed {seed}: {e}")
+            if attempt < max_retries:
+                print(f"  Restarting ComfyUI and retrying (attempt {attempt + 1}/{max_retries})...")
+                restart_comfyui()
+                time.sleep(5)
+                continue
+            else:
+                print(f"  Max retries reached, restarting ComfyUI for next item...")
+                restart_comfyui()
+                return []
+    return []
 
 
 def upload_to_google_drive(src_path, dest_relative):
@@ -276,8 +351,16 @@ def update_cycle_progress(item_id, idx, total_items, count, moved_count, status=
     if error:
         lines.append(f"**Last error:** {error}")
     content = "\n".join(lines) + "\n"
-    with open(CYCLE_PROGRESS, "w", encoding="utf-8") as f:
-        f.write(content)
+    for attempt in range(3):
+        try:
+            with open(CYCLE_PROGRESS, "w", encoding="utf-8") as f:
+                f.write(content)
+            break
+        except OSError as e:
+            if attempt < 2:
+                time.sleep(1)
+            else:
+                print(f"Warning: could not update CYCLE_PROGRESS.md after 3 attempts: {e}")
 
 
 def start_comfyui():
@@ -337,10 +420,11 @@ def main():
 
     if not args.no_launch:
         print("Starting ComfyUI...")
-        proc = start_comfyui()
+        global _comfyui_proc
+        _comfyui_proc = start_comfyui()
         if not wait_for_comfyui():
             print("ERROR: ComfyUI did not start")
-            proc.terminate()
+            _comfyui_proc.terminate()
             return 1
         print("ComfyUI ready")
 

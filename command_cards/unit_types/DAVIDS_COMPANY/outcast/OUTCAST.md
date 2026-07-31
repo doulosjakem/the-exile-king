@@ -27,7 +27,7 @@ Commit to a high-risk, high-reward offensive push.
 
 Move up to 2 Outcasts.
 
-Outcasts gain +2 Defense against ranged attacks this turn.
+Outcasts gain 2 Shield vs ranged this turn.
 
 **Purpose:**
 Survive enemy harassment and reposition.

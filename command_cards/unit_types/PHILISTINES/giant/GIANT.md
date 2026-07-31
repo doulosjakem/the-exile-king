@@ -10,7 +10,6 @@
 |---|---|
 | Range | 1 (melee) |
 | Attack | 3 |
-| Defense | 2 |
 | Health | 4 |
 | Move | 1 |
 
@@ -22,7 +21,7 @@
 | | Top | Bottom |
 |---|---|---|
 | Initiative | 8 | 2 |
-| Effect | Activate Giant: attack with +2 damage. Ignore 1 defense on target. | Activate Giant: move 1 tile. Gain +1 defense until next turn. |
+| Effect | Command Giant: attack with +2 damage. Ignore 1 Shield on target. | Command Giant: move 1 tile. Gain 1 Shield until start of next turn. |
 
 ### Unstoppable
 | | Top | Bottom |
@@ -34,4 +33,4 @@
 | | Top | Bottom |
 |---|---|---|
 | Initiative | 6 | 4 |
-| Effect | If Giant has taken damage this turn: attack gains +1 damage and ignores all defense. (1 activation) | Nearby enemies cannot attack Giant this turn unless they also have at least 2 HP. (2 activations) |
+| Effect | If Giant has taken damage this turn: attack gains +1 damage and ignores Shield. (1 activation) | Nearby enemies cannot attack Giant this turn unless they also have at least 2 HP. (2 activations) |

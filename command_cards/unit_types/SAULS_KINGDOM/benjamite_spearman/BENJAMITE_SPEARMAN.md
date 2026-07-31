@@ -25,9 +25,9 @@ Anti-infantry specialization using tribal fury.
 
 Activations: 2
 
-Benjamite Spearmen gain +2 Defense.
+Benjamite Spearmen gain 2 Shield.
 
-Adjacent friendly Infantry units also gain +1 Defense.
+Adjacent friendly Infantry units also gain 1 Shield.
 
 **Purpose:**
 Elite defensive formation that anchors the line alongside Royal Guards.

@@ -31,7 +31,7 @@ Available in **MVP** (enemy only).
 - Amalekites favor fast attacks, raids on objectives, and disengagement when outnumbered.
 - Desert Raiders have unique movement rules (ignore terrain penalties, can cross desert quickly).
 
-- **Faction-wide formation cards:** See [formations/AMALEKITES.md](formations/AMALEKITES.md)
+- **Faction-wide Formation cards:** Listed in the deck-building table below. Formation rules apply per the glossary (1 active Formation at a time, displaced when a new one is played).
 
 ---
 

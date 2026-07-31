@@ -10,20 +10,20 @@ All command card designs are in `command_cards/unit_types/**/*.md`. The text bel
 ### David (Commander)
 | Card | Top | Bottom |
 |---|---|---|
-| Shepherd's Call | Activate David + 1 adjacent ally: both may move and attack. Adjacent allies gain +1 damage. | Move David up to 3. After moving, David may issue a command to 1 adjacent friendly unit: that unit may activate immediately. |
+| Shepherd's Call | Command David + 1 adjacent ally: both may move and attack. Adjacent allies gain +1 damage. | Move David up to 3. After moving, David may issue a command to 1 adjacent friendly unit: that unit may command immediately. |
 | **Activations:** | 3 | 2 |
 
 ### Swordsman
 | Card | Top | Bottom |
 |---|---|---|
-| Shepherd's Advance | Activate up to 3 Swordsmen: each may move and attack. +1 attack if adjacent to another Swordsman. | Move up to 2 Swordsmen up to 2 tiles each. |
-| Shepherd's Formation | Shield Wall: adjacent Swordsmen gain +1 defense until next player turn. (2 activations) | Covenant Support: Swordsmen may attack without penalty when adjacent to friendly Spearmen. (1 activation) |
+| Shepherd's Advance | Command up to 3 Swordsmen: each may move and attack. +1 attack if adjacent to another Swordsman. | Move up to 2 Swordsmen up to 2 tiles each. |
+| Shepherd's Formation | Shield Wall: adjacent Swordsmen gain 1 Shield until start of next turn. (2 activations) | Covenant Support: Swordsmen may attack without penalty when adjacent to friendly Spearmen. (1 activation) |
 | **Init:** | 6/2 | 4/5 |
 
 ### Spearman
 | Card | Top | Bottom |
 |---|---|---|
-| Shepherd's Wall | Activate up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Activate up to 2 Spearmen: each gains brace (+1 defense vs melee until next turn). |
+| Shepherd's Wall | Command up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Command up to 2 Spearmen: each gains brace (1 Shield vs melee until start of next turn). |
 | Shepherd's Screen | Screen: adjacent friendly units gain -1 damage taken. (2 activations) | Spear Wall: Spearmen may make free attack when enemy enters melee range. (1 activation) |
 | **Init:** | 5/3 | 3/6 |
 
@@ -32,29 +32,29 @@ Note: There is a third card "Spearman Formation" in the faction file with text a
 ### Slinger
 | Card | Top | Bottom |
 |---|---|---|
-| Shepherd's Strike | Activate up to 2 Slingers: each may move then attack. If moved ≥2 tiles, attack gains +1 damage. | Activate up to 2 Slingers: move up to 3 tiles each. |
-| Stone Barrage | Activate all Slingers: combine fire on one target. Each Slinger adds +1 damage. | Activate 1 Slinger: attack. If another Slinger is within 2 tiles, this attack gains +1 damage. |
+| Shepherd's Strike | Command up to 2 Slingers: each may move then attack. If moved ≥2 tiles, attack gains +1 damage. | Command up to 2 Slingers: move up to 3 tiles each. |
+| Stone Barrage | Command all Slingers: combine fire on one target. Each Slinger adds +1 damage. | Command 1 Slinger: attack. If another Slinger is within 2 tiles, this attack gains +1 damage. |
 | **Init:** | 8/4 | 9/2 |
 
 ### Archer
 | Card | Top | Bottom |
 |---|---|---|
-| Shepherd's Volley | Activate up to 2 Archers: each attacks. Must target enemies within range. | Activate up to 2 Archers: move and gain Aim (+1 dmg on next shot if stationary). |
-| Shepherd's Mark | Overwatch: Archers may make free attack when enemy moves into range. (1 activation) | Marksman: one Archer ignores 1 defense this turn. (2 activations) |
+| Shepherd's Volley | Command up to 2 Archers: each attacks. Must target enemies within range. | Command up to 2 Archers: move and gain Aim (+1 dmg on next shot if stationary). |
+| Shepherd's Mark | Overwatch: Archers may make free attack when enemy moves into range. (1 activation) | Marksman: one Archer ignores 1 Shield this turn. (2 activations) |
 | **Init:** | 6/3 | 5/5 |
 
 ### Scout
 | Card | Top | Bottom |
 |---|---|---|
-| Wilderness Eye | Activate 1 Scout: move up to 4 tiles (ignores terrain), then make a free attack. | Activate 1 Scout: move up to 3 tiles. If ends adjacent to enemy, retreat 1 tile after interaction. |
+| Wilderness Eye | Command 1 Scout: move up to 4 tiles (ignores terrain), then make a free attack. | Command 1 Scout: move up to 3 tiles. If ends adjacent to enemy, retreat 1 tile after interaction. |
 | Wilderness Ambush | Ambush: Scouts start hidden. First attack gains +2 damage and enemy cannot counter. (1 activation) | Screen: Scouts block LoS for enemies within 1 tile. (2 activations) |
 | **Init:** | 7/5 | 6/4 |
 
 ### Shield Bearer
 | Card | Top | Bottom |
 |---|---|---|
-| Shepherd's Shield | Adjacent friendly units gain +1 defense until next player turn. (2 activations) | Bracing: Shield Bearer gains +1 defense this turn. |
-| Wilderness Advance | Activate Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
+| Shepherd's Shield | Adjacent friendly units gain 1 Shield until start of next turn. (2 activations) | Bracing: Shield Bearer gains 1 Shield this turn. |
+| Wilderness Advance | Command Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
 | **Init:** | 4/5 | 3/6 |
 
 ### Refugee
@@ -66,13 +66,13 @@ Note: There is a third card "Spearman Formation" in the faction file with text a
 ### Outcast
 | Card | Top | Bottom |
 |---|---|---|
-| Fugitive's Charge | Outcasts may move up to 3 spaces and attack. Gain +1 Attack on this attack. | Move up to 2 Outcasts. Outcasts gain +2 Defense against ranged attacks this turn. |
+| Fugitive's Charge | Outcasts may move up to 3 spaces and attack. Gain +1 Attack on this attack. | Move up to 2 Outcasts. Outcasts gain 2 Shield vs ranged this turn. |
 | **Init:** | 2 | 3 |
 
 ### Veteran
 | Card | Top | Bottom |
 |---|---|---|
-| Battle-Tested | Veterans attack with +1 Attack. If this attack defeats an enemy, Veterans may immediately attack an adjacent enemy. | Veterans gain +2 Defense this turn. Adjacent allied units gain +1 Defense until your next turn. |
+| Battle-Tested | Veterans attack with +1 Attack. If this attack defeats an enemy, Veterans may immediately attack an adjacent enemy. | Veterans gain 2 Shield this turn. Adjacent allied units gain 1 Shield until start of next turn. |
 | **Init:** | 3 | 2 |
 
 ### Mighty Men
@@ -88,41 +88,41 @@ Note: There is a third card "Spearman Formation" in the faction file with text a
 ### Jonathan (Commander)
 | Card | Top | Bottom |
 |---|---|---|
-| Jonathan's Charge | Activate Jonathan: move and attack. All Loyal Guards within 2 tiles gain +1 defense this turn. | Activate Jonathan: grant one Elite Archer within 2 tiles the ability to attack twice this turn. |
+| Jonathan's Charge | Command Jonathan: move and attack. All Loyal Guards within 2 tiles gain 1 Shield this turn. | Command Jonathan: grant one Elite Archer within 2 tiles the ability to attack twice this turn. |
 | **Init:** | 7 | 3 |
 
 ### Loyal Guard
 | Card | Top | Bottom |
 |---|---|---|
-| Covenant Guard | Shield Wall: Loyal Guards gain +2 defense until next player turn if adjacent to Jonathan. (2 activations) | Protect Commander: move Loyal Guard adjacent to friendly commander; commander gains -1 damage taken. (1 activation) |
+| Covenant Guard | Shield Wall: Loyal Guards gain +2 Shield until next player turn if adjacent to Jonathan. (2 activations) | Protect Commander: move Loyal Guard adjacent to friendly commander; commander gains -1 damage taken. (1 activation) |
 | **Init:** | 5 | 4 |
 
 ### Elite Archer
 | Card | Top | Bottom |
 |---|---|---|
-| Benjamin's Arrow | Target one enemy with an Elite Archer. This Archer gains +1 attack and ignores 1 defense. | Activate Elite Archer: move up to 2 tiles, then attack with +1 range this turn. |
-| True Aim | If Elite Archer has not moved this turn: attack with +2 range and +1 damage. | Activate Elite Archer: attack. If stationary, gain +1 damage. |
+| Benjamin's Arrow | Target one enemy with an Elite Archer. This Archer gains +1 attack and ignores 1 Shield. | Command Elite Archer: move up to 2 tiles, then attack with +1 range this turn. |
+| True Aim | If Elite Archer has not moved this turn: attack with +2 range and +1 damage. | Command Elite Archer: attack. If stationary, gain +1 damage. |
 | **Init:** | 8/3 | 9/2 |
 
 ### Archer
 | Card | Top | Bottom |
 |---|---|---|
-| Covenant Volley | Activate up to 2 Archers: each attacks. Must target enemies within range. Gain +1 attack if Jonathan is within 2 tiles. | Activate up to 2 Archers: move and gain Aim (+1 dmg on next shot if stationary). |
-| Benjamin's Eye | Overwatch: Archers may make free attack when enemy moves into range. (1 activation) | Marksman: one Archer ignores 1 defense this turn. If stationary, gain +1 range this turn. (2 activations) |
+| Covenant Volley | Command up to 2 Archers: each attacks. Must target enemies within range. Gain +1 attack if Jonathan is within 2 tiles. | Command up to 2 Archers: move and gain Aim (+1 dmg on next shot if stationary). |
+| Benjamin's Eye | Overwatch: Archers may make free attack when enemy moves into range. (1 activation) | Marksman: one Archer ignores 1 Shield this turn. If stationary, gain +1 range this turn. (2 activations) |
 | **Init:** | 6/3 | 5/5 |
 
 ### Spearman
 | Card | Top | Bottom |
 |---|---|---|
-| Tribe's Wall | Activate up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Activate up to 2 Spearmen: each gains brace (+1 defense vs melee until next turn). |
+| Tribe's Wall | Command up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Command up to 2 Spearmen: each gains brace (1 Shield vs melee until start of next turn). |
 | Tribe's Screen | Screen: adjacent friendly units gain -1 damage taken. (2 activations) | Benjamite Thrust: Spearmen attack with reach with +1 damage. (1 activation) |
 | **Init:** | 5/3 | 4/5 |
 
 ### Shield Bearer
 | Card | Top | Bottom |
 |---|---|---|
-| Covenant Shield | Adjacent friendly units gain +1 defense until next player turn. (2 activations) | Bracing: Shield Bearer gains +1 defense this turn. |
-| Commander's Advance | Activate Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations). If Jonathan is adjacent, Shield Bearer gains +1 defense. |
+| Covenant Shield | Adjacent friendly units gain 1 Shield until start of next turn. (2 activations) | Bracing: Shield Bearer gains 1 Shield this turn. |
+| Commander's Advance | Command Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations). If Jonathan is adjacent, Shield Bearer gains +1 Shield. |
 | **Init:** | 4/5 | 3/6 |
 
 ---
@@ -132,20 +132,20 @@ Note: There is a third card "Spearman Formation" in the faction file with text a
 ### Abner (Commander)
 | Card | Top | Bottom |
 |---|---|---|
-| Abner's Command | Issue an order to all units of one type within 2 spaces of Abner: Those units may activate immediately this turn. | All Saul's Kingdom units within 2 spaces of Abner gain +1 Attack this turn. |
+| Abner's Command | Issue an order to all units of one type within 2 spaces of Abner: Those units may command immediately this turn. | All Saul's Kingdom units within 2 spaces of Abner gain +1 Attack this turn. |
 | **Init:** | 3 | 2 |
 
 ### Royal Guard
 | Card | Top | Bottom |
 |---|---|---|
-| Royal Shield | When Royal Guard is attacked by melee, gain +3 Defense. After the attack, the attacker loses 1 Activation next turn. | Royal Guard may form a wall with another adjacent Royal Guard. Both gain +2 Defense until your next turn. |
-| King's Wall | Activate Royal Guard: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Royal Guard ignore hazardous terrain. (2 activations). If Abner is adjacent, Royal Guard gains +1 defense. |
+| Royal Shield | When Royal Guard is attacked by melee, gain 3 Shield. After the attack, the attacker loses 1 Activation next turn. | Royal Guard may form a wall with another adjacent Royal Guard. Both gain 2 Shield until your next turn. |
+| King's Wall | Command Royal Guard: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Royal Guard ignore hazardous terrain. (2 activations). If Abner is adjacent, Royal Guard gains +1 Shield. |
 | **Init:** | 4/5 | 3/6 |
 
 ### Benjamite Spearman
 | Card | Top | Bottom |
 |---|---|---|
-| Benjamite Charge | Benjamite Spearmen may move 2 spaces and attack. If the target is an Infantry unit, gain +2 Attack instead of +1. | Benjamite Spearmen gain +2 Defense. Adjacent friendly Infantry units also gain +1 Defense. |
+| Benjamite Charge | Benjamite Spearmen may move 2 spaces and attack. If the target is an Infantry unit, gain +2 Attack instead of +1. | Benjamite Spearmen gain 2 Shield. Adjacent friendly Infantry units also gain 1 Shield. |
 | **Init:** | 3 | 2 |
 
 ### Israelite Archer
@@ -157,13 +157,13 @@ Note: There is a third card "Spearman Formation" in the faction file with text a
 ### Officer
 | Card | Top | Bottom |
 |---|---|---|
-| Officer's Boost | Choose 1 adjacent allied unit. That unit gains +2 Attack and +1 Defense until your next turn. | Choose 1 adjacent allied unit. That unit may activate immediately this turn. |
+| Officer's Boost | Choose 1 adjacent allied unit. That unit gains +2 Attack and 1 Shield until start of next turn. | Choose 1 adjacent allied unit. That unit may command immediately this turn. |
 | **Init:** | 3 | 2 |
 
 ### Elite Bodyguard
 | Card | Top | Bottom |
 |---|---|---|
-| Guard | Elite Bodyguard may move adjacent to a Commander (Saul or Abner). Until your next turn, the Commander gains +2 Defense when Elite Bodyguards are adjacent. | When an adjacent enemy attacks the Commander, the Elite Bodyguard may intercept: take the damage instead. The Elite Bodyguard is eliminated after intercepting. |
+| Guard | Elite Bodyguard may move adjacent to a Commander (Saul or Abner). Until your next turn, the Commander gains 2 Shield when Elite Bodyguards are adjacent. | When an adjacent enemy attacks the Commander, the Elite Bodyguard may intercept: take the damage instead. The Elite Bodyguard is eliminated after intercepting. |
 | **Init:** | 2 | 3 |
 
 ---
@@ -173,60 +173,60 @@ Note: There is a third card "Spearman Formation" in the faction file with text a
 ### Achish (Commander)
 | Card | Top | Bottom |
 |---|---|---|
-| Philistine Might | Activate Achish: move up to 2, then attack. All adjacent Philistines gain Shielded (first damage prevented this turn). | Place on Command Board. Adjacent Giants and Heavy Infantry gain +1 defense. (2 activations) |
+| Philistine Might | Command Achish: move up to 2, then attack. All adjacent Philistines gain Shielded (first damage prevented this turn). | Place on Command Board. Adjacent Giants and Heavy Infantry gain +1 Shield. (2 activations) |
 | **Init:** | 7 | 3 |
 
 ### Swordsman
 | Card | Top | Bottom |
 |---|---|---|
-| Philistine Advance | Activate up to 3 Swordsmen: each may move and attack. Gain +1 attack if moved ≥2 tiles. | Move up to 2 Swordsmen up to 2 tiles each. |
-| Iron Resolve | Adjacent friendly Swordsmen gain +1 defense until next player turn. (2 activations) | Chariot Support: Swordsmen may attack without penalty when adjacent to friendly Chariots. (1 activation) |
+| Philistine Advance | Command up to 3 Swordsmen: each may move and attack. Gain +1 attack if moved ≥2 tiles. | Move up to 2 Swordsmen up to 2 tiles each. |
+| Iron Resolve | Adjacent friendly Swordsmen gain 1 Shield until start of next turn. (2 activations) | Chariot Support: Swordsmen may attack without penalty when adjacent to friendly Chariots. (1 activation) |
 | **Init:** | 6/2 | 4/5 |
 
 ### Spearman
 | Card | Top | Bottom |
 |---|---|---|
-| Philistine Spearmen | Activate up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Activate up to 2 Spearmen: each gains brace (+1 defense vs melee until next turn). |
+| Philistine Spearmen | Command up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Command up to 2 Spearmen: each gains brace (1 Shield vs melee until start of next turn). |
 | Ekron Screen | Screen: adjacent friendly units gain -1 damage taken. (2 activations) | Chariot Lane: Spearmen do not block friendly Chariot movement. (1 activation) |
 | **Init:** | 5/3 | 3/6 |
 
 ### Archer
 | Card | Top | Bottom |
 |---|---|---|
-| Ekron Volley | Activate up to 2 Archers: each attacks. Enemies hit lose 1 movement next turn. | Activate up to 2 Archers: move 1 tile each and gain +1 range this turn. |
+| Ekron Volley | Command up to 2 Archers: each attacks. Enemies hit lose 1 movement next turn. | Command up to 2 Archers: move 1 tile each and gain +1 range this turn. |
 | Ekron Aim | Opening Volley: Archers attack before all movement this turn. (1 activation) | Covering Fire: after an ally moves, one Archer may make a free attack. (2 activations) |
 | **Init:** | 6/3 | 5/4 |
 
 ### Shield Bearer
 | Card | Top | Bottom |
 |---|---|---|
-| Iron Bulwark | Adjacent friendly units gain +1 defense until next player turn. (2 activations) | Bracing: Shield Bearer gains +1 defense this turn. |
-| Shield Advance | Activate Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
+| Iron Bulwark | Adjacent friendly units gain 1 Shield until start of next turn. (2 activations) | Bracing: Shield Bearer gains 1 Shield this turn. |
+| Shield Advance | Command Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
 | **Init:** | 4/5 | 3/6 |
 
 ### Heavy Infantry
 | Card | Top | Bottom |
 |---|---|---|
-| Iron Shield Wall | Gain +2 Defense this turn. Cannot be pushed or moved by enemy effects this turn. | Heavy Infantry attacks with +2 Attack. After the attack, may move 1 space. |
+| Iron Shield Wall | Gain 2 Shield this turn. Cannot be pushed or moved by enemy effects this turn. | Heavy Infantry attacks with +2 Attack. After the attack, may move 1 space. |
 | **Init:** | 3 | 2 |
 
 ### Chariot
 | Card | Top | Bottom |
 |---|---|---|
-| Chariot Charge | Activate Chariot: move up to 3 tiles (must move ≥2), then attack with +1 damage. Push target 1 tile. | Activate Chariot: move up to 3 tiles through friendly units without obstruction. |
+| Chariot Charge | Command Chariot: move up to 3 tiles (must move ≥2), then attack with +1 damage. Push target 1 tile. | Command Chariot: move up to 3 tiles through friendly units without obstruction. |
 | Coastal Charge | Breakthrough: Chariot attacks and pushes target 2 tiles instead of 1. (1 activation) | Chariot ignores rough terrain penalties this turn. (2 activations) |
 | **Init:** | 9/4 | 8/5 |
 
 ### Champion
 | Card | Top | Bottom |
 |---|---|---|
-| Champion's Duel | Choose 1 enemy unit. Champion attacks with +2 Attack. If this attack defeats an enemy champion or hero, Champion may attack again immediately. | Champion gains +3 Defense this turn. Champion cannot be targeted by non-champion or non-hero units. |
+| Champion's Duel | Choose 1 enemy unit. Champion attacks with +2 Attack. If this attack defeats an enemy champion or hero, Champion may attack again immediately. | Champion gains 3 Shield this turn. Champion cannot be targeted by non-champion or non-hero units. |
 | **Init:** | 3 | 2 |
 
 ### Lords
 | Card | Top | Bottom |
 |---|---|---|
-| Lord's Decree | Issue an order to all Philistine units within 3 spaces: those units may activate immediately this turn. | All Philistine units within 3 spaces gain +1 Attack and +1 Defense until your next turn. |
+| Lord's Decree | Issue an order to all Philistine units within 3 spaces: those units may command immediately this turn. | All Philistine units within 3 spaces gain +1 Attack and 1 Shield until start of next turn. |
 | **Init:** | 3 | 2 |
 
 ---
@@ -270,51 +270,51 @@ Note: There is a third card "Spearman Formation" in the faction file with text a
 ### Philistine Lord (Commander)
 | Card | Top | Bottom |
 |---|---|---|
-| Ekron's Decree | Activate Philistine Lord: move up to 2, then attack. Adjacent allies gain +1 attack this turn. | Grant one Champion or Heavy Infantry within 2 tiles an extra activation. |
+| Ekron's Decree | Command Philistine Lord: move up to 2, then attack. Adjacent allies gain +1 attack this turn. | Grant one Champion or Heavy Infantry within 2 tiles an extra activation. |
 | **Init:** | 6 | 4 |
 
 ### Chariot
 | Card | Top | Bottom |
 |---|---|---|
-| Coastal Charge | Activate Chariot: move up to 3 tiles (must move ≥2), then attack with +1 damage. Push target 1 tile. | Activate Chariot: move up to 3 tiles through friendly units without obstruction. |
+| Coastal Charge | Command Chariot: move up to 3 tiles (must move ≥2), then attack with +1 damage. Push target 1 tile. | Command Chariot: move up to 3 tiles through friendly units without obstruction. |
 | Plain Breaker | Breakthrough: Chariot attacks and pushes target 2 tiles instead of 1. (1 activation) | Chariot ignores rough terrain penalties this turn. (2 activations) |
-| Hit and Run | Hit and Run: Chariot may move after attacking (up to 1 tile). (2 activations) | Chariot gains +1 defense for each tile moved this activation. (1 activation) |
+| Hit and Run | Hit and Run: Chariot may move after attacking (up to 1 tile). (2 activations) | Chariot gains +1 Shield for each tile moved this activation. (1 activation) |
 | **Init:** | 9/4 | 8/5 |
 
 ### Slinger
 | Card | Top | Bottom |
 |---|---|---|
-| Coastal Sling | Activate up to 2 Slingers: each may move then attack. If moved ≥2 tiles, attack gains +1 damage. | Activate up to 2 Slingers: move up to 3 tiles each. |
-| Stone Storm | Activate all Slingers: combine fire on one target. Each Slinger adds +1 damage. Targets hit cannot move next turn. | Activate 1 Slinger: attack. If another Slinger is within 2 tiles, this attack gains +1 damage. Targets hit cannot move next turn. |
+| Coastal Sling | Command up to 2 Slingers: each may move then attack. If moved ≥2 tiles, attack gains +1 damage. | Command up to 2 Slingers: move up to 3 tiles each. |
+| Stone Storm | Command all Slingers: combine fire on one target. Each Slinger adds +1 damage. Targets hit cannot move next turn. | Command 1 Slinger: attack. If another Slinger is within 2 tiles, this attack gains +1 damage. Targets hit cannot move next turn. |
 | **Init:** | 8/4 | 9/2 |
 
 ### Swordsman
 | Card | Top | Bottom |
 |---|---|---|
-| Philistine Advance | Activate up to 3 Swordsmen: each may move and attack. Gain +1 attack if moved ≥2 tiles. | Move up to 2 Swordsmen up to 2 tiles each. |
-| Iron Resolve | Adjacent friendly Swordsmen gain +1 defense until next player turn. (2 activations) | Chariot Support: Swordsmen may attack without penalty when adjacent to friendly Chariots. (1 activation) |
+| Philistine Advance | Command up to 3 Swordsmen: each may move and attack. Gain +1 attack if moved ≥2 tiles. | Move up to 2 Swordsmen up to 2 tiles each. |
+| Iron Resolve | Adjacent friendly Swordsmen gain 1 Shield until start of next turn. (2 activations) | Chariot Support: Swordsmen may attack without penalty when adjacent to friendly Chariots. (1 activation) |
 | **Init:** | 6/2 | 4/5 |
 
 ### Spearman
 | Card | Top | Bottom |
 |---|---|---|
-| Ekron Hedge | Activate up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Activate up to 2 Spearmen: each gains brace (+1 defense vs melee until next turn). |
-| Ekron Line | Brace Shields: adjacent Spearmen gain +2 defense until next player turn. (2 activations) | Chariot Lane: Spearmen do not block friendly Chariot movement. (1 activation) |
+| Ekron Hedge | Command up to 2 Spearmen: each moves up to 2 tiles and attacks with +1 damage vs charging enemies. | Command up to 2 Spearmen: each gains brace (1 Shield vs melee until start of next turn). |
+| Ekron Line | Brace Shields: adjacent Spearmen gain +2 Shield until next player turn. (2 activations) | Chariot Lane: Spearmen do not block friendly Chariot movement. (1 activation) |
 | Ekron Screen | Screen: adjacent friendly units gain -1 damage taken. (2 activations) | Spear Support: Spearmen attack with reach without penalty against charging enemies. (1 activation) |
 | **Init:** | 5/3 | 4/5 |
 
 ### Shield Bearer
 | Card | Top | Bottom |
 |---|---|---|
-| Iron Bulwark | Adjacent friendly units gain +1 defense until next player turn. (2 activations) | Bracing: Shield Bearer gains +1 defense this turn. |
-| Shield Advance | Activate Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
+| Iron Bulwark | Adjacent friendly units gain 1 Shield until start of next turn. (2 activations) | Bracing: Shield Bearer gains 1 Shield this turn. |
+| Shield Advance | Command Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
 | **Init:** | 4/5 | 3/6 |
 
 ---
 
 ## Unit Stats (from GDD.md)
 
-| Unit | Range | Attack | Defense | Health | Move | Notes |
+| Unit | Range | Attack | Shield Tokens | Health | Move | Notes |
 |---|---|---|---|---|---|---|
 | Swordsman | 1 | 2 | 1 | 2 | 2 | Standard melee |
 | Spearman | 2 (reach) | 2 | 1 | 2 | 2 | Anti-charge |

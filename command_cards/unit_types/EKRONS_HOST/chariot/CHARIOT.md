@@ -10,7 +10,6 @@
 |---|---|
 | Range | 1 (melee) |
 | Attack | 2 |
-| Defense | 1 |
 | Health | 2 |
 | Move | 3 |
 
@@ -22,7 +21,7 @@
 | | Top | Bottom |
 |---|---|---|
 | Initiative | 9 | 4 |
-| Effect | Activate Chariot: move up to 3 tiles (must move ≥2), then attack with +1 damage. Push target 1 tile. | Activate Chariot: move up to 3 tiles through friendly units without obstruction. |
+| Effect | Command Chariot: move up to 3 tiles (must move ≥2), then attack with +1 damage. Push target 1 tile. | Command Chariot: move up to 3 tiles through friendly units without obstruction. |
 
 ### Plain Breaker
 | | Top | Bottom |
@@ -34,4 +33,4 @@
 | | Top | Bottom |
 |---|---|---|
 | Initiative | 7 | 3 |
-| Effect | Hit and Run: Chariot may move after attacking (up to 1 tile). (2 activations) | Chariot gains +1 defense for each tile moved this activation. (1 activation) |
+| Effect | Hit and Run: Chariot may move after attacking (up to 1 tile). (2 activations) | Chariot gains +1 Shield for each tile moved this activation. (1 activation) |

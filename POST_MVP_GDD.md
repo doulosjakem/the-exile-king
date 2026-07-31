@@ -49,7 +49,7 @@ Full playable ally faction. Noble, loyal, elite Benjamite warriors. Represents t
 | Shield-Bearer | Support | Carries large communal shield, protects commander |
 | Benjamite Spearman | Elite Infantry | Fierce tribe, deadly with both bow and sling |
 
-**Commander ability:** Jonathan provides adjacent allies precision bonus (higher hit chance on ranged attacks). Loyal Guards gain +1 defense when adjacent to Jonathan.
+**Commander ability:** Jonathan provides adjacent allies precision bonus (higher hit chance on ranged attacks). Loyal Guards gain 1 Shield when adjacent to Jonathan.
 
 ---
 
@@ -152,7 +152,7 @@ These appear in later campaigns post-Saul's death. Each brings a distinct tactic
 ### Joab
 
 - Biblical notes: David's nephew (son of Zeruiah), commander of David's army. Ruthless but brilliant. Killed Abner and Amasa. Led army against Absalom's rebellion.
-- Commander style: Aggressive, commander-focused. Units within 2 tiles of Joab gain +1 attack but -1 defense (reckless offense).
+- Commander style: Aggressive, commander-focused. Units within 2 tiles of Joab gain +1 attack but lose 1 Shield (reckless offense).
 - Visual: Tall, gray-streaked beard, battle-scarred, bronze scale armor.
 
 ### Amasa

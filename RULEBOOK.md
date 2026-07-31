@@ -107,7 +107,7 @@ Deploy within your assigned deployment zone. Place commanders first, then remain
 
 ### Quick Reference
 
-| Unit | Range | Attack | Defense | Health | Move | Type |
+| Unit | Range | Attack | Health | Move | Type |
 |---|---|---|---|---|---|---|
 | David | 1 | 2 | 1 | 2 | 2 | Commander |
 | Jonathan | 1 | 2 | 1 | 2 | 2 | Commander |
@@ -128,7 +128,7 @@ Deploy within your assigned deployment zone. Place commanders first, then remain
 
 - **Range:** How many hexes away this unit can attack.
 - **Attack:** Damage dealt on a successful hit.
-- **Defense:** Reduces incoming damage by this amount.
+- **Shield:** Temporary token that absorbs 1 damage. Placed during Command phase, removed at start of unit's next turn.
 - **Health:** Total damage the unit can take before being eliminated.
 - **Move:** Maximum hexes the unit can move in one activation.
 
@@ -141,7 +141,7 @@ Commanders are always on the board. Losing your commander means defeat.
 | Commander | Passive Ability |
 |---|---|
 | **David** | Adjacent allies gain +1 attack. |
-| **Jonathan** | Adjacent allies gain +1 defense. Elite Archers gain +1 range when within 2 tiles. |
+| **Jonathan** | Adjacent allies gain +1 attack. Elite Archers gain +1 range when within 2 tiles. |
 | **Achish** | Adjacent Philistines gain Shielded (first damage prevented this turn). |
 | **Philistine Lord** | Adjacent allies gain +1 attack. |
 
@@ -151,10 +151,10 @@ Commanders are always on the board. Losing your commander means defeat.
 
 The turn has 5 phases. In co-op, players alternate turns. In head-to-head, players alternate. In 2v2, teams alternate but both players on a team share one hand.
 
-### Phase 1: Draw & Fatigue
+### Phase 1: Draw
 
 1. Current player draws from the deck until their hand has 4 cards.
-2. That player loses 1 random card from their hand to Fatigue (remove it from the game — it goes to the Lost Pile and never returns).
+2. (No fatigue — hand recovery only via Camp or Brainstorm.)
 3. If the deck is empty, shuffle the Spent Pile to make a new deck.
 
 ### Phase 2: Card Selection
@@ -171,11 +171,11 @@ The turn has 5 phases. In co-op, players alternate turns. In head-to-head, playe
    - Assign the ability to valid units.
    - Resolve the effect.
    - Place an activation token on every unit that acted.
-4. A unit can activate only once per player turn.
+4. A unit can be commanded only once per player turn.
 
 ### Phase 4: Enemy Turn
 
-The Philistines take their turn. Each enemy unit can activate once. The AI follows this priority:
+The Philistines take their turn. Each enemy unit can be commanded once. The AI follows this priority:
 
 1. Protect threatened commanders.
 2. Attack isolated or low-HP player units.
@@ -214,7 +214,7 @@ When resolving, you pick **one card's top ability** and the **other card's botto
 
 ### Card Loss
 
-- **Fatigue:** 1 random card lost from your hand each turn.
+- **Fatigue:** Removed from the rules entirely.
 - **Casualty:** When the last unit of a type is eliminated, remove one matching card from the deck.
 
 ---
@@ -223,7 +223,7 @@ When resolving, you pick **one card's top ability** and the **other card's botto
 
 1. **Attacker declares** which unit is attacking and what target.
 2. **Check range and line of sight.** Ranged attacks require clear LoS.
-3. **Roll damage:** Attack value minus target's Defense. Minimum damage is 1.
+3. **Roll damage:** Attack value minus target's Shield value (tokens absorb damage). Minimum damage is 1.
 4. **Apply damage:** Subtract from target's Health.
 5. **Elimination:** If Health reaches 0, the unit is removed from the board. Its matching Command Card is removed from the deck.
 
@@ -319,8 +319,8 @@ Full card text is printed on each card. For quick reference, card libraries are 
 
 ## FAQ
 
-**Q: Can I activate the same unit twice in one turn?**
-A: No. Once a unit activates, it cannot activate again until after the enemy turn.
+**Q: Can I command the same unit twice in one turn?**
+A: No. Once a unit is commanded, it cannot be commanded again until after the enemy turn.
 
 **Q: What if I have no valid targets for an ability?**
 A: Skip that ability. Resolve the other half if possible, or end the card.
@@ -331,8 +331,8 @@ A: No. You must resolve the top of one card and the bottom of the other.
 **Q: What happens when the deck runs out?**
 A: Shuffle the Spent Pile to create a new deck. Lost cards are gone forever.
 
-**Q: Do commander auras stack?**
-A: Yes. If a unit is adjacent to both David and Jonathan, it gains +1 attack and +1 defense.
+**Q: Do commanders provide auras?**
+A: No. Commander auras have been removed. Commanders provide unique card abilities instead.
 
 **Q: In 2v2, do we share one hand?**
 A: Yes. Both players on a team share one hand and one deck. Discuss strategy before playing cards.

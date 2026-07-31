@@ -270,28 +270,25 @@ Start another run
 ```
 Start Turn
     ↓
-Draw until hand contains 4 Command Cards
-(first turn: start with 2, draw 2)
-LOSE one random card (Fatigue)
+Draw up to 2 Command Cards (hand max 4)
     ↓
-Choose 2 Command Cards from hand
+Play 1 Command Card from hand
     ↓
-Reveal both cards
+Resolve card's effect
     ↓
-Resolve:
-  • Top ability of one card
-  • Bottom ability of the other card
-  (Each ability activates ONE unit — activation token placed)
-    ↓
-Discard both cards to Spent pile
-(or Lose pile if specified)
-    ↓
-Enemy Turn
+End Turn
 ```
 
 ### Unit Limitation Rule
 
-Each unit can generally activate only **once per player turn**. When a unit activates, place an activation token on it. It cannot activate again until the next player turn.
+Each unit can generally command only **once per player turn**. When a unit is commanded, mark it as used. It cannot be commanded again until the next player turn.
+
+This prevents:
+- Moving the same powerful units repeatedly.
+- Ignoring half the army.
+- "Favorite three units" strategies.
+
+**Note:** Camp and Brainstorm are recovery actions that replace the normal play phase or happen as a special action. Using them does not count as commanding a unit.
 
 This prevents:
 - Moving the same powerful units repeatedly.
@@ -339,8 +336,8 @@ Each command card has:
 
 Every army has access to basic commands:
 
-- **March:** Activate up to 2 units of one type. Move them.
-- **Engage:** Activate up to 2 units of one type. They attack.
+- **March:** Command up to 2 units of one type. Move them.
+- **Engage:** Command up to 2 units of one type. They attack.
 
 Universal commands are weaker than specialized commands.
 
@@ -374,16 +371,23 @@ Lost cards do not return until a battle recovery (or a special ability recovers 
 
 The player starts the game with **2 Command Cards** in hand. On the first turn, draw 2 more (hand of 4). Each subsequent turn, draw up to 2 to refill the hand back to 4.
 
-### Fatigue / Command Loss
+### Recovery Actions
 
-When refreshing your command hand:
-- Draw back up according to your hand rules.
-- Lose one random card.
+Two recovery actions exist that return Spent cards to the Command Deck and refill your hand:
 
-Represents:
-- Commander fatigue.
-- Loss of communication.
-- Soldiers becoming harder to coordinate.
+#### Camp
+- Takes your **whole turn**
+- Heal **1 HP** to all units
+- Choose **1 Spent card** to **Lose**
+- All other Spent cards return to your Command Deck
+- Refill your hand to **4**
+
+#### Brainstorm
+- Does **not** take your turn
+- No healing
+- **1 random Spent card** is **Lost**
+- All other Spent cards return to your Command Deck
+- Refill your hand to **4**
 
 ### Casualty System
 
@@ -426,7 +430,7 @@ Examples:
 **Swordsmen Advance**
 ```
 Top:
-  Activate Swordsmen:
+  Command Swordsmen:
   - Up to 3 Swordsmen may move and attack.
   - Gain +1 attack if adjacent to another Swordsman.
 
@@ -438,7 +442,7 @@ Bottom:
 **Archer Volley**
 ```
 Top:
-  Activate Archers:
+  Command Archers:
   - Up to 2 Archers attack.
   - Must target enemies within range.
 
@@ -460,7 +464,7 @@ Units have fixed base stats. Actions are enhanced by Command Cards.
 | **Move** | 2 |
 | **Attack** | Melee dmg 2 |
 | **Range** | 1 |
-| **Passive** | Adjacent allies +1 damage (Commander Aura) |
+| **Passive** | Adjacent allies +1 damage |
 | **Special** | Lose David = lose battle |
 
 ### Swordsman
@@ -516,7 +520,7 @@ Units have fixed base stats. Actions are enhanced by Command Cards.
 | **Move** | 1 |
 | **Attack** | Shield Bash dmg 1 |
 | **Range** | 1 |
-| **Passive** | Tank — high defense, slows enemy advance |
+| **Passive** | Tank — high Shield capacity, slows enemy advance |
 
 ---
 
@@ -578,12 +582,13 @@ No complex RPG stats.
 - Future consideration: specific units/equipment can have counter-attack as a perk
 
 ### Commander Mechanic
-- Each commander provides a unique passive aura to adjacent allies.
-- David: Adjacent allies gain +1 attack.
-- Jonathan: Adjacent allies gain +1 defense. Elite Archers gain +1 range when within 2 tiles.
-- Achish: Adjacent Philistines gain -1 damage taken.
-- Philistine Lord: Adjacent allies gain +1 attack.
-- Lose commander = lose the battle (immediate defeat).
+
+Commanders are unique heroes on the Command Board. They provide unique card abilities rather than auras.
+
+**Jonathan:** Command up to 1 Elite Archer within 2 tiles to attack twice this turn.
+**Achish:** Adjacent Philistines gain Shielded (first damage prevented this turn).
+**Philistine Lord:** Grant one Champion or Heavy Infantry within 2 tiles an extra activation.
+**Lose commander = lose the battle (immediate defeat).**
 
 ---
 
@@ -768,7 +773,6 @@ Possible:
 - Health
 - Movement
 - Attack
-- Defense
 - Range
 - Initiative
 - Keywords
@@ -777,20 +781,24 @@ Avoid unnecessary stats.
 
 ---
 
-## 3. How does activation work exactly?
+## 3. How does commanding work exactly?
 
 When an Order says:
 
-"Activate up to 2 Spearmen"
+"Command up to 2 Spearmen"
 
 What happens?
 
 Questions:
 
-- Can the same unit activate twice?
+- Can the same unit be commanded twice?
 - Can units split movement and attacks?
-- Can activated units trigger reactions afterward?
+- Can commanded units trigger reactions afterward?
 - Do units have exhaustion states?
+
+### Commander Auras
+
+Commander auras have been removed. Commanders provide unique card abilities instead.
 
 ---
 
@@ -799,7 +807,7 @@ Questions:
 Finalize:
 
 - Attack sequence.
-- Defense sequence.
+- Shield resolution.
 - Retaliation.
 - Damage.
 - Critical hits.
@@ -867,17 +875,16 @@ Questions:
 
 ---
 
-## 8. How does Brainstorm trigger?
+## 8. How does Brainstorm work?
 
-Current:
+Brainstorm is a free action available at any time, even during your turn.
 
-"When unable to draw enough Orders."
+- No healing
+- 1 random Spent card is Lost
+- All other Spent cards return to your Command Deck
+- Refill your hand to 4
 
-Need to define:
-
-- Is it automatic?
-- Can players choose it early?
-- Can players intentionally discard to trigger it?
+Brainstorm refills your hand but at the cost of losing a Spent card. This makes it a strategic choice, not just a recovery fallback.
 
 ---
 

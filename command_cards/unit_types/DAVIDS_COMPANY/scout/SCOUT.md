@@ -10,7 +10,6 @@
 |---|---|
 | Range | 2 |
 | Attack | 1 |
-| Defense | 1 |
 | Health | 1 |
 | Move | 3 |
 
@@ -22,7 +21,7 @@
 | | Top | Bottom |
 |---|---|---|
 | Initiative | 7 | 5 |
-| Effect | Activate 1 Scout: move up to 4 tiles (ignores terrain), then make a free attack. | Activate 1 Scout: move up to 3 tiles. If ends adjacent to enemy, retreat 1 tile after interaction. |
+| Effect | Command 1 Scout: move up to 4 tiles (ignores terrain), then make a free attack. | Command 1 Scout: move up to 3 tiles. If ends adjacent to enemy, retreat 1 tile after interaction. |
 
 ### Scout Formation
 | | Top | Bottom |

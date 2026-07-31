@@ -10,7 +10,6 @@
 |---|---|
 | Range | 2 |
 | Attack | 2 |
-| Defense | 1 |
 | Health | 2 |
 | Move | 2 |
 
@@ -22,7 +21,7 @@
 | | Top | Bottom |
 |---|---|---|
 | Initiative | 6 | 3 |
-| Effect | Activate up to 2 Archers: each attacks. Enemies hit lose 1 movement next turn. | Activate up to 2 Archers: move 1 tile each and gain +1 range this turn. |
+| Effect | Command up to 2 Archers: each attacks. Enemies hit lose 1 movement next turn. | Command up to 2 Archers: move 1 tile each and gain +1 range this turn. |
 
 ### Ekron Archer Formation 1
 | | Top | Bottom |

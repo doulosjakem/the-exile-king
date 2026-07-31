@@ -32,7 +32,7 @@ Available in **MVP**.
 - If Abner is eliminated, Saul's Kingdom loses 1 Activation from their command pool for the rest of the scenario.
 - Elite Bodyguards protect Abner — they may spend an activation to intercept attacks targeting Abner.
 
-- **Faction-wide formation cards:** See [formations/SAULS_KINGDOM.md](formations/SAULS_KINGDOM.md)
+- **Faction-wide Formation cards:** Listed in the deck-building table below. Formation rules apply per the glossary (1 active Formation at a time, displaced when a new one is played).
 
 ---
 

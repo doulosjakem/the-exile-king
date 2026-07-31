@@ -12,7 +12,7 @@
 
 **Activations:** 3
 
-Gain +2 Defense this turn.
+Gain 2 Shield this turn.
 
 Cannot be pushed or moved by enemy effects this turn.
 

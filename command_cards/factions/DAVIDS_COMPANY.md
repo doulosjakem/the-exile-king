@@ -67,7 +67,7 @@ Available in **Prototype**.
 | Card | Initiative Top | Initiative Bottom |
 |---|---|---|
 | David's Leadership | 7 | 3 |
-| *Top:* Activate David: move up to 2, then attack. Adjacent allies gain +1 attack this turn. | *Bottom:* Activate David: grant one friendly unit within 2 tiles an extra activation this turn. |
+| *Top:* Command David: move up to 2, then attack. Adjacent allies gain +1 attack this turn. | *Bottom:* Command David: grant one friendly unit within 2 tiles an extra activation this turn. |
 
 **Notes:** David can pair with any unit type.
 
@@ -78,33 +78,33 @@ Available in **Prototype**.
 ### Swordsman
 | Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
 |---|---|---|---|---|
-| Swordsmen Advance | 6 | 2 | Activate up to 3 Swordsmen: each may move and attack. Gain +1 attack if adjacent to another Swordsman. | Move up to 2 Swordsmen up to 2 tiles each. |
-| Swordsmen Formation | 4 | 5 | Shield Wall: adjacent Swordsmen gain +1 defense until next player turn. (2 activations) | Formation Support: Swordsmen may attack without penalty when adjacent to friendly Spearmen. (1 activation) |
+| Swordsmen Advance | 6 | 2 | Command up to 3 Swordsmen: each may move and attack. Gain +1 attack if adjacent to another Swordsman. | Move up to 2 Swordsmen up to 2 tiles each. |
+| Swordsmen Formation | 4 | 5 | Shield Wall: adjacent Swordsmen gain 1 Shield until start of next turn. (2 activations) | Formation Support: Swordsmen may attack without penalty when adjacent to friendly Spearmen. (1 activation) |
 
 ### Spearman
 | Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
 |---|---|---|---|---|
-| Spear Wall | 5 | 3 | Activate up to 2 Spearmen: attack with +1 damage vs charging enemies. | Activate up to 2 Spearmen: move up to 2 tiles, gain brace (+1 defense vs melee until next turn). |
-| Spearman Formation | 4 | 5 | Brace Shields: adjacent Spearmen gain +2 defense until next player turn. (2 activations) | Spear Support: Spearmen attack with reach without penalty against charging enemies. (1 activation) |
+| Spear Wall | 5 | 3 | Command up to 2 Spearmen: attack with +1 damage vs charging enemies. | Command up to 2 Spearmen: move up to 2 tiles, gain brace (+1 Shield vs melee until next turn). |
+| Spearman Formation | 4 | 5 | Brace Shields: adjacent Spearmen gain 2 Shield until start of next turn. (2 activations) | Spear Support: Spearmen attack with reach without penalty against charging enemies. (1 activation) |
 | Spearman Screen | 3 | 6 | Screen: adjacent friendly Heavy Infantry gain -1 damage taken. (2 activations) | Spear Wall: Spearmen may make free attack when enemy enters melee range. (1 activation) |
 
 ### Slinger
 | Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
 |---|---|---|---|---|
-| Circle and Strike | 8 | 4 | Activate up to 2 Slingers: each may move then attack. If moved ≥2 tiles, attack gains +1 damage. | Activate up to 2 Slingers: move up to 3 tiles each. |
-| Stone Volley | 9 | 2 | Activate all Slingers: combine fire on one target. Each Slinger adds +1 damage. | Activate 1 Slinger: attack. If another Slinger is within 2 tiles, this attack gains +1 damage. |
+| Circle and Strike | 8 | 4 | Command up to 2 Slingers: each may move then attack. If moved ≥2 tiles, attack gains +1 damage. | Command up to 2 Slingers: move up to 3 tiles each. |
+| Stone Volley | 9 | 2 | Command all Slingers: combine fire on one target. Each Slinger adds +1 damage. | Command 1 Slinger: attack. If another Slinger is within 2 tiles, this attack gains +1 damage. |
 
 ### Scout
 | Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
 |---|---|---|---|---|
-| Scout Recon | 7 | 5 | Activate 1 Scout: move up to 4 tiles (ignores terrain), then make a free attack. | Activate 1 Scout: move up to 3 tiles. If ends adjacent to enemy, retreat 1 tile after interaction. |
+| Scout Recon | 7 | 5 | Command 1 Scout: move up to 4 tiles (ignores terrain), then make a free attack. | Command 1 Scout: move up to 3 tiles. If ends adjacent to enemy, retreat 1 tile after interaction. |
 | Scout Formation | 6 | 4 | Ambush: Scouts start hidden. First attack gains +2 damage and enemy cannot counter. (1 activation) | Screen: Scouts block LoS for enemies within 1 tile. (2 activations) |
 
 ### Shield Bearer
 | Card | Top Initiative | Bottom Initiative | Top Effect | Bottom Effect |
 |---|---|---|---|---|
-| Shield Wall | 4 | 5 | Adjacent friendly units gain +1 defense until next player turn. (2 activations) | Bracing: Shield Bearer gains +1 defense this turn. |
-| Formation Advance | 3 | 6 | Activate Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
+| Shield Wall | 4 | 5 | Adjacent friendly units gain 1 Shield until start of next turn. (2 activations) | Bracing: Shield Bearer gains 1 Shield this turn. |
+| Formation Advance | 3 | 6 | Command Shield Bearer: move 1 tile. Adjacent enemies cannot move through this tile. (1 activation) | Allies adjacent to Shield Bearer ignore hazardous terrain. (2 activations) |
 
 ---
 
@@ -112,8 +112,8 @@ Available in **Prototype**.
 
 | Card | Initiative Top | Initiative Bottom | Top Effect | Bottom Effect |
 |---|---|---|---|---|
-| March | 1 | — | Activate up to 2 units of one type: each moves up to its full movement. | — |
-| Engage | 2 | — | Activate up to 2 units of one type: each attacks once. | — |
+| March | 1 | — | Command up to 2 units of one type: each moves up to its full movement. | — |
+| Engage | 2 | — | Command up to 2 units of one type: each attacks once. | — |
 
 **Notes:** Universal cards are not lost on casualty. One copy per deck.
 

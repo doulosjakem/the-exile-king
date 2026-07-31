@@ -12,7 +12,7 @@
 
 **Activations:** 3
 
-When Royal Guard is attacked by melee, gain +3 Defense.
+When Royal Guard is attacked by melee, gain 3 Shield.
 
 After the attack, the attacker loses 1 Activation next turn.
 
@@ -26,10 +26,10 @@ Armored frontline that punishes melee attackers and punishes them for trying.
 Activations: 2
 
 Royal Guard may form a wall with another adjacent Royal Guard.
-Both gain +2 Defense until your next turn.
+Both gain 2 Shield until start of next turn.
 
 **Purpose:**
-Double defense through mutual support.
+Double protection through mutual support.
 
 ---
 
@@ -50,5 +50,5 @@ Double defense through mutual support.
 
 - Royal Guard is the heaviest infantry unit in Saul's Kingdom.
 - Royal Shield is the premier defensive formation — makes the front line nearly impenetrable and punishes attackers.
-- King's Wall adds mutual support defense with an adjacent Royal Guard.
+- Anchor protection with an adjacent Royal Guard.
 - High discipline means they are reliable but inflexible — they cannot be kited.

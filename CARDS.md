@@ -73,7 +73,7 @@ These cards are unlocked by bringing the corresponding unit type.
 | | |
 |---|---|
 | **Unit Type** | David |
-| **Top** | Activate David + 1 ally: both may move and attack. Adjacent allies +1 damage this turn. |
+| **Top** | Command David + 1 ally: both may move and attack. Adjacent allies +1 damage this turn. |
 | **Bottom** | Move David up to 3 spaces. |
 | **Lose?** | No |
 
@@ -81,7 +81,7 @@ These cards are unlocked by bringing the corresponding unit type.
 | | |
 |---|---|
 | **Unit Type** | Swordsman |
-| **Top** | Activate Swordsmen: Up to 3 Swordsmen may move and attack. +1 attack if adjacent to another Swordsman. |
+| **Top** | Command Swordsmen: Up to 3 Swordsmen may move and attack. +1 attack if adjacent to another Swordsman. |
 | **Bottom** | Move: Move up to 2 Swordsmen. |
 | **Lose?** | No |
 
@@ -89,7 +89,7 @@ These cards are unlocked by bringing the corresponding unit type.
 | | |
 |---|---|
 | **Unit Type** | Archer |
-| **Top** | Activate Archers: Up to 2 Archers attack. Must target enemies within range. |
+| **Top** | Command Archers: Up to 2 Archers attack. Must target enemies within range. |
 | **Bottom** | Reposition: Move up to 2 Archers. |
 | **Lose?** | No |
 
@@ -97,7 +97,7 @@ These cards are unlocked by bringing the corresponding unit type.
 | | |
 |---|---|
 | **Unit Type** | Spearman |
-| **Top** | Activate Spearmen: Up to 2 Spearmen attack. Gain +1 defense against melee this turn. |
+| **Top** | Command Spearmen: Up to 2 Spearmen attack. Gain 1 Shield vs melee this turn. |
 | **Bottom** | Move: Move up to 2 Spearmen. They may not be targeted by melee until next turn. |
 | **Lose?** | No |
 
@@ -105,7 +105,7 @@ These cards are unlocked by bringing the corresponding unit type.
 | | |
 |---|---|
 | **Unit Type** | Slinger |
-| **Top** | Activate Slingers: Up to 2 Slingers attack. Ignore cover. |
+| **Top** | Command Slingers: Up to 2 Slingers attack. Ignore cover. |
 | **Bottom** | Move: Move up to 2 Slingers. They gain +1 move this turn. |
 | **Lose?** | No |
 
@@ -113,7 +113,7 @@ These cards are unlocked by bringing the corresponding unit type.
 | | |
 |---|---|
 | **Unit Type** | Scout |
-| **Top** | Activate Scouts: Up to 2 Scouts move and attack. They cannot be targeted until next turn. |
+| **Top** | Command Scouts: Up to 2 Scouts move and attack. They cannot be targeted until next turn. |
 | **Bottom** | Move: Move up to 3 Scouts. |
 | **Lose?** | No |
 
@@ -145,28 +145,13 @@ When the last unit of a type is eliminated, remove one matching command card fro
 
 ---
 
-## Fatigue System
-
-When refreshing your command hand at the start of a turn:
-- Draw back up to your hand size.
-- Lose one random card.
-
-Represents:
-- Commander fatigue.
-- Loss of communication.
-- Soldiers becoming harder to coordinate.
-
-Cards lost to fatigue go to the **Lost pile** permanently.
-
----
-
 ## Deck Rules Summary
 
 | Rule | Details |
 |---|---|
 | **Starting hand** | 2 cards |
 | **Draw per turn** | Up to hand size (hand fills to 4) |
-| **Fatigue** | Lose 1 random card after drawing |
+| **Recovery** | Camp or Brainstorm to return Spent cards |
 | **Cards chosen per turn** | 2 |
 | **Resolve** | Top of card A + Bottom of card B |
 | **After resolve** | Both cards → Spent pile |
@@ -186,7 +171,7 @@ For visual clarity, each ability type should have a small icon on the card:
 |---|---|
 | Attack | Crossed swords |
 | Move | Sandal footprint |
-| Buff / Defense | Shield |
+| Buff / Shield | Shield |
 | Heal | Red crescent / drop |
 | Multi-target | Two figures |
 | Lose | Skull / broken seal |

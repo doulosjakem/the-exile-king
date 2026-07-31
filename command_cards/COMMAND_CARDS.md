@@ -95,7 +95,7 @@ Purpose:
 
 ## Cross-References
 
-- **CARDS.md** — Master catalog of command card deck-building rules, fatigue, and universal commands
+- **CARDS.md** — Master catalog of command card deck-building rules, Camp/Brainstorm recovery, and universal commands
 - **GDD.md** — Core game design, faction rosters, unit stats, combat rules
 - **CARDS.md (Section: Card Removal by Casualty)** — When units die, matching command cards are removed from the deck
 - **POST_MVP_GDD.md** — Post-MVP faction expansions and additional unit types

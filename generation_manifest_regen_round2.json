@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "regen-0079-chieftain-player-units",
+    "prompt_key": "chieftain",
+    "output_subfolder": "player-units",
+    "count": 29,
+    "seed": 1686801086,
+    "files": [
+      "player-units\\chieftain_00009_.png",
+      "player-units\\chieftain_00010_.png",
+      "player-units\\chieftain_00011_.png",
+      "player-units\\chieftain_00012_.png",
+      "player-units\\chieftain_00013_.png",
+      "player-units\\chieftain_00014_.png",
+      "player-units\\chieftain_00015_.png",
+      "player-units\\chieftain_00016_.png",
+      "player-units\\chieftain_00017_.png",
+      "player-units\\chieftain_00018_.png",
+      "player-units\\chieftain_00019_.png"
+    ]
+  },
+  {
+    "id": "regen-0080-chieftain-portraits",
+    "prompt_key": "chieftain",
+    "output_subfolder": "portraits",
+    "count": 23,
+    "seed": 785827916,
+    "files": [
+      "portraits\\chieftain_00001_.png",
+      "portraits\\chieftain_00002_.png",
+      "portraits\\chieftain_00003_.png",
+      "portraits\\chieftain_00004_.png",
+      "portraits\\chieftain_00005_.png",
+      "portraits\\chieftain_00006_.png",
+      "portraits\\chieftain_00007_.png",
+      "portraits\\chieftain_00008_.png",
+      "portraits\\chieftain_00009_.png",
+      "portraits\\chieftain_00010_.png",
+      "portraits\\chieftain_00011_.png",
+      "portraits\\chieftain_00012_.png",
+      "portraits\\chieftain_00013_.png",
+      "portraits\\chieftain_00014_.png",
+      "portraits\\chieftain_00015_.png",
+      "portraits\\chieftain_00016_.png",
+      "portraits\\chieftain_00017_.png",
+      "portraits\\chieftain_00018_.png",
+      "portraits\\chieftain_00019_.png",
+      "portraits\\chieftain_00020_.png",
+      "portraits\\chieftain_00021_.png"
+    ]
+  },
+  {
+    "id": "regen-0081-chieftain-standees",
+    "prompt_key": "chieftain",
+    "output_subfolder": "standees",
+    "count": 1,
+    "seed": 1581090575,
+    "files": [
+      "standees\\amalekite-chieftain_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0082-chieftain-unit-tokens",
+    "prompt_key": "chieftain",
+    "output_subfolder": "unit-tokens",
+    "count": 21,
+    "seed": 488402092,
+    "files": [
+      "unit-tokens\\chieftain_00001_.png",
+      "unit-tokens\\chieftain_00002_.png",
+      "unit-tokens\\chieftain_00003_.png",
+      "unit-tokens\\chieftain_00004_.png",
+      "unit-tokens\\chieftain_00005_.png",
+      "unit-tokens\\chieftain_00006_.png",
+      "unit-tokens\\chieftain_00007_.png",
+      "unit-tokens\\chieftain_00008_.png",
+      "unit-tokens\\chieftain_00009_.png",
+      "unit-tokens\\chieftain_00010_.png",
+      "unit-tokens\\chieftain_00011_.png",
+      "unit-tokens\\chieftain_00012_.png",
+      "unit-tokens\\chieftain_00013_.png",
+      "unit-tokens\\chieftain_00014_.png",
+      "unit-tokens\\chieftain_00015_.png",
+      "unit-tokens\\chieftain_00016_.png",
+      "unit-tokens\\chieftain_00017_.png",
+      "unit-tokens\\chieftain_00018_.png",
+      "unit-tokens\\chieftain_00019_.png",
+      "unit-tokens\\chieftain_00020_.png",
+      "unit-tokens\\chieftain_00021_.png"
+    ]
+  },
+  {
+    "id": "regen-0083-circle-and-strike",
+    "prompt_key": "circle-and-strike",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 6,
+    "seed": 1615898747,
+    "files": [
+      "prototype\\unit-cards\\slinger-david-01_00001_.png",
+      "prototype\\unit-cards\\slinger-david-01_00002_.png",
+      "prototype\\unit-cards\\slinger-david-01_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0084-david-box-art",
+    "prompt_key": "david",
+    "output_subfolder": "box-art",
+    "count": 58,
+    "seed": 1660246020,
+    "files": [
+      "box-art\\david-as-king_00001_.png",
+      "box-art\\david-as-king_00002_.png",
+      "box-art\\david-as-king_00003_.png",
+      "box-art\\david-as-king_00004_.png",
+      "box-art\\david-as-king_00005_.png",
+      "box-art\\david-as-king_00006_.png",
+      "box-art\\david-as-king_00007_.png",
+      "box-art\\david-as-king_00008_.png",
+      "box-art\\david-as-king_00009_.png",
+      "box-art\\david-as-king_00010_.png",
+      "box-art\\david-as-king_00011_.png",
+      "box-art\\david-as-king_00012_.png",
+      "box-art\\david-as-king_00013_.png",
+      "box-art\\david-as-king_00014_.png",
+      "box-art\\david-as-king_00015_.png",
+      "box-art\\david-as-king_00016_.png",
+      "box-art\\david-as-king_00017_.png",
+      "box-art\\david-as-king_00018_.png",
+      "box-art\\david-as-king_00019_.png",
+      "box-art\\david-as-king_00020_.png",
+      "box-art\\david-as-king_00021_.png",
+      "box-art\\david-as-king_00022_.png",
+      "box-art\\david-as-king_00023_.png",
+      "box-art\\david-as-king_00024_.png",
+      "box-art\\david-as-king_00025_.png",
+      "box-art\\david-as-king_00026_.png",
+      "box-art\\david-as-king_00027_.png",
+      "box-art\\david-as-king_00028_.png",
+      "box-art\\david-as-king_00029_.png"
+    ]
+  },
+  {
+    "id": "regen-0085-david-card",
+    "prompt_key": "david",
+    "output_subfolder": "card",
+    "count": 11,
+    "seed": 804044617,
+    "files": [
+      "card\\davids-leadership_00001_.png",
+      "card\\davids-leadership_00002_.png",
+      "card\\davids-leadership_00003_.png",
+      "card\\davids-leadership_00004_.png",
+      "card\\davids-leadership_00005_.png",
+      "card\\davids-leadership_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0086-david-player-units",
+    "prompt_key": "david",
+    "output_subfolder": "player-units",
+    "count": 54,
+    "seed": 1684827000,
+    "files": [
+      "player-units\\david-as-king_00001_.png",
+      "player-units\\david-as-king_00002_.png",
+      "player-units\\david-as-king_00003_.png",
+      "player-units\\david-as-king_00004_.png",
+      "player-units\\david-as-king_00005_.png",
+      "player-units\\david-as-king_00006_.png",
+      "player-units\\david-as-king_00007_.png",
+      "player-units\\david-as-king_00008_.png",
+      "player-units\\david-as-king_00009_.png",
+      "player-units\\david-as-king_00010_.png",
+      "player-units\\david-as-king_00011_.png",
+      "player-units\\david-as-king_00012_.png",
+      "player-units\\david-as-king_00013_.png",
+      "player-units\\david-as-king_00014_.png",
+      "player-units\\david-as-king_00015_.png",
+      "player-units\\david-as-king_00016_.png",
+      "player-units\\david-as-king_00017_.png",
+      "player-units\\david-as-king_00018_.png",
+      "player-units\\david-as-king_00019_.png",
+      "player-units\\david-as-king_00020_.png",
+      "player-units\\david-as-king_00021_.png",
+      "player-units\\david-as-king_00022_.png",
+      "player-units\\david-as-king_00023_.png",
+      "player-units\\david-as-king_00024_.png",
+      "player-units\\david-as-king_00025_.png",
+      "player-units\\david-as-king_00026_.png",
+      "player-units\\david-as-king_00027_.png",
+      "player-units\\david-as-king_00028_.png",
+      "player-units\\david-as-king_00029_.png",
+      "player-units\\david_00001_.png",
+      "player-units\\davids-leadership_00001_.png",
+      "player-units\\davids-leadership_00002_.png",
+      "player-units\\davids-leadership_00003_.png",
+      "player-units\\davids-leadership_00004_.png",
+      "player-units\\davids-leadership_00005_.png",
+      "player-units\\david_00002_.png",
+      "player-units\\david_00003_.png",
+      "player-units\\david_00004_.png",
+      "player-units\\david_00005_.png",
+      "player-units\\david_00006_.png",
+      "player-units\\david_00007_.png",
+      "player-units\\david_00008_.png",
+      "player-units\\david_00009_.png",
+      "player-units\\david_00010_.png",
+      "player-units\\david_00011_.png",
+      "player-units\\david_00012_.png",
+      "player-units\\david_00013_.png",
+      "player-units\\david_00014_.png",
+      "player-units\\david_00015_.png",
+      "player-units\\david_00016_.png",
+      "player-units\\david_00017_.png",
+      "player-units\\david_00018_.png",
+      "player-units\\david_00019_.png",
+      "player-units\\david_00020_.png",
+      "player-units\\david_00021_.png",
+      "player-units\\david_00022_.png",
+      "player-units\\david_00023_.png",
+      "player-units\\david_00024_.png",
+      "player-units\\david_00025_.png",
+      "player-units\\david_00026_.png",
+      "player-units\\david_00027_.png"
+    ]
+  },
+  {
+    "id": "regen-0087-david-portraits",
+    "prompt_key": "david",
+    "output_subfolder": "portraits",
+    "count": 76,
+    "seed": 787712758,
+    "files": [
+      "portraits\\david_00001_.png",
+      "portraits\\david_00002_.png",
+      "portraits\\david_00003_.png",
+      "portraits\\david_00004_.png",
+      "portraits\\david_00005_.png",
+      "portraits\\david_00006_.png",
+      "portraits\\david_00007_.png",
+      "portraits\\david_00008_.png",
+      "portraits\\david_00009_.png",
+      "portraits\\david_00010_.png",
+      "portraits\\david_00011_.png",
+      "portraits\\david_00012_.png",
+      "portraits\\david_00013_.png",
+      "portraits\\david_00014_.png",
+      "portraits\\david_00015_.png",
+      "portraits\\david_00016_.png",
+      "portraits\\david_00017_.png",
+      "portraits\\david_00018_.png",
+      "portraits\\david_00019_.png",
+      "portraits\\david_00020_.png",
+      "portraits\\david_00021_.png",
+      "portraits\\david_00022_.png",
+      "portraits\\david_00023_.png",
+      "portraits\\david_00024_.png",
+      "portraits\\david_00025_.png",
+      "portraits\\david_00026_.png",
+      "portraits\\david_00027_.png",
+      "portraits\\david_00028_.png",
+      "portraits\\david_00029_.png",
+      "portraits\\david_00030_.png",
+      "portraits\\david_00031_.png",
+      "portraits\\david_00032_.png",
+      "portraits\\david_00033_.png",
+      "portraits\\david_00034_.png",
+      "portraits\\david_00035_.png",
+      "portraits\\david_00036_.png",
+      "portraits\\david_00037_.png",
+      "portraits\\david_00038_.png",
+      "portraits\\david_00039_.png",
+      "portraits\\david_00040_.png",
+      "portraits\\david_00041_.png",
+      "portraits\\david_00042_.png",
+      "portraits\\david_00043_.png",
+      "portraits\\david_00044_.png",
+      "portraits\\david_00045_.png",
+      "portraits\\david_00046_.png",
+      "portraits\\david_00047_.png",
+      "portraits\\david_00048_.png",
+      "portraits\\david_00049_.png",
+      "portraits\\david_00050_.png",
+      "portraits\\david_00051_.png",
+      "portraits\\david_00052_.png"
+    ]
+  },
+  {
+    "id": "regen-0088-david-unit-tokens",
+    "prompt_key": "david",
+    "output_subfolder": "unit-tokens",
+    "count": 19,
+    "seed": 1575910094,
+    "files": [
+      "unit-tokens\\david_00001_.png",
+      "unit-tokens\\david_00002_.png",
+      "unit-tokens\\david_00003_.png",
+      "unit-tokens\\david_00004_.png",
+      "unit-tokens\\david_00005_.png",
+      "unit-tokens\\david_00006_.png",
+      "unit-tokens\\david_00008_.png",
+      "unit-tokens\\david_00009_.png",
+      "unit-tokens\\david_00010_.png",
+      "unit-tokens\\david_00011_.png",
+      "unit-tokens\\david_00012_.png",
+      "unit-tokens\\david_00013_.png",
+      "unit-tokens\\david_00014_.png",
+      "unit-tokens\\david_00015_.png",
+      "unit-tokens\\david_00016_.png",
+      "unit-tokens\\david_00017_.png",
+      "unit-tokens\\david_00018_.png",
+      "unit-tokens\\david_00019_.png",
+      "unit-tokens\\david_00020_.png",
+      "unit-tokens\\david_00021_.png",
+      "unit-tokens\\david_00022_.png",
+      "unit-tokens\\david_00023_.png",
+      "unit-tokens\\david_00024_.png",
+      "unit-tokens\\david_00025_.png",
+      "unit-tokens\\david_00026_.png",
+      "unit-tokens\\david_00027_.png",
+      "unit-tokens\\david_00028_.png",
+      "unit-tokens\\david_00029_.png",
+      "unit-tokens\\david_00030_.png",
+      "unit-tokens\\david_00031_.png",
+      "unit-tokens\\david_00032_.png",
+      "unit-tokens\\david_00033_.png",
+      "unit-tokens\\david_00034_.png",
+      "unit-tokens\\david_00035_.png",
+      "unit-tokens\\david_00036_.png",
+      "unit-tokens\\david_00037_.png",
+      "unit-tokens\\david_00038_.png",
+      "unit-tokens\\david_00039_.png",
+      "unit-tokens\\david_00040_.png",
+      "unit-tokens\\david_00041_.png",
+      "unit-tokens\\david_00042_.png",
+      "unit-tokens\\david_00043_.png",
+      "unit-tokens\\david_00044_.png",
+      "unit-tokens\\david_00045_.png",
+      "unit-tokens\\david_00046_.png",
+      "unit-tokens\\david_00047_.png",
+      "unit-tokens\\david_00048_.png",
+      "unit-tokens\\david_00049_.png",
+      "unit-tokens\\david_00050_.png",
+      "unit-tokens\\david_00051_.png",
+      "unit-tokens\\david_00052_.png"
+    ]
+  },
+  {
+    "id": "regen-0089-david_commander",
+    "prompt_key": "david_commander",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 5,
+    "seed": 349015504,
+    "files": [
+      "prototype\\unit-discs\\david_00007_.png",
+      "prototype\\unit-discs\\david_00008_.png",
+      "prototype\\unit-discs\\david_00009_.png",
+      "prototype\\unit-discs\\david_00010_.png",
+      "prototype\\unit-discs\\david_00011_.png",
+      "prototype\\unit-discs\\david_00012_.png",
+      "prototype\\unit-discs\\david_00013_.png",
+      "prototype\\unit-discs\\david_00014_.png",
+      "prototype\\unit-discs\\david_00015_.png",
+      "prototype\\unit-discs\\david_00016_.png",
+      "prototype\\unit-discs\\david_00017_.png",
+      "prototype\\unit-discs\\david_00018_.png",
+      "prototype\\unit-discs\\david_00019_.png",
+      "prototype\\unit-discs\\david_00020_.png",
+      "prototype\\unit-discs\\david_00021_.png",
+      "prototype\\unit-discs\\david_00022_.png",
+      "prototype\\unit-discs\\david_00023_.png",
+      "prototype\\unit-discs\\david_00024_.png",
+      "prototype\\unit-discs\\david_00025_.png",
+      "prototype\\unit-discs\\david_00026_.png",
+      "prototype\\unit-discs\\david_00001_.png",
+      "prototype\\unit-discs\\david_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0090-ekron-archer-command",
+    "prompt_key": "ekron-archer-command",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 244888252,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-01_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0091-ekron-archer-formation-1",
+    "prompt_key": "ekron-archer-formation-1",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1847818167,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-02_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0092-ekron-archer-formation-2",
+    "prompt_key": "ekron-archer-formation-2",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 1,
+    "seed": 2066505390,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-03_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0093-elhanan-portraits",
+    "prompt_key": "elhanan",
+    "output_subfolder": "portraits",
+    "count": 4,
+    "seed": 1516610530,
+    "files": [
+      "portraits\\elhanan_00001_.png",
+      "portraits\\elhanan_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0094-elite_archer_jonathan",
+    "prompt_key": "elite_archer_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 4,
+    "seed": 1022593475,
+    "files": [
+      "prototype\\unit-discs\\elite-archer_00001_.png",
+      "prototype\\unit-discs\\elite-archer_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0095-end-turn-button-ui-elements",
+    "prompt_key": "end-turn-button",
+    "output_subfolder": "ui-elements",
+    "count": 1,
+    "seed": 1244012850,
+    "files": []
+  },
+  {
+    "id": "regen-0096-engage-card",
+    "prompt_key": "engage",
+    "output_subfolder": "card",
+    "count": 9,
+    "seed": 1547652214,
+    "files": [
+      "card\\engage_00001_.png",
+      "card\\engage_00002_.png",
+      "card\\engage_00003_.png",
+      "card\\engage_00004_.png",
+      "card\\engage_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0097-giant_achish",
+    "prompt_key": "giant_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 631568519,
+    "files": [
+      "prototype\\unit-discs\\giant_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0098-giants-might",
+    "prompt_key": "giants-might",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1943569101,
+    "files": [
+      "prototype\\unit-cards\\giant-achish-01_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0099-goliath-card",
+    "prompt_key": "goliath",
+    "output_subfolder": "card",
+    "count": 4,
+    "seed": 1250921260,
+    "files": [
+      "card\\goliath-challenge_00001_.png",
+      "card\\goliath-challenge_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0100-goliath-portraits",
+    "prompt_key": "goliath",
+    "output_subfolder": "portraits",
+    "count": 3,
+    "seed": 547808917,
+    "files": [
+      "portraits\\goliath-challenge_00001_.png",
+      "portraits\\goliath-challenge_00002_.png",
+      "portraits\\goliath_00001_.png",
+      "portraits\\goliath_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0101-guard-formation",
+    "prompt_key": "guard-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 5,
+    "seed": 2137709883,
+    "files": [
+      "prototype\\unit-cards\\loyal-guard-jonathan-01_00001_.png",
+      "prototype\\unit-cards\\loyal-guard-jonathan-01_00002_.png",
+      "prototype\\unit-cards\\loyal-guard-jonathan-01_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0102-hex_grass",
+    "prompt_key": "hex_grass",
+    "output_subfolder": "prototype/hex-tiles",
+    "count": 1,
+    "seed": 514801181,
+    "files": []
+  },
+  {
+    "id": "regen-0103-hp-bar-bg",
+    "prompt_key": "hp-bar-bg",
+    "output_subfolder": "prototype/ui",
+    "count": 1,
+    "seed": 1943865447,
+    "files": [
+      "prototype\\ui\\hp-bar-bg_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0104-joab-card",
+    "prompt_key": "joab",
+    "output_subfolder": "card",
+    "count": 4,
+    "seed": 29200532,
+    "files": [
+      "card\\joab-assault_00001_.png",
+      "card\\joab-assault_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0105-joab-portraits",
+    "prompt_key": "joab",
+    "output_subfolder": "portraits",
+    "count": 4,
+    "seed": 601589106,
+    "files": [
+      "portraits\\joab-assault_00001_.png",
+      "portraits\\joab-assault_00002_.png",
+      "portraits\\joab_00001_.png",
+      "portraits\\joab_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0106-jonathan-box-art",
+    "prompt_key": "jonathan",
+    "output_subfolder": "box-art",
+    "count": 10,
+    "seed": 467290891,
+    "files": [
+      "box-art\\jonathan-and-david_00001_.png",
+      "box-art\\jonathan-and-david_00002_.png",
+      "box-art\\jonathan-and-david_00003_.png",
+      "box-art\\jonathan-and-david_00004_.png",
+      "box-art\\jonathan-and-david_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0107-jonathan-card",
+    "prompt_key": "jonathan",
+    "output_subfolder": "card",
+    "count": 12,
+    "seed": 1581605189,
+    "files": [
+      "card\\jonathan-ambush_00001_.png",
+      "card\\jonathan-ambush_00002_.png",
+      "card\\jonathan-ambush_00003_.png",
+      "card\\jonathan-ambush_00004_.png",
+      "card\\jonathan-ambush_00005_.png",
+      "card\\jonathan-ambush_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0108-jonathan-portraits",
+    "prompt_key": "jonathan",
+    "output_subfolder": "portraits",
+    "count": 12,
+    "seed": 2101198353,
+    "files": [
+      "portraits\\jonathan-armor-bearer_00001_.png",
+      "portraits\\jonathan-armor-bearer_00002_.png",
+      "portraits\\jonathan-armor-bearer_00003_.png",
+      "portraits\\jonathan-armor-bearer_00004_.png",
+      "portraits\\jonathan-armor-bearer_00005_.png",
+      "portraits\\jonathan-armor-bearer_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0109-jonathan-prototype-unit-discs",
+    "prompt_key": "jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 20,
+    "seed": 837826442,
+    "files": [
+      "prototype\\unit-discs\\jonathan-ambush_00001_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00002_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00003_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00004_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00005_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00006_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00007_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00008_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00009_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00010_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00011_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00012_.png",
+      "prototype\\unit-discs\\jonathan-ambush_00013_.png"
+    ]
+  },
+  {
+    "id": "regen-0110-jonathan_commander",
+    "prompt_key": "jonathan_commander",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 4,
+    "seed": 1247833064,
+    "files": [
+      "prototype\\unit-discs\\jonathan-and-david_00001_.png",
+      "prototype\\unit-discs\\jonathan-and-david_00002_.png",
+      "prototype\\unit-discs\\jonathan-and-david_00003_.png",
+      "prototype\\unit-discs\\jonathan-and-david_00004_.png",
+      "prototype\\unit-discs\\jonathan-and-david_00005_.png",
+      "prototype\\unit-discs\\jonathan-armor-bearer_00001_.png",
+      "prototype\\unit-discs\\jonathan-armor-bearer_00002_.png",
+      "prototype\\unit-discs\\jonathan-armor-bearer_00003_.png",
+      "prototype\\unit-discs\\jonathan-armor-bearer_00004_.png",
+      "prototype\\unit-discs\\jonathan-armor-bearer_00005_.png",
+      "prototype\\unit-discs\\jonathan-armor-bearer_00006_.png",
+      "prototype\\unit-discs\\jonathan_00001_.png",
+      "prototype\\unit-discs\\jonathan_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0111-jonathans-mark",
+    "prompt_key": "jonathans-mark",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 3,
+    "seed": 441135612,
+    "files": [
+      "prototype\\unit-cards\\elite-archer-jonathan-01_00001_.png",
+      "prototype\\unit-cards\\elite-archer-jonathan-01_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0112-lahmi-portraits",
+    "prompt_key": "lahmi",
+    "output_subfolder": "portraits",
+    "count": 3,
+    "seed": 1373203426,
+    "files": [
+      "portraits\\lahmi_00001_.png",
+      "portraits\\lahmi_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0113-leather-belt",
+    "prompt_key": "leather-belt",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 1551289279,
+    "files": [
+      "prototype\\equipment\\leather-belt_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0114-leather-shield-equipment",
+    "prompt_key": "leather-shield",
+    "output_subfolder": "equipment",
+    "count": 11,
+    "seed": 1821135640,
+    "files": [
+      "equipment\\leather-shield_00001_.png",
+      "equipment\\leather-shield_00002_.png",
+      "equipment\\leather-shield_00003_.png",
+      "equipment\\leather-shield_00004_.png",
+      "equipment\\leather-shield_00005_.png",
+      "equipment\\leather-shield_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0115-leather-shield",
+    "prompt_key": "leather-shield",
+    "output_subfolder": "prototype/equipment",
+    "count": 5,
+    "seed": 1718810430,
+    "files": [
+      "prototype\\equipment\\leather-shield_00001_.png",
+      "prototype\\equipment\\leather-shield_00002_.png",
+      "prototype\\equipment\\leather-shield_00003_.png",
+      "prototype\\equipment\\leather-shield_00004_.png",
+      "prototype\\equipment\\leather-shield_00005_.png",
+      "prototype\\equipment\\leather-shield_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0116-loyal_guard_jonathan",
+    "prompt_key": "loyal_guard_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 5,
+    "seed": 1154391760,
+    "files": [
+      "prototype\\unit-discs\\loyal-guard-jonathan-01_00001_.png",
+      "prototype\\unit-discs\\loyal-guard-jonathan-01_00002_.png",
+      "prototype\\unit-discs\\loyal-guard_00001_.png",
+      "prototype\\unit-discs\\loyal-guard_00002_.png",
+      "prototype\\unit-discs\\loyal-guard_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0117-march-box-art",
+    "prompt_key": "march",
+    "output_subfolder": "box-art",
+    "count": 10,
+    "seed": 605633677,
+    "files": [
+      "box-art\\wilderness-march_00001_.png",
+      "box-art\\wilderness-march_00002_.png",
+      "box-art\\wilderness-march_00003_.png",
+      "box-art\\wilderness-march_00004_.png",
+      "box-art\\wilderness-march_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0118-march-card",
+    "prompt_key": "march",
+    "output_subfolder": "card",
+    "count": 9,
+    "seed": 259325534,
+    "files": [
+      "card\\march_00001_.png",
+      "card\\march_00002_.png",
+      "card\\march_00003_.png",
+      "card\\march_00004_.png",
+      "card\\march_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0119-nabal-box-art",
+    "prompt_key": "nabal",
+    "output_subfolder": "box-art",
+    "count": 5,
+    "seed": 174829501,
+    "files": [
+      "box-art\\nabal-s-whetting_00001_.png",
+      "box-art\\nabal-s-whetting_00002_.png",
+      "box-art\\nabal-s-whetting_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0120-nabal-portraits",
+    "prompt_key": "nabal",
+    "output_subfolder": "portraits",
+    "count": 9,
+    "seed": 392031816,
+    "files": [
+      "portraits\\nabal-s-whetting_00001_.png",
+      "portraits\\nabal-s-whetting_00002_.png",
+      "portraits\\nabal-s-whetting_00003_.png",
+      "portraits\\nabal-s-whetting_00004_.png",
+      "portraits\\nabal-s-whetting_00005_.png",
+      "portraits\\nabal-s-whetting_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0121-officer-card",
+    "prompt_key": "officer",
+    "output_subfolder": "card",
+    "count": 8,
+    "seed": 1906586293,
+    "files": [
+      "card\\officer-buff_00001_.png",
+      "card\\officer-buff_00002_.png",
+      "card\\officer-buff_00003_.png",
+      "card\\officer-buff_00004_.png"
+    ]
+  },
+  {
+    "id": "regen-0122-officer-portraits",
+    "prompt_key": "officer",
+    "output_subfolder": "portraits",
+    "count": 4,
+    "seed": 555367745,
+    "files": [
+      "portraits\\officer-buff_00001_.png",
+      "portraits\\officer-buff_00002_.png",
+      "portraits\\officer-buff_00003_.png",
+      "portraits\\officer-buff_00004_.png",
+      "portraits\\officer_00001_.png",
+      "portraits\\officer_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0123-perfect-shot",
+    "prompt_key": "perfect-shot",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1407813505,
+    "files": [
+      "prototype\\unit-cards\\elite-archer-jonathan-02_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0124-phalanx-advance",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 8,
+    "seed": 511403284,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-david-02_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-david-02_00002_.png",
+      "prototype\\unit-cards\\shield-bearer-david-02_00003_.png",
+      "prototype\\unit-cards\\shield-bearer-david-02_00004_.png"
+    ]
+  },
+  {
+    "id": "regen-0125-philistine_lord_commander",
+    "prompt_key": "philistine_lord_commander",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 6,
+    "seed": 136277460,
+    "files": [
+      "prototype\\unit-discs\\philistine-lord_00001_.png",
+      "prototype\\unit-discs\\philistine-lord_00002_.png",
+      "prototype\\unit-discs\\philistine-lord_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0126-quiver",
+    "prompt_key": "quiver",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 1965844118,
+    "files": [
+      "prototype\\equipment\\quiver_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0127-raider-card",
+    "prompt_key": "raider",
+    "output_subfolder": "card",
+    "count": 4,
+    "seed": 999437392,
+    "files": [
+      "card\\desert-raider-charge_00001_.png",
+      "card\\desert-raider-charge_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0128-raider-player-units",
+    "prompt_key": "raider",
+    "output_subfolder": "player-units",
+    "count": 5,
+    "seed": 251414203,
+    "files": [
+      "player-units\\raider_00001_.png",
+      "player-units\\raider_00002_.png",
+      "player-units\\raider_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0129-raider-portraits",
+    "prompt_key": "raider",
+    "output_subfolder": "portraits",
+    "count": 13,
+    "seed": 202162781,
+    "files": [
+      "portraits\\raider_00001_.png",
+      "portraits\\raider_00002_.png",
+      "portraits\\raider_00003_.png",
+      "portraits\\raider_00004_.png",
+      "portraits\\raider_00005_.png",
+      "portraits\\raider_00006_.png",
+      "portraits\\raider_00007_.png",
+      "portraits\\raider_00008_.png"
+    ]
+  },
+  {
+    "id": "regen-0130-raider-standees",
+    "prompt_key": "raider",
+    "output_subfolder": "standees",
+    "count": 1,
+    "seed": 612482410,
+    "files": [
+      "standees\\amalekite-raider_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0131-raider-unit-tokens",
+    "prompt_key": "raider",
+    "output_subfolder": "unit-tokens",
+    "count": 20,
+    "seed": 485154328,
+    "files": [
+      "unit-tokens\\raider_00001_.png",
+      "unit-tokens\\raider_00002_.png",
+      "unit-tokens\\raider_00003_.png",
+      "unit-tokens\\raider_00004_.png",
+      "unit-tokens\\raider_00005_.png",
+      "unit-tokens\\raider_00006_.png",
+      "unit-tokens\\raider_00007_.png",
+      "unit-tokens\\raider_00008_.png",
+      "unit-tokens\\raider_00009_.png",
+      "unit-tokens\\raider_00010_.png",
+      "unit-tokens\\raider_00011_.png",
+      "unit-tokens\\raider_00012_.png",
+      "unit-tokens\\raider_00013_.png",
+      "unit-tokens\\raider_00014_.png"
+    ]
+  },
+  {
+    "id": "regen-0132-refugee-box-art",
+    "prompt_key": "refugee",
+    "output_subfolder": "box-art",
+    "count": 10,
+    "seed": 1579841107,
+    "files": [
+      "box-art\\refugee-column_00001_.png",
+      "box-art\\refugee-column_00002_.png",
+      "box-art\\refugee-column_00003_.png",
+      "box-art\\refugee-column_00004_.png",
+      "box-art\\refugee-column_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0133-refugee-card",
+    "prompt_key": "refugee",
+    "output_subfolder": "card",
+    "count": 7,
+    "seed": 920057498,
+    "files": [
+      "card\\refugee-aid_00001_.png",
+      "card\\refugee-aid_00002_.png",
+      "card\\refugee-aid_00003_.png",
+      "card\\refugee-aid_00004_.png"
+    ]
+  },
+  {
+    "id": "regen-0134-refugee-portraits",
+    "prompt_key": "refugee",
+    "output_subfolder": "portraits",
+    "count": 24,
+    "seed": 1779960658,
+    "files": [
+      "portraits\\refugee-column_00001_.png",
+      "portraits\\refugee-column_00002_.png",
+      "portraits\\refugee-column_00003_.png",
+      "portraits\\refugee-column_00004_.png",
+      "portraits\\refugee-column_00005_.png",
+      "portraits\\refugee-column_00006_.png",
+      "portraits\\refugee-column_00007_.png",
+      "portraits\\refugee-column_00008_.png",
+      "portraits\\refugee-column_00009_.png",
+      "portraits\\refugee-column_00010_.png",
+      "portraits\\refugee-column_00011_.png",
+      "portraits\\refugee-column_00012_.png",
+      "portraits\\refugee-column_00013_.png",
+      "portraits\\refugee-column_00014_.png",
+      "portraits\\refugee-column_00015_.png"
+    ]
+  },
+  {
+    "id": "regen-0135-refugee-standees",
+    "prompt_key": "refugee",
+    "output_subfolder": "standees",
+    "count": 1,
+    "seed": 212839652,
+    "files": [
+      "standees\\refugee-aid_00001_.png",
+      "standees\\refugee-aid_00002_.png",
+      "standees\\refugee-aid_00003_.png",
+      "standees\\refugee-column_00001_.png",
+      "standees\\refugee-column_00002_.png",
+      "standees\\refugee-column_00003_.png",
+      "standees\\refugee-column_00004_.png",
+      "standees\\refugee-column_00005_.png",
+      "standees\\refugee-column_00006_.png",
+      "standees\\refugee-column_00007_.png",
+      "standees\\refugee-column_00008_.png",
+      "standees\\refugee-column_00009_.png",
+      "standees\\refugee-column_00010_.png",
+      "standees\\refugee-column_00011_.png",
+      "standees\\refugee-column_00012_.png",
+      "standees\\refugee-column_00013_.png",
+      "standees\\refugee-column_00014_.png",
+      "standees\\refugee_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0136-refugee-unit-tokens",
+    "prompt_key": "refugee",
+    "output_subfolder": "unit-tokens",
+    "count": 22,
+    "seed": 584505709,
+    "files": [
+      "unit-tokens\\refugee_00001_.png",
+      "unit-tokens\\refugee_00002_.png",
+      "unit-tokens\\refugee_00003_.png",
+      "unit-tokens\\refugee_00004_.png",
+      "unit-tokens\\refugee_00005_.png",
+      "unit-tokens\\refugee_00006_.png",
+      "unit-tokens\\refugee_00007_.png",
+      "unit-tokens\\refugee_00008_.png",
+      "unit-tokens\\refugee_00009_.png",
+      "unit-tokens\\refugee_00010_.png",
+      "unit-tokens\\refugee_00011_.png"
+    ]
+  },
+  {
+    "id": "regen-0137-saph-portraits",
+    "prompt_key": "saph",
+    "output_subfolder": "portraits",
+    "count": 4,
+    "seed": 1722827271,
+    "files": [
+      "portraits\\saph_00001_.png",
+      "portraits\\saph_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0138-saul-box-art",
+    "prompt_key": "saul",
+    "output_subfolder": "box-art",
+    "count": 5,
+    "seed": 1046037552,
+    "files": [
+      "box-art\\saul-at-the-javelin_00001_.png",
+      "box-art\\saul-at-the-javelin_00002_.png",
+      "box-art\\saul-at-the-javelin_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0139-saul-card",
+    "prompt_key": "saul",
+    "output_subfolder": "card",
+    "count": 4,
+    "seed": 2025269839,
+    "files": [
+      "card\\veteran-assault_00001_.png",
+      "card\\veteran-assault_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0140-saul-portraits",
+    "prompt_key": "saul",
+    "output_subfolder": "portraits",
+    "count": 2,
+    "seed": 852362800,
+    "files": [
+      "portraits\\saul-at-the-javelin_00001_.png",
+      "portraits\\saul-at-the-javelin_00002_.png",
+      "portraits\\saul_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0141-scout-card",
+    "prompt_key": "scout",
+    "output_subfolder": "card",
+    "count": 7,
+    "seed": 578941445,
+    "files": [
+      "card\\scout-recon_00001_.png",
+      "card\\scout-recon_00002_.png",
+      "card\\scout-recon_00003_.png",
+      "card\\scout-recon_00004_.png"
+    ]
+  },
+  {
+    "id": "regen-0142-scout-player-units",
+    "prompt_key": "scout",
+    "output_subfolder": "player-units",
+    "count": 83,
+    "seed": 1798109585,
+    "files": [
+      "player-units\\scout-recon_00001_.png",
+      "player-units\\scout-recon_00002_.png",
+      "player-units\\scout-recon_00003_.png",
+      "player-units\\scout_00001_.png",
+      "player-units\\scout_00002_.png",
+      "player-units\\scout_00003_.png",
+      "player-units\\scout_00004_.png",
+      "player-units\\scout_00005_.png",
+      "player-units\\scout_00006_.png",
+      "player-units\\scout_00007_.png",
+      "player-units\\scout_00008_.png",
+      "player-units\\scout_00009_.png",
+      "player-units\\scout_00010_.png",
+      "player-units\\scout_00011_.png",
+      "player-units\\scout_00012_.png",
+      "player-units\\scout_00013_.png",
+      "player-units\\scout_00014_.png",
+      "player-units\\scout_00015_.png",
+      "player-units\\scout_00016_.png",
+      "player-units\\scout_00017_.png",
+      "player-units\\scout_00018_.png",
+      "player-units\\scout_00019_.png",
+      "player-units\\scout_00020_.png",
+      "player-units\\scout_00021_.png",
+      "player-units\\scout_00022_.png",
+      "player-units\\scout_00023_.png",
+      "player-units\\scout_00024_.png",
+      "player-units\\scout_00025_.png",
+      "player-units\\scout_00026_.png",
+      "player-units\\scout_00027_.png",
+      "player-units\\scout_00028_.png",
+      "player-units\\scout_00029_.png",
+      "player-units\\scout_00030_.png",
+      "player-units\\scout_00031_.png",
+      "player-units\\scout_00032_.png",
+      "player-units\\scout_00033_.png",
+      "player-units\\scout_00034_.png",
+      "player-units\\scout_00035_.png",
+      "player-units\\scout_00036_.png",
+      "player-units\\scout_00037_.png",
+      "player-units\\scout_00038_.png",
+      "player-units\\scout_00039_.png",
+      "player-units\\scout_00040_.png",
+      "player-units\\scout_00041_.png",
+      "player-units\\scout_00042_.png"
+    ]
+  },
+  {
+    "id": "regen-0143-scout-portraits",
+    "prompt_key": "scout",
+    "output_subfolder": "portraits",
+    "count": 29,
+    "seed": 721904016,
+    "files": [
+      "portraits\\scout_00001_.png",
+      "portraits\\scout_00002_.png",
+      "portraits\\scout_00003_.png",
+      "portraits\\scout_00004_.png",
+      "portraits\\scout_00005_.png",
+      "portraits\\scout_00006_.png",
+      "portraits\\scout_00007_.png",
+      "portraits\\scout_00008_.png",
+      "portraits\\scout_00009_.png",
+      "portraits\\scout_00010_.png",
+      "portraits\\scout_00011_.png",
+      "portraits\\scout_00012_.png",
+      "portraits\\scout_00013_.png",
+      "portraits\\scout_00014_.png",
+      "portraits\\scout_00015_.png",
+      "portraits\\scout_00016_.png",
+      "portraits\\scout_00017_.png",
+      "portraits\\scout_00018_.png",
+      "portraits\\scout_00019_.png",
+      "portraits\\scout_00020_.png",
+      "portraits\\scout_00021_.png",
+      "portraits\\scout_00022_.png",
+      "portraits\\scout_00023_.png",
+      "portraits\\scout_00024_.png",
+      "portraits\\scout_00025_.png",
+      "portraits\\scout_00026_.png",
+      "portraits\\scout_00027_.png",
+      "portraits\\scout_00028_.png",
+      "portraits\\scout_00029_.png",
+      "portraits\\scout_00030_.png",
+      "portraits\\scout_00031_.png",
+      "portraits\\scout_00032_.png",
+      "portraits\\scout_00033_.png",
+      "portraits\\scout_00034_.png",
+      "portraits\\scout_00035_.png",
+      "portraits\\scout_00036_.png",
+      "portraits\\scout_00037_.png",
+      "portraits\\scout_00038_.png",
+      "portraits\\scout_00039_.png",
+      "portraits\\scout_00040_.png",
+      "portraits\\scout_00041_.png",
+      "portraits\\scout_00042_.png"
+    ]
+  },
+  {
+    "id": "regen-0144-scout-standees",
+    "prompt_key": "scout",
+    "output_subfolder": "standees",
+    "count": 1,
+    "seed": 766525262,
+    "files": [
+      "standees\\scout_00001_.png",
+      "standees\\scout_00002_.png",
+      "standees\\scout_00003_.png",
+      "standees\\scout_00004_.png",
+      "standees\\scout_00005_.png",
+      "standees\\scout_00006_.png",
+      "standees\\scout_00007_.png",
+      "standees\\scout_00008_.png",
+      "standees\\scout_00009_.png",
+      "standees\\scout_00010_.png",
+      "standees\\scout_00011_.png",
+      "standees\\scout_00012_.png",
+      "standees\\scout_00013_.png",
+      "standees\\scout_00014_.png",
+      "standees\\scout_00015_.png",
+      "standees\\scout_00016_.png",
+      "standees\\scout_00017_.png",
+      "standees\\scout_00018_.png",
+      "standees\\scout_00019_.png",
+      "standees\\scout_00020_.png",
+      "standees\\scout_00021_.png",
+      "standees\\scout_00022_.png",
+      "standees\\scout_00023_.png",
+      "standees\\scout_00024_.png",
+      "standees\\scout_00025_.png",
+      "standees\\scout_00026_.png",
+      "standees\\scout_00027_.png",
+      "standees\\scout_00028_.png",
+      "standees\\scout_00029_.png"
+    ]
+  },
+  {
+    "id": "regen-0145-scout-unit-tokens",
+    "prompt_key": "scout",
+    "output_subfolder": "unit-tokens",
+    "count": 25,
+    "seed": 1062822412,
+    "files": [
+      "unit-tokens\\scout_00001_.png",
+      "unit-tokens\\scout_00002_.png",
+      "unit-tokens\\scout_00003_.png",
+      "unit-tokens\\scout_00004_.png",
+      "unit-tokens\\scout_00005_.png",
+      "unit-tokens\\scout_00006_.png",
+      "unit-tokens\\scout_00007_.png",
+      "unit-tokens\\scout_00008_.png",
+      "unit-tokens\\scout_00009_.png",
+      "unit-tokens\\scout_00010_.png",
+      "unit-tokens\\scout_00011_.png",
+      "unit-tokens\\scout_00012_.png",
+      "unit-tokens\\scout_00013_.png"
+    ]
+  },
+  {
+    "id": "regen-0146-scout-formation",
+    "prompt_key": "scout-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 2042511727,
+    "files": [
+      "prototype\\unit-cards\\scout-david-02_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0147-scout-recon",
+    "prompt_key": "scout-recon",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 3,
+    "seed": 1469153400,
+    "files": [
+      "prototype\\unit-cards\\scout-david-01_00001_.png",
+      "prototype\\unit-cards\\scout-david-01_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0148-scout_david",
+    "prompt_key": "scout_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 2137589366,
+    "files": [
+      "prototype\\unit-discs\\scout-david-01_00001_.png",
+      "prototype\\unit-discs\\scout-david-02_00001_.png",
+      "prototype\\unit-discs\\scout-david_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0149-shield-wall",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 12,
+    "seed": 2008330969,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-david-01_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-david-01_00002_.png",
+      "prototype\\unit-cards\\shield-bearer-david-01_00003_.png",
+      "prototype\\unit-cards\\shield-bearer-david-01_00004_.png",
+      "prototype\\unit-cards\\shield-bearer-david-01_00005_.png",
+      "prototype\\unit-cards\\shield-bearer-david-01_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0150-shield_bearer_achish",
+    "prompt_key": "shield_bearer_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 113504629,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-achish_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0151-shield_bearer_david",
+    "prompt_key": "shield_bearer_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 2112413174,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-david-01_00001_.png",
+      "prototype\\unit-discs\\shield-bearer-david-01_00002_.png",
+      "prototype\\unit-discs\\shield-bearer-david-01_00003_.png",
+      "prototype\\unit-discs\\shield-bearer-david-01_00004_.png",
+      "prototype\\unit-discs\\shield-bearer-david-01_00005_.png",
+      "prototype\\unit-discs\\shield-bearer-david-01_00006_.png",
+      "prototype\\unit-discs\\shield-bearer-david-02_00001_.png",
+      "prototype\\unit-discs\\shield-bearer-david-02_00002_.png",
+      "prototype\\unit-discs\\shield-bearer-david-02_00003_.png",
+      "prototype\\unit-discs\\shield-bearer-david-02_00004_.png",
+      "prototype\\unit-discs\\shield-bearer-david_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0152-shield_bearer_ekron",
+    "prompt_key": "shield_bearer_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 1,
+    "seed": 1981815783,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-ekron_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0153-shield_bearer_jonathan",
+    "prompt_key": "shield_bearer_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 1,
+    "seed": 442815922,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-jonathan_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0154-sibbecai-portraits",
+    "prompt_key": "sibbecai",
+    "output_subfolder": "portraits",
+    "count": 4,
+    "seed": 980043458,
+    "files": [
+      "portraits\\sibbecai_00001_.png",
+      "portraits\\sibbecai_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0155-sling-equipment",
+    "prompt_key": "sling",
+    "output_subfolder": "equipment",
+    "count": 10,
+    "seed": 2082409264,
+    "files": [
+      "equipment\\sling_00001_.png",
+      "equipment\\slinger-david-01_00001_.png",
+      "equipment\\slinger-david-01_00002_.png",
+      "equipment\\slinger-david-01_00003_.png",
+      "equipment\\sling_00002_.png",
+      "equipment\\sling_00003_.png",
+      "equipment\\sling_00004_.png",
+      "equipment\\sling_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0156-sling",
+    "prompt_key": "sling",
+    "output_subfolder": "prototype/equipment",
+    "count": 9,
+    "seed": 1956016148,
+    "files": [
+      "prototype\\equipment\\sling_00001_.png",
+      "prototype\\equipment\\sling_00002_.png",
+      "prototype\\equipment\\sling_00003_.png",
+      "prototype\\equipment\\sling_00004_.png",
+      "prototype\\equipment\\sling_00005_.png",
+      "prototype\\equipment\\sling_00006_.png",
+      "prototype\\equipment\\sling_00007_.png"
+    ]
+  },
+  {
+    "id": "regen-0157-slinger-card",
+    "prompt_key": "slinger",
+    "output_subfolder": "card",
+    "count": 7,
+    "seed": 2049994611,
+    "files": [
+      "card\\slinger-skirmish_00001_.png",
+      "card\\slinger-skirmish_00002_.png",
+      "card\\slinger-skirmish_00003_.png",
+      "card\\slinger-skirmish_00004_.png"
+    ]
+  },
+  {
+    "id": "regen-0158-slinger-equipment",
+    "prompt_key": "slinger",
+    "output_subfolder": "equipment",
+    "count": 13,
+    "seed": 1371122456,
+    "files": [
+      "equipment\\slinger-skirmish_00001_.png",
+      "equipment\\slinger-skirmish_00002_.png",
+      "equipment\\slinger-skirmish_00003_.png",
+      "equipment\\slinger_00001_.png",
+      "equipment\\slinger_00002_.png",
+      "equipment\\slinger_00003_.png",
+      "equipment\\slinger_00004_.png",
+      "equipment\\slinger_00005_.png",
+      "equipment\\slinger_00006_.png",
+      "equipment\\slinger_00007_.png"
+    ]
+  },
+  {
+    "id": "regen-0159-slinger-player-units",
+    "prompt_key": "slinger",
+    "output_subfolder": "player-units",
+    "count": 74,
+    "seed": 248515912,
+    "files": [
+      "player-units\\slinger_00001_.png",
+      "player-units\\slinger_00002_.png",
+      "player-units\\slinger_00003_.png",
+      "player-units\\slinger_00004_.png",
+      "player-units\\slinger_00005_.png",
+      "player-units\\slinger_00006_.png",
+      "player-units\\slinger_00007_.png",
+      "player-units\\slinger_00008_.png",
+      "player-units\\slinger_00009_.png",
+      "player-units\\slinger_00010_.png",
+      "player-units\\slinger_00011_.png",
+      "player-units\\slinger_00012_.png",
+      "player-units\\slinger_00013_.png",
+      "player-units\\slinger_00014_.png",
+      "player-units\\slinger_00015_.png",
+      "player-units\\slinger_00016_.png",
+      "player-units\\slinger_00017_.png",
+      "player-units\\slinger_00018_.png",
+      "player-units\\slinger_00019_.png",
+      "player-units\\slinger_00020_.png",
+      "player-units\\slinger_00021_.png",
+      "player-units\\slinger_00022_.png",
+      "player-units\\slinger_00023_.png",
+      "player-units\\slinger_00024_.png",
+      "player-units\\slinger_00025_.png",
+      "player-units\\slinger_00026_.png",
+      "player-units\\slinger_00027_.png",
+      "player-units\\slinger_00028_.png",
+      "player-units\\slinger_00029_.png",
+      "player-units\\slinger_00030_.png",
+      "player-units\\slinger_00031_.png",
+      "player-units\\slinger_00032_.png",
+      "player-units\\slinger_00033_.png",
+      "player-units\\slinger_00034_.png",
+      "player-units\\slinger_00035_.png",
+      "player-units\\slinger_00036_.png",
+      "player-units\\slinger_00037_.png",
+      "player-units\\slinger_00038_.png",
+      "player-units\\slinger_00039_.png",
+      "player-units\\slinger_00040_.png"
+    ]
+  },
+  {
+    "id": "regen-0160-slinger-portraits",
+    "prompt_key": "slinger",
+    "output_subfolder": "portraits",
+    "count": 12,
+    "seed": 1570525730,
+    "files": [
+      "portraits\\slinger_00001_.png",
+      "portraits\\slinger_00002_.png",
+      "portraits\\slinger_00003_.png",
+      "portraits\\slinger_00004_.png",
+      "portraits\\slinger_00005_.png",
+      "portraits\\slinger_00006_.png",
+      "portraits\\slinger_00007_.png",
+      "portraits\\slinger_00008_.png",
+      "portraits\\slinger_00009_.png",
+      "portraits\\slinger_00010_.png",
+      "portraits\\slinger_00011_.png",
+      "portraits\\slinger_00012_.png",
+      "portraits\\slinger_00013_.png",
+      "portraits\\slinger_00014_.png",
+      "portraits\\slinger_00015_.png",
+      "portraits\\slinger_00016_.png",
+      "portraits\\slinger_00017_.png",
+      "portraits\\slinger_00018_.png",
+      "portraits\\slinger_00019_.png",
+      "portraits\\slinger_00020_.png",
+      "portraits\\slinger_00021_.png",
+      "portraits\\slinger_00022_.png",
+      "portraits\\slinger_00023_.png",
+      "portraits\\slinger_00024_.png",
+      "portraits\\slinger_00025_.png",
+      "portraits\\slinger_00026_.png",
+      "portraits\\slinger_00027_.png",
+      "portraits\\slinger_00028_.png",
+      "portraits\\slinger_00029_.png",
+      "portraits\\slinger_00030_.png",
+      "portraits\\slinger_00031_.png",
+      "portraits\\slinger_00032_.png",
+      "portraits\\slinger_00033_.png",
+      "portraits\\slinger_00034_.png",
+      "portraits\\slinger_00035_.png",
+      "portraits\\slinger_00036_.png",
+      "portraits\\slinger_00037_.png",
+      "portraits\\slinger_00038_.png",
+      "portraits\\slinger_00039_.png",
+      "portraits\\slinger_00040_.png",
+      "portraits\\slinger_00041_.png"
+    ]
+  },
+  {
+    "id": "regen-0161-slinger-prototype-equipment",
+    "prompt_key": "slinger",
+    "output_subfolder": "prototype/equipment",
+    "count": 15,
+    "seed": 727772165,
+    "files": [
+      "prototype\\equipment\\slinger_00001_.png",
+      "prototype\\equipment\\slinger_00002_.png",
+      "prototype\\equipment\\slinger_00003_.png",
+      "prototype\\equipment\\slinger_00004_.png",
+      "prototype\\equipment\\slinger_00005_.png",
+      "prototype\\equipment\\slinger_00006_.png",
+      "prototype\\equipment\\slinger_00007_.png",
+      "prototype\\equipment\\slinger_00008_.png",
+      "prototype\\equipment\\slinger_00009_.png",
+      "prototype\\equipment\\slinger_00010_.png",
+      "prototype\\equipment\\slinger_00011_.png",
+      "prototype\\equipment\\slinger_00012_.png",
+      "prototype\\equipment\\slinger_00013_.png"
+    ]
+  },
+  {
+    "id": "regen-0162-slinger-standees",
+    "prompt_key": "slinger",
+    "output_subfolder": "standees",
+    "count": 1,
+    "seed": 504914895,
+    "files": [
+      "standees\\slinger_00001_.png",
+      "standees\\slinger_00002_.png",
+      "standees\\slinger_00003_.png",
+      "standees\\slinger_00004_.png",
+      "standees\\slinger_00005_.png",
+      "standees\\slinger_00006_.png",
+      "standees\\slinger_00007_.png",
+      "standees\\slinger_00008_.png",
+      "standees\\slinger_00009_.png",
+      "standees\\slinger_00010_.png",
+      "standees\\slinger_00011_.png",
+      "standees\\slinger_00012_.png",
+      "standees\\slinger_00013_.png",
+      "standees\\slinger_00014_.png"
+    ]
+  },
+  {
+    "id": "regen-0163-slinger-unit-tokens",
+    "prompt_key": "slinger",
+    "output_subfolder": "unit-tokens",
+    "count": 25,
+    "seed": 1282862884,
+    "files": [
+      "unit-tokens\\slinger_00001_.png",
+      "unit-tokens\\slinger_00002_.png",
+      "unit-tokens\\slinger_00003_.png",
+      "unit-tokens\\slinger_00004_.png",
+      "unit-tokens\\slinger_00005_.png",
+      "unit-tokens\\slinger_00006_.png",
+      "unit-tokens\\slinger_00007_.png",
+      "unit-tokens\\slinger_00008_.png",
+      "unit-tokens\\slinger_00009_.png",
+      "unit-tokens\\slinger_00010_.png",
+      "unit-tokens\\slinger_00011_.png",
+      "unit-tokens\\slinger_00012_.png",
+      "unit-tokens\\slinger_00013_.png"
+    ]
+  },
+  {
+    "id": "regen-0164-slinger_david",
+    "prompt_key": "slinger_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 1,
+    "seed": 1995145336,
+    "files": [
+      "prototype\\unit-discs\\slinger-david_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0165-slinger_ekron",
+    "prompt_key": "slinger_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 1017493998,
+    "files": [
+      "prototype\\unit-discs\\slinger-ekron_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0166-spear-card",
+    "prompt_key": "spear",
+    "output_subfolder": "card",
+    "count": 9,
+    "seed": 1595405275,
+    "files": [
+      "card\\spear-wall_00001_.png",
+      "card\\spear-wall_00002_.png",
+      "card\\spear-wall_00003_.png",
+      "card\\spear-wall_00004_.png",
+      "card\\spear-wall_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0167-spear-equipment",
+    "prompt_key": "spear",
+    "output_subfolder": "equipment",
+    "count": 3,
+    "seed": 1355055398,
+    "files": [
+      "equipment\\spear-wall_00001_.png",
+      "equipment\\spear-wall_00002_.png",
+      "equipment\\spear-wall_00003_.png",
+      "equipment\\spear-wall_00004_.png",
+      "equipment\\spear_00001_.png",
+      "equipment\\spear_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0168-spear",
+    "prompt_key": "spear",
+    "output_subfolder": "prototype/equipment",
+    "count": 4,
+    "seed": 1060536166,
+    "files": [
+      "prototype\\equipment\\spear_00001_.png",
+      "prototype\\equipment\\spear_00002_.png",
+      "prototype\\equipment\\spear_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0169-spear-wall-equipment",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "equipment",
+    "count": 8,
+    "seed": 444002532,
+    "files": [
+      "equipment\\spear-wall_00005_.png",
+      "equipment\\spear-wall_00006_.png"
+    ]
+  },
+  {
+    "id": "regen-0170-spear-wall-prototype-equipment",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/equipment",
+    "count": 8,
+    "seed": 1971094408,
+    "files": [
+      "prototype\\equipment\\spear-wall_00001_.png",
+      "prototype\\equipment\\spear-wall_00002_.png",
+      "prototype\\equipment\\spear-wall_00003_.png",
+      "prototype\\equipment\\spear-wall_00004_.png",
+      "prototype\\equipment\\spear-wall_00005_.png",
+      "prototype\\equipment\\spear-wall_00006_.png",
+      "prototype\\equipment\\spear-wall_00007_.png"
+    ]
+  },
+  {
+    "id": "regen-0171-spear-wall",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 8,
+    "seed": 457417442,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-01_00001_.png",
+      "prototype\\unit-cards\\spearman-david-01_00002_.png",
+      "prototype\\unit-cards\\spearman-david-01_00003_.png",
+      "prototype\\unit-cards\\spearman-david-01_00004_.png"
+    ]
+  },
+  {
+    "id": "regen-0172-spearman-equipment",
+    "prompt_key": "spearman",
+    "output_subfolder": "equipment",
+    "count": 4,
+    "seed": 158316451,
+    "files": [
+      "equipment\\spearman-david-01_00001_.png",
+      "equipment\\spearman-david-01_00002_.png",
+      "equipment\\spearman-david-01_00003_.png",
+      "equipment\\spearman-david-01_00004_.png",
+      "equipment\\spearman_00001_.png",
+      "equipment\\spearman_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0173-spearman-player-units",
+    "prompt_key": "spearman",
+    "output_subfolder": "player-units",
+    "count": 25,
+    "seed": 125074899,
+    "files": [
+      "player-units\\spearman_00001_.png",
+      "player-units\\spearman_00002_.png",
+      "player-units\\spearman_00003_.png",
+      "player-units\\spearman_00004_.png",
+      "player-units\\spearman_00005_.png",
+      "player-units\\spearman_00006_.png",
+      "player-units\\spearman_00007_.png",
+      "player-units\\spearman_00008_.png",
+      "player-units\\spearman_00009_.png",
+      "player-units\\spearman_00010_.png",
+      "player-units\\spearman_00011_.png",
+      "player-units\\spearman_00012_.png",
+      "player-units\\spearman_00013_.png",
+      "player-units\\spearman_00014_.png"
+    ]
+  },
+  {
+    "id": "regen-0174-spearman-portraits",
+    "prompt_key": "spearman",
+    "output_subfolder": "portraits",
+    "count": 25,
+    "seed": 771136550,
+    "files": [
+      "portraits\\spearman_00001_.png",
+      "portraits\\spearman_00002_.png",
+      "portraits\\spearman_00003_.png",
+      "portraits\\spearman_00004_.png",
+      "portraits\\spearman_00005_.png",
+      "portraits\\spearman_00006_.png",
+      "portraits\\spearman_00007_.png",
+      "portraits\\spearman_00008_.png",
+      "portraits\\spearman_00009_.png",
+      "portraits\\spearman_00010_.png",
+      "portraits\\spearman_00011_.png",
+      "portraits\\spearman_00012_.png",
+      "portraits\\spearman_00013_.png",
+      "portraits\\spearman_00014_.png",
+      "portraits\\spearman_00015_.png",
+      "portraits\\spearman_00016_.png",
+      "portraits\\spearman_00017_.png",
+      "portraits\\spearman_00018_.png",
+      "portraits\\spearman_00019_.png"
+    ]
+  },
+  {
+    "id": "regen-0175-spearman-prototype-equipment",
+    "prompt_key": "spearman",
+    "output_subfolder": "prototype/equipment",
+    "count": 25,
+    "seed": 371035226,
+    "files": [
+      "prototype\\equipment\\spearman_00001_.png",
+      "prototype\\equipment\\spearman_00002_.png",
+      "prototype\\equipment\\spearman_00003_.png",
+      "prototype\\equipment\\spearman_00004_.png",
+      "prototype\\equipment\\spearman_00005_.png",
+      "prototype\\equipment\\spearman_00006_.png",
+      "prototype\\equipment\\spearman_00007_.png",
+      "prototype\\equipment\\spearman_00008_.png",
+      "prototype\\equipment\\spearman_00009_.png",
+      "prototype\\equipment\\spearman_00010_.png",
+      "prototype\\equipment\\spearman_00011_.png",
+      "prototype\\equipment\\spearman_00012_.png",
+      "prototype\\equipment\\spearman_00013_.png",
+      "prototype\\equipment\\spearman_00014_.png",
+      "prototype\\equipment\\spearman_00015_.png",
+      "prototype\\equipment\\spearman_00016_.png",
+      "prototype\\equipment\\spearman_00017_.png",
+      "prototype\\equipment\\spearman_00018_.png",
+      "prototype\\equipment\\spearman_00019_.png",
+      "prototype\\equipment\\spearman_00020_.png",
+      "prototype\\equipment\\spearman_00021_.png",
+      "prototype\\equipment\\spearman_00022_.png"
+    ]
+  },
+  {
+    "id": "regen-0176-spearman-prototype-unit-discs",
+    "prompt_key": "spearman",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 1068742889,
+    "files": [
+      "prototype\\unit-discs\\jonathan-spearman_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0177-spearman-unit-tokens",
+    "prompt_key": "spearman",
+    "output_subfolder": "unit-tokens",
+    "count": 20,
+    "seed": 1447684489,
+    "files": [
+      "unit-tokens\\spearman_00001_.png",
+      "unit-tokens\\spearman_00002_.png",
+      "unit-tokens\\spearman_00003_.png",
+      "unit-tokens\\spearman_00004_.png",
+      "unit-tokens\\spearman_00005_.png",
+      "unit-tokens\\spearman_00006_.png",
+      "unit-tokens\\spearman_00007_.png",
+      "unit-tokens\\spearman_00008_.png",
+      "unit-tokens\\spearman_00009_.png",
+      "unit-tokens\\spearman_00010_.png",
+      "unit-tokens\\spearman_00011_.png",
+      "unit-tokens\\spearman_00012_.png",
+      "unit-tokens\\spearman_00013_.png",
+      "unit-tokens\\spearman_00014_.png",
+      "unit-tokens\\spearman_00015_.png",
+      "unit-tokens\\spearman_00016_.png",
+      "unit-tokens\\spearman_00017_.png",
+      "unit-tokens\\spearman_00018_.png",
+      "unit-tokens\\spearman_00019_.png",
+      "unit-tokens\\spearman_00020_.png",
+      "unit-tokens\\spearman_00021_.png",
+      "unit-tokens\\spearman_00022_.png",
+      "unit-tokens\\spearman_00023_.png"
+    ]
+  },
+  {
+    "id": "regen-0178-spearman-formation",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 8,
+    "seed": 301091347,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-02_00001_.png",
+      "prototype\\unit-cards\\spearman-david-02_00002_.png",
+      "prototype\\unit-cards\\spearman-david-02_00003_.png",
+      "prototype\\unit-cards\\spearman-david-02_00004_.png"
+    ]
+  },
+  {
+    "id": "regen-0179-spearman-screen",
+    "prompt_key": "spearman-screen",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 4,
+    "seed": 491787196,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-03_00001_.png",
+      "prototype\\unit-cards\\spearman-david-03_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0180-spearman_achish",
+    "prompt_key": "spearman_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 1,
+    "seed": 1105262788,
+    "files": [
+      "prototype\\unit-discs\\spearman-achish_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0181-spearman_david",
+    "prompt_key": "spearman_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 1,
+    "seed": 252793744,
+    "files": [
+      "prototype\\unit-discs\\spearman-david-02_00001_.png",
+      "prototype\\unit-discs\\spearman-david-02_00002_.png",
+      "prototype\\unit-discs\\spearman-david-02_00003_.png",
+      "prototype\\unit-discs\\spearman-david-02_00004_.png",
+      "prototype\\unit-discs\\spearman-david-03_00001_.png",
+      "prototype\\unit-discs\\spearman-david-03_00002_.png",
+      "prototype\\unit-discs\\spearman-david_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0182-spearman_jonathan",
+    "prompt_key": "spearman_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 766570655,
+    "files": [
+      "prototype\\unit-discs\\spearman-jonathan_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0183-stone-volley",
+    "prompt_key": "stone-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 4,
+    "seed": 1293778692,
+    "files": [
+      "prototype\\unit-cards\\slinger-david-02_00001_.png",
+      "prototype\\unit-cards\\slinger-david-02_00002_.png"
+    ]
+  },
+  {
+    "id": "regen-0184-sword-sheath",
+    "prompt_key": "sword-sheath",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 299905818,
+    "files": [
+      "prototype\\equipment\\sword-sheath_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0185-swordsman-player-units",
+    "prompt_key": "swordsman",
+    "output_subfolder": "player-units",
+    "count": 37,
+    "seed": 1611811984,
+    "files": [
+      "player-units\\swordsman_00001_.png",
+      "player-units\\swordsman_00002_.png",
+      "player-units\\swordsman_00003_.png",
+      "player-units\\swordsman_00004_.png",
+      "player-units\\swordsman_00005_.png",
+      "player-units\\swordsman_00006_.png",
+      "player-units\\swordsman_00007_.png",
+      "player-units\\swordsman_00008_.png",
+      "player-units\\swordsman_00009_.png",
+      "player-units\\swordsman_00010_.png",
+      "player-units\\swordsman_00011_.png",
+      "player-units\\swordsman_00012_.png",
+      "player-units\\swordsman_00013_.png",
+      "player-units\\swordsman_00014_.png",
+      "player-units\\swordsman_00015_.png",
+      "player-units\\swordsman_00016_.png",
+      "player-units\\swordsman_00017_.png",
+      "player-units\\swordsman_00018_.png",
+      "player-units\\swordsman_00019_.png"
+    ]
+  },
+  {
+    "id": "regen-0186-swordsman-portraits",
+    "prompt_key": "swordsman",
+    "output_subfolder": "portraits",
+    "count": 10,
+    "seed": 1491070384,
+    "files": [
+      "portraits\\swordsman_00001_.png",
+      "portraits\\swordsman_00002_.png",
+      "portraits\\swordsman_00003_.png",
+      "portraits\\swordsman_00004_.png",
+      "portraits\\swordsman_00005_.png",
+      "portraits\\swordsman_00006_.png",
+      "portraits\\swordsman_00007_.png",
+      "portraits\\swordsman_00008_.png",
+      "portraits\\swordsman_00009_.png",
+      "portraits\\swordsman_00010_.png",
+      "portraits\\swordsman_00011_.png",
+      "portraits\\swordsman_00012_.png",
+      "portraits\\swordsman_00013_.png",
+      "portraits\\swordsman_00014_.png",
+      "portraits\\swordsman_00015_.png",
+      "portraits\\swordsman_00016_.png",
+      "portraits\\swordsman_00017_.png",
+      "portraits\\swordsman_00018_.png",
+      "portraits\\swordsman_00019_.png"
+    ]
+  },
+  {
+    "id": "regen-0187-swordsman-standees",
+    "prompt_key": "swordsman",
+    "output_subfolder": "standees",
+    "count": 1,
+    "seed": 1633556274,
+    "files": [
+      "standees\\swordsman_00001_.png",
+      "standees\\swordsman_00002_.png",
+      "standees\\swordsman_00003_.png",
+      "standees\\swordsman_00004_.png",
+      "standees\\swordsman_00005_.png",
+      "standees\\swordsman_00006_.png",
+      "standees\\swordsman_00007_.png",
+      "standees\\swordsman_00008_.png",
+      "standees\\swordsman_00009_.png",
+      "standees\\swordsman_00010_.png"
+    ]
+  },
+  {
+    "id": "regen-0188-swordsman-unit-tokens",
+    "prompt_key": "swordsman",
+    "output_subfolder": "unit-tokens",
+    "count": 15,
+    "seed": 1708515577,
+    "files": [
+      "unit-tokens\\swordsman_00001_.png",
+      "unit-tokens\\swordsman_00002_.png",
+      "unit-tokens\\swordsman_00003_.png",
+      "unit-tokens\\swordsman_00004_.png",
+      "unit-tokens\\swordsman_00005_.png",
+      "unit-tokens\\swordsman_00006_.png",
+      "unit-tokens\\swordsman_00007_.png",
+      "unit-tokens\\swordsman_00008_.png"
+    ]
+  },
+  {
+    "id": "regen-0189-swordsman_achish",
+    "prompt_key": "swordsman_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 1,
+    "seed": 1297209019,
+    "files": [
+      "prototype\\unit-discs\\swordsman-achish_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0190-swordsman_david",
+    "prompt_key": "swordsman_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 1168864292,
+    "files": [
+      "prototype\\unit-discs\\swordsman-david_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0191-swordsman_ekron",
+    "prompt_key": "swordsman_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 1814221329,
+    "files": [
+      "prototype\\unit-discs\\swordsman-ekron_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0192-swordsman_jonathan",
+    "prompt_key": "swordsman_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 2,
+    "seed": 2142248110,
+    "files": [
+      "prototype\\unit-discs\\swordsman-jonathan_00001_.png"
+    ]
+  },
+  {
+    "id": "regen-0193-swordsmen-advance-card",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "card",
+    "count": 9,
+    "seed": 885865858,
+    "files": [
+      "card\\swordsmen-advance_00001_.png",
+      "card\\swordsmen-advance_00002_.png",
+      "card\\swordsmen-advance_00003_.png",
+      "card\\swordsmen-advance_00004_.png",
+      "card\\swordsmen-advance_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0194-swordsmen-advance",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 9,
+    "seed": 1725899512,
+    "files": [
+      "prototype\\unit-cards\\swordsmen-advance-01_00001_.png",
+      "prototype\\unit-cards\\swordsmen-advance-01_00002_.png",
+      "prototype\\unit-cards\\swordsmen-advance-01_00003_.png",
+      "prototype\\unit-cards\\swordsmen-advance-01_00004_.png",
+      "prototype\\unit-cards\\swordsmen-advance-01_00005_.png"
+    ]
+  },
+  {
+    "id": "regen-0195-swordsmen-formation",
+    "prompt_key": "swordsmen-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 6,
+    "seed": 1872520388,
+    "files": [
+      "prototype\\unit-cards\\swordsmen-advance-02_00001_.png",
+      "prototype\\unit-cards\\swordsmen-advance-02_00002_.png",
+      "prototype\\unit-cards\\swordsmen-advance-02_00003_.png"
+    ]
+  },
+  {
+    "id": "regen-0196-unstoppable",
+    "prompt_key": "unstoppable",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 610195203,
+    "files": [
+      "prototype\\unit-cards\\giant-achish-02_00001_.png"
+    ]
+  }
+]

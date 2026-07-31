@@ -13,7 +13,7 @@
 **Activations:** 3
 
 Choose 1 adjacent allied unit.
-That unit gains +2 Attack and +1 Defense until your next turn.
+That unit gains +2 Attack and 1 Shield until start of your next turn.
 
 **Purpose:**
 Enhance a key unit's combat effectiveness.
@@ -25,7 +25,7 @@ Enhance a key unit's combat effectiveness.
 **Activations:** 2
 
 Choose 1 adjacent allied unit.
-That unit may activate immediately this turn (if not already activated).
+That unit may command immediately this turn (if not already commanded).
 
 **Purpose:**
 Extend the turn's activation through officer leadership.

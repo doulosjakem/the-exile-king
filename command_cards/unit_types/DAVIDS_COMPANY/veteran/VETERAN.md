@@ -26,9 +26,9 @@ Elite frontline fighters that chain kills.
 
 **Activations:** 2
 
-Veterans gain +2 Defense this turn.
+Veterans gain 2 Shield this turn.
 
-Adjacent allied units gain +1 Defense until your next turn.
+Adjacent allied units gain 1 Shield until start of your next turn.
 
 **Purpose:**
 Anchors the defensive line with elite resilience.
