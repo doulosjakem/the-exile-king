@@ -26,12 +26,15 @@ robocopy "%COMFYUI_OUTPUT%" "%GDRIVE_ARTOUTPUT%" /MIR /FFT /R:2 /W:5 ^
   /NJH /NJS /NP /LOG+:"%LOG%"
 echo [%date% %time%] Image sync done >> "%LOG%"
 
+REM -- Purge excluded dirs that /MIR+/_XD skips (top-level only) --
+if exist "%GDRIVE_ARTOUTPUT%\_archive_regeneration_round2" rmdir /s /q "%GDRIVE_ARTOUTPUT%\_archive_regeneration_round2"
+
 REM --- 2. Sync design docs to Google Drive ---
 echo [%date% %time%] Syncing docs to Google Drive (Projects/Games/Exile King/docs) >> "%LOG%"
 
 REM 2a. Root-level .md files (exclude non-doc dirs)
 robocopy "%WORKSPACE%" "%GDRIVE_DOCS%" *.md /S ^
-  /XD ".kilo" "command_cards" "Assets" "Packages" "ProjectSettings" "__pycache__" ".vs" "Library" "Temp" "Obj" "Build" "Builds" ^
+  /XD ".git" ".kilo" "command_cards" "Assets" "Packages" "ProjectSettings" "__pycache__" ".vs" "Library" "Temp" "Obj" "Build" "Builds" ^
   /NJH /NJS /NP /LOG+:"%LOG%"
 
 REM 2b. Command cards
