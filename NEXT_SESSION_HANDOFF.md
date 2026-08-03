@@ -5,11 +5,16 @@
 - Command card design finalized for 4 playable factions: David's Company, Jonathan's Followers, Achish's Host, Ekron's Host
 - Art generation pipeline built: `generation_queue.json`, `review_art_ollama.py`, `run_comfyui_generation.py`
 - Prompts defined in `PROMPTS.md`; prompt keys are stable (art assets can be generated without breaking references)
+- **Full art review completed**: 2,213 images reviewed via Ollama (2,138 KEEP, 75 TRASH, 0 errors) — results in `full_review.json`
+- **Low-scored images archived**: all 1,630 images scoring ≤3 moved to `_archive_regeneration_round2/`
+- **`prep_regen_batch.py` created**: generates `prep_regen_queue.json` (175 items, ~388 images) with exact counts per prefix
+- **`build_printable_prototype.py` completed**: generates print-and-play PDF from card `.md` files + ComfyUI art assets
+- **`build_printable_prototype.py` bugs fixed**: `smart_title` apostrophe handling, Shield Advance mapping, formation card name overwrite
 
 ## What's NOT Done
 - **Unity implementation has not started** (Sprint 3 is pending)
 - **No C# changes yet** — no hex grid, no activation system, no card resolver
-- **Printable prototype assets not generated** — card art, unit discs, and UI elements are queued but not rendered
+- **Printable prototype assets not fully generated** — `prep_regen_queue.json` is ready with 175 items / ~388 images; after the review round finishes and ComfyUI is launched, run the generation script
 - **Mechanical balance is unvalidated** — card designs are on paper; nothing has been playtested or implemented
 
 ## Where Things Stand

@@ -295,7 +295,7 @@ EXPECTED_PROMPTS = {
     "bronze-helm": "bronze age simple bronze helmet, rounded cap with nose guard, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
     "bronze-greaves": "bronze age bronze shin guards, simple pair, aged patina, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
     "leather-belt": "bronze age simple leather belt, worn brown leather, bronze buckle, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
-    "commander-aura-marker": "soft glowing circle on ground, commander presence area, warm golden light, board game UI element, transparent background, hand-painted illustration, NOT medieval, NOT fantasy, NOT European",
+    "commander-aura-marker": "small circular token shape, aged warm parchment color, dark brown ink border outline, flat medieval manuscript style, game UI element, hand-painted texture, isolated on transparent background, family friendly",
     "activation-token": "small wooden token shape, aged warm parchment color, dark ink border outline, flat board game token, game UI element, isolated on transparent background, family friendly",
     "lost-pile-marker": "small marker disk, aged parchment with dark X mark, board game token style, game UI element, isolated on transparent background, family friendly",
     "setup-sheet": "game setup reference sheet, aged parchment background, dark ink text boxes, checkmark list style, board game reference card, hand-painted texture, no background",
@@ -351,7 +351,7 @@ EXPECTED_PROMPTS = {
     "bronze-helm": "bronze age simple bronze helmet, rounded cap with nose guard, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
     "bronze-greaves": "bronze age bronze shin guards, simple pair, aged patina, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
     "leather-belt": "bronze age simple leather belt, worn brown leather, bronze buckle, isolated, hand-painted illustration, watercolor, transparent background, NOT medieval, NOT fantasy, NOT European",
-    "commander-aura-marker": "soft glowing circle on ground, commander presence area, warm golden light, board game UI element, transparent background, hand-painted illustration, NOT medieval, NOT fantasy, NOT European",
+    "commander-aura-marker": "small circular token shape, aged warm parchment color, dark brown ink border outline, flat medieval manuscript style, game UI element, hand-painted texture, isolated on transparent background, family friendly",
     "activation-token": "small wooden token shape, aged warm parchment color, dark ink border outline, flat board game token, game UI element, isolated on transparent background, family friendly",
     "lost-pile-marker": "small marker disk, aged parchment with dark X mark, board game token style, game UI element, isolated on transparent background, family friendly",
     "setup-sheet": "game setup reference sheet, aged parchment background, dark ink text boxes, checkmark list style, board game reference card, hand-painted texture, no background",
@@ -594,16 +594,16 @@ def lookup_expected_prompt(rel_path):
                     best_len = score
                     best_key = key
 
-    if not best_key:
+    if not best_key or best_key not in EXPECTED_PROMPTS:
         best_key = _prototype_lookup(folder, stem)
 
-    if not best_key:
+    if not best_key or best_key not in EXPECTED_PROMPTS:
         for alias, canonical in PROMPT_ALIASES.items():
             if alias in combined:
                 best_key = canonical
                 break
 
-    if best_key:
+    if best_key and best_key in EXPECTED_PROMPTS:
         return EXPECTED_PROMPTS[best_key], best_key
     return None, None
 

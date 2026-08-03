@@ -44,6 +44,12 @@ def find_file_on_disk(filename, base):
     """
     # Normalize: replace backslashes with OS separator
     relative_path = filename.replace("\\", os.sep)
+
+    # If the filename itself is already in the archive, skip it
+    first_part = relative_path.replace("\\", "/").split("/")[0]
+    if "_archive_regeneration" in first_part:
+        return None
+
     full_path = os.path.join(base, relative_path)
     if os.path.exists(full_path):
         return full_path

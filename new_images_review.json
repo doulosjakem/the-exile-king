@@ -1,0 +1,1483 @@
+{
+  "model": "llava-phi3:3.8b",
+  "timestamp": "2026-08-02 20:07:05",
+  "total_reviewed": 92,
+  "keep": 92,
+  "trash": 0,
+  "errors": 0,
+  "no_prompt_match": 0,
+  "images": [
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-01_00002_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-02_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-03_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-04_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-05_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-06_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-07_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-08_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-09_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\commander-cards\\philistine-lord-10_00001_00001_.png",
+      "expected_prompt_key": "card_front_philistine_lord",
+      "asset_type": "card",
+      "expected_prompt": "hand-painted regal portrait of the Philistine lord of Ekron, bronze age Levantine ruler, dark hair, embroidered tunic, bronze scale armor, purple cloak, bronze sword, authoritative expression, standing with regal bearing, Mediterranean complexion, aged parchment background, ink outlines with muted watercolor wash, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\elite-archer-jonathan-03_00001_00001_.png",
+      "expected_prompt_key": "elite_archer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's elite archer, bronze age Levantine archer, dark hair, white linen tunic with dark border, leather vest, brown cloak, composite bow drawn with arrow nocked, quiver on back, bronze short sword at hip, noble precise expression, standing with disciplined poise, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\elite-archer-jonathan-04_00001_00001_.png",
+      "expected_prompt_key": "elite_archer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's elite archer, bronze age Levantine archer, dark hair, white linen tunic with dark border, leather vest, brown cloak, composite bow drawn with arrow nocked, quiver on back, bronze short sword at hip, noble precise expression, standing with disciplined poise, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\elite-archer-jonathan-05_00001_00001_.png",
+      "expected_prompt_key": "elite_archer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's elite archer, bronze age Levantine archer, dark hair, white linen tunic with dark border, leather vest, brown cloak, composite bow drawn with arrow nocked, quiver on back, bronze short sword at hip, noble precise expression, standing with disciplined poise, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\giant-achish-04_00001_00001_.png",
+      "expected_prompt_key": "giant_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine giant warrior from Gath, bronze age Levantine giant, enormous build, dark hair and beard, worn leather tunic, bronze scales on shoulders, small shield, massive bronze-tipped spear, fierce expression, towering menacing figure, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\giant-achish-05_00001_00001_.png",
+      "expected_prompt_key": "giant_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine giant warrior from Gath, bronze age Levantine giant, enormous build, dark hair and beard, worn leather tunic, bronze scales on shoulders, small shield, massive bronze-tipped spear, fierce expression, towering menacing figure, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\loyal-guard-jonathan-02_00001_00001_.png",
+      "expected_prompt_key": "loyal_guard_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's loyal guard, bronze age Levantine elite infantryman, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, loyal protective expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\loyal-guard-jonathan-03_00001_00001_.png",
+      "expected_prompt_key": "loyal_guard_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's loyal guard, bronze age Levantine elite infantryman, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, loyal protective expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\loyal-guard-jonathan-04_00001_00001_.png",
+      "expected_prompt_key": "loyal_guard_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's loyal guard, bronze age Levantine elite infantryman, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, loyal protective expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\loyal-guard-jonathan-05_00001_00001_.png",
+      "expected_prompt_key": "loyal_guard_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's loyal guard, bronze age Levantine elite infantryman, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, loyal protective expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\scout-david-03_00001_00001_.png",
+      "expected_prompt_key": "scout_david",
+      "asset_type": "generic",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's scout, bronze age Levantine tracker and skirmisher, lean shepherd-skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, sandals, sling at belt, short spear, small hide shield on back, knife at waist, alert watchful expression, standing lightly on rocky Judean hillside, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\scout-david-04_00001_00001_.png",
+      "expected_prompt_key": "scout_david",
+      "asset_type": "generic",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's scout, bronze age Levantine tracker and skirmisher, lean shepherd-skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, sandals, sling at belt, short spear, small hide shield on back, knife at waist, alert watchful expression, standing lightly on rocky Judean hillside, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\scout-david-05_00001_00001_.png",
+      "expected_prompt_key": "scout_david",
+      "asset_type": "generic",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's scout, bronze age Levantine tracker and skirmisher, lean shepherd-skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, sandals, sling at belt, short spear, small hide shield on back, knife at waist, alert watchful expression, standing lightly on rocky Judean hillside, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-achish-01_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-achish-02_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-achish-03_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-achish-04_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-achish-05_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-david-03_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's shield bearer, bronze age Levantine heavy infantry, dark hair, linen tunic with leather armor, brown cloak, large round hide shield with bronze rim, bronze short sword, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-david-04_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's shield bearer, bronze age Levantine heavy infantry, dark hair, linen tunic with leather armor, brown cloak, large round hide shield with bronze rim, bronze short sword, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-david-05_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's shield bearer, bronze age Levantine heavy infantry, dark hair, linen tunic with leather armor, brown cloak, large round hide shield with bronze rim, bronze short sword, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-ekron-01_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-ekron-02_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-ekron-03_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-ekron-04_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-ekron-05_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-jonathan-01_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-jonathan-02_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-jonathan-03_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-jonathan-04_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\shield-bearer-jonathan-05_00001_00001_.png",
+      "expected_prompt_key": "shield_bearer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-david-03_00001_00001_.png",
+      "expected_prompt_key": "slinger_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's slinger, bronze age Levantine Israelite skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch at belt, pouch of smooth stones at hip, small knife, crouched lightly ready to pivot and throw, alert watchful expression, standing on rocky slope, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-david-04_00001_00001_.png",
+      "expected_prompt_key": "slinger_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's slinger, bronze age Levantine Israelite skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch at belt, pouch of smooth stones at hip, small knife, crouched lightly ready to pivot and throw, alert watchful expression, standing on rocky slope, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-david-05_00001_00001_.png",
+      "expected_prompt_key": "slinger_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's slinger, bronze age Levantine Israelite skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch at belt, pouch of smooth stones at hip, small knife, crouched lightly ready to pivot and throw, alert watchful expression, standing on rocky slope, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-ekron-01_00001_00001_.png",
+      "expected_prompt_key": "slinger_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-ekron-02_00001_00001_.png",
+      "expected_prompt_key": "slinger_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-ekron-03_00001_00001_.png",
+      "expected_prompt_key": "slinger_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-ekron-04_00001_00001_.png",
+      "expected_prompt_key": "slinger_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\slinger-ekron-05_00001_00001_.png",
+      "expected_prompt_key": "slinger_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-achish-01_00001_00001_.png",
+      "expected_prompt_key": "spearman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine spearman of Gath, bronze age Levantine warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on rocky ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-achish-02_00001_00001_.png",
+      "expected_prompt_key": "spearman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine spearman of Gath, bronze age Levantine warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on rocky ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-achish-03_00001_00001_.png",
+      "expected_prompt_key": "spearman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine spearman of Gath, bronze age Levantine warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on rocky ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-achish-04_00001_00001_.png",
+      "expected_prompt_key": "spearman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine spearman of Gath, bronze age Levantine warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on rocky ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-achish-05_00001_00001_.png",
+      "expected_prompt_key": "spearman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine spearman of Gath, bronze age Levantine warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on rocky ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-david-04_00001_00001_.png",
+      "expected_prompt_key": "spearman_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's spearman, bronze age Levantine Israelite warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on hillside overlooking wilderness valleys, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-david-05_00001_00001_.png",
+      "expected_prompt_key": "spearman_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's spearman, bronze age Levantine Israelite warrior, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, long wooden spear with bronze tip held in both hands, small hide shield slung across back, knife at waist, sandals, focused expression, standing on hillside overlooking wilderness valleys, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-ekron-01_00001_00001_.png",
+      "expected_prompt_key": "spearman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-ekron-02_00001_00001_.png",
+      "expected_prompt_key": "spearman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-ekron-03_00001_00001_.png",
+      "expected_prompt_key": "spearman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-ekron-04_00001_00001_.png",
+      "expected_prompt_key": "spearman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-ekron-05_00001_00001_.png",
+      "expected_prompt_key": "spearman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-jonathan-01_00001_00001_.png",
+      "expected_prompt_key": "spearman_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-jonathan-02_00001_00001_.png",
+      "expected_prompt_key": "spearman_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-jonathan-03_00001_00001_.png",
+      "expected_prompt_key": "spearman_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-jonathan-04_00001_00001_.png",
+      "expected_prompt_key": "spearman_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\spearman-jonathan-05_00001_00001_.png",
+      "expected_prompt_key": "spearman_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-achish-01_00001_00001_.png",
+      "expected_prompt_key": "swordsman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-achish-02_00001_00001_.png",
+      "expected_prompt_key": "swordsman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-achish-03_00001_00001_.png",
+      "expected_prompt_key": "swordsman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-achish-04_00001_00001_.png",
+      "expected_prompt_key": "swordsman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-achish-05_00001_00001_.png",
+      "expected_prompt_key": "swordsman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-ekron-01_00001_00001_.png",
+      "expected_prompt_key": "swordsman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-ekron-02_00001_00001_.png",
+      "expected_prompt_key": "swordsman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-ekron-03_00001_00001_.png",
+      "expected_prompt_key": "swordsman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-ekron-04_00001_00001_.png",
+      "expected_prompt_key": "swordsman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsman-ekron-05_00001_00001_.png",
+      "expected_prompt_key": "swordsman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsmen-advance-03_00001_00001_.png",
+      "expected_prompt_key": "swordsmen-advance",
+      "asset_type": "card",
+      "expected_prompt": "scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen advancing in formation, bronze short swords raised, hide shields overlapping, dust at their heels, linen tunics and leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsmen-advance-04_00001_00001_.png",
+      "expected_prompt_key": "swordsmen-advance",
+      "asset_type": "card",
+      "expected_prompt": "scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen advancing in formation, bronze short swords raised, hide shields overlapping, dust at their heels, linen tunics and leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-cards\\swordsmen-advance-05_00001_00001_.png",
+      "expected_prompt_key": "swordsmen-advance",
+      "asset_type": "card",
+      "expected_prompt": "scene in illuminated manuscript style, bronze age Levantine Israelite swordsmen advancing in formation, bronze short swords raised, hide shields overlapping, dust at their heels, linen tunics and leather vests, determined expressions, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\archer-achish_00002_00001_.png",
+      "expected_prompt_key": "archer_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine archer of Ekron, bronze age Levantine archer, dark hair, linen tunic with leather vest, short composite bow in hand with arrow nocked, quiver on back, knife at waist, focused expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\archer-jonathan_00002_00001_.png",
+      "expected_prompt_key": "archer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's archer, bronze age Levantine archer, dark hair, simple linen tunic with leather vest, brown cloak, short composite bow drawn with arrow nocked, quiver of arrows slung across back, knife at waist, sandals, drawing bow with focused precision, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\giant_00002_00001_.png",
+      "expected_prompt_key": "giant_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine giant warrior from Gath, bronze age Levantine giant, enormous build, dark hair and beard, worn leather tunic, bronze scales on shoulders, small shield, massive bronze-tipped spear, fierce expression, towering menacing figure, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\scout-david_00002_00001_.png",
+      "expected_prompt_key": "scout_david",
+      "asset_type": "generic",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's scout, bronze age Levantine tracker and skirmisher, lean shepherd-skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, sandals, sling at belt, short spear, small hide shield on back, knife at waist, alert watchful expression, standing lightly on rocky Judean hillside, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\shield-bearer-achish_00002_00001_.png",
+      "expected_prompt_key": "shield_bearer_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with bronze scale armor, brown cloak, large rectangular hide shield with bronze rim, long spear, bronze helmet, imposing defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\shield-bearer-david_00002_00001_.png",
+      "expected_prompt_key": "shield_bearer_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's shield bearer, bronze age Levantine heavy infantry, dark hair, linen tunic with leather armor, brown cloak, large round hide shield with bronze rim, bronze short sword, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\shield-bearer-ekron_00002_00001_.png",
+      "expected_prompt_key": "shield_bearer_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron shield bearer, bronze age Levantine heavy infantryman, dark hair, linen tunic with leather shoulder armor, brown cloak, round hide shield held high, bronze short sword, disciplined defensive stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\shield-bearer-jonathan_00002_00001_.png",
+      "expected_prompt_key": "shield_bearer_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's shield bearer, bronze age Levantine warrior, dark hair, white linen tunic with dark border, leather vest, brown cloak, large round hide shield held high, bronze sword at hip, protective stance, determined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\slinger-ekron_00002_00001_.png",
+      "expected_prompt_key": "slinger_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron slinger, bronze age Levantine skirmisher, dark hair, simple linen tunic with leather vest, worn brown cloak, leather sling in hand with pouch of stones at hip, pouch of smooth stones at waist, small knife, alert predatory expression, standing on coastal sand, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\spearman-jonathan_00002_00001_.png",
+      "expected_prompt_key": "spearman_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's spearman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather shoulder guards, brown cloak wrapped, long wooden spear with bronze tip held upright, small hide shield at side, knife at waist, alert disciplined expression, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\swordsman-achish_00002_00001_.png",
+      "expected_prompt_key": "swordsman_achish",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Philistine swordsman of Gath, bronze age Levantine infantry, dark hair, linen tunic with leather vest, brown wool cloak, bronze short sword with leaf-shaped blade in hand, small round hide shield on arm, leather wrapped grip, alert expression, standing ready, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\swordsman-david_00002_00001_.png",
+      "expected_prompt_key": "swordsman_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's swordsman, bronze age Levantine Israelite warrior, dark hair and short beard, simple linen tunic with layered leather vest, worn brown wool cloak pinned at shoulder, bronze short sword with leaf-shaped blade in hand, small round hide-covered shield on arm, leather wrapped grip, sandals, alert expression, standing on rocky Judean ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\swordsman-ekron_00002_00001_.png",
+      "expected_prompt_key": "swordsman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron swordsman, bronze age Levantine infantry, dark hair, linen tunic with leather shoulder piece, brown cloak tied at neck, bronze short sword in hand, small hide shield on arm, determined expression, standing on coastal ground, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "prototype\\unit-discs\\swordsman-jonathan_00002_00001_.png",
+      "expected_prompt_key": "swordsman_jonathan",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Jonathan's swordsman guard, bronze age Levantine elite infantry, dark hair, white linen tunic with leather vest, brown cloak, bronze short sword raised, small hide shield, disciplined attack stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    }
+  ]
+}

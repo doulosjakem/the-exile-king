@@ -32,7 +32,7 @@ EQUIPMENT_NEGATIVE_EXTRA = "person, people, human, hands, fingers, body, figure,
 TILE_POSITIVE_SUFFIX = ", top-down flat seamless hex tile texture, parchment texture overlay, watercolor ink wash style, muted earth tones, no grid lines, no borders, no text, board game style, family friendly, NOT medieval, NOT fantasy, NOT European"
 TILE_NEGATIVE_EXTRA = "grid lines, borders, text, logo, modern, perspective, 3d, shadow, person, people, human, building, structure, creature, animal"
 
-UI_POSITIVE_SUFFIX = ", flat vector-like UI element, clean vector art style, simple shape, centered, no text, no background, family friendly, NOT medieval, NOT fantasy, NOT European"
+UI_POSITIVE_SUFFIX = ", flat medieval manuscript style, game UI element, hand-painted texture, isolated on transparent background, family friendly"
 UI_NEGATIVE_EXTRA = "hand-painted, watercolor, aged parchment, aged paper, ink wash, textured paper, background, scene, person, people, human, text, logo"
 
 CARD_POSITIVE_SUFFIX = ", scene in illuminated manuscript style, aged parchment background, ink outlines with muted watercolor wash, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European"
@@ -73,7 +73,7 @@ def classify_asset_type(item):
     return "character"
 
 
-def build_workflow(item, seed):
+def build_workflow(item, seed, batch_size=1):
     prompt_key = item["prompt_key"]
     asset_type = classify_asset_type(item)
     
@@ -99,6 +99,8 @@ def build_workflow(item, seed):
         negative_parts.append(TILE_NEGATIVE_EXTRA)
     elif asset_type == "ui":
         negative_parts.append(UI_NEGATIVE_EXTRA)
+    elif asset_type == "card":
+        negative_parts.append(CARD_NEGATIVE_EXTRA)
     elif asset_type == "card":
         negative_parts.append(CARD_NEGATIVE_EXTRA)
     negative = ", ".join(negative_parts)
@@ -136,7 +138,7 @@ def build_workflow(item, seed):
             "inputs": {
                 "width": width,
                 "height": height,
-                "batch_size": 1
+                "batch_size": batch_size
             }
         },
         "6": {
@@ -183,6 +185,8 @@ def submit_workflow(workflow):
     try:
         with urllib.request.urlopen(req, timeout=300) as resp:
             result = json.loads(resp.read().decode("utf-8"))
+            if "error" in result:
+                print(f"\n  ComfyUI API error: {result['error']}")
             return result.get("prompt_id")
     except Exception as e:
         print(f"\n  submit_workflow ERROR: {e}")
@@ -224,15 +228,22 @@ def move_outputs(item, manifest_entry):
     dest_dir = os.path.join(OUTPUT_BASE, subfolder)
     os.makedirs(dest_dir, exist_ok=True)
 
+    comfy_output = os.path.join(OUTPUT_BASE, "..", "..")
     comfy_output = os.path.join(COMFYUI_DIR, "output")
     files = sorted([f for f in os.listdir(comfy_output) if f.startswith(prefix)])
     moved = []
     for f in files:
         src = os.path.join(comfy_output, f)
         dest = os.path.join(dest_dir, f)
-        if not os.path.exists(dest):
-            shutil.move(src, dest)
-            moved.append(os.path.relpath(dest, OUTPUT_BASE))
+        if os.path.exists(dest):
+            existing = set(os.listdir(dest_dir))
+            base_name = f.rsplit("_", 1)[0]
+            idx = 1
+            while f"{base_name}_{idx:05d}_.png" in existing:
+                idx += 1
+            dest = os.path.join(dest_dir, f"{base_name}_{idx:05d}_.png")
+        shutil.move(src, dest)
+        moved.append(os.path.relpath(dest, OUTPUT_BASE))
     return moved
 
 
@@ -249,7 +260,13 @@ def interrupt_comfyui():
 def clear_comfyui_queue():
     """Try to clear the pending queue in ComfyUI."""
     try:
-        req = urllib.request.Request("http://127.0.0.1:8188/queue", method="DELETE")
+        payload = json.dumps({"clear": True}).encode("utf-8")
+        req = urllib.request.Request(
+            "http://127.0.0.1:8188/queue",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
         urllib.request.urlopen(req, timeout=5)
         return True
     except Exception:
@@ -257,10 +274,16 @@ def clear_comfyui_queue():
 
 
 def restart_comfyui():
-    """Restart ComfyUI by stopping and starting it again."""
-    global _comfyui_proc
+    """Restart ComfyUI by stopping and starting it again.
+    Only restarts if the script started ComfyUI. If ComfyUI was already
+    running (user started it), just interrupt the stuck prompt."""
+    global _comfyui_proc, _comfyui_managed
+    if not _comfyui_managed:
+        interrupt_comfyui()
+        clear_comfyui_queue()
+        time.sleep(3)
+        return True
     try:
-        # Stop current ComfyUI
         stop_comfyui()
         time.sleep(2)
         if _comfyui_proc and _comfyui_proc.poll() is None:
@@ -269,14 +292,15 @@ def restart_comfyui():
     except Exception:
         pass
     time.sleep(2)
-    # Start new ComfyUI
     _comfyui_proc = start_comfyui()
     if wait_for_comfyui(timeout=180):
         print("  ComfyUI restarted successfully")
         return True
+    _comfyui_managed = False
     return False
 
 
+_comfyui_managed = False
 _comfyui_proc = None
 
 
@@ -294,26 +318,73 @@ def generate_one_image(item, seed, max_retries=2):
             if attempt < max_retries:
                 print(f"  Interrupting prompt and retrying (attempt {attempt + 1}/{max_retries})...")
                 interrupt_comfyui()
-                time.sleep(5)
                 clear_comfyui_queue()
+                time.sleep(5)
                 continue
             else:
-                print(f"  Max retries reached, restarting ComfyUI for next item...")
+                print(f"  Max retries reached for seed {seed}, skipping to next image...")
                 interrupt_comfyui()
                 time.sleep(2)
-                restart_comfyui()
                 return []
         except Exception as e:
-            # submit_workflow etc. failed - restart ComfyUI
+            # submit_workflow etc. failed - retry without restarting
             print(f"\n  FAILED seed {seed}: {e}")
             if attempt < max_retries:
-                print(f"  Restarting ComfyUI and retrying (attempt {attempt + 1}/{max_retries})...")
-                restart_comfyui()
+                print(f"  Retrying (attempt {attempt + 1}/{max_retries})...")
+                if not _comfyui_managed:
+                    interrupt_comfyui()
+                    clear_comfyui_queue()
+                else:
+                    restart_comfyui()
                 time.sleep(5)
                 continue
             else:
-                print(f"  Max retries reached, restarting ComfyUI for next item...")
-                restart_comfyui()
+                print(f"  Max retries reached for seed {seed}, skipping to next image...")
+                return []
+    return []
+
+
+def generate_batch(item, count, base_seed, max_retries=2):
+    """Generate multiple images for one item in a single workflow batch."""
+    for attempt in range(max_retries + 1):
+        try:
+            workflow = build_workflow(item, base_seed, batch_size=count)
+            prompt_id = submit_workflow(workflow)
+            wait_for_prompt(prompt_id)
+            moved = move_outputs(item, {})
+            if len(moved) < count and attempt < max_retries:
+                print(f"\n  Got {len(moved)} files, expected {count}. Retrying...")
+                interrupt_comfyui()
+                clear_comfyui_queue()
+                time.sleep(5)
+                continue
+            return moved
+        except RuntimeError as e:
+            print(f"\n  FAILED batch seed {base_seed}: {e}")
+            if attempt < max_retries:
+                print(f"  Interrupting prompt and retrying (attempt {attempt + 1}/{max_retries})...")
+                interrupt_comfyui()
+                clear_comfyui_queue()
+                time.sleep(5)
+                continue
+            else:
+                print(f"  Max retries reached for seed {base_seed}, skipping...")
+                interrupt_comfyui()
+                time.sleep(2)
+                return []
+        except Exception as e:
+            print(f"\n  FAILED batch seed {base_seed}: {e}")
+            if attempt < max_retries:
+                print(f"  Retrying (attempt {attempt + 1}/{max_retries})...")
+                if not _comfyui_managed:
+                    interrupt_comfyui()
+                    clear_comfyui_queue()
+                else:
+                    restart_comfyui()
+                time.sleep(5)
+                continue
+            else:
+                print(f"  Max retries reached for seed {base_seed}, skipping...")
                 return []
     return []
 
@@ -363,9 +434,20 @@ def update_cycle_progress(item_id, idx, total_items, count, moved_count, status=
                 print(f"Warning: could not update CYCLE_PROGRESS.md after 3 attempts: {e}")
 
 
+def is_comfyui_running():
+    try:
+        req = urllib.request.Request("http://127.0.0.1:8188/system_stats", method="GET")
+        urllib.request.urlopen(req, timeout=5)
+        return True
+    except Exception:
+        return False
+
+
 def start_comfyui():
-    cmd = [COMFYUI_PYTHON, "-s", "ComfyUI\\main.py", "--lowvram", "--windows-standalone-build"]
-    proc = subprocess.Popen(cmd, cwd=COMFYUI_ROOT, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    cmd = [COMFYUI_PYTHON, "-s", "ComfyUI/main.py", "--lowvram", "--windows-standalone-build", "--disable-auto-launch", "--port", "8188"]
+    log_file = os.path.join(COMFYUI_ROOT, "comfyui_generation.log")
+    log_handle = open(log_file, "w", encoding="utf-8", buffering=1)
+    proc = subprocess.Popen(cmd, cwd=COMFYUI_ROOT, stdout=log_handle, stderr=subprocess.STDOUT)
     return proc
 
 
@@ -379,6 +461,18 @@ def wait_for_comfyui(timeout=120):
         except Exception:
             pass
         time.sleep(2)
+    # If we get here, print the log tail to help diagnose
+    log_file = os.path.join(COMFYUI_ROOT, "comfyui_generation.log")
+    if os.path.isfile(log_file):
+        print("--- ComfyUI log tail (last 20 lines) ---")
+        try:
+            with open(log_file, "r", encoding="utf-8") as f:
+                lines = f.readlines()
+                for line in lines[-20:]:
+                    print(line.rstrip())
+        except Exception:
+            pass
+        print("--- End log tail ---")
     return False
 
 
@@ -418,15 +512,21 @@ def main():
     print(f"Output base: {OUTPUT_BASE}")
     print(f"---")
 
+    global _comfyui_proc, _comfyui_managed
+
     if not args.no_launch:
-        print("Starting ComfyUI...")
-        global _comfyui_proc
-        _comfyui_proc = start_comfyui()
-        if not wait_for_comfyui():
-            print("ERROR: ComfyUI did not start")
-            _comfyui_proc.terminate()
-            return 1
-        print("ComfyUI ready")
+        if is_comfyui_running():
+            print("ComfyUI is already running on port 8188, using existing instance")
+            _comfyui_managed = False
+        else:
+            print("Starting ComfyUI...")
+            _comfyui_proc = start_comfyui()
+            if not wait_for_comfyui():
+                print("ERROR: ComfyUI did not start")
+                _comfyui_proc.terminate()
+                return 1
+            _comfyui_managed = True
+            print("ComfyUI ready")
 
     manifest = []
     total_items = len(queue)
@@ -441,20 +541,36 @@ def main():
             item_id = item.get("id", f"item-{idx}")
             display_idx = start_index + idx + 1
             count = item.get("count", 1)
+            subfolder = item.get("output_subfolder", "")
+            prefix = item.get("filename_prefix", "ComfyUI")
+            dest_dir = os.path.join(OUTPUT_BASE, subfolder)
+            existing = 0
+            if os.path.isdir(dest_dir):
+                existing = len([f for f in os.listdir(dest_dir) if f.startswith(prefix)])
             base_seed = hash(item_id + str(time.time())) % (2**31)
-            print(f"[{display_idx}/{total_items + start_index}] {item_id} ({count} images) ... ", end="", flush=True)
-            moved_all = []
-            for i in range(count):
-                seed = base_seed + i
-                moved = generate_one_image(item, seed)
-                moved_all.extend(moved)
-                update_cycle_progress(item_id, display_idx, total_items + start_index, count, len(moved_all), status="generating", seed=base_seed)
-                for rel_path in moved:
-                    try:
-                        src_path = os.path.join(OUTPUT_BASE, rel_path)
-                        upload_to_google_drive(src_path, rel_path)
-                    except Exception as e:
-                        print(f"\n  GD upload warning: {e}")
+            if existing >= count:
+                existing_files = sorted([os.path.relpath(os.path.join(dest_dir, f), OUTPUT_BASE) for f in os.listdir(dest_dir) if f.startswith(prefix)]) if os.path.isdir(dest_dir) else []
+                print(f"[{display_idx}/{total_items + start_index}] {item_id} ({count} images) ... SKIPPED ({existing} existing)")
+                manifest.append({
+                    "id": item_id,
+                    "prompt_key": item.get("prompt_key"),
+                    "output_subfolder": item.get("output_subfolder"),
+                    "count": count,
+                    "seed": base_seed,
+                    "files": existing_files
+                })
+                continue
+            needed = count - existing
+            print(f"[{display_idx}/{total_items + start_index}] {item_id} ({count} images, {needed} new) ... ", end="", flush=True)
+            seed = base_seed
+            moved_all = generate_batch(item, needed, seed)
+            update_cycle_progress(item_id, display_idx, total_items + start_index, count, len(moved_all), status="generating", seed=base_seed)
+            for rel_path in moved_all:
+                try:
+                    src_path = os.path.join(OUTPUT_BASE, rel_path)
+                    upload_to_google_drive(src_path, rel_path)
+                except Exception as e:
+                    print(f"\n  GD upload warning: {e}")
             print(f"done ({len(moved_all)} files)")
             total_generated += len(moved_all)
             update_cycle_progress(item_id, display_idx, total_items + start_index, count, count, status="complete", seed=base_seed)
@@ -480,18 +596,17 @@ def main():
                 if existing < count:
                     needed = count - existing
                     print(f"Fill-missing: {item_id} needs {needed} more images")
-                    for i in range(needed):
-                        fill_seed = (int(time.time() * 1000) + i) % (2**31)
-                        moved = generate_one_image(item, fill_seed)
-                        if moved:
-                            fill_missing_count += len(moved)
-                            total_generated += len(moved)
-                            for rel_path in moved:
-                                try:
-                                    src_path = os.path.join(OUTPUT_BASE, rel_path)
-                                    upload_to_google_drive(src_path, rel_path)
-                                except Exception as e:
-                                    print(f"\n  GD upload warning: {e}")
+                    fill_seed = int(time.time() * 1000) % (2**31)
+                    moved = generate_batch(item, needed, fill_seed)
+                    if moved:
+                        fill_missing_count += len(moved)
+                        total_generated += len(moved)
+                        for rel_path in moved:
+                            try:
+                                src_path = os.path.join(OUTPUT_BASE, rel_path)
+                                upload_to_google_drive(src_path, rel_path)
+                            except Exception as e:
+                                print(f"\n  GD upload warning: {e}")
                     for entry in manifest:
                         if entry["id"] == item_id:
                             current_files = set(entry.get("files", []))
@@ -501,8 +616,11 @@ def main():
                             break
     finally:
         if not args.no_shutdown:
-            print("Shutting down ComfyUI...")
-            stop_comfyui()
+            if _comfyui_managed:
+                print("Shutting down ComfyUI...")
+                stop_comfyui()
+            else:
+                print("Leaving ComfyUI running (was started externally)")
 
     with open(args.manifest, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)

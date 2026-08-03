@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "filename": "unit-discs\\spearman-ekron_00001_00001_.png",
+      "expected_prompt_key": "spearman_ekron",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, Ekron spearman, bronze age Levantine warrior, dark hair, linen tunic with leather armor, brown cloak, long wooden spear with bronze tip held taut, small hide shield, steady formation stance, Mediterranean complexion, hand-painted historical illustration, watercolor and ink on aged parchment, board game card art, centered composition, family friendly, NOT medieval, NOT fantasy, NOT European",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    }
+  ],
+  "timestamp": "2026-08-02 14:37:39"
+}
