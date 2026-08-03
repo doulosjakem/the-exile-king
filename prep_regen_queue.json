@@ -1,5 +1,49 @@
 [
   {
+    "id": "unit-disc-david",
+    "prompt_key": "david_commander",
+    "count": 3,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 512,
+    "output_subfolder": "prototype/unit-discs",
+    "filename_prefix": "david"
+  },
+  {
+    "id": "unit-disc-jonathan",
+    "prompt_key": "jonathan_commander",
+    "count": 3,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 512,
+    "output_subfolder": "prototype/unit-discs",
+    "filename_prefix": "jonathan"
+  },
+  {
+    "id": "unit-disc-achish",
+    "prompt_key": "achish_commander",
+    "count": 3,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 512,
+    "output_subfolder": "prototype/unit-discs",
+    "filename_prefix": "achish"
+  },
+  {
+    "id": "unit-disc-philistine-lord",
+    "prompt_key": "philistine_lord_commander",
+    "count": 3,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 512,
+    "output_subfolder": "prototype/unit-discs",
+    "filename_prefix": "philistine-lord"
+  },
+  {
     "id": "unit-disc-swordsman-david",
     "prompt_key": "swordsman_david",
     "count": 3,
@@ -1837,6 +1881,17 @@
     "filename_prefix": "bow"
   },
   {
+    "id": "equipment-sword-sheath",
+    "prompt_key": "sword-sheath",
+    "count": 1,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 512,
+    "output_subfolder": "prototype/equipment",
+    "filename_prefix": "sword-sheath"
+  },
+  {
     "id": "equipment-quiver",
     "prompt_key": "quiver",
     "count": 1,
@@ -1868,16 +1923,5 @@
     "height": 512,
     "output_subfolder": "prototype/equipment",
     "filename_prefix": "leather-belt"
-  },
-  {
-    "id": "ui-commander-aura-marker",
-    "prompt_key": "commander-aura-marker",
-    "count": 1,
-    "steps": 4,
-    "cfg": 3,
-    "width": 512,
-    "height": 512,
-    "output_subfolder": "prototype/ui",
-    "filename_prefix": "commander-aura-marker"
   }
 ]
