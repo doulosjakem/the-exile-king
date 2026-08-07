@@ -1,8 +1,8 @@
 {
   "model": "llava-phi3:3.8b",
-  "timestamp": "2026-08-03 14:31:28",
-  "total_reviewed": 3528,
-  "keep": 3427,
+  "timestamp": "2026-08-03 19:15:40",
+  "total_reviewed": 3529,
+  "keep": 3428,
   "trash": 101,
   "errors": 0,
   "no_prompt_match": 555,
@@ -58090,6 +58090,26 @@
         "NO"
       ],
       "raw_response": "1. Yes\n2. No\n3. No\n4. No"
+    },
+    {
+      "filename": "unit-discs/slinger-david_00003_.png",
+      "expected_prompt_key": "slinger_david",
+      "asset_type": "character",
+      "expected_prompt": "ONE PERSON ONLY, solo portrait, waist-up, David's slinger, bronze age Levantine Israelite skirmisher",
+      "decision": "KEEP",
+      "score": 3,
+      "reason": "does not match expected prompt",
+      "answers": [
+        "YES",
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "raw_response": "1. Yes\n2. No\n3. No\n4. No",
+      "old_score": 0,
+      "old_decision": "UNREVIEWED",
+      "review_model": "llava-phi3:3.8b",
+      "timestamp": "2026-08-03 19:20:14"
     }
   ]
 }

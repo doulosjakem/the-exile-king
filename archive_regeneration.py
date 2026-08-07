@@ -75,7 +75,7 @@ def main():
     args = parse_args()
     
     data = load_review()
-    low_images = [img for img in data['images'] if img['score'] <= 3]
+    low_images = [img for img in data['images'] if img.get('decision') == 'TRASH']
     
     print(f"Found {len(low_images)} low-scored images in review file")
     print(f"  Score 1: {len([x for x in low_images if x['score'] == 1])}")

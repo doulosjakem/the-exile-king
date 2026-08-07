@@ -1,1 +1,1984 @@
-[]
+[
+  {
+    "id": "unit-disc-david",
+    "prompt_key": "david_commander",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1019698762,
+    "files": [
+      "prototype\\unit-discs\\david_00001_.png",
+      "prototype\\unit-discs\\david_00002_.png",
+      "prototype\\unit-discs\\david_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-jonathan",
+    "prompt_key": "jonathan_commander",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 881843430,
+    "files": [
+      "prototype\\unit-discs\\jonathan_00001_.png",
+      "prototype\\unit-discs\\jonathan_00002_.png",
+      "prototype\\unit-discs\\jonathan_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-achish",
+    "prompt_key": "achish_commander",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 2000786018,
+    "files": [
+      "prototype\\unit-discs\\achish_00001_.png",
+      "prototype\\unit-discs\\achish_00002_.png",
+      "prototype\\unit-discs\\achish_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-philistine-lord",
+    "prompt_key": "philistine_lord_commander",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 431347357,
+    "files": [
+      "prototype\\unit-discs\\philistine-lord_00001_.png",
+      "prototype\\unit-discs\\philistine-lord_00002_.png",
+      "prototype\\unit-discs\\philistine-lord_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-swordsman-david",
+    "prompt_key": "swordsman_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 868876286,
+    "files": [
+      "prototype\\unit-discs\\swordsman-david_00001_.png",
+      "prototype\\unit-discs\\swordsman-david_00002_.png",
+      "prototype\\unit-discs\\swordsman-david_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-swordsman-jonathan",
+    "prompt_key": "swordsman_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 2012315390,
+    "files": [
+      "prototype\\unit-discs\\swordsman-jonathan_00001_.png",
+      "prototype\\unit-discs\\swordsman-jonathan_00002_.png",
+      "prototype\\unit-discs\\swordsman-jonathan_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-swordsman-achish",
+    "prompt_key": "swordsman_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 2041508307,
+    "files": [
+      "prototype\\unit-discs\\swordsman-achish_00001_.png",
+      "prototype\\unit-discs\\swordsman-achish_00002_.png",
+      "prototype\\unit-discs\\swordsman-achish_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-swordsman-ekron",
+    "prompt_key": "swordsman_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 118840203,
+    "files": [
+      "prototype\\unit-discs\\swordsman-ekron_00001_.png",
+      "prototype\\unit-discs\\swordsman-ekron_00002_.png",
+      "prototype\\unit-discs\\swordsman-ekron_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-spearman-david",
+    "prompt_key": "spearman_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1988587382,
+    "files": [
+      "prototype\\unit-discs\\spearman-david_00001_.png",
+      "prototype\\unit-discs\\spearman-david_00002_.png",
+      "prototype\\unit-discs\\spearman-david_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-spearman-jonathan",
+    "prompt_key": "spearman_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 353636975,
+    "files": [
+      "prototype\\unit-discs\\spearman-jonathan_00001_.png",
+      "prototype\\unit-discs\\spearman-jonathan_00002_.png",
+      "prototype\\unit-discs\\spearman-jonathan_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-spearman-achish",
+    "prompt_key": "spearman_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1048584029,
+    "files": [
+      "prototype\\unit-discs\\spearman-achish_00001_.png",
+      "prototype\\unit-discs\\spearman-achish_00002_.png",
+      "prototype\\unit-discs\\spearman-achish_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-spearman-ekron",
+    "prompt_key": "spearman_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 153146122,
+    "files": [
+      "prototype\\unit-discs\\spearman-ekron_00001_.png",
+      "prototype\\unit-discs\\spearman-ekron_00002_.png",
+      "prototype\\unit-discs\\spearman-ekron_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-slinger-david",
+    "prompt_key": "slinger_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1642085487,
+    "files": [
+      "prototype\\unit-discs\\slinger-david_00001_.png",
+      "prototype\\unit-discs\\slinger-david_00002_.png",
+      "prototype\\unit-discs\\slinger-david_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-slinger-ekron",
+    "prompt_key": "slinger_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 2083473269,
+    "files": [
+      "prototype\\unit-discs\\slinger-ekron_00001_.png",
+      "prototype\\unit-discs\\slinger-ekron_00002_.png",
+      "prototype\\unit-discs\\slinger-ekron_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-scout-david",
+    "prompt_key": "scout_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 69810701,
+    "files": [
+      "prototype\\unit-discs\\scout-david_00001_.png",
+      "prototype\\unit-discs\\scout-david_00002_.png",
+      "prototype\\unit-discs\\scout-david_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-shield-bearer-david",
+    "prompt_key": "shield_bearer_david",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 100571067,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-david_00001_.png",
+      "prototype\\unit-discs\\shield-bearer-david_00002_.png",
+      "prototype\\unit-discs\\shield-bearer-david_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-shield-bearer-jonathan",
+    "prompt_key": "shield_bearer_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1906962418,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-jonathan_00001_.png",
+      "prototype\\unit-discs\\shield-bearer-jonathan_00002_.png",
+      "prototype\\unit-discs\\shield-bearer-jonathan_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-shield-bearer-achish",
+    "prompt_key": "shield_bearer_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 669929202,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-achish_00001_.png",
+      "prototype\\unit-discs\\shield-bearer-achish_00002_.png",
+      "prototype\\unit-discs\\shield-bearer-achish_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-shield-bearer-ekron",
+    "prompt_key": "shield_bearer_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 5897910,
+    "files": [
+      "prototype\\unit-discs\\shield-bearer-ekron_00001_.png",
+      "prototype\\unit-discs\\shield-bearer-ekron_00002_.png",
+      "prototype\\unit-discs\\shield-bearer-ekron_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-loyal-guard",
+    "prompt_key": "loyal_guard_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1360633040,
+    "files": [
+      "prototype\\unit-discs\\loyal-guard_00001_.png",
+      "prototype\\unit-discs\\loyal-guard_00002_.png",
+      "prototype\\unit-discs\\loyal-guard_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-elite-archer",
+    "prompt_key": "elite_archer_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1696571503,
+    "files": [
+      "prototype\\unit-discs\\elite-archer_00001_.png",
+      "prototype\\unit-discs\\elite-archer_00002_.png",
+      "prototype\\unit-discs\\elite-archer_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-archer-jonathan",
+    "prompt_key": "archer_jonathan",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 156660752,
+    "files": [
+      "prototype\\unit-discs\\archer-jonathan_00001_.png",
+      "prototype\\unit-discs\\archer-jonathan_00002_.png",
+      "prototype\\unit-discs\\archer-jonathan_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-archer-achish",
+    "prompt_key": "archer_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1846608710,
+    "files": [
+      "prototype\\unit-discs\\archer-achish_00001_.png",
+      "prototype\\unit-discs\\archer-achish_00002_.png",
+      "prototype\\unit-discs\\archer-achish_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-giant",
+    "prompt_key": "giant_achish",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 309480345,
+    "files": [
+      "prototype\\unit-discs\\giant_00001_.png",
+      "prototype\\unit-discs\\giant_00002_.png",
+      "prototype\\unit-discs\\giant_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-disc-chariot",
+    "prompt_key": "chariot_ekron",
+    "output_subfolder": "prototype/unit-discs",
+    "count": 3,
+    "seed": 1096632703,
+    "files": [
+      "prototype\\unit-discs\\chariot_00001_.png",
+      "prototype\\unit-discs\\chariot_00002_.png",
+      "prototype\\unit-discs\\chariot_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-01",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 324281424,
+    "files": [
+      "prototype\\commander-cards\\david-01_00001_.png",
+      "prototype\\commander-cards\\david-01_00002_.png",
+      "prototype\\commander-cards\\david-01_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-02",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 304547667,
+    "files": [
+      "prototype\\commander-cards\\david-02_00001_.png",
+      "prototype\\commander-cards\\david-02_00002_.png",
+      "prototype\\commander-cards\\david-02_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-03",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1217863611,
+    "files": [
+      "prototype\\commander-cards\\david-03_00001_.png",
+      "prototype\\commander-cards\\david-03_00002_.png",
+      "prototype\\commander-cards\\david-03_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-04",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1225382990,
+    "files": [
+      "prototype\\commander-cards\\david-04_00001_.png",
+      "prototype\\commander-cards\\david-04_00002_.png",
+      "prototype\\commander-cards\\david-04_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-05",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1879368460,
+    "files": [
+      "prototype\\commander-cards\\david-05_00001_.png",
+      "prototype\\commander-cards\\david-05_00002_.png",
+      "prototype\\commander-cards\\david-05_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-06",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 807812362,
+    "files": [
+      "prototype\\commander-cards\\david-06_00001_.png",
+      "prototype\\commander-cards\\david-06_00002_.png",
+      "prototype\\commander-cards\\david-06_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-07",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1858382192,
+    "files": [
+      "prototype\\commander-cards\\david-07_00001_.png",
+      "prototype\\commander-cards\\david-07_00002_.png",
+      "prototype\\commander-cards\\david-07_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-08",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 332987366,
+    "files": [
+      "prototype\\commander-cards\\david-08_00001_.png",
+      "prototype\\commander-cards\\david-08_00002_.png",
+      "prototype\\commander-cards\\david-08_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-09",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 136144287,
+    "files": [
+      "prototype\\commander-cards\\david-09_00001_.png",
+      "prototype\\commander-cards\\david-09_00002_.png",
+      "prototype\\commander-cards\\david-09_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-david-10",
+    "prompt_key": "card_front_david",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1982169805,
+    "files": [
+      "prototype\\commander-cards\\david-10_00001_.png",
+      "prototype\\commander-cards\\david-10_00002_.png",
+      "prototype\\commander-cards\\david-10_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-01",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1578998333,
+    "files": [
+      "prototype\\commander-cards\\jonathan-01_00001_.png",
+      "prototype\\commander-cards\\jonathan-01_00002_.png",
+      "prototype\\commander-cards\\jonathan-01_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-02",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1403929222,
+    "files": [
+      "prototype\\commander-cards\\jonathan-02_00001_.png",
+      "prototype\\commander-cards\\jonathan-02_00002_.png",
+      "prototype\\commander-cards\\jonathan-02_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-03",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1020952467,
+    "files": [
+      "prototype\\commander-cards\\jonathan-03_00001_.png",
+      "prototype\\commander-cards\\jonathan-03_00002_.png",
+      "prototype\\commander-cards\\jonathan-03_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-04",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 993637665,
+    "files": [
+      "prototype\\commander-cards\\jonathan-04_00001_.png",
+      "prototype\\commander-cards\\jonathan-04_00002_.png",
+      "prototype\\commander-cards\\jonathan-04_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-05",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 2060653830,
+    "files": [
+      "prototype\\commander-cards\\jonathan-05_00001_.png",
+      "prototype\\commander-cards\\jonathan-05_00002_.png",
+      "prototype\\commander-cards\\jonathan-05_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-06",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1183024082,
+    "files": [
+      "prototype\\commander-cards\\jonathan-06_00001_.png",
+      "prototype\\commander-cards\\jonathan-06_00002_.png",
+      "prototype\\commander-cards\\jonathan-06_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-07",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1379571732,
+    "files": [
+      "prototype\\commander-cards\\jonathan-07_00001_.png",
+      "prototype\\commander-cards\\jonathan-07_00002_.png",
+      "prototype\\commander-cards\\jonathan-07_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-08",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1224154295,
+    "files": [
+      "prototype\\commander-cards\\jonathan-08_00001_.png",
+      "prototype\\commander-cards\\jonathan-08_00002_.png",
+      "prototype\\commander-cards\\jonathan-08_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-09",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1437329902,
+    "files": [
+      "prototype\\commander-cards\\jonathan-09_00001_.png",
+      "prototype\\commander-cards\\jonathan-09_00002_.png",
+      "prototype\\commander-cards\\jonathan-09_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-jonathan-10",
+    "prompt_key": "card_front_jonathan",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 282225813,
+    "files": [
+      "prototype\\commander-cards\\jonathan-10_00001_.png",
+      "prototype\\commander-cards\\jonathan-10_00002_.png",
+      "prototype\\commander-cards\\jonathan-10_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-01",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 988886204,
+    "files": [
+      "prototype\\commander-cards\\achish-01_00001_.png",
+      "prototype\\commander-cards\\achish-01_00002_.png",
+      "prototype\\commander-cards\\achish-01_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-02",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1841547683,
+    "files": [
+      "prototype\\commander-cards\\achish-02_00001_.png",
+      "prototype\\commander-cards\\achish-02_00002_.png",
+      "prototype\\commander-cards\\achish-02_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-03",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 2037060432,
+    "files": [
+      "prototype\\commander-cards\\achish-03_00001_.png",
+      "prototype\\commander-cards\\achish-03_00002_.png",
+      "prototype\\commander-cards\\achish-03_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-04",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1345108925,
+    "files": [
+      "prototype\\commander-cards\\achish-04_00001_.png",
+      "prototype\\commander-cards\\achish-04_00002_.png",
+      "prototype\\commander-cards\\achish-04_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-05",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1111051037,
+    "files": [
+      "prototype\\commander-cards\\achish-05_00001_.png",
+      "prototype\\commander-cards\\achish-05_00002_.png",
+      "prototype\\commander-cards\\achish-05_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-06",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 279121325,
+    "files": [
+      "prototype\\commander-cards\\achish-06_00001_.png",
+      "prototype\\commander-cards\\achish-06_00002_.png",
+      "prototype\\commander-cards\\achish-06_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-07",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 525558538,
+    "files": [
+      "prototype\\commander-cards\\achish-07_00001_.png",
+      "prototype\\commander-cards\\achish-07_00002_.png",
+      "prototype\\commander-cards\\achish-07_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-08",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 281880449,
+    "files": [
+      "prototype\\commander-cards\\achish-08_00001_.png",
+      "prototype\\commander-cards\\achish-08_00002_.png",
+      "prototype\\commander-cards\\achish-08_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-09",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 2121996387,
+    "files": [
+      "prototype\\commander-cards\\achish-09_00001_.png",
+      "prototype\\commander-cards\\achish-09_00002_.png",
+      "prototype\\commander-cards\\achish-09_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-achish-10",
+    "prompt_key": "card_front_achish",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1884014774,
+    "files": [
+      "prototype\\commander-cards\\achish-10_00001_.png",
+      "prototype\\commander-cards\\achish-10_00002_.png",
+      "prototype\\commander-cards\\achish-10_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-01",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 959738847,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-01_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-01_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-01_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-02",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1145655684,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-02_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-02_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-02_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-03",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 70503112,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-03_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-03_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-03_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-04",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1895545110,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-04_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-04_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-04_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-05",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 255090059,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-05_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-05_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-05_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-06",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1449665895,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-06_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-06_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-06_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-07",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1652943731,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-07_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-07_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-07_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-08",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1965537268,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-08_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-08_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-08_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-09",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 918041134,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-09_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-09_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-09_00003_.png"
+    ]
+  },
+  {
+    "id": "commander-card-philistine-lord-10",
+    "prompt_key": "card_front_philistine_lord",
+    "output_subfolder": "prototype/commander-cards",
+    "count": 3,
+    "seed": 1610828319,
+    "files": [
+      "prototype\\commander-cards\\philistine-lord-10_00001_.png",
+      "prototype\\commander-cards\\philistine-lord-10_00002_.png",
+      "prototype\\commander-cards\\philistine-lord-10_00003_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsmen-advance-01",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1381916289,
+    "files": [
+      "prototype\\unit-cards\\swordsmen-advance-01_00001_.png",
+      "prototype\\unit-cards\\swordsmen-advance-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsmen-advance-02",
+    "prompt_key": "swordsmen-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1087480551,
+    "files": [
+      "prototype\\unit-cards\\swordsmen-advance-02_00001_.png",
+      "prototype\\unit-cards\\swordsmen-advance-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsmen-advance-03",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1397680980,
+    "files": [
+      "prototype\\unit-cards\\swordsmen-advance-03_00001_.png",
+      "prototype\\unit-cards\\swordsmen-advance-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsmen-advance-04",
+    "prompt_key": "swordsmen-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1051278472,
+    "files": [
+      "prototype\\unit-cards\\swordsmen-advance-04_00001_.png",
+      "prototype\\unit-cards\\swordsmen-advance-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsmen-advance-05",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1287174745,
+    "files": [
+      "prototype\\unit-cards\\swordsmen-advance-05_00001_.png",
+      "prototype\\unit-cards\\swordsmen-advance-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-david-01",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1959041128,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-01_00001_.png",
+      "prototype\\unit-cards\\spearman-david-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-david-02",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1066591978,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-02_00001_.png",
+      "prototype\\unit-cards\\spearman-david-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-david-03",
+    "prompt_key": "spearman-screen",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1448879117,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-03_00001_.png",
+      "prototype\\unit-cards\\spearman-david-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-david-04",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1412066637,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-04_00001_.png",
+      "prototype\\unit-cards\\spearman-david-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-david-05",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 477335877,
+    "files": [
+      "prototype\\unit-cards\\spearman-david-05_00001_.png",
+      "prototype\\unit-cards\\spearman-david-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-david-01",
+    "prompt_key": "circle-and-strike",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1117066967,
+    "files": [
+      "prototype\\unit-cards\\slinger-david-01_00001_.png",
+      "prototype\\unit-cards\\slinger-david-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-david-02",
+    "prompt_key": "stone-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1260569424,
+    "files": [
+      "prototype\\unit-cards\\slinger-david-02_00001_.png",
+      "prototype\\unit-cards\\slinger-david-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-david-03",
+    "prompt_key": "circle-and-strike",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 221444445,
+    "files": [
+      "prototype\\unit-cards\\slinger-david-03_00001_.png",
+      "prototype\\unit-cards\\slinger-david-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-david-04",
+    "prompt_key": "stone-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1651964409,
+    "files": [
+      "prototype\\unit-cards\\slinger-david-04_00001_.png",
+      "prototype\\unit-cards\\slinger-david-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-david-05",
+    "prompt_key": "circle-and-strike",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1790004381,
+    "files": [
+      "prototype\\unit-cards\\slinger-david-05_00001_.png",
+      "prototype\\unit-cards\\slinger-david-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-scout-david-01",
+    "prompt_key": "scout-recon",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 596958347,
+    "files": [
+      "prototype\\unit-cards\\scout-david-01_00001_.png",
+      "prototype\\unit-cards\\scout-david-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-scout-david-02",
+    "prompt_key": "scout-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1983046093,
+    "files": [
+      "prototype\\unit-cards\\scout-david-02_00001_.png",
+      "prototype\\unit-cards\\scout-david-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-scout-david-03",
+    "prompt_key": "scout-recon",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 793175304,
+    "files": [
+      "prototype\\unit-cards\\scout-david-03_00001_.png",
+      "prototype\\unit-cards\\scout-david-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-scout-david-04",
+    "prompt_key": "scout-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 817308822,
+    "files": [
+      "prototype\\unit-cards\\scout-david-04_00001_.png",
+      "prototype\\unit-cards\\scout-david-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-scout-david-05",
+    "prompt_key": "scout-recon",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1133245395,
+    "files": [
+      "prototype\\unit-cards\\scout-david-05_00001_.png",
+      "prototype\\unit-cards\\scout-david-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-david-01",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1084398718,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-david-01_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-david-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-david-02",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1219334627,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-david-02_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-david-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-david-03",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 540802288,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-david-03_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-david-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-david-04",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 284628024,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-david-04_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-david-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-david-05",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1925819531,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-david-05_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-david-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-loyal-guard-jonathan-01",
+    "prompt_key": "guard-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1872448872,
+    "files": [
+      "prototype\\unit-cards\\loyal-guard-jonathan-01_00001_.png",
+      "prototype\\unit-cards\\loyal-guard-jonathan-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-loyal-guard-jonathan-02",
+    "prompt_key": "guard-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 944697699,
+    "files": [
+      "prototype\\unit-cards\\loyal-guard-jonathan-02_00001_.png",
+      "prototype\\unit-cards\\loyal-guard-jonathan-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-loyal-guard-jonathan-03",
+    "prompt_key": "guard-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 310842565,
+    "files": [
+      "prototype\\unit-cards\\loyal-guard-jonathan-03_00001_.png",
+      "prototype\\unit-cards\\loyal-guard-jonathan-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-loyal-guard-jonathan-04",
+    "prompt_key": "guard-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 63291603,
+    "files": [
+      "prototype\\unit-cards\\loyal-guard-jonathan-04_00001_.png",
+      "prototype\\unit-cards\\loyal-guard-jonathan-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-loyal-guard-jonathan-05",
+    "prompt_key": "guard-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1274366208,
+    "files": [
+      "prototype\\unit-cards\\loyal-guard-jonathan-05_00001_.png",
+      "prototype\\unit-cards\\loyal-guard-jonathan-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-elite-archer-jonathan-01",
+    "prompt_key": "jonathans-mark",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1786267016,
+    "files": [
+      "prototype\\unit-cards\\elite-archer-jonathan-01_00001_.png",
+      "prototype\\unit-cards\\elite-archer-jonathan-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-elite-archer-jonathan-02",
+    "prompt_key": "perfect-shot",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 2128000031,
+    "files": [
+      "prototype\\unit-cards\\elite-archer-jonathan-02_00001_.png",
+      "prototype\\unit-cards\\elite-archer-jonathan-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-elite-archer-jonathan-03",
+    "prompt_key": "jonathans-mark",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 341147090,
+    "files": [
+      "prototype\\unit-cards\\elite-archer-jonathan-03_00001_.png",
+      "prototype\\unit-cards\\elite-archer-jonathan-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-elite-archer-jonathan-04",
+    "prompt_key": "perfect-shot",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1984425904,
+    "files": [
+      "prototype\\unit-cards\\elite-archer-jonathan-04_00001_.png",
+      "prototype\\unit-cards\\elite-archer-jonathan-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-elite-archer-jonathan-05",
+    "prompt_key": "jonathans-mark",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1521062189,
+    "files": [
+      "prototype\\unit-cards\\elite-archer-jonathan-05_00001_.png",
+      "prototype\\unit-cards\\elite-archer-jonathan-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-jonathan-01",
+    "prompt_key": "archer-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 421261355,
+    "files": [
+      "prototype\\unit-cards\\archer-jonathan-01_00001_.png",
+      "prototype\\unit-cards\\archer-jonathan-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-jonathan-02",
+    "prompt_key": "archer-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1854162138,
+    "files": [
+      "prototype\\unit-cards\\archer-jonathan-02_00001_.png",
+      "prototype\\unit-cards\\archer-jonathan-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-jonathan-03",
+    "prompt_key": "archer-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 352794266,
+    "files": [
+      "prototype\\unit-cards\\archer-jonathan-03_00001_.png",
+      "prototype\\unit-cards\\archer-jonathan-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-jonathan-04",
+    "prompt_key": "archer-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1534935979,
+    "files": [
+      "prototype\\unit-cards\\archer-jonathan-04_00001_.png",
+      "prototype\\unit-cards\\archer-jonathan-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-jonathan-05",
+    "prompt_key": "archer-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 201566950,
+    "files": [
+      "prototype\\unit-cards\\archer-jonathan-05_00001_.png",
+      "prototype\\unit-cards\\archer-jonathan-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-jonathan-01",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1580516311,
+    "files": [
+      "prototype\\unit-cards\\spearman-jonathan-01_00001_.png",
+      "prototype\\unit-cards\\spearman-jonathan-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-jonathan-02",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1948827662,
+    "files": [
+      "prototype\\unit-cards\\spearman-jonathan-02_00001_.png",
+      "prototype\\unit-cards\\spearman-jonathan-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-jonathan-03",
+    "prompt_key": "spearman-screen",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1954267656,
+    "files": [
+      "prototype\\unit-cards\\spearman-jonathan-03_00001_.png",
+      "prototype\\unit-cards\\spearman-jonathan-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-jonathan-04",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1085859139,
+    "files": [
+      "prototype\\unit-cards\\spearman-jonathan-04_00001_.png",
+      "prototype\\unit-cards\\spearman-jonathan-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-jonathan-05",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 648535659,
+    "files": [
+      "prototype\\unit-cards\\spearman-jonathan-05_00001_.png",
+      "prototype\\unit-cards\\spearman-jonathan-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-jonathan-01",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 637185540,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-jonathan-01_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-jonathan-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-jonathan-02",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1897902143,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-jonathan-02_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-jonathan-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-jonathan-03",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 571361344,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-jonathan-03_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-jonathan-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-jonathan-04",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1672177397,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-jonathan-04_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-jonathan-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-jonathan-05",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 299855326,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-jonathan-05_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-jonathan-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-giant-achish-01",
+    "prompt_key": "giants-might",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1994890993,
+    "files": [
+      "prototype\\unit-cards\\giant-achish-01_00001_.png",
+      "prototype\\unit-cards\\giant-achish-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-giant-achish-02",
+    "prompt_key": "unstoppable",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 135316282,
+    "files": [
+      "prototype\\unit-cards\\giant-achish-02_00001_.png",
+      "prototype\\unit-cards\\giant-achish-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-giant-achish-03",
+    "prompt_key": "berserker-rage",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1534365491,
+    "files": [
+      "prototype\\unit-cards\\giant-achish-03_00001_.png",
+      "prototype\\unit-cards\\giant-achish-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-giant-achish-04",
+    "prompt_key": "giants-might",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1607335079,
+    "files": [
+      "prototype\\unit-cards\\giant-achish-04_00001_.png",
+      "prototype\\unit-cards\\giant-achish-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-giant-achish-05",
+    "prompt_key": "unstoppable",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1117412190,
+    "files": [
+      "prototype\\unit-cards\\giant-achish-05_00001_.png",
+      "prototype\\unit-cards\\giant-achish-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-achish-01",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 952190905,
+    "files": [
+      "prototype\\unit-cards\\swordsman-achish-01_00001_.png",
+      "prototype\\unit-cards\\swordsman-achish-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-achish-02",
+    "prompt_key": "swordsmen-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1511823499,
+    "files": [
+      "prototype\\unit-cards\\swordsman-achish-02_00001_.png",
+      "prototype\\unit-cards\\swordsman-achish-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-achish-03",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 322175578,
+    "files": [
+      "prototype\\unit-cards\\swordsman-achish-03_00001_.png",
+      "prototype\\unit-cards\\swordsman-achish-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-achish-04",
+    "prompt_key": "swordsmen-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1642895931,
+    "files": [
+      "prototype\\unit-cards\\swordsman-achish-04_00001_.png",
+      "prototype\\unit-cards\\swordsman-achish-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-achish-05",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 619232838,
+    "files": [
+      "prototype\\unit-cards\\swordsman-achish-05_00001_.png",
+      "prototype\\unit-cards\\swordsman-achish-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-achish-01",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1559946936,
+    "files": [
+      "prototype\\unit-cards\\spearman-achish-01_00001_.png",
+      "prototype\\unit-cards\\spearman-achish-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-achish-02",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1697447621,
+    "files": [
+      "prototype\\unit-cards\\spearman-achish-02_00001_.png",
+      "prototype\\unit-cards\\spearman-achish-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-achish-03",
+    "prompt_key": "spearman-screen",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1909729987,
+    "files": [
+      "prototype\\unit-cards\\spearman-achish-03_00001_.png",
+      "prototype\\unit-cards\\spearman-achish-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-achish-04",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 528597886,
+    "files": [
+      "prototype\\unit-cards\\spearman-achish-04_00001_.png",
+      "prototype\\unit-cards\\spearman-achish-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-achish-05",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 2060275435,
+    "files": [
+      "prototype\\unit-cards\\spearman-achish-05_00001_.png",
+      "prototype\\unit-cards\\spearman-achish-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-achish-01",
+    "prompt_key": "ekron-archer-command",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 867603118,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-01_00001_.png",
+      "prototype\\unit-cards\\archer-achish-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-achish-02",
+    "prompt_key": "ekron-archer-formation-1",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 987001956,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-02_00001_.png",
+      "prototype\\unit-cards\\archer-achish-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-achish-03",
+    "prompt_key": "ekron-archer-formation-2",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 759187496,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-03_00001_.png",
+      "prototype\\unit-cards\\archer-achish-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-achish-04",
+    "prompt_key": "ekron-archer-command",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 423839021,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-04_00001_.png",
+      "prototype\\unit-cards\\archer-achish-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-archer-achish-05",
+    "prompt_key": "ekron-archer-formation-1",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1247685964,
+    "files": [
+      "prototype\\unit-cards\\archer-achish-05_00001_.png",
+      "prototype\\unit-cards\\archer-achish-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-achish-01",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 686162464,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-achish-01_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-achish-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-achish-02",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 244634137,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-achish-02_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-achish-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-achish-03",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1952810121,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-achish-03_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-achish-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-achish-04",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 945806189,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-achish-04_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-achish-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-achish-05",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 754320729,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-achish-05_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-achish-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-chariot-ekron-01",
+    "prompt_key": "chariot-charge",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 723398654,
+    "files": [
+      "prototype\\unit-cards\\chariot-ekron-01_00001_.png",
+      "prototype\\unit-cards\\chariot-ekron-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-chariot-ekron-02",
+    "prompt_key": "chariot-formation-1",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 912811435,
+    "files": [
+      "prototype\\unit-cards\\chariot-ekron-02_00001_.png",
+      "prototype\\unit-cards\\chariot-ekron-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-chariot-ekron-03",
+    "prompt_key": "chariot-formation-2",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 146013991,
+    "files": [
+      "prototype\\unit-cards\\chariot-ekron-03_00001_.png",
+      "prototype\\unit-cards\\chariot-ekron-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-chariot-ekron-04",
+    "prompt_key": "chariot-charge",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 710223396,
+    "files": [
+      "prototype\\unit-cards\\chariot-ekron-04_00001_.png",
+      "prototype\\unit-cards\\chariot-ekron-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-chariot-ekron-05",
+    "prompt_key": "chariot-formation-1",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1483762432,
+    "files": [
+      "prototype\\unit-cards\\chariot-ekron-05_00001_.png",
+      "prototype\\unit-cards\\chariot-ekron-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-ekron-01",
+    "prompt_key": "circle-and-strike",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 701205576,
+    "files": [
+      "prototype\\unit-cards\\slinger-ekron-01_00001_.png",
+      "prototype\\unit-cards\\slinger-ekron-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-ekron-02",
+    "prompt_key": "stone-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1039027228,
+    "files": [
+      "prototype\\unit-cards\\slinger-ekron-02_00001_.png",
+      "prototype\\unit-cards\\slinger-ekron-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-ekron-03",
+    "prompt_key": "circle-and-strike",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 245506552,
+    "files": [
+      "prototype\\unit-cards\\slinger-ekron-03_00001_.png",
+      "prototype\\unit-cards\\slinger-ekron-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-ekron-04",
+    "prompt_key": "stone-volley",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 651599421,
+    "files": [
+      "prototype\\unit-cards\\slinger-ekron-04_00001_.png",
+      "prototype\\unit-cards\\slinger-ekron-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-slinger-ekron-05",
+    "prompt_key": "circle-and-strike",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 364872626,
+    "files": [
+      "prototype\\unit-cards\\slinger-ekron-05_00001_.png",
+      "prototype\\unit-cards\\slinger-ekron-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-ekron-01",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 870558270,
+    "files": [
+      "prototype\\unit-cards\\swordsman-ekron-01_00001_.png",
+      "prototype\\unit-cards\\swordsman-ekron-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-ekron-02",
+    "prompt_key": "swordsmen-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1481376879,
+    "files": [
+      "prototype\\unit-cards\\swordsman-ekron-02_00001_.png",
+      "prototype\\unit-cards\\swordsman-ekron-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-ekron-03",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1186209119,
+    "files": [
+      "prototype\\unit-cards\\swordsman-ekron-03_00001_.png",
+      "prototype\\unit-cards\\swordsman-ekron-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-ekron-04",
+    "prompt_key": "swordsmen-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 218825928,
+    "files": [
+      "prototype\\unit-cards\\swordsman-ekron-04_00001_.png",
+      "prototype\\unit-cards\\swordsman-ekron-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-swordsman-ekron-05",
+    "prompt_key": "swordsmen-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 21189862,
+    "files": [
+      "prototype\\unit-cards\\swordsman-ekron-05_00001_.png",
+      "prototype\\unit-cards\\swordsman-ekron-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-ekron-01",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1991257659,
+    "files": [
+      "prototype\\unit-cards\\spearman-ekron-01_00001_.png",
+      "prototype\\unit-cards\\spearman-ekron-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-ekron-02",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1305893639,
+    "files": [
+      "prototype\\unit-cards\\spearman-ekron-02_00001_.png",
+      "prototype\\unit-cards\\spearman-ekron-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-ekron-03",
+    "prompt_key": "spearman-screen",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1284596292,
+    "files": [
+      "prototype\\unit-cards\\spearman-ekron-03_00001_.png",
+      "prototype\\unit-cards\\spearman-ekron-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-ekron-04",
+    "prompt_key": "spear-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 404838818,
+    "files": [
+      "prototype\\unit-cards\\spearman-ekron-04_00001_.png",
+      "prototype\\unit-cards\\spearman-ekron-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-spearman-ekron-05",
+    "prompt_key": "spearman-formation",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 970378020,
+    "files": [
+      "prototype\\unit-cards\\spearman-ekron-05_00001_.png",
+      "prototype\\unit-cards\\spearman-ekron-05_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-ekron-01",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 696927272,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-ekron-01_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-ekron-01_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-ekron-02",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1651368840,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-ekron-02_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-ekron-02_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-ekron-03",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1517244630,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-ekron-03_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-ekron-03_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-ekron-04",
+    "prompt_key": "phalanx-advance",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 162763075,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-ekron-04_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-ekron-04_00002_.png"
+    ]
+  },
+  {
+    "id": "unit-card-shield-bearer-ekron-05",
+    "prompt_key": "shield-wall",
+    "output_subfolder": "prototype/unit-cards",
+    "count": 2,
+    "seed": 1578611595,
+    "files": [
+      "prototype\\unit-cards\\shield-bearer-ekron-05_00001_.png",
+      "prototype\\unit-cards\\shield-bearer-ekron-05_00002_.png"
+    ]
+  },
+  {
+    "id": "card-back-01",
+    "prompt_key": "card_back",
+    "output_subfolder": "prototype/card-backs",
+    "count": 3,
+    "seed": 1829108857,
+    "files": [
+      "prototype\\card-backs\\card-back_00001_.png",
+      "prototype\\card-backs\\card-back_00002_.png",
+      "prototype\\card-backs\\card-back_00003_.png"
+    ]
+  },
+  {
+    "id": "equipment-bronze-sword",
+    "prompt_key": "bronze-sword",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 865800661,
+    "files": [
+      "prototype\\equipment\\bronze-sword_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-leather-shield",
+    "prompt_key": "leather-shield",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 1903739248,
+    "files": [
+      "prototype\\equipment\\leather-shield_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-spear",
+    "prompt_key": "spear",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 625893731,
+    "files": [
+      "prototype\\equipment\\spear_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-sling",
+    "prompt_key": "sling",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 1465915714,
+    "files": [
+      "prototype\\equipment\\sling_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-bow",
+    "prompt_key": "bow",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 1266291133,
+    "files": [
+      "prototype\\equipment\\bow_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-sword-sheath",
+    "prompt_key": "sword-sheath",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 1863354606,
+    "files": [
+      "prototype\\equipment\\sword-sheath_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-quiver",
+    "prompt_key": "quiver",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 801922685,
+    "files": [
+      "prototype\\equipment\\quiver_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-bronze-greaves",
+    "prompt_key": "bronze-greaves",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 896004099,
+    "files": [
+      "prototype\\equipment\\bronze-greaves_00001_.png"
+    ]
+  },
+  {
+    "id": "equipment-leather-belt",
+    "prompt_key": "leather-belt",
+    "output_subfolder": "prototype/equipment",
+    "count": 1,
+    "seed": 418838563,
+    "files": [
+      "prototype\\equipment\\leather-belt_00001_.png"
+    ]
+  }
+]

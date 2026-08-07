@@ -3,2870 +3,2442 @@
     "filename": "card-backs/card-back_00001_.png",
     "basename": "card-back_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_back"
+    "old_decision": "KEEP"
   },
   {
     "filename": "card-backs/card-back_00002_.png",
     "basename": "card-back_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_back"
+    "old_decision": "KEEP"
   },
   {
     "filename": "card-backs/card-back_00003_.png",
     "basename": "card-back_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_back"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-01_00001_.png",
     "basename": "achish-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-01_00002_.png",
     "basename": "achish-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-01_00003_.png",
     "basename": "achish-01_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-02_00001_.png",
     "basename": "achish-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-02_00002_.png",
     "basename": "achish-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-02_00003_.png",
     "basename": "achish-02_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-03_00001_.png",
     "basename": "achish-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-03_00002_.png",
     "basename": "achish-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-03_00003_.png",
     "basename": "achish-03_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-04_00001_.png",
     "basename": "achish-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-04_00002_.png",
     "basename": "achish-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-04_00003_.png",
     "basename": "achish-04_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-05_00001_.png",
     "basename": "achish-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-05_00002_.png",
     "basename": "achish-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-05_00003_.png",
     "basename": "achish-05_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-06_00001_.png",
     "basename": "achish-06_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-06_00002_.png",
     "basename": "achish-06_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-06_00003_.png",
     "basename": "achish-06_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-07_00001_.png",
     "basename": "achish-07_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-07_00002_.png",
     "basename": "achish-07_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-07_00003_.png",
     "basename": "achish-07_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-08_00001_.png",
     "basename": "achish-08_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-08_00002_.png",
     "basename": "achish-08_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-08_00003_.png",
     "basename": "achish-08_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-09_00001_.png",
     "basename": "achish-09_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-09_00002_.png",
     "basename": "achish-09_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-09_00003_.png",
     "basename": "achish-09_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-10_00001_.png",
     "basename": "achish-10_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-10_00002_.png",
     "basename": "achish-10_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/achish-10_00003_.png",
     "basename": "achish-10_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-01_00001_.png",
     "basename": "david-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-01_00002_.png",
     "basename": "david-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-01_00003_.png",
     "basename": "david-01_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-02_00001_.png",
     "basename": "david-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-02_00002_.png",
     "basename": "david-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-02_00003_.png",
     "basename": "david-02_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-03_00001_.png",
     "basename": "david-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-03_00002_.png",
     "basename": "david-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-03_00003_.png",
     "basename": "david-03_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-04_00001_.png",
     "basename": "david-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-04_00002_.png",
     "basename": "david-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-04_00003_.png",
     "basename": "david-04_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-05_00001_.png",
     "basename": "david-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-05_00002_.png",
     "basename": "david-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-05_00003_.png",
     "basename": "david-05_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-06_00001_.png",
     "basename": "david-06_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-06_00002_.png",
     "basename": "david-06_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-06_00003_.png",
     "basename": "david-06_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-07_00001_.png",
     "basename": "david-07_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-07_00002_.png",
     "basename": "david-07_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-07_00003_.png",
     "basename": "david-07_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-08_00001_.png",
     "basename": "david-08_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-08_00002_.png",
     "basename": "david-08_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-08_00003_.png",
     "basename": "david-08_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-09_00001_.png",
     "basename": "david-09_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-09_00002_.png",
     "basename": "david-09_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-09_00003_.png",
     "basename": "david-09_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-10_00001_.png",
     "basename": "david-10_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-10_00002_.png",
     "basename": "david-10_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/david-10_00003_.png",
     "basename": "david-10_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-01_00001_.png",
     "basename": "jonathan-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-01_00002_.png",
     "basename": "jonathan-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-01_00003_.png",
     "basename": "jonathan-01_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-02_00001_.png",
     "basename": "jonathan-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-02_00002_.png",
     "basename": "jonathan-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-02_00003_.png",
     "basename": "jonathan-02_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-03_00001_.png",
     "basename": "jonathan-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-03_00002_.png",
     "basename": "jonathan-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-03_00003_.png",
     "basename": "jonathan-03_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-04_00001_.png",
     "basename": "jonathan-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-04_00002_.png",
     "basename": "jonathan-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-04_00003_.png",
     "basename": "jonathan-04_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-05_00001_.png",
     "basename": "jonathan-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-05_00002_.png",
     "basename": "jonathan-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-05_00003_.png",
     "basename": "jonathan-05_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-06_00001_.png",
     "basename": "jonathan-06_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-06_00002_.png",
     "basename": "jonathan-06_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-06_00003_.png",
     "basename": "jonathan-06_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-07_00001_.png",
     "basename": "jonathan-07_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-07_00002_.png",
     "basename": "jonathan-07_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-07_00003_.png",
     "basename": "jonathan-07_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-08_00001_.png",
     "basename": "jonathan-08_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-08_00002_.png",
     "basename": "jonathan-08_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-08_00003_.png",
     "basename": "jonathan-08_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-09_00001_.png",
     "basename": "jonathan-09_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-09_00002_.png",
     "basename": "jonathan-09_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-09_00003_.png",
     "basename": "jonathan-09_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-10_00001_.png",
     "basename": "jonathan-10_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-10_00002_.png",
     "basename": "jonathan-10_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/jonathan-10_00003_.png",
     "basename": "jonathan-10_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-01_00001_.png",
     "basename": "philistine-lord-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-01_00002_.png",
     "basename": "philistine-lord-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "commander-cards/philistine-lord-01_00002_00001_.png",
-    "basename": "philistine-lord-01_00002_00001_.png",
+    "filename": "commander-cards/philistine-lord-01_00003_.png",
+    "basename": "philistine-lord-01_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-02_00001_.png",
     "basename": "philistine-lord-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-02_00001_00001_.png",
-    "basename": "philistine-lord-02_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-02_00002_.png",
     "basename": "philistine-lord-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-02_00003_.png",
+    "basename": "philistine-lord-02_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-03_00001_.png",
     "basename": "philistine-lord-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-03_00001_00001_.png",
-    "basename": "philistine-lord-03_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-03_00002_.png",
     "basename": "philistine-lord-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-03_00003_.png",
+    "basename": "philistine-lord-03_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-04_00001_.png",
     "basename": "philistine-lord-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-04_00001_00001_.png",
-    "basename": "philistine-lord-04_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-04_00002_.png",
     "basename": "philistine-lord-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-04_00003_.png",
+    "basename": "philistine-lord-04_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-05_00001_.png",
     "basename": "philistine-lord-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-05_00001_00001_.png",
-    "basename": "philistine-lord-05_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-05_00002_.png",
     "basename": "philistine-lord-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-05_00003_.png",
+    "basename": "philistine-lord-05_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-06_00001_.png",
     "basename": "philistine-lord-06_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-06_00001_00001_.png",
-    "basename": "philistine-lord-06_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-06_00002_.png",
     "basename": "philistine-lord-06_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-06_00003_.png",
+    "basename": "philistine-lord-06_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-07_00001_.png",
     "basename": "philistine-lord-07_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-07_00001_00001_.png",
-    "basename": "philistine-lord-07_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-07_00002_.png",
     "basename": "philistine-lord-07_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-07_00003_.png",
+    "basename": "philistine-lord-07_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-08_00001_.png",
     "basename": "philistine-lord-08_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-08_00001_00001_.png",
-    "basename": "philistine-lord-08_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-08_00002_.png",
     "basename": "philistine-lord-08_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-08_00003_.png",
+    "basename": "philistine-lord-08_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-09_00001_.png",
     "basename": "philistine-lord-09_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-09_00001_00001_.png",
-    "basename": "philistine-lord-09_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-09_00002_.png",
     "basename": "philistine-lord-09_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-09_00003_.png",
+    "basename": "philistine-lord-09_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-10_00001_.png",
     "basename": "philistine-lord-10_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
-  },
-  {
-    "filename": "commander-cards/philistine-lord-10_00001_00001_.png",
-    "basename": "philistine-lord-10_00001_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
   },
   {
     "filename": "commander-cards/philistine-lord-10_00002_.png",
     "basename": "philistine-lord-10_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "card_front_philistine_lord"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "commander-cards/philistine-lord-10_00003_.png",
+    "basename": "philistine-lord-10_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/bow_00001_.png",
     "basename": "bow_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "bow"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/bronze-greaves_00001_.png",
     "basename": "bronze-greaves_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "bronze-greaves"
-  },
-  {
-    "filename": "equipment/bronze-helm_00001_.png",
-    "basename": "bronze-helm_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "bronze-helm"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/bronze-sword_00001_.png",
     "basename": "bronze-sword_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "bronze-sword"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/leather-belt_00001_.png",
     "basename": "leather-belt_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "leather-belt"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/leather-shield_00001_.png",
     "basename": "leather-shield_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "leather-shield"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/quiver_00001_.png",
     "basename": "quiver_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "quiver"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/sling_00001_.png",
     "basename": "sling_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "sling"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/spear_00001_.png",
     "basename": "spear_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear"
+    "old_decision": "KEEP"
   },
   {
     "filename": "equipment/sword-sheath_00001_.png",
     "basename": "sword-sheath_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "sword-sheath"
-  },
-  {
-    "filename": "hex-tiles/hex-grass-03_00001_.png",
-    "basename": "hex-grass-03_00001_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "hex_grass"
-  },
-  {
-    "filename": "ui/commander-aura-marker_00001_.png",
-    "basename": "commander-aura-marker_00001_.png",
-    "old_score": 2,
-    "old_decision": "TRASH",
-    "expected_prompt_key": "commander-aura-marker"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-01_00001_.png",
     "basename": "archer-achish-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-command"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-01_00002_.png",
     "basename": "archer-achish-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-command"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-02_00001_.png",
     "basename": "archer-achish-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-02_00002_.png",
     "basename": "archer-achish-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-03_00001_.png",
     "basename": "archer-achish-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-formation-2"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-03_00002_.png",
     "basename": "archer-achish-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-formation-2"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-04_00001_.png",
     "basename": "archer-achish-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-command"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-04_00002_.png",
     "basename": "archer-achish-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-command"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-05_00001_.png",
     "basename": "archer-achish-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-achish-05_00002_.png",
     "basename": "archer-achish-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "ekron-archer-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-01_00001_.png",
     "basename": "archer-jonathan-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-01_00002_.png",
     "basename": "archer-jonathan-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-02_00001_.png",
     "basename": "archer-jonathan-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-02_00002_.png",
     "basename": "archer-jonathan-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-03_00001_.png",
     "basename": "archer-jonathan-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-03_00002_.png",
     "basename": "archer-jonathan-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-04_00001_.png",
     "basename": "archer-jonathan-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-04_00002_.png",
     "basename": "archer-jonathan-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-05_00001_.png",
     "basename": "archer-jonathan-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/archer-jonathan-05_00002_.png",
     "basename": "archer-jonathan-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-01_00001_.png",
     "basename": "chariot-ekron-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-charge"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-01_00002_.png",
     "basename": "chariot-ekron-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-charge"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-02_00001_.png",
     "basename": "chariot-ekron-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-02_00002_.png",
     "basename": "chariot-ekron-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-03_00001_.png",
     "basename": "chariot-ekron-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-formation-2"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-03_00002_.png",
     "basename": "chariot-ekron-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-formation-2"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-04_00001_.png",
     "basename": "chariot-ekron-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-charge"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-04_00002_.png",
     "basename": "chariot-ekron-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-charge"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-05_00001_.png",
     "basename": "chariot-ekron-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/chariot-ekron-05_00002_.png",
     "basename": "chariot-ekron-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot-formation-1"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/elite-archer-jonathan-01_00001_.png",
     "basename": "elite-archer-jonathan-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "jonathans-mark"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/elite-archer-jonathan-01_00002_.png",
     "basename": "elite-archer-jonathan-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "jonathans-mark"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/elite-archer-jonathan-02_00001_.png",
     "basename": "elite-archer-jonathan-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "perfect-shot"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/elite-archer-jonathan-02_00002_.png",
     "basename": "elite-archer-jonathan-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "perfect-shot"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/elite-archer-jonathan-03_00001_.png",
     "basename": "elite-archer-jonathan-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "jonathans-mark"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/elite-archer-jonathan-03_00001_00001_.png",
-    "basename": "elite-archer-jonathan-03_00001_00001_.png",
+    "filename": "unit-cards/elite-archer-jonathan-03_00002_.png",
+    "basename": "elite-archer-jonathan-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "elite_archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/elite-archer-jonathan-04_00001_.png",
     "basename": "elite-archer-jonathan-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "perfect-shot"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/elite-archer-jonathan-04_00001_00001_.png",
-    "basename": "elite-archer-jonathan-04_00001_00001_.png",
+    "filename": "unit-cards/elite-archer-jonathan-04_00002_.png",
+    "basename": "elite-archer-jonathan-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "elite_archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/elite-archer-jonathan-05_00001_.png",
     "basename": "elite-archer-jonathan-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "jonathans-mark"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/elite-archer-jonathan-05_00001_00001_.png",
-    "basename": "elite-archer-jonathan-05_00001_00001_.png",
+    "filename": "unit-cards/elite-archer-jonathan-05_00002_.png",
+    "basename": "elite-archer-jonathan-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "elite_archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-01_00001_.png",
     "basename": "giant-achish-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giants-might"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-01_00002_.png",
     "basename": "giant-achish-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giants-might"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-02_00001_.png",
     "basename": "giant-achish-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "unstoppable"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-02_00002_.png",
     "basename": "giant-achish-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "unstoppable"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-03_00001_.png",
     "basename": "giant-achish-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "berserker-rage"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-03_00002_.png",
     "basename": "giant-achish-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "berserker-rage"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-04_00001_.png",
     "basename": "giant-achish-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giants-might"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/giant-achish-04_00001_00001_.png",
-    "basename": "giant-achish-04_00001_00001_.png",
+    "filename": "unit-cards/giant-achish-04_00002_.png",
+    "basename": "giant-achish-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giant_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/giant-achish-05_00001_.png",
     "basename": "giant-achish-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "unstoppable"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/giant-achish-05_00001_00001_.png",
-    "basename": "giant-achish-05_00001_00001_.png",
+    "filename": "unit-cards/giant-achish-05_00002_.png",
+    "basename": "giant-achish-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giant_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/loyal-guard-jonathan-01_00001_.png",
     "basename": "loyal-guard-jonathan-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "guard-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/loyal-guard-jonathan-01_00002_.png",
     "basename": "loyal-guard-jonathan-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/loyal-guard-jonathan-02_00001_.png",
     "basename": "loyal-guard-jonathan-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "guard-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/loyal-guard-jonathan-02_00001_00001_.png",
-    "basename": "loyal-guard-jonathan-02_00001_00001_.png",
+    "filename": "unit-cards/loyal-guard-jonathan-02_00002_.png",
+    "basename": "loyal-guard-jonathan-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/loyal-guard-jonathan-03_00001_.png",
     "basename": "loyal-guard-jonathan-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "guard-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/loyal-guard-jonathan-03_00001_00001_.png",
-    "basename": "loyal-guard-jonathan-03_00001_00001_.png",
+    "filename": "unit-cards/loyal-guard-jonathan-03_00002_.png",
+    "basename": "loyal-guard-jonathan-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/loyal-guard-jonathan-04_00001_.png",
     "basename": "loyal-guard-jonathan-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "guard-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/loyal-guard-jonathan-04_00001_00001_.png",
-    "basename": "loyal-guard-jonathan-04_00001_00001_.png",
+    "filename": "unit-cards/loyal-guard-jonathan-04_00002_.png",
+    "basename": "loyal-guard-jonathan-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/loyal-guard-jonathan-05_00001_.png",
     "basename": "loyal-guard-jonathan-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "guard-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/loyal-guard-jonathan-05_00001_00001_.png",
-    "basename": "loyal-guard-jonathan-05_00001_00001_.png",
+    "filename": "unit-cards/loyal-guard-jonathan-05_00002_.png",
+    "basename": "loyal-guard-jonathan-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/scout-david-01_00001_.png",
     "basename": "scout-david-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout-recon"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/scout-david-01_00002_.png",
     "basename": "scout-david-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout-recon"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/scout-david-02_00001_.png",
     "basename": "scout-david-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/scout-david-02_00002_.png",
     "basename": "scout-david-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/scout-david-03_00001_.png",
     "basename": "scout-david-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout-recon"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/scout-david-03_00001_00001_.png",
-    "basename": "scout-david-03_00001_00001_.png",
+    "filename": "unit-cards/scout-david-03_00002_.png",
+    "basename": "scout-david-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/scout-david-04_00001_.png",
     "basename": "scout-david-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/scout-david-04_00001_00001_.png",
-    "basename": "scout-david-04_00001_00001_.png",
+    "filename": "unit-cards/scout-david-04_00002_.png",
+    "basename": "scout-david-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/scout-david-05_00001_.png",
     "basename": "scout-david-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout-recon"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/scout-david-05_00001_00001_.png",
-    "basename": "scout-david-05_00001_00001_.png",
+    "filename": "unit-cards/scout-david-05_00002_.png",
+    "basename": "scout-david-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-achish-01_00001_.png",
     "basename": "shield-bearer-achish-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-achish-01_00001_00001_.png",
-    "basename": "shield-bearer-achish-01_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-achish-01_00002_.png",
+    "basename": "shield-bearer-achish-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-achish-02_00001_.png",
     "basename": "shield-bearer-achish-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-achish-02_00001_00001_.png",
-    "basename": "shield-bearer-achish-02_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-achish-02_00002_.png",
+    "basename": "shield-bearer-achish-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-achish-03_00001_.png",
     "basename": "shield-bearer-achish-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-achish-03_00001_00001_.png",
-    "basename": "shield-bearer-achish-03_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-achish-03_00002_.png",
+    "basename": "shield-bearer-achish-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-achish-04_00001_.png",
     "basename": "shield-bearer-achish-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-achish-04_00001_00001_.png",
-    "basename": "shield-bearer-achish-04_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-achish-04_00002_.png",
+    "basename": "shield-bearer-achish-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-achish-05_00001_.png",
     "basename": "shield-bearer-achish-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-achish-05_00001_00001_.png",
-    "basename": "shield-bearer-achish-05_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-achish-05_00002_.png",
+    "basename": "shield-bearer-achish-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-david-01_00001_.png",
     "basename": "shield-bearer-david-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-david-01_00002_.png",
     "basename": "shield-bearer-david-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-david-02_00001_.png",
     "basename": "shield-bearer-david-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-david-02_00002_.png",
     "basename": "shield-bearer-david-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-david-03_00001_.png",
     "basename": "shield-bearer-david-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-david-03_00001_00001_.png",
-    "basename": "shield-bearer-david-03_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-david-03_00002_.png",
+    "basename": "shield-bearer-david-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-david-04_00001_.png",
     "basename": "shield-bearer-david-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-david-04_00001_00001_.png",
-    "basename": "shield-bearer-david-04_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-david-04_00002_.png",
+    "basename": "shield-bearer-david-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-david-05_00001_.png",
     "basename": "shield-bearer-david-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-david-05_00001_00001_.png",
-    "basename": "shield-bearer-david-05_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-david-05_00002_.png",
+    "basename": "shield-bearer-david-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-ekron-01_00001_.png",
     "basename": "shield-bearer-ekron-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-ekron-01_00001_00001_.png",
-    "basename": "shield-bearer-ekron-01_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-ekron-01_00002_.png",
+    "basename": "shield-bearer-ekron-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-ekron-02_00001_.png",
     "basename": "shield-bearer-ekron-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-ekron-02_00001_00001_.png",
-    "basename": "shield-bearer-ekron-02_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-ekron-02_00002_.png",
+    "basename": "shield-bearer-ekron-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-ekron-03_00001_.png",
     "basename": "shield-bearer-ekron-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-ekron-03_00001_00001_.png",
-    "basename": "shield-bearer-ekron-03_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-ekron-03_00002_.png",
+    "basename": "shield-bearer-ekron-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-ekron-04_00001_.png",
     "basename": "shield-bearer-ekron-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-ekron-04_00001_00001_.png",
-    "basename": "shield-bearer-ekron-04_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-ekron-04_00002_.png",
+    "basename": "shield-bearer-ekron-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-ekron-05_00001_.png",
     "basename": "shield-bearer-ekron-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-ekron-05_00001_00001_.png",
-    "basename": "shield-bearer-ekron-05_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-ekron-05_00002_.png",
+    "basename": "shield-bearer-ekron-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-jonathan-01_00001_.png",
     "basename": "shield-bearer-jonathan-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-jonathan-01_00001_00001_.png",
-    "basename": "shield-bearer-jonathan-01_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-jonathan-01_00002_.png",
+    "basename": "shield-bearer-jonathan-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-jonathan-02_00001_.png",
     "basename": "shield-bearer-jonathan-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-jonathan-02_00001_00001_.png",
-    "basename": "shield-bearer-jonathan-02_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-jonathan-02_00002_.png",
+    "basename": "shield-bearer-jonathan-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-jonathan-03_00001_.png",
     "basename": "shield-bearer-jonathan-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-jonathan-03_00001_00001_.png",
-    "basename": "shield-bearer-jonathan-03_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-jonathan-03_00002_.png",
+    "basename": "shield-bearer-jonathan-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-jonathan-04_00001_.png",
     "basename": "shield-bearer-jonathan-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "phalanx-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-jonathan-04_00001_00001_.png",
-    "basename": "shield-bearer-jonathan-04_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-jonathan-04_00002_.png",
+    "basename": "shield-bearer-jonathan-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/shield-bearer-jonathan-05_00001_.png",
     "basename": "shield-bearer-jonathan-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/shield-bearer-jonathan-05_00001_00001_.png",
-    "basename": "shield-bearer-jonathan-05_00001_00001_.png",
+    "filename": "unit-cards/shield-bearer-jonathan-05_00002_.png",
+    "basename": "shield-bearer-jonathan-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-david-01_00001_.png",
     "basename": "slinger-david-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "circle-and-strike"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-david-01_00002_.png",
     "basename": "slinger-david-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "circle-and-strike"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-david-02_00001_.png",
     "basename": "slinger-david-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "stone-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-david-02_00002_.png",
     "basename": "slinger-david-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "stone-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-david-03_00001_.png",
     "basename": "slinger-david-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "circle-and-strike"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-david-03_00001_00001_.png",
-    "basename": "slinger-david-03_00001_00001_.png",
+    "filename": "unit-cards/slinger-david-03_00002_.png",
+    "basename": "slinger-david-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-david-04_00001_.png",
     "basename": "slinger-david-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "stone-volley"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-david-04_00001_00001_.png",
-    "basename": "slinger-david-04_00001_00001_.png",
+    "filename": "unit-cards/slinger-david-04_00002_.png",
+    "basename": "slinger-david-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-david-05_00001_.png",
     "basename": "slinger-david-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "circle-and-strike"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-david-05_00001_00001_.png",
-    "basename": "slinger-david-05_00001_00001_.png",
+    "filename": "unit-cards/slinger-david-05_00002_.png",
+    "basename": "slinger-david-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-ekron-01_00001_.png",
     "basename": "slinger-ekron-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "circle-and-strike"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-ekron-01_00001_00001_.png",
-    "basename": "slinger-ekron-01_00001_00001_.png",
+    "filename": "unit-cards/slinger-ekron-01_00002_.png",
+    "basename": "slinger-ekron-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-ekron-02_00001_.png",
     "basename": "slinger-ekron-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "stone-volley"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-ekron-02_00001_00001_.png",
-    "basename": "slinger-ekron-02_00001_00001_.png",
+    "filename": "unit-cards/slinger-ekron-02_00002_.png",
+    "basename": "slinger-ekron-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-ekron-03_00001_.png",
     "basename": "slinger-ekron-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "circle-and-strike"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-ekron-03_00001_00001_.png",
-    "basename": "slinger-ekron-03_00001_00001_.png",
+    "filename": "unit-cards/slinger-ekron-03_00002_.png",
+    "basename": "slinger-ekron-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-ekron-04_00001_.png",
     "basename": "slinger-ekron-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "stone-volley"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-ekron-04_00001_00001_.png",
-    "basename": "slinger-ekron-04_00001_00001_.png",
+    "filename": "unit-cards/slinger-ekron-04_00002_.png",
+    "basename": "slinger-ekron-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/slinger-ekron-05_00001_.png",
     "basename": "slinger-ekron-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "circle-and-strike"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/slinger-ekron-05_00001_00001_.png",
-    "basename": "slinger-ekron-05_00001_00001_.png",
+    "filename": "unit-cards/slinger-ekron-05_00002_.png",
+    "basename": "slinger-ekron-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-achish-01_00001_.png",
     "basename": "spearman-achish-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-achish-01_00001_00001_.png",
-    "basename": "spearman-achish-01_00001_00001_.png",
+    "filename": "unit-cards/spearman-achish-01_00002_.png",
+    "basename": "spearman-achish-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-achish-02_00001_.png",
     "basename": "spearman-achish-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-achish-02_00001_00001_.png",
-    "basename": "spearman-achish-02_00001_00001_.png",
+    "filename": "unit-cards/spearman-achish-02_00002_.png",
+    "basename": "spearman-achish-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-achish-03_00001_.png",
     "basename": "spearman-achish-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-screen"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-achish-03_00001_00001_.png",
-    "basename": "spearman-achish-03_00001_00001_.png",
+    "filename": "unit-cards/spearman-achish-03_00002_.png",
+    "basename": "spearman-achish-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-achish-04_00001_.png",
     "basename": "spearman-achish-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-achish-04_00001_00001_.png",
-    "basename": "spearman-achish-04_00001_00001_.png",
+    "filename": "unit-cards/spearman-achish-04_00002_.png",
+    "basename": "spearman-achish-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-achish-05_00001_.png",
     "basename": "spearman-achish-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-achish-05_00001_00001_.png",
-    "basename": "spearman-achish-05_00001_00001_.png",
+    "filename": "unit-cards/spearman-achish-05_00002_.png",
+    "basename": "spearman-achish-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-01_00001_.png",
     "basename": "spearman-david-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-01_00002_.png",
     "basename": "spearman-david-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-02_00001_.png",
     "basename": "spearman-david-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-02_00002_.png",
     "basename": "spearman-david-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-03_00001_.png",
     "basename": "spearman-david-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-screen"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-03_00002_.png",
     "basename": "spearman-david-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-04_00001_.png",
     "basename": "spearman-david-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-david-04_00001_00001_.png",
-    "basename": "spearman-david-04_00001_00001_.png",
+    "filename": "unit-cards/spearman-david-04_00002_.png",
+    "basename": "spearman-david-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-david-05_00001_.png",
     "basename": "spearman-david-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-david-05_00001_00001_.png",
-    "basename": "spearman-david-05_00001_00001_.png",
+    "filename": "unit-cards/spearman-david-05_00002_.png",
+    "basename": "spearman-david-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-ekron-01_00001_.png",
     "basename": "spearman-ekron-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-ekron-01_00001_00001_.png",
-    "basename": "spearman-ekron-01_00001_00001_.png",
+    "filename": "unit-cards/spearman-ekron-01_00002_.png",
+    "basename": "spearman-ekron-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-ekron-02_00001_.png",
     "basename": "spearman-ekron-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-ekron-02_00001_00001_.png",
-    "basename": "spearman-ekron-02_00001_00001_.png",
+    "filename": "unit-cards/spearman-ekron-02_00002_.png",
+    "basename": "spearman-ekron-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-ekron-03_00001_.png",
     "basename": "spearman-ekron-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-screen"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-ekron-03_00001_00001_.png",
-    "basename": "spearman-ekron-03_00001_00001_.png",
+    "filename": "unit-cards/spearman-ekron-03_00002_.png",
+    "basename": "spearman-ekron-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-ekron-04_00001_.png",
     "basename": "spearman-ekron-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-ekron-04_00001_00001_.png",
-    "basename": "spearman-ekron-04_00001_00001_.png",
+    "filename": "unit-cards/spearman-ekron-04_00002_.png",
+    "basename": "spearman-ekron-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-ekron-05_00001_.png",
     "basename": "spearman-ekron-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-ekron-05_00001_00001_.png",
-    "basename": "spearman-ekron-05_00001_00001_.png",
+    "filename": "unit-cards/spearman-ekron-05_00002_.png",
+    "basename": "spearman-ekron-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-jonathan-01_00001_.png",
     "basename": "spearman-jonathan-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-jonathan-01_00001_00001_.png",
-    "basename": "spearman-jonathan-01_00001_00001_.png",
+    "filename": "unit-cards/spearman-jonathan-01_00002_.png",
+    "basename": "spearman-jonathan-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-jonathan-02_00001_.png",
     "basename": "spearman-jonathan-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-jonathan-02_00001_00001_.png",
-    "basename": "spearman-jonathan-02_00001_00001_.png",
+    "filename": "unit-cards/spearman-jonathan-02_00002_.png",
+    "basename": "spearman-jonathan-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-jonathan-03_00001_.png",
     "basename": "spearman-jonathan-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-screen"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-jonathan-03_00001_00001_.png",
-    "basename": "spearman-jonathan-03_00001_00001_.png",
+    "filename": "unit-cards/spearman-jonathan-03_00002_.png",
+    "basename": "spearman-jonathan-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-jonathan-04_00001_.png",
     "basename": "spearman-jonathan-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spear-wall"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-jonathan-04_00001_00001_.png",
-    "basename": "spearman-jonathan-04_00001_00001_.png",
+    "filename": "unit-cards/spearman-jonathan-04_00002_.png",
+    "basename": "spearman-jonathan-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/spearman-jonathan-05_00001_.png",
     "basename": "spearman-jonathan-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/spearman-jonathan-05_00001_00001_.png",
-    "basename": "spearman-jonathan-05_00001_00001_.png",
+    "filename": "unit-cards/spearman-jonathan-05_00002_.png",
+    "basename": "spearman-jonathan-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-achish-01_00001_.png",
     "basename": "swordsman-achish-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-achish-01_00001_00001_.png",
-    "basename": "swordsman-achish-01_00001_00001_.png",
+    "filename": "unit-cards/swordsman-achish-01_00002_.png",
+    "basename": "swordsman-achish-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-achish-02_00001_.png",
     "basename": "swordsman-achish-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-achish-02_00001_00001_.png",
-    "basename": "swordsman-achish-02_00001_00001_.png",
+    "filename": "unit-cards/swordsman-achish-02_00002_.png",
+    "basename": "swordsman-achish-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-achish-03_00001_.png",
     "basename": "swordsman-achish-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-achish-03_00001_00001_.png",
-    "basename": "swordsman-achish-03_00001_00001_.png",
+    "filename": "unit-cards/swordsman-achish-03_00002_.png",
+    "basename": "swordsman-achish-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-achish-04_00001_.png",
     "basename": "swordsman-achish-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-achish-04_00001_00001_.png",
-    "basename": "swordsman-achish-04_00001_00001_.png",
+    "filename": "unit-cards/swordsman-achish-04_00002_.png",
+    "basename": "swordsman-achish-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-achish-05_00001_.png",
     "basename": "swordsman-achish-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-achish-05_00001_00001_.png",
-    "basename": "swordsman-achish-05_00001_00001_.png",
+    "filename": "unit-cards/swordsman-achish-05_00002_.png",
+    "basename": "swordsman-achish-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-ekron-01_00001_.png",
     "basename": "swordsman-ekron-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-ekron-01_00001_00001_.png",
-    "basename": "swordsman-ekron-01_00001_00001_.png",
+    "filename": "unit-cards/swordsman-ekron-01_00002_.png",
+    "basename": "swordsman-ekron-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-ekron-02_00001_.png",
     "basename": "swordsman-ekron-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-ekron-02_00001_00001_.png",
-    "basename": "swordsman-ekron-02_00001_00001_.png",
+    "filename": "unit-cards/swordsman-ekron-02_00002_.png",
+    "basename": "swordsman-ekron-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-ekron-03_00001_.png",
     "basename": "swordsman-ekron-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-ekron-03_00001_00001_.png",
-    "basename": "swordsman-ekron-03_00001_00001_.png",
+    "filename": "unit-cards/swordsman-ekron-03_00002_.png",
+    "basename": "swordsman-ekron-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-ekron-04_00001_.png",
     "basename": "swordsman-ekron-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-ekron-04_00001_00001_.png",
-    "basename": "swordsman-ekron-04_00001_00001_.png",
+    "filename": "unit-cards/swordsman-ekron-04_00002_.png",
+    "basename": "swordsman-ekron-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsman-ekron-05_00001_.png",
     "basename": "swordsman-ekron-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsman-ekron-05_00001_00001_.png",
-    "basename": "swordsman-ekron-05_00001_00001_.png",
+    "filename": "unit-cards/swordsman-ekron-05_00002_.png",
+    "basename": "swordsman-ekron-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsmen-advance-01_00001_.png",
     "basename": "swordsmen-advance-01_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsmen-advance-01_00002_.png",
     "basename": "swordsmen-advance-01_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsmen-advance-02_00001_.png",
     "basename": "swordsmen-advance-02_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsmen-advance-02_00002_.png",
     "basename": "swordsmen-advance-02_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-formation"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsmen-advance-03_00001_.png",
     "basename": "swordsmen-advance-03_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsmen-advance-03_00001_00001_.png",
-    "basename": "swordsmen-advance-03_00001_00001_.png",
+    "filename": "unit-cards/swordsmen-advance-03_00002_.png",
+    "basename": "swordsmen-advance-03_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsmen-advance-04_00001_.png",
     "basename": "swordsmen-advance-04_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-formation"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsmen-advance-04_00001_00001_.png",
-    "basename": "swordsmen-advance-04_00001_00001_.png",
+    "filename": "unit-cards/swordsmen-advance-04_00002_.png",
+    "basename": "swordsmen-advance-04_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-cards/swordsmen-advance-05_00001_.png",
     "basename": "swordsmen-advance-05_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-cards/swordsmen-advance-05_00001_00001_.png",
-    "basename": "swordsmen-advance-05_00001_00001_.png",
+    "filename": "unit-cards/swordsmen-advance-05_00002_.png",
+    "basename": "swordsmen-advance-05_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsmen-advance"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/achish_00001_.png",
     "basename": "achish_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/achish_00002_.png",
     "basename": "achish_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/achish_00003_.png",
     "basename": "achish_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "achish_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/archer-achish_00001_.png",
     "basename": "archer-achish_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/archer-achish_00002_.png",
     "basename": "archer-achish_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer_achish"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/archer-achish_00002_00001_.png",
-    "basename": "archer-achish_00002_00001_.png",
+    "filename": "unit-discs/archer-achish_00003_.png",
+    "basename": "archer-achish_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/archer-jonathan_00001_.png",
     "basename": "archer-jonathan_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/archer-jonathan_00002_.png",
     "basename": "archer-jonathan_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/archer-jonathan_00002_00001_.png",
-    "basename": "archer-jonathan_00002_00001_.png",
+    "filename": "unit-discs/archer-jonathan_00003_.png",
+    "basename": "archer-jonathan_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/chariot_00001_.png",
     "basename": "chariot_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/chariot_00002_.png",
     "basename": "chariot_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/chariot_00003_.png",
     "basename": "chariot_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "chariot_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/david_00001_.png",
     "basename": "david_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/david_00002_.png",
     "basename": "david_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/david_00003_.png",
     "basename": "david_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/elite-archer_00001_.png",
     "basename": "elite-archer_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "elite_archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/elite-archer_00002_.png",
     "basename": "elite-archer_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "elite_archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/elite-archer_00003_.png",
     "basename": "elite-archer_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "elite_archer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/giant_00001_.png",
     "basename": "giant_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giant_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/giant_00002_.png",
     "basename": "giant_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giant_achish"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/giant_00002_00001_.png",
-    "basename": "giant_00002_00001_.png",
+    "filename": "unit-discs/giant_00003_.png",
+    "basename": "giant_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "giant_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/jonathan_00001_.png",
     "basename": "jonathan_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "jonathan_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/jonathan_00002_.png",
     "basename": "jonathan_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "jonathan_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/jonathan_00003_.png",
     "basename": "jonathan_00003_.png",
-    "old_score": 2,
-    "old_decision": "TRASH",
-    "expected_prompt_key": "jonathan"
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/loyal-guard_00001_.png",
     "basename": "loyal-guard_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/loyal-guard_00002_.png",
     "basename": "loyal-guard_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/loyal-guard_00003_.png",
     "basename": "loyal-guard_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "loyal_guard_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/philistine-lord_00001_.png",
     "basename": "philistine-lord_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "philistine_lord_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/philistine-lord_00002_.png",
     "basename": "philistine-lord_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "philistine_lord_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/philistine-lord_00003_.png",
     "basename": "philistine-lord_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "philistine_lord_commander"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/scout-david_00001_.png",
     "basename": "scout-david_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/scout-david_00002_.png",
     "basename": "scout-david_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout_david"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/scout-david_00002_00001_.png",
-    "basename": "scout-david_00002_00001_.png",
+    "filename": "unit-discs/scout-david_00003_.png",
+    "basename": "scout-david_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "scout_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-achish_00001_.png",
     "basename": "shield-bearer-achish_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-achish_00002_.png",
     "basename": "shield-bearer-achish_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/shield-bearer-achish_00002_00001_.png",
-    "basename": "shield-bearer-achish_00002_00001_.png",
+    "filename": "unit-discs/shield-bearer-achish_00003_.png",
+    "basename": "shield-bearer-achish_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-david_00001_.png",
     "basename": "shield-bearer-david_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-david_00002_.png",
     "basename": "shield-bearer-david_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/shield-bearer-david_00002_00001_.png",
-    "basename": "shield-bearer-david_00002_00001_.png",
+    "filename": "unit-discs/shield-bearer-david_00003_.png",
+    "basename": "shield-bearer-david_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-ekron_00001_.png",
     "basename": "shield-bearer-ekron_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-ekron_00002_.png",
     "basename": "shield-bearer-ekron_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/shield-bearer-ekron_00002_00001_.png",
-    "basename": "shield-bearer-ekron_00002_00001_.png",
+    "filename": "unit-discs/shield-bearer-ekron_00003_.png",
+    "basename": "shield-bearer-ekron_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-jonathan_00001_.png",
     "basename": "shield-bearer-jonathan_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/shield-bearer-jonathan_00002_.png",
     "basename": "shield-bearer-jonathan_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/shield-bearer-jonathan_00002_00001_.png",
-    "basename": "shield-bearer-jonathan_00002_00001_.png",
+    "filename": "unit-discs/shield-bearer-jonathan_00003_.png",
+    "basename": "shield-bearer-jonathan_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "shield_bearer_jonathan"
-  },
-  {
-    "filename": "unit-discs/slinger-david-02_00002_.png",
-    "basename": "slinger-david-02_00002_.png",
-    "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "stone-volley"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/slinger-david_00001_.png",
     "basename": "slinger-david_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/slinger-david_00002_.png",
     "basename": "slinger-david_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_david"
+    "old_decision": "KEEP"
+  },
+  {
+    "filename": "unit-discs/slinger-david_00003_.png",
+    "basename": "slinger-david_00003_.png",
+    "old_score": 3,
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/slinger-ekron_00001_.png",
     "basename": "slinger-ekron_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/slinger-ekron_00002_.png",
     "basename": "slinger-ekron_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_ekron"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/slinger-ekron_00002_00001_.png",
-    "basename": "slinger-ekron_00002_00001_.png",
+    "filename": "unit-discs/slinger-ekron_00003_.png",
+    "basename": "slinger-ekron_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "slinger_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-achish_00001_.png",
     "basename": "spearman-achish_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-achish_00002_.png",
     "basename": "spearman-achish_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-achish_00003_.png",
     "basename": "spearman-achish_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-david_00001_.png",
     "basename": "spearman-david_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-david_00002_.png",
     "basename": "spearman-david_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-david_00003_.png",
     "basename": "spearman-david_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-ekron_00001_.png",
     "basename": "spearman-ekron_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-ekron_00002_.png",
     "basename": "spearman-ekron_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-ekron_00003_.png",
     "basename": "spearman-ekron_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-jonathan_00001_.png",
     "basename": "spearman-jonathan_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/spearman-jonathan_00002_.png",
     "basename": "spearman-jonathan_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/spearman-jonathan_00002_00001_.png",
-    "basename": "spearman-jonathan_00002_00001_.png",
+    "filename": "unit-discs/spearman-jonathan_00003_.png",
+    "basename": "spearman-jonathan_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "spearman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-achish_00001_.png",
     "basename": "swordsman-achish_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-achish_00002_.png",
     "basename": "swordsman-achish_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/swordsman-achish_00002_00001_.png",
-    "basename": "swordsman-achish_00002_00001_.png",
+    "filename": "unit-discs/swordsman-achish_00003_.png",
+    "basename": "swordsman-achish_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_achish"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-david_00001_.png",
     "basename": "swordsman-david_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-david_00002_.png",
     "basename": "swordsman-david_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_david"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/swordsman-david_00002_00001_.png",
-    "basename": "swordsman-david_00002_00001_.png",
+    "filename": "unit-discs/swordsman-david_00003_.png",
+    "basename": "swordsman-david_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_david"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-ekron_00001_.png",
     "basename": "swordsman-ekron_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-ekron_00002_.png",
     "basename": "swordsman-ekron_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/swordsman-ekron_00002_00001_.png",
-    "basename": "swordsman-ekron_00002_00001_.png",
+    "filename": "unit-discs/swordsman-ekron_00003_.png",
+    "basename": "swordsman-ekron_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_ekron"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-jonathan_00001_.png",
     "basename": "swordsman-jonathan_00001_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_jonathan"
+    "old_decision": "KEEP"
   },
   {
     "filename": "unit-discs/swordsman-jonathan_00002_.png",
     "basename": "swordsman-jonathan_00002_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_jonathan"
+    "old_decision": "KEEP"
   },
   {
-    "filename": "unit-discs/swordsman-jonathan_00002_00001_.png",
-    "basename": "swordsman-jonathan_00002_00001_.png",
+    "filename": "unit-discs/swordsman-jonathan_00003_.png",
+    "basename": "swordsman-jonathan_00003_.png",
     "old_score": 3,
-    "old_decision": "KEEP",
-    "expected_prompt_key": "swordsman_jonathan"
+    "old_decision": "KEEP"
   }
 ]
