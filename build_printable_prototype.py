@@ -148,6 +148,15 @@ CARD_NAME_TO_PROMPT_KEY = {
     "Hit and Run": "chariot-formation-2",
     "Coastal Sling": "circle-and-strike",
     "Stone Storm": "stone-volley",
+    "Battle Cry": "battle-cry",
+    "Tactical Assessment": "tactical-assessment",
+    "Last Resort": "last-resort",
+    "Flanking Maneuver": "flanking-maneuver",
+    "Siege Engineer": "siege-engineer",
+    "Shepherd's Call": "shepherds-call",
+    "Jonathan's Charge": "jonathans-charge",
+    "Ekron's Decree": "ekrons-decree",
+    "Philistine Might": "philistine-might",
 }
 
 # Commander card order in .md file
@@ -172,23 +181,45 @@ COMMANDER_CARD_ORDER = {
 
 # Unit disc prompt key overrides
 UNIT_DISC_PROMPT_KEYS = {
-    "David": "david",
-    "Jonathan": "jonathan",
-    "Achish": "achish",
-    "Philistine Lord": "philistine-lord",
+    "David": "david_commander",
+    "Jonathan": "jonathan_commander",
+    "Achish": "achish_commander",
+    "Philistine Lord": "philistine_lord_commander",
     "Abner": "abner",
     "Chieftain": "chieftain",
-    "Swordsman": "swordsman-david",
-    "Spearman": "spearman-david",
-    "Shield Bearer": "shield-bearer-david",
-    "Scout": "scout-david",
-    "Archer": "archer-jonathan",
-    "Slinger": "slinger-david",
-    "Loyal Guard": "loyal-guard",
-    "Elite Archer": "elite-archer",
-    "Giant": "giant",
-    "Chariot": "chariot",
-    "Heavy Infantry": "heavy-infantry",
+    "Loyal Guard": "loyal_guard_jonathan",
+    "Elite Archer": "elite_archer_jonathan",
+    "Giant": "giant_achish",
+    "Chariot": "chariot_ekron",
+}
+
+# Faction-specific prompt keys for shared unit types
+FACTION_UNIT_PROMPT_KEYS = {
+    "David's Company": {
+        "Swordsman": "swordsman_david",
+        "Spearman": "spearman_david",
+        "Slinger": "slinger_david",
+        "Scout": "scout_david",
+        "Shield Bearer": "shield_bearer_david",
+        "Archer": "archer_jonathan",
+    },
+    "Jonathan's Followers": {
+        "Archer": "archer_jonathan",
+        "Spearman": "spearman_jonathan",
+        "Shield Bearer": "shield_bearer_jonathan",
+    },
+    "Achish's Host": {
+        "Swordsman": "swordsman_achish",
+        "Spearman": "spearman_achish",
+        "Archer": "archer_achish",
+        "Shield Bearer": "shield_bearer_achish",
+    },
+    "Lord of Ekron's Host": {
+        "Swordsman": "swordsman_ekron",
+        "Spearman": "spearman_ekron",
+        "Slinger": "slinger_ekron",
+        "Shield Bearer": "shield_bearer_ekron",
+    },
 }
 
 # Post-MVP files to skip
@@ -420,10 +451,16 @@ class ArtInventory:
                     return f
         return None
 
-    def get_unit_disc_art(self, unit_name):
-        prefix = UNIT_DISC_PROMPT_KEYS.get(unit_name)
-        if prefix:
-            return self.get_art(prefix)
+    def get_unit_disc_art(self, unit_name, faction=None):
+        # Check faction-specific mapping first
+        if faction and faction in FACTION_UNIT_PROMPT_KEYS:
+            pk = FACTION_UNIT_PROMPT_KEYS[faction].get(unit_name)
+            if pk:
+                return self.get_art(pk)
+        # Check global mapping
+        pk = UNIT_DISC_PROMPT_KEYS.get(unit_name)
+        if pk:
+            return self.get_art(pk)
         # Try normalizing
         norm = unit_name.lower().replace(" ", "-")
         return self.get_art(norm)
@@ -436,7 +473,7 @@ class ArtInventory:
         return None
 
     def get_hex_tile_art(self, terrain="grass"):
-        return self.get_art("hex-" + terrain) or self.get_art(terrain)
+        return self.get_art("hex_" + terrain) or self.get_art("hex-" + terrain) or self.get_art(terrain)
 
     def get_ui_art(self, name):
         return self.get_art(name)
@@ -462,7 +499,8 @@ class CardData:
         self.unit_name = unit_name
         self.faction = faction
         self.is_formation = is_formation
-        self.art_path = None
+        self.top_art_path = None
+        self.bottom_art_path = None
 
 
 def parse_table_card(lines, start_idx, card_name, unit_name, faction):
@@ -782,89 +820,85 @@ def parse_all_cards(base_dir, factions=None):
 # ============================================================================
 
 def render_card(card, inventory, dpi=DPI_DEFAULT):
-    """Render a single command card to a PIL Image."""
+    """Render a single command card to a PIL Image with top/bottom split art."""
     scale = dpi / DPI_DEFAULT
     w = int(CARD_W * scale)
     h = int(CARD_H * scale)
     img = Image.new("RGBA", (w, h), PARCHMENT_BG)
     draw = ImageDraw.Draw(img)
 
-    border_w = int(2 * scale)
-    draw.rectangle([0, 0, w - border_w, h - border_w],
-                   outline=PARCHMENT_BORDER, width=border_w)
+    ob = int(4 * scale)
+    ib = int(2 * scale)
+    draw.rectangle([0, 0, w - ob, h - ob], outline=DARK_INK, width=ob)
+    draw.rectangle([ib // 2, ib // 2, w - ib // 2 - ib, h - ib // 2 - ib],
+                   outline=PARCHMENT_BORDER, width=ib)
 
-    art_h = int(h * 0.65)
-    art = None
-    if not inventory.no_art:
-        pk = normalize_card_name_to_prompt_key(card.name)
-        art_path = inventory.get_art(pk)
-        if art_path:
-            art = resize_art_for_area(art_path, w, art_h)
+    mid_y = h // 2
+    divider_h = int(3 * scale)
+    draw.rectangle([ob, mid_y - divider_h // 2, w - ob, mid_y + divider_h // 2], fill=DARK_INK)
 
-    if art:
-        img.paste(art, (0, 0), art)
-    else:
-        draw.rectangle([0, 0, w, art_h], fill=(200, 200, 200))
-        draw_text_centered(draw, "ART PENDING", w // 2, art_h // 2 - int(10 * scale),
-                           get_font(int(16 * scale), bold=True))
+    title_h = int(20 * scale)
+    title_y = h - ob - title_h
+    draw.rectangle([ob, title_y, w - ob, h - ob], fill=FACTION_COLORS.get(card.faction, (100, 100, 100)))
+    title_font = get_font(int(9 * scale), bold=True)
+    draw_text_centered(draw, card.faction.upper(), w // 2, title_y + int(5 * scale),
+                       title_font, fill=(255, 255, 255))
 
-    text_y = art_h
-    draw.rectangle([0, text_y, w, h], fill=(245, 240, 225))
+    art_w = w - ob - ib * 2
+    art_h = int(300 * scale)
 
-    badge_r = int(36 * scale)
-    init_top = card.top_initiative if isinstance(card.top_initiative, (int, float)) else 0
-    draw.ellipse([int(12 * scale), int(text_y + 12 * scale),
-                  int(12 * scale + badge_r * 2), int(text_y + 12 * scale + badge_r * 2)],
-                 fill=(20, 20, 20))
-    font_init = get_font(int(18 * scale), bold=True)
-    bbox = font_init.getbbox(str(init_top))
-    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-    draw.text((int(12 * scale + badge_r - tw / 2),
-               int(text_y + 12 * scale + badge_r - th / 2)),
-              str(init_top), font=font_init, fill=(255, 255, 255))
+    def draw_half(base_y, art_path, action_text, initiative, side):
+        art_x = ob + ib
+        art_y = base_y + int(10 * scale)
 
-    init_bot = card.bottom_initiative if isinstance(card.bottom_initiative, (int, float)) else 0
-    bx = w - int(12 * scale + badge_r * 2)
-    by = h - int(12 * scale + badge_r * 2)
-    draw.ellipse([bx, by, bx + badge_r * 2, by + badge_r * 2], fill=(20, 20, 20))
-    bbox = font_init.getbbox(str(init_bot))
-    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-    draw.text((bx + badge_r - tw / 2, by + badge_r - th / 2),
-              str(init_bot), font=font_init, fill=(255, 255, 255))
+        art = None
+        if not inventory.no_art and art_path and os.path.exists(art_path):
+            art = resize_art_for_area(art_path, art_w, art_h)
 
-    font_title = get_font(int(16 * scale), bold=True)
-    name_y = text_y + int(10 * scale)
-    draw_text_centered(draw, card.name, w // 2, name_y, font_title, fill=DARK_INK)
+        if art:
+            paste_x = art_x + (art_w - art.width) // 2
+            paste_y = art_y + (art_h - art.height) // 2
+            img.paste(art, (paste_x, paste_y), art)
+        else:
+            draw.rectangle([art_x, art_y, art_x + art_w, art_y + art_h], fill=(200, 200, 200))
 
-    font_body = get_font(int(11 * scale))
-    body_w = w - int(24 * scale)
-    body_x = int(12 * scale)
-    body_y = name_y + int(24 * scale)
+        panel_h = int(140 * scale)
+        panel_y = mid_y - divider_h // 2 - ob - ib - panel_h if side == "top" else title_y - int(4 * scale) - panel_h
+        panel_x = art_x
+        panel_w = art_w
 
-    font_label = get_font(int(10 * scale), bold=True)
-    draw_text_multiline_left(draw, "Top Action:", body_x, body_y,
-                             font_label, body_w, fill=(80, 60, 40))
-    label_h = text_height("Top Action:", font_label)
-    top_y = body_y + label_h + int(4 * scale)
+        draw.rectangle([panel_x, panel_y, panel_x + panel_w, panel_y + panel_h],
+                       fill=(20, 18, 15, 190))
 
-    draw_text_multiline_left(draw, card.top_text, body_x, top_y,
-                             font_body, body_w, fill=DARK_INK)
+        badge_r = int(22 * scale)
+        badge_x = panel_x + int(8 * scale)
+        badge_y = panel_y + int(8 * scale)
+        draw.ellipse([badge_x, badge_y, badge_x + badge_r * 2, badge_y + badge_r * 2],
+                     fill=(212, 175, 55))
+        font_init = get_font(int(13 * scale), bold=True)
+        bbox = font_init.getbbox(str(initiative))
+        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+        draw.text((badge_x + badge_r - tw // 2, badge_y + badge_r - th // 2),
+                  str(initiative), font=font_init, fill=(20, 18, 15))
 
-    top_lines = wrap_text(card.top_text, font_body, body_w)
-    top_h = len(top_lines) * int(text_height("Ag", font_body) * 1.3)
-    bot_y = top_y + top_h + int(12 * scale)
+        label_font = get_font(int(10 * scale), bold=True)
+        label_y = panel_y + int(8 * scale)
+        draw_text_multiline_left(draw, side.upper() + " ACTION:", badge_x + badge_r * 2 + int(8 * scale), label_y,
+                                 label_font, panel_w - badge_r * 2 - int(24 * scale), fill=(212, 175, 55))
 
-    draw_text_multiline_left(draw, "Bottom Action:", body_x, bot_y,
-                             font_label, body_w, fill=(80, 60, 40))
-    blh = text_height("Bottom Action:", font_label)
-    bot_text_y = bot_y + blh + int(4 * scale)
-    draw_text_multiline_left(draw, card.bottom_text, body_x, bot_text_y,
-                             font_body, body_w, fill=DARK_INK)
+        body_font = get_font(int(12 * scale))
+        body_y = label_y + int(14 * scale)
+        draw_text_multiline_left(draw, action_text, panel_x + int(8 * scale), body_y,
+                                 body_font, panel_w - int(16 * scale), fill=(245, 240, 225))
 
-    footer_font = get_font(int(9 * scale))
-    footer_y = h - int(18 * scale)
-    draw_text_centered(draw, card.unit_name, w // 2, footer_y,
-                       footer_font, fill=(80, 60, 40))
+    top_base = ob + ib
+    bot_base = mid_y + divider_h // 2 + ob + ib
+
+    top_init = card.top_initiative if isinstance(card.top_initiative, (int, float)) else 0
+    bot_init = card.bottom_initiative if isinstance(card.bottom_initiative, (int, float)) else 0
+
+    draw_half(top_base, card.top_art_path, card.top_text, top_init, "top")
+    draw_half(bot_base, card.bottom_art_path, card.bottom_text, bot_init, "bottom")
 
     return img
 
@@ -924,7 +958,7 @@ def render_unit_disc(unit_name, faction, stats, inventory, dpi=DPI_DEFAULT):
 
     art = None
     if not inventory.no_art:
-        art_path = inventory.get_unit_disc_art(unit_name)
+        art_path = inventory.get_unit_disc_art(unit_name, faction)
         if art_path:
             art = resize_art_for_area(art_path, int(diam * 0.7), int(diam * 0.7))
 
@@ -934,19 +968,28 @@ def render_unit_disc(unit_name, faction, stats, inventory, dpi=DPI_DEFAULT):
         draw.ellipse([cx - radius + int(20 * scale), cy - radius + int(20 * scale),
                       cx + radius - int(20 * scale), cy + radius - int(20 * scale)],
                      fill=(200, 200, 200))
-        draw_text_centered(draw, unit_name.upper(), cx, cy - int(10 * scale),
-                           get_font(int(14 * scale), bold=True), fill=DARK_INK)
 
     if stats:
         rng, atk, dfc, hp, mv = stats
-        sf = get_font(int(10 * scale), bold=True)
-        sy = cy + radius - int(50 * scale)
-        draw_text_centered(draw, "R{} A{} D{} H{} M{}".format(rng, atk, dfc, hp, mv),
-                           cx, sy, sf, fill=DARK_INK)
+        sf = get_font(int(16 * scale), bold=True)
+        sy = cy + radius - int(55 * scale)
+        stats_text = "R{} A{} D{} H{} M{}".format(rng, atk, dfc, hp, mv)
+        tw = text_width(stats_text, sf)
+        th = text_height(stats_text, sf)
+        draw.rectangle([cx - tw // 2 - int(8 * scale), sy - int(4 * scale),
+                        cx + tw // 2 + int(8 * scale), sy + th + int(4 * scale)],
+                       fill=(30, 25, 20, 200))
+        draw_text_centered(draw, stats_text, cx, sy, sf, fill=(245, 240, 225))
 
-    nf = get_font(int(13 * scale), bold=True)
-    ny = cy + radius - int(15 * scale)
-    draw_text_centered(draw, unit_name, cx, ny, nf, fill=DARK_INK)
+    nf = get_font(int(20 * scale), bold=True)
+    ny = cy + radius - int(18 * scale)
+    name_text = unit_name
+    tw = text_width(name_text, nf)
+    th = text_height(name_text, nf)
+    draw.rectangle([cx - tw // 2 - int(10 * scale), ny - int(4 * scale),
+                    cx + tw // 2 + int(10 * scale), ny + th + int(4 * scale)],
+                   fill=(30, 25, 20, 210))
+    draw_text_centered(draw, name_text, cx, ny, nf, fill=(245, 240, 225))
 
     return img
 
@@ -1016,6 +1059,38 @@ def render_hex_board(inventory, dpi=DPI_DEFAULT):
 
     start_x = margin + (PAGE_W - margin * 2 - total_w) // 2
     start_y = margin + int(30 * scale)
+
+    board_art = None
+    if not inventory.no_art:
+        board_art = inventory.get_art("playable_board")
+
+    if board_art:
+        board_img = Image.open(board_art).convert("RGB")
+        board_img = board_img.resize((PAGE_W, PAGE_H), Image.Resampling.LANCZOS)
+        page.paste(board_img, (0, 0))
+
+        for r in range(rows):
+            for c in range(cols):
+                x = start_x + c * hex_size + (r % 2) * (hex_size // 2)
+                y = start_y + r * int(hex_size * 0.866)
+
+                corners = []
+                for i in range(6):
+                    angle = 60 * i - 30
+                    ax = x + int(hex_size * math.cos(math.radians(angle)) * 0.5)
+                    ay = y + int(hex_size * math.sin(math.radians(angle)) * 0.5)
+                    corners.append((ax, ay))
+
+                draw.polygon(corners, outline=(80, 70, 60, 120), width=int(1 * scale))
+
+                cf = get_font(int(10 * scale), bold=True)
+                draw_text_centered(draw, chr(65 + c) + str(r + 1), x, y, cf, fill=(50, 50, 50, 180))
+
+        title_font = get_font(int(24 * scale), bold=True)
+        draw_text_centered(draw, "8x8 Hex Grid Board", PAGE_W // 2, margin,
+                           title_font, fill=DARK_INK)
+
+        return page
 
     grass_art = inventory.get_hex_tile_art("grass") if not inventory.no_art else None
     rock_art = inventory.get_hex_tile_art("rock") if not inventory.no_art else None
@@ -1159,9 +1234,13 @@ def render_card_backs(inventory, dpi=DPI_DEFAULT):
             if back_art:
                 page.paste(back_art, (x, y), back_art)
             else:
-                draw.rectangle([x, y, x + cw, y + ch],
-                               fill=PARCHMENT_BG, outline=PARCHMENT_BORDER,
-                               width=int(2 * scale))
+                outer_border = int(4 * scale)
+                draw.rectangle([x, y, x + cw - outer_border, y + ch - outer_border],
+                               fill=PARCHMENT_BG, outline=DARK_INK, width=outer_border)
+                inner_border = int(2 * scale)
+                draw.rectangle([x + outer_border // 2, y + outer_border // 2,
+                                x + cw - outer_border // 2 - inner_border, y + ch - outer_border // 2 - inner_border],
+                               outline=PARCHMENT_BORDER, width=inner_border)
                 draw_text_centered(draw, "THE EXILE KING",
                                    x + cw // 2, y + ch // 2,
                                    get_font(int(14 * scale), bold=True), fill=DARK_INK)
@@ -1321,17 +1400,28 @@ def map_cards_to_art(all_cards, inventory):
         for idx, cn in enumerate(card_order):
             for card in all_cards:
                 if card.faction == faction and card.name == cn:
-                    art = inventory.get_commander_art(faction, idx)
-                    if art:
-                        card.art_path = art
+                    commander_art = inventory.get_commander_art(faction, idx)
+                    pk = normalize_card_name_to_prompt_key(card.name)
+                    ability_art = inventory.get_art(pk)
+                    if commander_art:
+                        card.top_art_path = commander_art
+                    if ability_art:
+                        card.bottom_art_path = ability_art
+                    if not card.top_art_path and ability_art:
+                        card.top_art_path = ability_art
+                    if not card.bottom_art_path and ability_art:
+                        card.bottom_art_path = ability_art
 
     for card in all_cards:
-        if card.art_path:
+        if card.top_art_path and card.bottom_art_path:
             continue
         pk = normalize_card_name_to_prompt_key(card.name)
         art = inventory.get_art(pk)
         if art:
-            card.art_path = art
+            if not card.top_art_path:
+                card.top_art_path = art
+            if not card.bottom_art_path:
+                card.bottom_art_path = art
 
 
 # ============================================================================
@@ -1445,9 +1535,11 @@ def main():
     args = parser.parse_args()
 
     pr = os.path.dirname(os.path.abspath(__file__))
-    art_dir = args.art_dir or os.path.join(
+    local_art_dir = os.path.join(pr, "art", "prototype")
+    jake_art_dir = os.path.join(
         r"D:\Jake\ComfyUI_windows_portable\ComfyUI\output\ComfyUI\annointed-exile",
         "prototype")
+    art_dir = args.art_dir or (local_art_dir if os.path.exists(local_art_dir) else jake_art_dir)
     queue_path = args.queue or os.path.join(pr, "generation_queue.json")
     review_path = args.review_report or os.path.join(pr, "full_review.json")
     output_path = args.output or os.path.join(pr, "prototype", "printable_prototype.pdf")

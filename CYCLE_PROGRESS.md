@@ -1,6 +1,6 @@
 # Generation + Review Cycle Progress
 
-**Started:** 2026-08-03 18:32:34
+**Started:** 2026-08-07 12:41:29
 **Mode:** Generation batch
 **Current GPU:** GTX 1060 6GB
 **ComfyUI flags:** `--disable-auto-launch --lowvram --reserve-vram 2.0 --windows-standalone-build`
@@ -11,5 +11,5 @@
 
 **Cycle state:** complete
 **Current item:** -
-**Current queue index:** 175 / 175
+**Current queue index:** 225 / 225
 **Images for current item:** 0 / 0

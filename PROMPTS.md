@@ -193,6 +193,42 @@ Generate at larger size then downscale to target in Unity for better quality.
 
 ---
 
+## Commander Ability Cards (512×768)
+
+**Settings:** 512×768, steps 4, CFG 3, batch 5
+
+These are **tactical scene illustrations** for the 9 commander ability cards. NOT portraits. Think: marginalia in a medieval chronicle showing troop movements or dramatic moments.
+
+| Card | Prompt |
+|---|---|
+| **Battle Cry** | `scene in illuminated manuscript style, bronze age Levantine warriors raising weapons and shouting, dust and motion, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Tactical Assessment** | `scene in illuminated manuscript style, bronze age Levantine commander studying the battlefield from a rocky outcrop, hand raised in thought, warriors waiting below, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Last Resort** | `scene in illuminated manuscript style, bronze age Levantine warriors in desperate defensive position, shields locked, faces determined against overwhelming odds, aged parchment background, ink outlines with muted watercolor wash in faded crimson and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Flanking Maneuver** | `scene in illuminated manuscript style, bronze age Levantine soldiers moving through rocky terrain to outflank the enemy, motion lines, dust, aged parchment background, ink outlines with muted watercolor wash in ochre and faded indigo, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Siege Engineer** | `scene in illuminated manuscript style, bronze age Levantine engineers constructing a siege ramp or battering ram, wooden beams, ropes, earthworks, aged parchment background, ink outlines with muted watercolor wash in umber and ochre, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Shepherd's Call** | `scene in illuminated manuscript style, young bronze age Levantine commander David standing on a hillside raising a shepherd's staff, small band of warriors gathering below, aged parchment background, ink outlines with muted watercolor wash in ochre and faded gold, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Jonathan's Charge** | `scene in illuminated manuscript style, bronze age Levantine warrior Jonathan leading a bold charge down a rocky slope, armor gleaming, spear raised, aged parchment background, ink outlines with muted watercolor wash in ochre and faded crimson, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Ekron's Decree** | `scene in illuminated manuscript style, bronze age Levantine Philistine lord seated on a folding stool in a field tent, issuing commands to spearmen, warm lamplight, aged parchment background, ink outlines with muted watercolor wash in umber and amber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+| **Philistine Might** | `scene in illuminated manuscript style, bronze age Levantine Philistine champion standing dominant among enemies, large figure, spear and shield, aged parchment background, ink outlines with muted watercolor wash in faded crimson and umber, hand-painted historical illustration, board game card art, family friendly, NOT medieval, NOT fantasy, NOT European` |
+
+**Total: 9 prompts × 5 samples = 45 images**
+
+---
+
+## Playable Board Art (2550×3300)
+
+**Settings:** 2550×3300, steps 4, CFG 3, batch 5
+
+Generate a **single composed playable board image** — an 8×8 hex grid rendered as a tactical map on aged parchment. This replaces the flat checkerboard with a visually rich map background.
+
+| Card | Prompt |
+|---|---|
+| **Playable Board** | `top-down tactical battlefield map on aged parchment, 8x8 hex grid visible as subtle hexagon outlines, bronze age Levantine terrain: dry grass plains, rocky outcrops, sandy patches, scattered boulders and low shrubs, hand-painted illuminated manuscript style, ink outlines with muted watercolor wash in ochre umber faded crimson and sage green, board game playable map, family friendly, NOT medieval, NOT fantasy, NOT European, historically accurate bronze age Levantine` |
+
+**Total: 1 prompt × 5 samples = 5 images**
+
+---
+
 ## Post-MVP Content
 
 > **All portrait prompts, box art, and faction art for Jonathan's Followers, Philistines, Girzites, Geshurites, Gezerites, Mighty Men, Joab/Amasa/Asahel, and any expansion content are maintained in `POST_MVP_GDD.md`.**

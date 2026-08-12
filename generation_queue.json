@@ -2365,14 +2365,113 @@
     "filename_prefix": "lost-pile-marker"
   },
   {
-    "id": "ui-setup-sheet",
-    "prompt_key": "setup-sheet",
-    "count": 1,
+    "id": "playable-board",
+    "prompt_key": "playable_board",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 2550,
+    "height": 3300,
+    "output_subfolder": "prototype/board",
+    "filename_prefix": "playable-board"
+  },
+  {
+    "id": "ability-battle-cry",
+    "prompt_key": "battle-cry",
+    "count": 5,
     "steps": 4,
     "cfg": 3,
     "width": 512,
-    "height": 512,
-    "output_subfolder": "prototype/ui",
-    "filename_prefix": "setup-sheet"
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "battle-cry"
+  },
+  {
+    "id": "ability-tactical-assessment",
+    "prompt_key": "tactical-assessment",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "tactical-assessment"
+  },
+  {
+    "id": "ability-last-resort",
+    "prompt_key": "last-resort",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "last-resort"
+  },
+  {
+    "id": "ability-flanking-maneuver",
+    "prompt_key": "flanking-maneuver",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "flanking-maneuver"
+  },
+  {
+    "id": "ability-siege-engineer",
+    "prompt_key": "siege-engineer",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "siege-engineer"
+  },
+  {
+    "id": "ability-shepherds-call",
+    "prompt_key": "shepherds-call",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "shepherds-call"
+  },
+  {
+    "id": "ability-jonathans-charge",
+    "prompt_key": "jonathans-charge",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "jonathans-charge"
+  },
+  {
+    "id": "ability-ekrons-decree",
+    "prompt_key": "ekrons-decree",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "ekrons-decree"
+  },
+  {
+    "id": "ability-philistine-might",
+    "prompt_key": "philistine-might",
+    "count": 5,
+    "steps": 4,
+    "cfg": 3,
+    "width": 512,
+    "height": 768,
+    "output_subfolder": "prototype/unit-cards",
+    "filename_prefix": "philistine-might"
   }
 ]
