@@ -348,6 +348,21 @@ def resize_art_for_area(art_path, target_w, target_h):
     return img
 
 
+def resize_art_cover(art_path, target_w, target_h):
+    """Load art and resize to cover target dimensions, cropping overflow."""
+    if not art_path or not os.path.exists(art_path):
+        return None
+    img = Image.open(art_path).convert("RGBA")
+    scale = max(target_w / img.width, target_h / img.height)
+    new_w = int(img.width * scale)
+    new_h = int(img.height * scale)
+    img = img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+    left = (img.width - target_w) // 2
+    top = (img.height - target_h) // 2
+    img = img.crop((left, top, left + target_w, top + target_h))
+    return img
+
+
 # ============================================================================
 # Art Inventory
 # ============================================================================
@@ -820,7 +835,7 @@ def parse_all_cards(base_dir, factions=None):
 # ============================================================================
 
 def render_card(card, inventory, dpi=DPI_DEFAULT):
-    """Render a single command card to a PIL Image with top/bottom split art."""
+    """Render a single command card to a PIL Image with full-art background."""
     scale = dpi / DPI_DEFAULT
     w = int(CARD_W * scale)
     h = int(CARD_H * scale)
@@ -833,10 +848,6 @@ def render_card(card, inventory, dpi=DPI_DEFAULT):
     draw.rectangle([ib // 2, ib // 2, w - ib // 2 - ib, h - ib // 2 - ib],
                    outline=PARCHMENT_BORDER, width=ib)
 
-    mid_y = h // 2
-    divider_h = int(3 * scale)
-    draw.rectangle([ob, mid_y - divider_h // 2, w - ob, mid_y + divider_h // 2], fill=DARK_INK)
-
     title_h = int(20 * scale)
     title_y = h - ob - title_h
     draw.rectangle([ob, title_y, w - ob, h - ob], fill=FACTION_COLORS.get(card.faction, (100, 100, 100)))
@@ -844,36 +855,34 @@ def render_card(card, inventory, dpi=DPI_DEFAULT):
     draw_text_centered(draw, card.faction.upper(), w // 2, title_y + int(5 * scale),
                        title_font, fill=(255, 255, 255))
 
+    art_x = ob + ib
+    art_y = ob + ib
     art_w = w - ob - ib * 2
-    art_h = int(300 * scale)
+    art_h = h - ob - ib * 2 - title_h - int(4 * scale)
 
-    def draw_half(base_y, art_path, action_text, initiative, side):
-        art_x = ob + ib
-        art_y = base_y + int(10 * scale)
+    art_path = card.top_art_path or card.bottom_art_path
+    art = None
+    if not inventory.no_art and art_path and os.path.exists(art_path):
+        art = resize_art_cover(art_path, art_w, art_h)
 
-        art = None
-        if not inventory.no_art and art_path and os.path.exists(art_path):
-            art = resize_art_for_area(art_path, art_w, art_h)
+    if art:
+        img.paste(art, (art_x, art_y), art)
+    else:
+        draw.rectangle([art_x, art_y, art_x + art_w, art_y + art_h], fill=(200, 200, 200))
 
-        if art:
-            paste_x = art_x + (art_w - art.width) // 2
-            paste_y = art_y + (art_h - art.height) // 2
-            img.paste(art, (paste_x, paste_y), art)
-        else:
-            draw.rectangle([art_x, art_y, art_x + art_w, art_y + art_h], fill=(200, 200, 200))
+    overlay_h = int(100 * scale)
+    text_pad = int(8 * scale)
+    badge_r = int(22 * scale)
+    badge_size = badge_r * 2
 
-        panel_h = int(140 * scale)
-        panel_y = mid_y - divider_h // 2 - ob - ib - panel_h if side == "top" else title_y - int(4 * scale) - panel_h
-        panel_x = art_x
-        panel_w = art_w
-
-        draw.rectangle([panel_x, panel_y, panel_x + panel_w, panel_y + panel_h],
+    def draw_action_overlay(base_y, initiative, action_text, side_label):
+        overlay_y = base_y
+        draw.rectangle([art_x, overlay_y, art_x + art_w, overlay_y + overlay_h],
                        fill=(20, 18, 15, 190))
 
-        badge_r = int(22 * scale)
-        badge_x = panel_x + int(8 * scale)
-        badge_y = panel_y + int(8 * scale)
-        draw.ellipse([badge_x, badge_y, badge_x + badge_r * 2, badge_y + badge_r * 2],
+        badge_x = art_x + text_pad
+        badge_y = overlay_y + text_pad
+        draw.ellipse([badge_x, badge_y, badge_x + badge_size, badge_y + badge_size],
                      fill=(212, 175, 55))
         font_init = get_font(int(13 * scale), bold=True)
         bbox = font_init.getbbox(str(initiative))
@@ -882,23 +891,28 @@ def render_card(card, inventory, dpi=DPI_DEFAULT):
                   str(initiative), font=font_init, fill=(20, 18, 15))
 
         label_font = get_font(int(10 * scale), bold=True)
-        label_y = panel_y + int(8 * scale)
-        draw_text_multiline_left(draw, side.upper() + " ACTION:", badge_x + badge_r * 2 + int(8 * scale), label_y,
-                                 label_font, panel_w - badge_r * 2 - int(24 * scale), fill=(212, 175, 55))
+        label_y = overlay_y + text_pad
+        draw_text_multiline_left(draw, side_label,
+                                 badge_x + badge_size + text_pad, label_y,
+                                 label_font, art_w - badge_size - text_pad * 3,
+                                 fill=(212, 175, 55))
 
         body_font = get_font(int(12 * scale))
         body_y = label_y + int(14 * scale)
-        draw_text_multiline_left(draw, action_text, panel_x + int(8 * scale), body_y,
-                                 body_font, panel_w - int(16 * scale), fill=(245, 240, 225))
-
-    top_base = ob + ib
-    bot_base = mid_y + divider_h // 2 + ob + ib
+        draw_text_multiline_left(draw, action_text,
+                                 badge_x + text_pad, body_y,
+                                 body_font, art_w - badge_size - text_pad * 3,
+                                 fill=(245, 240, 225))
 
     top_init = card.top_initiative if isinstance(card.top_initiative, (int, float)) else 0
     bot_init = card.bottom_initiative if isinstance(card.bottom_initiative, (int, float)) else 0
 
-    draw_half(top_base, card.top_art_path, card.top_text, top_init, "top")
-    draw_half(bot_base, card.bottom_art_path, card.bottom_text, bot_init, "bottom")
+    draw_action_overlay(art_y, top_init, card.top_text, "TOP ACTION:")
+    draw_action_overlay(art_y + art_h - overlay_h, bot_init, card.bottom_text, "BOTTOM ACTION:")
+
+    mid_y = art_y + art_h // 2
+    draw.rectangle([art_x, mid_y - int(1 * scale), art_x + art_w, mid_y + int(1 * scale)],
+                   fill=DARK_INK)
 
     return img
 
@@ -1077,8 +1091,8 @@ def render_hex_board(inventory, dpi=DPI_DEFAULT):
                 corners = []
                 for i in range(6):
                     angle = 60 * i - 30
-                    ax = x + int(hex_size * math.cos(math.radians(angle)) * 0.5)
-                    ay = y + int(hex_size * math.sin(math.radians(angle)) * 0.5)
+                    ax = x + int(hex_size * math.cos(math.radians(angle)) * 1.0)
+                    ay = y + int(hex_size * math.sin(math.radians(angle)) * 1.0)
                     corners.append((ax, ay))
 
                 draw.polygon(corners, outline=(80, 70, 60, 120), width=int(1 * scale))
@@ -1092,17 +1106,6 @@ def render_hex_board(inventory, dpi=DPI_DEFAULT):
 
         return page
 
-    grass_art = inventory.get_hex_tile_art("grass") if not inventory.no_art else None
-    rock_art = inventory.get_hex_tile_art("rock") if not inventory.no_art else None
-    sand_art = inventory.get_hex_tile_art("sand") if not inventory.no_art else None
-
-    pattern = []
-    for r in range(8):
-        row = []
-        for c in range(8):
-            row.append("grass" if (r + c) % 2 == 0 else "rock")
-        pattern.append(row)
-
     for r in range(rows):
         for c in range(cols):
             x = start_x + c * hex_size + (r % 2) * (hex_size // 2)
@@ -1111,25 +1114,11 @@ def render_hex_board(inventory, dpi=DPI_DEFAULT):
             corners = []
             for i in range(6):
                 angle = 60 * i - 30
-                ax = x + int(hex_size * math.cos(math.radians(angle)) * 0.5)
-                ay = y + int(hex_size * math.sin(math.radians(angle)) * 0.5)
+                ax = x + int(hex_size * math.cos(math.radians(angle)) * 1.0)
+                ay = y + int(hex_size * math.sin(math.radians(angle)) * 1.0)
                 corners.append((ax, ay))
 
-            terrain = pattern[r][c]
-            tile_img = None
-            target_s = hex_size
-            if terrain == "grass" and grass_art:
-                tile_img = resize_art_for_area(grass_art, target_s, target_s)
-            elif terrain == "rock" and rock_art:
-                tile_img = resize_art_for_area(rock_art, target_s, target_s)
-
-            if tile_img:
-                page.paste(tile_img, (x - tile_img.width // 2, y - tile_img.height // 2), tile_img)
-            else:
-                color = (200, 200, 180) if terrain == "grass" else (180, 180, 170)
-                draw.polygon(corners, fill=color)
-
-            draw.polygon(corners, outline=(80, 70, 60))
+            draw.polygon(corners, outline=(80, 70, 60), width=int(1 * scale))
 
             cf = get_font(int(9 * scale), bold=True)
             draw_text_centered(draw, chr(65 + c) + str(r + 1), x, y, cf, fill=(50, 50, 50))
@@ -1401,27 +1390,16 @@ def map_cards_to_art(all_cards, inventory):
             for card in all_cards:
                 if card.faction == faction and card.name == cn:
                     commander_art = inventory.get_commander_art(faction, idx)
-                    pk = normalize_card_name_to_prompt_key(card.name)
-                    ability_art = inventory.get_art(pk)
                     if commander_art:
                         card.top_art_path = commander_art
-                    if ability_art:
-                        card.bottom_art_path = ability_art
-                    if not card.top_art_path and ability_art:
-                        card.top_art_path = ability_art
-                    if not card.bottom_art_path and ability_art:
-                        card.bottom_art_path = ability_art
+                    break
 
     for card in all_cards:
-        if card.top_art_path and card.bottom_art_path:
-            continue
-        pk = normalize_card_name_to_prompt_key(card.name)
-        art = inventory.get_art(pk)
-        if art:
-            if not card.top_art_path:
+        if not card.top_art_path:
+            pk = normalize_card_name_to_prompt_key(card.name)
+            art = inventory.get_art(pk)
+            if art:
                 card.top_art_path = art
-            if not card.bottom_art_path:
-                card.bottom_art_path = art
 
 
 # ============================================================================
