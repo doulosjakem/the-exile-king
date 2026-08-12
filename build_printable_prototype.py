@@ -842,23 +842,20 @@ def render_card(card, inventory, dpi=DPI_DEFAULT):
     img = Image.new("RGBA", (w, h), PARCHMENT_BG)
     draw = ImageDraw.Draw(img)
 
-    ob = int(4 * scale)
-    ib = int(2 * scale)
-    draw.rectangle([0, 0, w - ob, h - ob], outline=DARK_INK, width=ob)
-    draw.rectangle([ib // 2, ib // 2, w - ib // 2 - ib, h - ib // 2 - ib],
-                   outline=PARCHMENT_BORDER, width=ib)
+    ob = int(5 * scale)
+    draw.rectangle([0, 0, w - 1, h - 1], outline=DARK_INK, width=ob)
 
-    title_h = int(20 * scale)
+    title_h = int(26 * scale)
     title_y = h - ob - title_h
     draw.rectangle([ob, title_y, w - ob, h - ob], fill=FACTION_COLORS.get(card.faction, (100, 100, 100)))
-    title_font = get_font(int(9 * scale), bold=True)
-    draw_text_centered(draw, card.faction.upper(), w // 2, title_y + int(5 * scale),
+    title_font = get_font(int(12 * scale), bold=True)
+    draw_text_centered(draw, card.faction.upper(), w // 2, title_y + int(6 * scale),
                        title_font, fill=(255, 255, 255))
 
-    art_x = ob + ib
-    art_y = ob + ib
-    art_w = w - ob - ib * 2
-    art_h = h - ob - ib * 2 - title_h - int(4 * scale)
+    art_x = ob
+    art_y = ob
+    art_w = w - ob * 2
+    art_h = h - ob * 2 - title_h - int(6 * scale)
 
     art_path = card.top_art_path or card.bottom_art_path
     art = None
@@ -870,49 +867,75 @@ def render_card(card, inventory, dpi=DPI_DEFAULT):
     else:
         draw.rectangle([art_x, art_y, art_x + art_w, art_y + art_h], fill=(200, 200, 200))
 
-    overlay_h = int(100 * scale)
-    text_pad = int(8 * scale)
-    badge_r = int(22 * scale)
+    text_pad = int(12 * scale)
+    badge_r = int(24 * scale)
     badge_size = badge_r * 2
-
-    def draw_action_overlay(base_y, initiative, action_text, side_label):
-        overlay_y = base_y
-        draw.rectangle([art_x, overlay_y, art_x + art_w, overlay_y + overlay_h],
-                       fill=(20, 18, 15, 190))
-
-        badge_x = art_x + text_pad
-        badge_y = overlay_y + text_pad
-        draw.ellipse([badge_x, badge_y, badge_x + badge_size, badge_y + badge_size],
-                     fill=(212, 175, 55))
-        font_init = get_font(int(13 * scale), bold=True)
-        bbox = font_init.getbbox(str(initiative))
-        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-        draw.text((badge_x + badge_r - tw // 2, badge_y + badge_r - th // 2),
-                  str(initiative), font=font_init, fill=(20, 18, 15))
-
-        label_font = get_font(int(10 * scale), bold=True)
-        label_y = overlay_y + text_pad
-        draw_text_multiline_left(draw, side_label,
-                                 badge_x + badge_size + text_pad, label_y,
-                                 label_font, art_w - badge_size - text_pad * 3,
-                                 fill=(212, 175, 55))
-
-        body_font = get_font(int(12 * scale))
-        body_y = label_y + int(14 * scale)
-        draw_text_multiline_left(draw, action_text,
-                                 badge_x + text_pad, body_y,
-                                 body_font, art_w - badge_size - text_pad * 3,
-                                 fill=(245, 240, 225))
 
     top_init = card.top_initiative if isinstance(card.top_initiative, (int, float)) else 0
     bot_init = card.bottom_initiative if isinstance(card.bottom_initiative, (int, float)) else 0
 
-    draw_action_overlay(art_y, top_init, card.top_text, "TOP ACTION:")
-    draw_action_overlay(art_y + art_h - overlay_h, bot_init, card.bottom_text, "BOTTOM ACTION:")
+    top_y = art_y + text_pad
+    overlay_h = int(52 * scale)
+    draw.rectangle([art_x, top_y, art_x + art_w, top_y + overlay_h],
+                   fill=(20, 18, 15, 210))
 
-    mid_y = art_y + art_h // 2
-    draw.rectangle([art_x, mid_y - int(1 * scale), art_x + art_w, mid_y + int(1 * scale)],
-                   fill=DARK_INK)
+    badge_x = art_x + text_pad
+    badge_y = top_y + (overlay_h - badge_size) // 2
+    draw.ellipse([badge_x, badge_y, badge_x + badge_size, badge_y + badge_size],
+                 fill=(212, 175, 55))
+    font_init = get_font(int(16 * scale), bold=True)
+    bbox = font_init.getbbox(str(top_init))
+    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    draw.text((badge_x + badge_r - tw // 2, badge_y + badge_r - th // 2),
+              str(top_init), font=font_init, fill=(20, 18, 15))
+
+    name_font = get_font(int(18 * scale), bold=True)
+    name_x = badge_x + badge_size + text_pad
+    name_y = top_y + (overlay_h - text_height(card.name, name_font)) // 2
+    draw.text((name_x, name_y), card.name, font=name_font, fill=(245, 240, 225))
+
+    unit_font = get_font(int(12 * scale), bold=True)
+    unit_text = card.unit_name if card.unit_name else ""
+    if unit_text:
+        uw = text_width(unit_text, unit_font)
+        draw.text((art_x + art_w - text_pad - uw, top_y + (overlay_h - text_height(unit_text, unit_font)) // 2),
+                  unit_text, font=unit_font, fill=(212, 175, 55))
+
+    label_font = get_font(int(16 * scale), bold=True)
+    body_font = get_font(int(16 * scale))
+
+    block_h = int(170 * scale)
+    block_y = art_y + art_h - block_h - text_pad
+    draw.rectangle([art_x, block_y, art_x + art_w, art_y + art_h - text_pad],
+                   fill=(20, 18, 15, 210))
+
+    a_label_y = block_y + text_pad
+    bbox = font_init.getbbox(str(top_init))
+    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    draw.text((art_x + text_pad, a_label_y), "A", font=label_font, fill=(212, 175, 55))
+    draw.text((art_x + art_w - text_pad - tw, a_label_y), str(top_init), font=font_init, fill=(212, 175, 55))
+
+    a_text_y = a_label_y + int(22 * scale)
+    avail_w = art_w - text_pad * 2
+    lines = wrap_text(card.top_text, body_font, avail_w)
+    line_h = int(24 * scale)
+    for i, line in enumerate(lines[:2]):
+        draw.text((art_x + text_pad, a_text_y + i * line_h), line,
+                  font=body_font, fill=(245, 240, 225))
+
+    sep_y = a_text_y + 2 * line_h + text_pad // 2
+    draw.rectangle([art_x + text_pad, sep_y, art_x + art_w - text_pad, sep_y + int(2 * scale)],
+                   fill=(212, 175, 55))
+
+    b_label_y = sep_y + int(8 * scale)
+    draw.text((art_x + text_pad, b_label_y), "B", font=label_font, fill=(212, 175, 55))
+    draw.text((art_x + art_w - text_pad - tw, b_label_y), str(bot_init), font=font_init, fill=(212, 175, 55))
+
+    b_text_y = b_label_y + int(22 * scale)
+    lines = wrap_text(card.bottom_text, body_font, avail_w)
+    for i, line in enumerate(lines[:2]):
+        draw.text((art_x + text_pad, b_text_y + i * line_h), line,
+                  font=body_font, fill=(245, 240, 225))
 
     return img
 
