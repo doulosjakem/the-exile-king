@@ -842,14 +842,14 @@ def render_card(card, inventory, dpi=DPI_DEFAULT):
     img = Image.new("RGBA", (w, h), PARCHMENT_BG)
     draw = ImageDraw.Draw(img)
 
-    ob = int(5 * scale)
+    ob = int(6 * scale)
     draw.rectangle([0, 0, w - 1, h - 1], outline=DARK_INK, width=ob)
 
-    title_h = int(26 * scale)
+    title_h = int(32 * scale)
     title_y = h - ob - title_h
     draw.rectangle([ob, title_y, w - ob, h - ob], fill=FACTION_COLORS.get(card.faction, (100, 100, 100)))
-    title_font = get_font(int(12 * scale), bold=True)
-    draw_text_centered(draw, card.faction.upper(), w // 2, title_y + int(6 * scale),
+    title_font = get_font(int(14 * scale), bold=True)
+    draw_text_centered(draw, card.faction.upper(), w // 2, title_y + int(8 * scale),
                        title_font, fill=(255, 255, 255))
 
     art_x = ob
@@ -867,71 +867,67 @@ def render_card(card, inventory, dpi=DPI_DEFAULT):
     else:
         draw.rectangle([art_x, art_y, art_x + art_w, art_y + art_h], fill=(200, 200, 200))
 
-    text_pad = int(12 * scale)
-    badge_r = int(24 * scale)
+    text_pad = int(14 * scale)
+    badge_r = int(28 * scale)
     badge_size = badge_r * 2
 
     top_init = card.top_initiative if isinstance(card.top_initiative, (int, float)) else 0
     bot_init = card.bottom_initiative if isinstance(card.bottom_initiative, (int, float)) else 0
 
     top_y = art_y + text_pad
-    overlay_h = int(52 * scale)
+    overlay_h = int(60 * scale)
     draw.rectangle([art_x, top_y, art_x + art_w, top_y + overlay_h],
-                   fill=(20, 18, 15, 210))
+                   fill=(20, 18, 15, 220))
 
     badge_x = art_x + text_pad
     badge_y = top_y + (overlay_h - badge_size) // 2
     draw.ellipse([badge_x, badge_y, badge_x + badge_size, badge_y + badge_size],
                  fill=(212, 175, 55))
-    font_init = get_font(int(16 * scale), bold=True)
+    font_init = get_font(int(22 * scale), bold=True)
     bbox = font_init.getbbox(str(top_init))
     tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
     draw.text((badge_x + badge_r - tw // 2, badge_y + badge_r - th // 2),
               str(top_init), font=font_init, fill=(20, 18, 15))
 
-    name_font = get_font(int(18 * scale), bold=True)
+    name_font = get_font(int(32 * scale), bold=True)
     name_x = badge_x + badge_size + text_pad
     name_y = top_y + (overlay_h - text_height(card.name, name_font)) // 2
     draw.text((name_x, name_y), card.name, font=name_font, fill=(245, 240, 225))
 
-    unit_font = get_font(int(12 * scale), bold=True)
+    unit_font = get_font(int(24 * scale), bold=True)
     unit_text = card.unit_name if card.unit_name else ""
     if unit_text:
         uw = text_width(unit_text, unit_font)
         draw.text((art_x + art_w - text_pad - uw, top_y + (overlay_h - text_height(unit_text, unit_font)) // 2),
                   unit_text, font=unit_font, fill=(212, 175, 55))
 
-    label_font = get_font(int(16 * scale), bold=True)
-    body_font = get_font(int(16 * scale))
+    label_font = get_font(int(28 * scale), bold=True)
+    body_font = get_font(int(28 * scale))
 
-    block_h = int(170 * scale)
+    block_h = int(260 * scale)
     block_y = art_y + art_h - block_h - text_pad
     draw.rectangle([art_x, block_y, art_x + art_w, art_y + art_h - text_pad],
-                   fill=(20, 18, 15, 210))
+                   fill=(20, 18, 15, 220))
 
     a_label_y = block_y + text_pad
-    bbox = font_init.getbbox(str(top_init))
-    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
     draw.text((art_x + text_pad, a_label_y), "A", font=label_font, fill=(212, 175, 55))
-    draw.text((art_x + art_w - text_pad - tw, a_label_y), str(top_init), font=font_init, fill=(212, 175, 55))
 
-    a_text_y = a_label_y + int(22 * scale)
+    a_text_y = a_label_y + int(32 * scale)
     avail_w = art_w - text_pad * 2
     lines = wrap_text(card.top_text, body_font, avail_w)
-    line_h = int(24 * scale)
+    line_h = int(32 * scale)
     for i, line in enumerate(lines[:2]):
         draw.text((art_x + text_pad, a_text_y + i * line_h), line,
                   font=body_font, fill=(245, 240, 225))
 
-    sep_y = a_text_y + 2 * line_h + text_pad // 2
-    draw.rectangle([art_x + text_pad, sep_y, art_x + art_w - text_pad, sep_y + int(2 * scale)],
+    sep_y = a_text_y + 2 * line_h + text_pad
+    draw.rectangle([art_x + text_pad, sep_y, art_x + art_w - text_pad, sep_y + int(3 * scale)],
                    fill=(212, 175, 55))
 
-    b_label_y = sep_y + int(8 * scale)
+    b_label_y = sep_y + int(10 * scale)
     draw.text((art_x + text_pad, b_label_y), "B", font=label_font, fill=(212, 175, 55))
-    draw.text((art_x + art_w - text_pad - tw, b_label_y), str(bot_init), font=font_init, fill=(212, 175, 55))
 
-    b_text_y = b_label_y + int(22 * scale)
+    b_text_y = b_label_y + int(32 * scale)
     lines = wrap_text(card.bottom_text, body_font, avail_w)
     for i, line in enumerate(lines[:2]):
         draw.text((art_x + text_pad, b_text_y + i * line_h), line,
@@ -1000,7 +996,10 @@ def render_unit_disc(unit_name, faction, stats, inventory, dpi=DPI_DEFAULT):
             art = resize_art_for_area(art_path, int(diam * 0.7), int(diam * 0.7))
 
     if art:
-        img.paste(art, (cx - art.width // 2, cy - radius + int(20 * scale)), art)
+        art_mask = Image.new("L", art.size, 0)
+        art_mask_draw = ImageDraw.Draw(art_mask)
+        art_mask_draw.ellipse([0, 0, art.width - 1, art.height - 1], fill=255)
+        img.paste(art, (cx - art.width // 2, cy - radius + int(20 * scale)), art_mask)
     else:
         draw.ellipse([cx - radius + int(20 * scale), cy - radius + int(20 * scale),
                       cx + radius - int(20 * scale), cy + radius - int(20 * scale)],
@@ -1070,19 +1069,19 @@ def render_disc_sheet(units, inventory, dpi=DPI_DEFAULT):
 # ============================================================================
 
 def render_hex_board(inventory, dpi=DPI_DEFAULT):
-    """Render an 8x8 hex grid board."""
+    """Render a playable 8x8 hex map board."""
     import math
     scale = dpi / DPI_DEFAULT
     page = Image.new("RGB", (PAGE_W, PAGE_H), (240, 235, 220))
     draw = ImageDraw.Draw(page)
 
     margin = int(MARGIN * scale)
-    hex_size = int(180 * scale)
+    hex_size = int(160 * scale)
     cols, rows = 8, 8
     total_w = cols * hex_size
     total_h = int(rows * hex_size * 0.866) + int(hex_size * 0.433)
     page_w_avail = PAGE_W - margin * 2
-    page_h_avail = PAGE_H - margin * 2 - int(60 * scale)
+    page_h_avail = PAGE_H - margin * 2 - int(80 * scale)
     if total_w > page_w_avail:
         s = page_w_avail / total_w
         hex_size = int(hex_size * s)
@@ -1095,39 +1094,17 @@ def render_hex_board(inventory, dpi=DPI_DEFAULT):
         total_h = int(total_h * s)
 
     start_x = margin + (PAGE_W - margin * 2 - total_w) // 2
-    start_y = margin + int(30 * scale)
+    start_y = margin + int(40 * scale)
 
     board_art = None
     if not inventory.no_art:
         board_art = inventory.get_art("playable_board")
 
+    board_area = (start_x, start_y, start_x + total_w, start_y + total_h)
     if board_art:
         board_img = Image.open(board_art).convert("RGB")
-        board_img = board_img.resize((PAGE_W, PAGE_H), Image.Resampling.LANCZOS)
-        page.paste(board_img, (0, 0))
-
-        for r in range(rows):
-            for c in range(cols):
-                x = start_x + c * hex_size + (r % 2) * (hex_size // 2)
-                y = start_y + r * int(hex_size * 0.866)
-
-                corners = []
-                for i in range(6):
-                    angle = 60 * i - 30
-                    ax = x + int(hex_size * math.cos(math.radians(angle)) * 1.0)
-                    ay = y + int(hex_size * math.sin(math.radians(angle)) * 1.0)
-                    corners.append((ax, ay))
-
-                draw.polygon(corners, outline=(80, 70, 60, 120), width=int(1 * scale))
-
-                cf = get_font(int(10 * scale), bold=True)
-                draw_text_centered(draw, chr(65 + c) + str(r + 1), x, y, cf, fill=(50, 50, 50, 180))
-
-        title_font = get_font(int(24 * scale), bold=True)
-        draw_text_centered(draw, "8x8 Hex Grid Board", PAGE_W // 2, margin,
-                           title_font, fill=DARK_INK)
-
-        return page
+        board_img = board_img.resize((total_w, total_h), Image.Resampling.LANCZOS)
+        page.paste(board_img, (start_x, start_y))
 
     for r in range(rows):
         for c in range(cols):
@@ -1141,13 +1118,13 @@ def render_hex_board(inventory, dpi=DPI_DEFAULT):
                 ay = y + int(hex_size * math.sin(math.radians(angle)) * 1.0)
                 corners.append((ax, ay))
 
-            draw.polygon(corners, outline=(80, 70, 60), width=int(1 * scale))
+            draw.polygon(corners, fill=(245, 240, 225, 120), outline=(80, 70, 60), width=int(2 * scale))
 
-            cf = get_font(int(9 * scale), bold=True)
+            cf = get_font(int(12 * scale), bold=True)
             draw_text_centered(draw, chr(65 + c) + str(r + 1), x, y, cf, fill=(50, 50, 50))
 
-    title_font = get_font(int(24 * scale), bold=True)
-    draw_text_centered(draw, "8x8 Hex Grid Board", PAGE_W // 2, margin,
+    title_font = get_font(int(28 * scale), bold=True)
+    draw_text_centered(draw, "The Exile King - Playable Board", PAGE_W // 2, margin,
                        title_font, fill=DARK_INK)
 
     return page
@@ -1336,11 +1313,11 @@ def render_rules_reference(dpi=DPI_DEFAULT):
             x = int(MARGIN * scale)
             y = int(MARGIN * scale)
 
-        hf = get_font(int(16 * scale), bold=True)
-        bf = get_font(int(11 * scale))
+        hf = get_font(int(24 * scale), bold=True)
+        bf = get_font(int(18 * scale))
         th = text_height(title, hf)
 
-        if y + th > PAGE_H - int(MARGIN * scale) - int(80 * scale):
+        if y + th > PAGE_H - int(MARGIN * scale) - int(60 * scale):
             yield page
             page = Image.new("RGB", (PAGE_W, PAGE_H), (250, 245, 230))
             draw = ImageDraw.Draw(page)
@@ -1348,22 +1325,22 @@ def render_rules_reference(dpi=DPI_DEFAULT):
             y = int(MARGIN * scale)
 
         if si == 0:
-            bt = get_font(int(28 * scale), bold=True)
+            bt = get_font(int(36 * scale), bold=True)
             draw_text_centered(draw, "THE EXILE KING - Rules Reference",
                                PAGE_W // 2, y, bt, fill=DARK_INK)
-            y += int(40 * scale)
+            y += int(50 * scale)
 
         draw_text_multiline_left(draw, title, x, y, hf, PAGE_W - x * 2, fill=RED)
-        y += th + int(8 * scale)
+        y += th + int(4 * scale)
 
         for b in bullets:
             draw_text_multiline_left(draw, b, x, y, bf, PAGE_W - x * 2 + int(10 * scale),
-                                     fill=DARK_INK, line_spacing=1.4)
+                                     fill=DARK_INK, line_spacing=1.3)
             lh = text_height("Ag", bf)
             lc = len(wrap_text(b, bf, PAGE_W - x * 2 + int(10 * scale)))
-            y += int(lh * 1.4 * lc) + int(6 * scale)
+            y += int(lh * 1.3 * lc) + int(4 * scale)
 
-        y += int(10 * scale)
+        y += int(6 * scale)
 
     if page is not None:
         yield page
