@@ -1076,51 +1076,72 @@ def render_hex_board(inventory, dpi=DPI_DEFAULT):
     draw = ImageDraw.Draw(page)
 
     margin = int(MARGIN * scale)
-    hex_size = int(160 * scale)
+    hex_radius = int(160 * scale)
     cols, rows = 8, 8
-    total_w = cols * hex_size
-    total_h = int(rows * hex_size * 0.866) + int(hex_size * 0.433)
+    horiz_spacing = int(hex_radius * 1.732)
+    vert_spacing = int(hex_radius * 1.5)
+    total_w = (cols - 1) * horiz_spacing + 2 * hex_radius
+    total_h = (rows - 1) * vert_spacing + 2 * hex_radius
     page_w_avail = PAGE_W - margin * 2
     page_h_avail = PAGE_H - margin * 2 - int(80 * scale)
     if total_w > page_w_avail:
         s = page_w_avail / total_w
-        hex_size = int(hex_size * s)
-        total_w = int(total_w * s)
-        total_h = int(total_h * s)
+        hex_radius = int(hex_radius * s)
+        horiz_spacing = int(hex_radius * 1.732)
+        vert_spacing = int(hex_radius * 1.5)
+        total_w = (cols - 1) * horiz_spacing + 2 * hex_radius
+        total_h = (rows - 1) * vert_spacing + 2 * hex_radius
     if total_h > page_h_avail:
         s = page_h_avail / total_h
-        hex_size = int(hex_size * s)
-        total_w = int(total_w * s)
-        total_h = int(total_h * s)
+        hex_radius = int(hex_radius * s)
+        horiz_spacing = int(hex_radius * 1.732)
+        vert_spacing = int(hex_radius * 1.5)
+        total_w = (cols - 1) * horiz_spacing + 2 * hex_radius
+        total_h = (rows - 1) * vert_spacing + 2 * hex_radius
 
-    start_x = margin + (PAGE_W - margin * 2 - total_w) // 2
-    start_y = margin + int(40 * scale)
+    start_x = margin + (PAGE_W - margin * 2 - total_w) // 2 + hex_radius
+    start_y = margin + int(40 * scale) + hex_radius
 
     board_art = None
     if not inventory.no_art:
         board_art = inventory.get_art("playable_board")
 
-    board_area = (start_x, start_y, start_x + total_w, start_y + total_h)
+    board_area = (start_x - hex_radius, start_y - hex_radius,
+                  start_x + (cols - 1) * horiz_spacing + hex_radius,
+                  start_y + (rows - 1) * vert_spacing + hex_radius)
     if board_art:
         board_img = Image.open(board_art).convert("RGB")
-        board_img = board_img.resize((total_w, total_h), Image.Resampling.LANCZOS)
-        page.paste(board_img, (start_x, start_y))
+        board_img = board_img.resize((board_area[2] - board_area[0],
+                                       board_area[3] - board_area[1]), Image.Resampling.LANCZOS)
+        page.paste(board_img, (board_area[0], board_area[1]))
+
+    terrain_colors = [
+        (210, 205, 190),
+        (195, 210, 185),
+        (225, 215, 195),
+        (180, 200, 175),
+        (215, 200, 180),
+        (190, 210, 190),
+        (220, 210, 190),
+        (200, 215, 200),
+    ]
 
     for r in range(rows):
         for c in range(cols):
-            x = start_x + c * hex_size + (r % 2) * (hex_size // 2)
-            y = start_y + r * int(hex_size * 0.866)
+            x = start_x + c * horiz_spacing + (r % 2) * (horiz_spacing // 2)
+            y = start_y + r * vert_spacing
 
             corners = []
             for i in range(6):
                 angle = 60 * i - 30
-                ax = x + int(hex_size * math.cos(math.radians(angle)) * 1.0)
-                ay = y + int(hex_size * math.sin(math.radians(angle)) * 1.0)
+                ax = x + int(hex_radius * math.cos(math.radians(angle)))
+                ay = y + int(hex_radius * math.sin(math.radians(angle)))
                 corners.append((ax, ay))
 
-            draw.polygon(corners, fill=(245, 240, 225, 120), outline=(80, 70, 60), width=int(2 * scale))
+            terrain_color = terrain_colors[(r * cols + c) % len(terrain_colors)]
+            draw.polygon(corners, fill=terrain_color, outline=(80, 70, 60), width=int(2 * scale))
 
-            cf = get_font(int(12 * scale), bold=True)
+            cf = get_font(int(14 * scale), bold=True)
             draw_text_centered(draw, chr(65 + c) + str(r + 1), x, y, cf, fill=(50, 50, 50))
 
     title_font = get_font(int(28 * scale), bold=True)
