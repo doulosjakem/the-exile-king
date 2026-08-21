@@ -993,39 +993,24 @@ def render_unit_disc(unit_name, faction, stats, inventory, dpi=DPI_DEFAULT):
     if not inventory.no_art:
         art_path = inventory.get_unit_disc_art(unit_name, faction)
         if art_path:
-            art = resize_art_for_area(art_path, int(diam * 0.7), int(diam * 0.7))
+            art = resize_art_cover(art_path, diam, diam)
 
     if art:
         art_mask = Image.new("L", art.size, 0)
         art_mask_draw = ImageDraw.Draw(art_mask)
         art_mask_draw.ellipse([0, 0, art.width - 1, art.height - 1], fill=255)
-        img.paste(art, (cx - art.width // 2, cy - radius + int(20 * scale)), art_mask)
-    else:
-        draw.ellipse([cx - radius + int(20 * scale), cy - radius + int(20 * scale),
-                      cx + radius - int(20 * scale), cy + radius - int(20 * scale)],
-                     fill=(200, 200, 200))
+        img.paste(art, (cx - art.width // 2, cy - art.height // 2), art_mask)
 
-    if stats:
-        rng, atk, dfc, hp, mv = stats
-        sf = get_font(int(16 * scale), bold=True)
-        sy = cy + radius - int(55 * scale)
-        stats_text = "R{} A{} D{} H{} M{}".format(rng, atk, dfc, hp, mv)
-        tw = text_width(stats_text, sf)
-        th = text_height(stats_text, sf)
-        draw.rectangle([cx - tw // 2 - int(8 * scale), sy - int(4 * scale),
-                        cx + tw // 2 + int(8 * scale), sy + th + int(4 * scale)],
-                       fill=(30, 25, 20, 200))
-        draw_text_centered(draw, stats_text, cx, sy, sf, fill=(245, 240, 225))
-
-    nf = get_font(int(20 * scale), bold=True)
-    ny = cy + radius - int(18 * scale)
+    name_font = get_font(int(36 * scale), bold=True)
+    name_y = cy + int(80 * scale)
     name_text = unit_name
-    tw = text_width(name_text, nf)
-    th = text_height(name_text, nf)
-    draw.rectangle([cx - tw // 2 - int(10 * scale), ny - int(4 * scale),
-                    cx + tw // 2 + int(10 * scale), ny + th + int(4 * scale)],
-                   fill=(30, 25, 20, 210))
-    draw_text_centered(draw, name_text, cx, ny, nf, fill=(245, 240, 225))
+    tw = text_width(name_text, name_font)
+    th = text_height(name_text, name_font)
+    name_pad = int(12 * scale)
+    draw.rectangle([cx - tw // 2 - name_pad, name_y - name_pad,
+                    cx + tw // 2 + name_pad, name_y + th + name_pad],
+                   fill=(30, 25, 20, 180))
+    draw_text_centered(draw, name_text, cx, name_y, name_font, fill=(245, 240, 225))
 
     return img
 
