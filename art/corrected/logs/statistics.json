@@ -1,0 +1,10 @@
+{
+  "total_images": 8,
+  "successfully_processed": 8,
+  "no_hands": 0,
+  "failed": 0,
+  "with_hands": 8,
+  "total_hands_detected": 11,
+  "avg_processing_time": 78.1,
+  "avg_pixel_change": 5.53
+}

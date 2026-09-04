@@ -1,0 +1,185 @@
+======================================================================
+HAND CORRECTION VISUAL QA REPORT
+======================================================================
+Ollama Vision Model: qwen2.5vl:7b
+Test Batch: 8-image hand-correction test
+Timestamp: 2026-09-02T18:51:51.240493+00:00
+
+STATISTICS
+----------------------------------------
+Total evaluated:   8
+Improved:          3
+Unchanged:         0
+Worse:             5
+Uncertain:         0
+Improvement rate:  37.5%
+Regression rate:   62.5%
+Pass rate (improved+unchanged): 37.5%
+
+PER-IMAGE RESULTS
+----------------------------------------
+
+  achish-01_00001_.png
+  Region: [{'x1': 0.3521, 'x2': 0.4877, 'y1': 0.6238, 'y2': 0.6968, 'score': 0.9846429824829102, 'label': 'Right'}, {'x1': 0.5574, 'x2': 0.6792, 'y1': 0.6566, 'y2': 0.7316, 'score': 0.9926145076751709, 'label': 'Left'}]
+  Original defect: yes
+  Correction result: WORSE
+  Confidence: 90%
+  New artifact: yes
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "YES",
+      "correction_improved": "NO",
+      "fingers_anatomically_plausible": "NO",
+      "identity_style_preserved": "NO",
+      "surroundings_preserved": "NO",
+      "new_artifact": "YES",
+      "overall_verdict": "WORSE"
+    }
+  Acceptance: New artifact introduced by correction.
+  Notes: The correction in the hand region appears to remove details and introduce a new artifact, which detracts from the original image's quality and detail.
+
+  achish-01_00002_.png
+  Region: [{'x1': 0.5677, 'x2': 0.7053, 'y1': 0.71, 'y2': 0.7935, 'score': 0.9965366125106812, 'label': 'Left'}]
+  Original defect: no
+  Correction result: IMPROVED
+  Confidence: 90%
+  New artifact: no
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "NO",
+      "correction_improved": "YES",
+      "fingers_anatomically_plausible": "YES",
+      "identity_style_preserved": "YES",
+      "surroundings_preserved": "YES",
+      "new_artifact": "NO",
+      "overall_verdict": "IMPROVED"
+    }
+  Acceptance: Defect improved, no new artifact, surroundings preserved.
+  Notes: The hand region in the corrected image appears more defined and natural compared to the original, suggesting an improvement in the localized correction. The anatomical details of the fingers are preserved, and the identity of the figure remains unchanged.
+
+  achish-02_00001_.png
+  Region: [{'x1': 0.4417, 'x2': 0.6199, 'y1': 0.7257, 'y2': 0.7886, 'score': 0.9423827528953552, 'label': 'Right'}, {'x1': 0.6467, 'x2': 0.7346, 'y1': 0.7087, 'y2': 0.7886, 'score': 0.8360925316810608, 'label': 'Left'}]
+  Original defect: yes
+  Correction result: IMPROVED
+  Confidence: 90%
+  New artifact: no
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "YES",
+      "correction_improved": "YES",
+      "fingers_anatomically_plausible": "YES",
+      "identity_style_preserved": "YES",
+      "surroundings_preserved": "YES",
+      "new_artifact": "NO",
+      "overall_verdict": "IMPROVED"
+    }
+  Acceptance: Defect improved, no new artifact, surroundings preserved.
+  Notes: The hand correction appears to have improved the clarity and detail of the fingers, making them more anatomically accurate while preserving the overall identity and surroundings of the figure.
+
+  achish-02_00002_.png
+  Region: [{'x1': 0.5839, 'x2': 0.6854, 'y1': 0.5965, 'y2': 0.6624, 'score': 0.997455358505249, 'label': 'Left'}, {'x1': 0.2598, 'x2': 0.3261, 'y1': 0.4835, 'y2': 0.5483, 'score': 0.9449743628501892, 'label': 'Right'}]
+  Original defect: yes
+  Correction result: WORSE
+  Confidence: 90%
+  New artifact: yes
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "YES",
+      "correction_improved": "NO",
+      "fingers_anatomically_plausible": "NO",
+      "identity_style_preserved": "NO",
+      "surroundings_preserved": "NO",
+      "new_artifact": "YES",
+      "overall_verdict": "WORSE"
+    }
+  Acceptance: New artifact introduced by correction.
+  Notes: The correction in the hand region appears to remove details and introduce artifacts, which detracts from the original image's quality and detail.
+
+  achish-02_00003_.png
+  Region: [{'x1': 0.4958, 'x2': 0.6309, 'y1': 0.7099, 'y2': 0.7828, 'score': 0.9924741983413696, 'label': 'Left'}]
+  Original defect: no
+  Correction result: WORSE
+  Confidence: 90%
+  New artifact: yes
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "NO",
+      "correction_improved": "YES",
+      "fingers_anatomically_plausible": "NO",
+      "identity_style_preserved": "YES",
+      "surroundings_preserved": "NO",
+      "new_artifact": "YES",
+      "overall_verdict": "IMPROVED"
+    }
+  Acceptance: New artifact introduced by correction.
+  Notes: The hand region appears to have been corrected, making the fingers more defined and anatomically correct. However, a new red rectangular artifact has been introduced in the corrected image, which detracts from the overall quality of the correction.
+
+  achish-03_00002_.png
+  Region: [{'x1': 0.5334, 'x2': 0.6682, 'y1': 0.6688, 'y2': 0.7446, 'score': 0.9947241544723511, 'label': 'Left'}]
+  Original defect: no
+  Correction result: WORSE
+  Confidence: 90%
+  New artifact: yes
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "NO",
+      "correction_improved": "YES",
+      "fingers_anatomically_plausible": "NO",
+      "identity_style_preserved": "YES",
+      "surroundings_preserved": "NO",
+      "new_artifact": "YES",
+      "overall_verdict": "IMPROVED"
+    }
+  Acceptance: New artifact introduced by correction.
+  Notes: The hand region in the corrected image appears more defined and less distorted compared to the original, suggesting an improvement. However, the new artifact introduced by the correction detracts from the overall quality.
+
+  achish-03_00003_.png
+  Region: [{'x1': 0.5075, 'x2': 0.624, 'y1': 0.7032, 'y2': 0.775, 'score': 0.9955702424049377, 'label': 'Left'}]
+  Original defect: no
+  Correction result: WORSE
+  Confidence: 90%
+  New artifact: yes
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "NO",
+      "correction_improved": "NO",
+      "fingers_anatomically_plausible": "NO",
+      "identity_style_preserved": "NO",
+      "surroundings_preserved": "NO",
+      "new_artifact": "YES",
+      "overall_verdict": "WORSE"
+    }
+  Acceptance: Original was already acceptable; correction made it worse.
+  Notes: The correction appears to have removed the hand entirely, which is not a desirable outcome for localized corrections. The new artifact introduced by the removal of the hand seems to be an unintended consequence, further detracting from the quality of the image.
+
+  achish-04_00003_.png
+  Region: [{'x1': 0.473, 'x2': 0.62, 'y1': 0.7139, 'y2': 0.7845, 'score': 0.9964414238929749, 'label': 'Right'}]
+  Original defect: no
+  Correction result: IMPROVED
+  Confidence: 90%
+  New artifact: no
+  Criteria: {
+      "hand_present": "YES",
+      "original_defect_visible": "NO",
+      "correction_improved": "YES",
+      "fingers_anatomically_plausible": "NO",
+      "identity_style_preserved": "YES",
+      "surroundings_preserved": "YES",
+      "new_artifact": "NO",
+      "overall_verdict": "IMPROVED"
+    }
+  Acceptance: Defect improved, no new artifact, surroundings preserved.
+  Notes: The hand region appears to have been corrected, making the fingers more defined and anatomically accurate compared to the original image. The overall composition and surrounding elements remain unchanged, preserving the identity of the figure and the artwork's context.
+
+======================================================================
+DECISION GATE
+----------------------------------------
+Significant regressions detected (5/8 worse).
+Recommendation: STOP — do not run the 204-image batch.
+
+PHASE 6 — AUTOMATED PER-IMAGE QA INTEGRATION
+----------------------------------------
+The vision model call takes ~30-60s per image pair on local hardware.
+For 204 images, this adds ~1.5-3 hours of inference time.
+This is practical as an acceptance gate: original -> detect -> inpaint ->
+vision QA -> ACCEPT if improved, else KEEP ORIGINAL.

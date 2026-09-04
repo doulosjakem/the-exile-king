@@ -1,0 +1,37 @@
+======================================================================
+HAND CORRECTION VISUAL QA — CLEAN (NO OVERLAY, CROPPED)
+======================================================================
+Model: qwen2.5vl:7b
+Method: Cropped to hand region (512x512), no overlay image
+
+ORIGINAL PIPELINE
+----------------------------------------
+Parameters: padding=0.5, dilate=15, blur=10, grow_mask_by=8, denoise=0.5, resize_source=True
+Improved: 8 (100.0%)
+Worse:    0 (0.0%)
+
+FIXED PIPELINE
+----------------------------------------
+Parameters: padding=0.10, dilate=3, blur=3, grow_mask_by=0, denoise=0.3, resize_source=False
+Improved: 8 (100.0%)
+Worse:    0 (0.0%)
+
+--- ORIGINAL Per-Image ---
+  achish-01_00001_.png: IMPROVED | conf=90% | The correction appears to have removed a distracting element in the background while maintaining the integrity of the hand and surrounding details. The anatomical fingers are clearly defined, and no new artifacts are introduced.
+  achish-01_00002_.png: IMPROVED | conf=90% | The corrected image maintains the anatomical details of the fingers and preserves the surrounding clothing textures, improving clarity without introducing new artifacts or distortions.
+  achish-02_00001_.png: IMPROVED | conf=90% | The localized correction in the second image appears to have removed a defect, likely a hole or tear, from the hand region without introducing any new artifacts or altering the anatomical details of the fingers. The surroundings and identity of the character remain preserved, indicating a genuine improvement.
+  achish-02_00002_.png: IMPROVED | conf=90% | The correction has removed a distracting shadow and improved the clarity of the hand, without introducing any new artifacts or altering the surrounding details. The anatomical fingers are preserved correctly, and the identity of the hand is maintained.
+  achish-02_00003_.png: IMPROVED | conf=90% | 
+  achish-03_00002_.png: IMPROVED | conf=90% | The correction appears to have removed a distracting element in the background, improving the focus on the hand and the object it holds. The anatomical details of the fingers are preserved, and no new artifacts or distortions are introduced.
+  achish-03_00003_.png: IMPROVED | conf=90% | 
+  achish-04_00003_.png: IMPROVED | conf=90% | 
+
+--- FIXED Per-Image ---
+  achish-01_00001_.png: IMPROVED | conf=90% | The correction appears to have removed a distracting element in the center of the image, improving the focus on the hands and the surrounding details without introducing any new artifacts or altering the anatomical structure of the fingers. The overall composition is enhanced, making the hands more prominent and the image clearer.
+  achish-01_00002_.png: IMPROVED | conf=90% | The corrected image appears to have improved the clarity and detail of the hand, making it more anatomically accurate with distinct fingers. The surrounding elements, such as the clothing and belt, remain unchanged and preserved well. There are no new artifacts introduced in the correction process.
+  achish-02_00001_.png: IMPROVED | conf=90% | 
+  achish-02_00002_.png: IMPROVED | conf=90% | The correction has removed the original defect, likely a small artifact or distortion on the hand, without introducing any new artifacts or altering the anatomical details of the fingers. The surroundings and identity of the figure remain preserved.
+  achish-02_00003_.png: IMPROVED | conf=90% | 
+  achish-03_00002_.png: IMPROVED | conf=90% | The correction appears to have removed a small, rectangular artifact from the hand region without introducing any new artifacts or altering the anatomical structure of the fingers. The overall clarity and detail of the hand are improved in the corrected image.
+  achish-03_00003_.png: IMPROVED | conf=90% | 
+  achish-04_00003_.png: IMPROVED | conf=90% | 

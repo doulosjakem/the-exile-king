@@ -1,0 +1,299 @@
+{
+  "model": "qwen2.5vl:7b",
+  "timestamp": "2026-09-03T03:49:23.073630+00:00",
+  "methodology": "QA with cropped/resized hand region images, NO overlay image",
+  "original_pipeline": {
+    "parameters": "padding=0.5, dilate=15, blur=10, grow=8, denoise=0.5, resize_source=True",
+    "stats": {
+      "improved": 8,
+      "worse": 0,
+      "unchanged": 0,
+      "total": 8
+    },
+    "results": [
+      {
+        "filename": "achish-01_00001_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The correction appears to have removed a distracting element in the background while maintaining the integrity of the hand and surrounding details. The anatomical fingers are clearly defined, and no new artifacts are introduced.",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nNOTES: The correction appears to have removed a distracting element in the background while maintaining the integrity of the hand and surrounding details. The anatomical fingers are clearly defined, and no new artifacts are introduced."
+      },
+      {
+        "filename": "achish-01_00002_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The corrected image maintains the anatomical details of the fingers and preserves the surrounding clothing textures, improving clarity without introducing new artifacts or distortions.",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nNOTES: The corrected image maintains the anatomical details of the fingers and preserves the surrounding clothing textures, improving clarity without introducing new artifacts or distortions."
+      },
+      {
+        "filename": "achish-02_00001_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The localized correction in the second image appears to have removed a defect, likely a hole or tear, from the hand region without introducing any new artifacts or altering the anatomical details of the fingers. The surroundings and identity of the character remain preserved, indicating a genuine improvement.",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nNOTES: The localized correction in the second image appears to have removed a defect, likely a hole or tear, from the hand region without introducing any new artifacts or altering the anatomical details of the fingers. The surroundings and identity of the character remain preserved, indicating a genuine improvement."
+      },
+      {
+        "filename": "achish-02_00002_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The correction has removed a distracting shadow and improved the clarity of the hand, without introducing any new artifacts or altering the surrounding details. The anatomical fingers are preserved correctly, and the identity of the hand is maintained.",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nNOTES: The correction has removed a distracting shadow and improved the clarity of the hand, without introducing any new artifacts or altering the surrounding details. The anatomical fingers are preserved correctly, and the identity of the hand is maintained."
+      },
+      {
+        "filename": "achish-02_00003_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nThe corrected image appears to have improved the clarity and detail of the hand, making it more anatomically accurate and preserving the surrounding fabric texture without introducing new artifacts or distortions."
+      },
+      {
+        "filename": "achish-03_00002_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The correction appears to have removed a distracting element in the background, improving the focus on the hand and the object it holds. The anatomical details of the fingers are preserved, and no new artifacts or distortions are introduced.",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nNOTES: The correction appears to have removed a distracting element in the background, improving the focus on the hand and the object it holds. The anatomical details of the fingers are preserved, and no new artifacts or distortions are introduced."
+      },
+      {
+        "filename": "achish-03_00003_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nThe corrected image maintains the anatomical details of the fingers and preserves the identity of the hand. The surrounding fabric and belt are also preserved without introducing new artifacts or distortions. Overall, the correction appears to be an improvement over the original image."
+      },
+      {
+        "filename": "achish-04_00003_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nThe correction appears to have removed a shadow or distortion from the hand, improving clarity and detail without introducing new artifacts or altering the surrounding elements. The anatomical structure of the fingers is preserved, and the identity of the hand remains unchanged."
+      }
+    ]
+  },
+  "fixed_pipeline": {
+    "parameters": "padding=0.10, dilate=3, blur=3, grow=0, denoise=0.3, resize_source=False",
+    "stats": {
+      "improved": 8,
+      "worse": 0,
+      "unchanged": 0,
+      "total": 8
+    },
+    "results": [
+      {
+        "filename": "achish-01_00001_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The correction appears to have removed a distracting element in the center of the image, improving the focus on the hands and the surrounding details without introducing any new artifacts or altering the anatomical structure of the fingers. The overall composition is enhanced, making the hands more prominent and the image clearer.",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nNOTES: The correction appears to have removed a distracting element in the center of the image, improving the focus on the hands and the surrounding details without introducing any new artifacts or altering the anatomical structure of the fingers. The overall composition is enhanced, making the hands more prominent and the image clearer."
+      },
+      {
+        "filename": "achish-01_00002_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The corrected image appears to have improved the clarity and detail of the hand, making it more anatomically accurate with distinct fingers. The surrounding elements, such as the clothing and belt, remain unchanged and preserved well. There are no new artifacts introduced in the correction process.",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nNOTES: The corrected image appears to have improved the clarity and detail of the hand, making it more anatomically accurate with distinct fingers. The surrounding elements, such as the clothing and belt, remain unchanged and preserved well. There are no new artifacts introduced in the correction process."
+      },
+      {
+        "filename": "achish-02_00001_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nThe correction appears to have removed a distracting element in the background while maintaining the integrity of the hand and surrounding details. The anatomical fingers are correctly defined, and no new artifacts are introduced. The overall image quality has improved."
+      },
+      {
+        "filename": "achish-02_00002_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The correction has removed the original defect, likely a small artifact or distortion on the hand, without introducing any new artifacts or altering the anatomical details of the fingers. The surroundings and identity of the figure remain preserved.",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nNOTES: The correction has removed the original defect, likely a small artifact or distortion on the hand, without introducing any new artifacts or altering the anatomical details of the fingers. The surroundings and identity of the figure remain preserved."
+      },
+      {
+        "filename": "achish-02_00003_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nThe corrected image appears to have improved the clarity and detail of the hand, making it more anatomically accurate and visually appealing without introducing any new artifacts or altering the surrounding elements. The fingers are now more defined, and the overall composition looks cleaner and more polished."
+      },
+      {
+        "filename": "achish-03_00002_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "The correction appears to have removed a small, rectangular artifact from the hand region without introducing any new artifacts or altering the anatomical structure of the fingers. The overall clarity and detail of the hand are improved in the corrected image.",
+        "raw_response": "Q1_hand_present: YES\nQ2_original_defect: YES\nQ3_correction_improved: YES\nQ4_anatomical_fingers: YES\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: IMPROVED\nCONFIDENCE: 0.9\n\nNOTES: The correction appears to have removed a small, rectangular artifact from the hand region without introducing any new artifacts or altering the anatomical structure of the fingers. The overall clarity and detail of the hand are improved in the corrected image."
+      },
+      {
+        "filename": "achish-03_00003_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "YES",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nThe corrected image appears to have improved the clarity and detail of the hand, making it more anatomically accurate and visually appealing without introducing any new artifacts or altering the surrounding elements. The fingers are now more defined, and the overall composition looks cleaner and more polished."
+      },
+      {
+        "filename": "achish-04_00003_.png",
+        "correction_result": "improved",
+        "confidence": 0.9,
+        "criteria": {
+          "hand_present": "YES",
+          "original_defect": "NO",
+          "correction_improved": "YES",
+          "fingers": "YES",
+          "identity": "YES",
+          "surroundings": "YES",
+          "new_artifact": "NO",
+          "overall": "IMPROVED"
+        },
+        "notes": "",
+        "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: NO  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: YES  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nThe correction appears to have removed a distracting element in the background, which was likely a defect or artifact in the original image. The hand and surrounding areas remain anatomically correct and preserved without introducing new artifacts. Overall, the image has been improved by this localized correction."
+      }
+    ]
+  }
+}

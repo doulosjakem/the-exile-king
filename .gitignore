@@ -105,3 +105,26 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# ============================================================
+# Project-level ignores for Python and experiment artifacts
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Hand-correction experiment: generated image outputs
+# (source scripts and QA reports in logs/ remain tracked)
+/art/corrected/corrected/
+/art/corrected/denoise_0.8/
+/art/corrected/denoise_0.8_masks/
+/art/corrected/fixed/
+/art/corrected/fixed_masks/
+/art/corrected/experiment/
+/art/corrected/experiment_masks/
+/art/corrected/diagnostics/
+/art/corrected/masks/
+/art/corrected/test/
+/art/corrected/contact_sheets/

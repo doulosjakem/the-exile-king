@@ -1,0 +1,25 @@
+======================================================================
+FULL-RES VERIFICATION: Original Pipeline (No Overlay)
+======================================================================
+Model: qwen2.5vl:7b | Native 512x768 | 2 images per eval (no overlay)
+
+PREVIOUSLY 'WORSE' (5 images) — Now re-tested without overlay:
+--------------------------------------------------
+  achish-01_00001_.png: IMPROVED | 90% | 
+  achish-02_00002_.png: WORSE | 90% | 
+  achish-02_00003_.png: IMPROVED | 90% | 
+  achish-03_00002_.png: WORSE | 90% | 
+  achish-03_00003_.png: WORSE | 90% | 
+  -> 2 improved, 3 worse out of 5
+
+PREVIOUSLY 'IMPROVED' (3 images) — Baseline check:
+--------------------------------------------------
+  achish-01_00002_.png: IMPROVED | 90% | 
+  achish-02_00001_.png: IMPROVED | 90% | 
+  achish-04_00003_.png: IMPROVED | 90% | 
+  -> 3 improved out of 3
+
+======================================================================
+CONCLUSION:
+----------------------------------------
+3 previously-worse images still worse without overlay.

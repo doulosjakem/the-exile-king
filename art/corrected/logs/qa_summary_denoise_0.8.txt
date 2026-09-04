@@ -1,0 +1,23 @@
+======================================================================
+QA SUMMARY: denoise=0.8 pipeline vs original
+======================================================================
+Model: qwen2.5vl:7b | Images: 2 per eval (original + denoise=0.8 corrected)
+Method: Full images at 256px width, NO overlay
+
+Params: padding=0.5, dilate=15, blur=10, grow=8, denoise=0.8, resize=True, steps=8, cfg=5.0
+  Improved:  2 (25.0%)
+  Worse:     6 (75.0%)
+  Total:     8
+
+  achish-01_00001_.png: WORSE | 90% | No hand in detected region.
+  achish-01_00002_.png: IMPROVED | 95% | Defect improved, no artifact, surroundings preserved.
+  achish-02_00001_.png: WORSE | 90% | No hand in detected region.
+  achish-02_00002_.png: WORSE | 90% | No hand in detected region.
+  achish-02_00003_.png: WORSE | 90% | No hand in detected region.
+  achish-03_00002_.png: IMPROVED | 90% | The correction introduced a hand where none was present in the original, improving the image by addressing an anatomical
+  achish-03_00003_.png: WORSE | 90% | 
+  achish-04_00003_.png: WORSE | 90% | The correction removed the hand, which was a defect in the original image. However, this removal also introduced a new a
+
+======================================================================
+Result: regression_rate=75.0%
+FAIL: regression rate > 10% threshold -- STOP required

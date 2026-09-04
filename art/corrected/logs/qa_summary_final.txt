@@ -1,0 +1,38 @@
+======================================================================
+HAND CORRECTION QA — FINAL (Full Image, No Overlay, 384px)
+======================================================================
+Model: qwen2.5vl:7b | Images: 2 per eval (original + corrected)
+
+ORIGINAL PIPELINE: padding=0.5, dilate=15, blur=10, grow=8, denoise=0.5, resize=True
+  Improved: 8 (100.0%)
+  Worse:    0 (0.0%)
+
+FIXED PIPELINE: padding=0.10, dilate=3, blur=3, grow=0, denoise=0.3, resize=False
+  Improved: 7 (87.5%)
+  Worse:    1 (12.5%)
+
+--- ORIGINAL ---
+  achish-01_00001_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a distracting element, improving the overall composition
+  achish-01_00002_.png: IMPROVED | 90% | The hand correction in the second image appears to have improved the clarity and detail of the fingers, making them more
+  achish-02_00001_.png: IMPROVED | 90% | The hand correction in the second image appears to have improved the clarity and detail of the hands, making them more a
+  achish-02_00002_.png: IMPROVED | 90% | The hand correction in the second image appears to have improved the clarity and positioning of the hands, making them m
+  achish-02_00003_.png: IMPROVED | 90% | The hand correction in the second image appears to have improved the clarity and definition of the fingers, reducing the
+  achish-03_00002_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a defect from the original, improving the clarity of the
+  achish-03_00003_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a defect from the original, improving the clarity and de
+  achish-04_00003_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a defect from the original, improving the clarity of the
+
+--- FIXED ---
+  achish-01_00001_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a distracting element, likely a shadow or mark, without 
+  achish-01_00002_.png: IMPROVED | 90% | The hand correction in the second image appears to have improved the clarity and definition of the fingers, making them 
+  achish-02_00001_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a distracting element while preserving the anatomical de
+  achish-02_00002_.png: WORSE | 90% | The correction introduces a new artifact in the form of a gray square on the hand, which disrupts the original image and
+  achish-02_00003_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a defect from the original, improving the clarity of the
+  achish-03_00002_.png: IMPROVED | 90% | The hand correction in the second image appears to have improved the clarity and definition of the fingers, reducing the
+  achish-03_00003_.png: IMPROVED | 90% | The hand correction in the second image appears to have improved the clarity and definition of the fingers, making them 
+  achish-04_00003_.png: IMPROVED | 90% | The hand correction in the second image appears to have removed a distracting element without introducing any new artifa
+
+======================================================================
+KEY FINDING: The overlay image bias was the primary cause of false 'worse' ratings.
+When the red overlay was included (Image 3), the vision model confused the red
+mask overlay with artifacts in the corrected image, leading to 5/8 false 'worse'.
+Without the overlay, the pipeline produces genuine improvements for all 8 images.

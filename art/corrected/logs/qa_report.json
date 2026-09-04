@@ -1,0 +1,287 @@
+{
+  "model": "qwen2.5vl:7b",
+  "timestamp": "2026-09-02T18:51:51.238495+00:00",
+  "test_batch": "8-image hand-correction test",
+  "criteria": [
+    "Q1: Was a hand actually present in the detected region?",
+    "Q2: Was the original hand visibly malformed/problematic?",
+    "Q3: Did the correction improve the hand?",
+    "Q4: Are the fingers more anatomically plausible?",
+    "Q5: Did the correction preserve character identity/style?",
+    "Q6: Did the correction preserve pose, clothing, lighting, background, composition?",
+    "Q7: Did the correction introduce any new artifact?",
+    "Q8: Overall — IMPROVED / UNCHANGED / WORSE / UNCERTAIN"
+  ],
+  "acceptance_rule": {
+    "pass": "Targeted defect improved AND no new artifact AND surroundings preserved",
+    "fail_worse": "Detector wrong, original acceptable, new artifact, or surroundings not preserved"
+  },
+  "statistics": {
+    "total": 8,
+    "improved": 3,
+    "unchanged": 0,
+    "worse": 5,
+    "uncertain": 0,
+    "improvement_rate": 0.375,
+    "regression_rate": 0.625,
+    "pass_rate": 0.375
+  },
+  "results": [
+    {
+      "filename": "achish-01_00001_.png",
+      "detected_region": [
+        {
+          "x1": 0.3521,
+          "x2": 0.4877,
+          "y1": 0.6238,
+          "y2": 0.6968,
+          "score": 0.9846429824829102,
+          "label": "Right"
+        },
+        {
+          "x1": 0.5574,
+          "x2": 0.6792,
+          "y1": 0.6566,
+          "y2": 0.7316,
+          "score": 0.9926145076751709,
+          "label": "Left"
+        }
+      ],
+      "original_defect": "yes",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "new_artifact": "yes",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "YES",
+        "correction_improved": "NO",
+        "fingers_anatomically_plausible": "NO",
+        "identity_style_preserved": "NO",
+        "surroundings_preserved": "NO",
+        "new_artifact": "YES",
+        "overall_verdict": "WORSE"
+      },
+      "acceptance_reason": "New artifact introduced by correction.",
+      "notes": "The correction in the hand region appears to remove details and introduce a new artifact, which detracts from the original image's quality and detail."
+    },
+    {
+      "filename": "achish-01_00002_.png",
+      "detected_region": [
+        {
+          "x1": 0.5677,
+          "x2": 0.7053,
+          "y1": 0.71,
+          "y2": 0.7935,
+          "score": 0.9965366125106812,
+          "label": "Left"
+        }
+      ],
+      "original_defect": "no",
+      "correction_result": "improved",
+      "confidence": 0.9,
+      "new_artifact": "no",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "NO",
+        "correction_improved": "YES",
+        "fingers_anatomically_plausible": "YES",
+        "identity_style_preserved": "YES",
+        "surroundings_preserved": "YES",
+        "new_artifact": "NO",
+        "overall_verdict": "IMPROVED"
+      },
+      "acceptance_reason": "Defect improved, no new artifact, surroundings preserved.",
+      "notes": "The hand region in the corrected image appears more defined and natural compared to the original, suggesting an improvement in the localized correction. The anatomical details of the fingers are preserved, and the identity of the figure remains unchanged."
+    },
+    {
+      "filename": "achish-02_00001_.png",
+      "detected_region": [
+        {
+          "x1": 0.4417,
+          "x2": 0.6199,
+          "y1": 0.7257,
+          "y2": 0.7886,
+          "score": 0.9423827528953552,
+          "label": "Right"
+        },
+        {
+          "x1": 0.6467,
+          "x2": 0.7346,
+          "y1": 0.7087,
+          "y2": 0.7886,
+          "score": 0.8360925316810608,
+          "label": "Left"
+        }
+      ],
+      "original_defect": "yes",
+      "correction_result": "improved",
+      "confidence": 0.9,
+      "new_artifact": "no",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "YES",
+        "correction_improved": "YES",
+        "fingers_anatomically_plausible": "YES",
+        "identity_style_preserved": "YES",
+        "surroundings_preserved": "YES",
+        "new_artifact": "NO",
+        "overall_verdict": "IMPROVED"
+      },
+      "acceptance_reason": "Defect improved, no new artifact, surroundings preserved.",
+      "notes": "The hand correction appears to have improved the clarity and detail of the fingers, making them more anatomically accurate while preserving the overall identity and surroundings of the figure."
+    },
+    {
+      "filename": "achish-02_00002_.png",
+      "detected_region": [
+        {
+          "x1": 0.5839,
+          "x2": 0.6854,
+          "y1": 0.5965,
+          "y2": 0.6624,
+          "score": 0.997455358505249,
+          "label": "Left"
+        },
+        {
+          "x1": 0.2598,
+          "x2": 0.3261,
+          "y1": 0.4835,
+          "y2": 0.5483,
+          "score": 0.9449743628501892,
+          "label": "Right"
+        }
+      ],
+      "original_defect": "yes",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "new_artifact": "yes",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "YES",
+        "correction_improved": "NO",
+        "fingers_anatomically_plausible": "NO",
+        "identity_style_preserved": "NO",
+        "surroundings_preserved": "NO",
+        "new_artifact": "YES",
+        "overall_verdict": "WORSE"
+      },
+      "acceptance_reason": "New artifact introduced by correction.",
+      "notes": "The correction in the hand region appears to remove details and introduce artifacts, which detracts from the original image's quality and detail."
+    },
+    {
+      "filename": "achish-02_00003_.png",
+      "detected_region": [
+        {
+          "x1": 0.4958,
+          "x2": 0.6309,
+          "y1": 0.7099,
+          "y2": 0.7828,
+          "score": 0.9924741983413696,
+          "label": "Left"
+        }
+      ],
+      "original_defect": "no",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "new_artifact": "yes",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "NO",
+        "correction_improved": "YES",
+        "fingers_anatomically_plausible": "NO",
+        "identity_style_preserved": "YES",
+        "surroundings_preserved": "NO",
+        "new_artifact": "YES",
+        "overall_verdict": "IMPROVED"
+      },
+      "acceptance_reason": "New artifact introduced by correction.",
+      "notes": "The hand region appears to have been corrected, making the fingers more defined and anatomically correct. However, a new red rectangular artifact has been introduced in the corrected image, which detracts from the overall quality of the correction."
+    },
+    {
+      "filename": "achish-03_00002_.png",
+      "detected_region": [
+        {
+          "x1": 0.5334,
+          "x2": 0.6682,
+          "y1": 0.6688,
+          "y2": 0.7446,
+          "score": 0.9947241544723511,
+          "label": "Left"
+        }
+      ],
+      "original_defect": "no",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "new_artifact": "yes",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "NO",
+        "correction_improved": "YES",
+        "fingers_anatomically_plausible": "NO",
+        "identity_style_preserved": "YES",
+        "surroundings_preserved": "NO",
+        "new_artifact": "YES",
+        "overall_verdict": "IMPROVED"
+      },
+      "acceptance_reason": "New artifact introduced by correction.",
+      "notes": "The hand region in the corrected image appears more defined and less distorted compared to the original, suggesting an improvement. However, the new artifact introduced by the correction detracts from the overall quality."
+    },
+    {
+      "filename": "achish-03_00003_.png",
+      "detected_region": [
+        {
+          "x1": 0.5075,
+          "x2": 0.624,
+          "y1": 0.7032,
+          "y2": 0.775,
+          "score": 0.9955702424049377,
+          "label": "Left"
+        }
+      ],
+      "original_defect": "no",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "new_artifact": "yes",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "NO",
+        "correction_improved": "NO",
+        "fingers_anatomically_plausible": "NO",
+        "identity_style_preserved": "NO",
+        "surroundings_preserved": "NO",
+        "new_artifact": "YES",
+        "overall_verdict": "WORSE"
+      },
+      "acceptance_reason": "Original was already acceptable; correction made it worse.",
+      "notes": "The correction appears to have removed the hand entirely, which is not a desirable outcome for localized corrections. The new artifact introduced by the removal of the hand seems to be an unintended consequence, further detracting from the quality of the image."
+    },
+    {
+      "filename": "achish-04_00003_.png",
+      "detected_region": [
+        {
+          "x1": 0.473,
+          "x2": 0.62,
+          "y1": 0.7139,
+          "y2": 0.7845,
+          "score": 0.9964414238929749,
+          "label": "Right"
+        }
+      ],
+      "original_defect": "no",
+      "correction_result": "improved",
+      "confidence": 0.9,
+      "new_artifact": "no",
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect_visible": "NO",
+        "correction_improved": "YES",
+        "fingers_anatomically_plausible": "NO",
+        "identity_style_preserved": "YES",
+        "surroundings_preserved": "YES",
+        "new_artifact": "NO",
+        "overall_verdict": "IMPROVED"
+      },
+      "acceptance_reason": "Defect improved, no new artifact, surroundings preserved.",
+      "notes": "The hand region appears to have been corrected, making the fingers more defined and anatomically accurate compared to the original image. The overall composition and surrounding elements remain unchanged, preserving the identity of the figure and the artwork's context."
+    }
+  ]
+}

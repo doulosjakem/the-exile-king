@@ -1,0 +1,194 @@
+[
+  {
+    "filename": "achish-01_00001_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-01_00001_.png",
+    "status": "corrected",
+    "hands_detected": 2,
+    "bboxes": [
+      {
+        "x1": 0.3521,
+        "x2": 0.4877,
+        "y1": 0.6238,
+        "y2": 0.6968,
+        "score": 0.9846429824829102,
+        "label": "Right"
+      },
+      {
+        "x1": 0.5574,
+        "x2": 0.6792,
+        "y1": 0.6566,
+        "y2": 0.7316,
+        "score": 0.9926145076751709,
+        "label": "Left"
+      }
+    ],
+    "mask_pixels_pct": 8.1,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-01_00001_.png",
+    "error": null,
+    "processing_time": 95.91420197486877,
+    "pixel_change_pct": 7.92
+  },
+  {
+    "filename": "achish-01_00002_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-01_00002_.png",
+    "status": "corrected",
+    "hands_detected": 1,
+    "bboxes": [
+      {
+        "x1": 0.5677,
+        "x2": 0.7053,
+        "y1": 0.71,
+        "y2": 0.7935,
+        "score": 0.9965366125106812,
+        "label": "Left"
+      }
+    ],
+    "mask_pixels_pct": 5.51,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-01_00002_.png",
+    "error": null,
+    "processing_time": 78.13372159004211,
+    "pixel_change_pct": 5.41
+  },
+  {
+    "filename": "achish-02_00001_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-02_00001_.png",
+    "status": "corrected",
+    "hands_detected": 2,
+    "bboxes": [
+      {
+        "x1": 0.4417,
+        "x2": 0.6199,
+        "y1": 0.7257,
+        "y2": 0.7886,
+        "score": 0.9423827528953552,
+        "label": "Right"
+      },
+      {
+        "x1": 0.6467,
+        "x2": 0.7346,
+        "y1": 0.7087,
+        "y2": 0.7886,
+        "score": 0.8360925316810608,
+        "label": "Left"
+      }
+    ],
+    "mask_pixels_pct": 7.03,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-02_00001_.png",
+    "error": null,
+    "processing_time": 75.8499047756195,
+    "pixel_change_pct": 6.82
+  },
+  {
+    "filename": "achish-02_00002_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-02_00002_.png",
+    "status": "corrected",
+    "hands_detected": 2,
+    "bboxes": [
+      {
+        "x1": 0.5839,
+        "x2": 0.6854,
+        "y1": 0.5965,
+        "y2": 0.6624,
+        "score": 0.997455358505249,
+        "label": "Left"
+      },
+      {
+        "x1": 0.2598,
+        "x2": 0.3261,
+        "y1": 0.4835,
+        "y2": 0.5483,
+        "score": 0.9449743628501892,
+        "label": "Right"
+      }
+    ],
+    "mask_pixels_pct": 5.62,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-02_00002_.png",
+    "error": null,
+    "processing_time": 76.56327414512634,
+    "pixel_change_pct": 5.58
+  },
+  {
+    "filename": "achish-02_00003_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-02_00003_.png",
+    "status": "corrected",
+    "hands_detected": 1,
+    "bboxes": [
+      {
+        "x1": 0.4958,
+        "x2": 0.6309,
+        "y1": 0.7099,
+        "y2": 0.7828,
+        "score": 0.9924741983413696,
+        "label": "Left"
+      }
+    ],
+    "mask_pixels_pct": 4.84,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-02_00003_.png",
+    "error": null,
+    "processing_time": 76.05728960037231,
+    "pixel_change_pct": 4.94
+  },
+  {
+    "filename": "achish-03_00002_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-03_00002_.png",
+    "status": "corrected",
+    "hands_detected": 1,
+    "bboxes": [
+      {
+        "x1": 0.5334,
+        "x2": 0.6682,
+        "y1": 0.6688,
+        "y2": 0.7446,
+        "score": 0.9947241544723511,
+        "label": "Left"
+      }
+    ],
+    "mask_pixels_pct": 4.9,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-03_00002_.png",
+    "error": null,
+    "processing_time": 73.44018745422363,
+    "pixel_change_pct": 4.81
+  },
+  {
+    "filename": "achish-03_00003_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-03_00003_.png",
+    "status": "corrected",
+    "hands_detected": 1,
+    "bboxes": [
+      {
+        "x1": 0.5075,
+        "x2": 0.624,
+        "y1": 0.7032,
+        "y2": 0.775,
+        "score": 0.9955702424049377,
+        "label": "Left"
+      }
+    ],
+    "mask_pixels_pct": 4.1,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-03_00003_.png",
+    "error": null,
+    "processing_time": 73.49109220504761,
+    "pixel_change_pct": 3.91
+  },
+  {
+    "filename": "achish-04_00003_.png",
+    "path": "D:\\the-exile-king\\art\\prototype\\commander-cards\\achish-04_00003_.png",
+    "status": "corrected",
+    "hands_detected": 1,
+    "bboxes": [
+      {
+        "x1": 0.473,
+        "x2": 0.62,
+        "y1": 0.7139,
+        "y2": 0.7845,
+        "score": 0.9964414238929749,
+        "label": "Right"
+      }
+    ],
+    "mask_pixels_pct": 4.97,
+    "output_path": "D:\\the-exile-king\\art\\corrected\\corrected\\achish-04_00003_.png",
+    "error": null,
+    "processing_time": 75.22193574905396,
+    "pixel_change_pct": 4.87
+  }
+]

@@ -1,0 +1,153 @@
+{
+  "model": "qwen2.5vl:7b",
+  "timestamp": "2026-09-03T13:28:04.505910+00:00",
+  "methodology": "Full images at 256px width, NO overlay image",
+  "denoise_value": 0.8,
+  "pipeline_params": "padding=0.5, dilate=15, blur=10, grow=8, denoise=0.8, resize_source=True, steps=8, cfg=5.0",
+  "stats": {
+    "improved": 2,
+    "worse": 6,
+    "unchanged": 0,
+    "uncertain": 0,
+    "error": 0,
+    "total": 8
+  },
+  "results": [
+    {
+      "filename": "achish-01_00001_.png",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect": "YES",
+        "correction_improved": "NO",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "NO",
+        "overall": "WORSE"
+      },
+      "notes": "No hand in detected region.",
+      "raw_response": ""
+    },
+    {
+      "filename": "achish-01_00002_.png",
+      "correction_result": "improved",
+      "confidence": 0.95,
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect": "YES",
+        "correction_improved": "YES",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "NO",
+        "overall": "IMPROVED"
+      },
+      "notes": "Defect improved, no artifact, surroundings preserved.",
+      "raw_response": ""
+    },
+    {
+      "filename": "achish-02_00001_.png",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect": "YES",
+        "correction_improved": "NO",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "NO",
+        "overall": "WORSE"
+      },
+      "notes": "No hand in detected region.",
+      "raw_response": ""
+    },
+    {
+      "filename": "achish-02_00002_.png",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect": "YES",
+        "correction_improved": "NO",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "NO",
+        "overall": "WORSE"
+      },
+      "notes": "No hand in detected region.",
+      "raw_response": ""
+    },
+    {
+      "filename": "achish-02_00003_.png",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect": "YES",
+        "correction_improved": "NO",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "NO",
+        "overall": "WORSE"
+      },
+      "notes": "No hand in detected region.",
+      "raw_response": ""
+    },
+    {
+      "filename": "achish-03_00002_.png",
+      "correction_result": "improved",
+      "confidence": 0.9,
+      "criteria": {
+        "hand_present": "YES",
+        "original_defect": "YES",
+        "correction_improved": "YES",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "NO",
+        "overall": "IMPROVED"
+      },
+      "notes": "The correction introduced a hand where none was present in the original, improving the image by addressing an anatomical defect. However, the hand appears unnatural and not anatomically correct.",
+      "raw_response": "Q1_hand_present: YES  \nQ2_original_defect: YES  \nQ3_correction_improved: YES  \nQ4_anatomical_fingers: NO  \nQ5_identity_preserved: YES  \nQ6_surroundings_preserved: YES  \nQ7_new_artifact: NO  \n\nQ8_overall: IMPROVED  \nCONFIDENCE: 0.9  \n\nNOTES: The correction introduced a hand where none was present in the original, improving the image by addressing an anatomical defect. However, the hand appears unnatural and not anatomically correct."
+    },
+    {
+      "filename": "achish-03_00003_.png",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "criteria": {
+        "hand_present": "NO",
+        "original_defect": "YES",
+        "correction_improved": "NO",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "NO",
+        "overall": "WORSE"
+      },
+      "notes": "",
+      "raw_response": "Q1_hand_present: NO\nQ2_original_defect: YES\nQ3_correction_improved: NO\nQ4_anatomical_fingers: NO\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: NO\nQ8_overall: WORSE\nCONFIDENCE: 0.9\n\nThe correction removed the hand, which was present in the original image. This removal appears to be a defect and worsened the image as it altered the intended composition."
+    },
+    {
+      "filename": "achish-04_00003_.png",
+      "correction_result": "worse",
+      "confidence": 0.9,
+      "criteria": {
+        "hand_present": "NO",
+        "original_defect": "YES",
+        "correction_improved": "NO",
+        "fingers": "NO",
+        "identity": "YES",
+        "surroundings": "YES",
+        "new_artifact": "YES",
+        "overall": "WORSE"
+      },
+      "notes": "The correction removed the hand, which was a defect in the original image. However, this removal also introduced a new artifact (the absence of the hand) and did not improve the overall image quality.",
+      "raw_response": "Q1_hand_present: NO\nQ2_original_defect: YES\nQ3_correction_improved: NO\nQ4_anatomical_fingers: NO\nQ5_identity_preserved: YES\nQ6_surroundings_preserved: YES\nQ7_new_artifact: YES\nQ8_overall: WORSE\nCONFIDENCE: 0.9\n\nNOTES: The correction removed the hand, which was a defect in the original image. However, this removal also introduced a new artifact (the absence of the hand) and did not improve the overall image quality."
+    }
+  ]
+}
