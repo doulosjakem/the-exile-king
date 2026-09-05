@@ -128,3 +128,22 @@ __pycache__/
 /art/corrected/masks/
 /art/corrected/test/
 /art/corrected/contact_sheets/
+
+# ==============================
+# Exile King: SDXL inpainting experiment
+# ==============================
+
+# Generated model checkpoints (multi-GB, never committed)
+*.safetensors
+
+# Generated inpainting outputs
+/art/output/
+
+# Test images (regenerated from pipeline)
+/art/test/
+
+# MediaPipe hand landmarker model
+/models/
+
+# ComfyUI outputs
+ComfyUI/output/
